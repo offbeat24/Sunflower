@@ -1,0 +1,9 @@
+source;share/tflite_pkg/hook/pythonpath.ps1
+source;share/tflite_pkg/hook/pythonpath.dsv
+source;share/tflite_pkg/hook/pythonpath.sh
+source;share/tflite_pkg/hook/ament_prefix_path.ps1
+source;share/tflite_pkg/hook/ament_prefix_path.dsv
+source;share/tflite_pkg/hook/ament_prefix_path.sh
+source;../../build/tflite_pkg/share/tflite_pkg/hook/pythonpath_develop.ps1
+source;../../build/tflite_pkg/share/tflite_pkg/hook/pythonpath_develop.dsv
+source;../../build/tflite_pkg/share/tflite_pkg/hook/pythonpath_develop.sh

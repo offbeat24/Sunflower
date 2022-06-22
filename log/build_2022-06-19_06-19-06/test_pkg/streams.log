@@ -1,0 +1,24 @@
+[10.518s] Invoking command in '/home/pi/sunflower/build/test_pkg': PYTHONPATH=/home/pi/sunflower/install/test_pkg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/pi/sunflower/install/test_pkg --editable --build-directory /home/pi/sunflower/build/test_pkg/build --no-deps install_data --install-dir /home/pi/sunflower/install/test_pkg
+[13.996s] running develop
+[15.601s] running egg_info
+[15.601s] creating test_pkg.egg-info
+[15.602s] writing test_pkg.egg-info/PKG-INFO
+[15.605s] writing dependency_links to test_pkg.egg-info/dependency_links.txt
+[15.606s] writing entry points to test_pkg.egg-info/entry_points.txt
+[15.607s] writing requirements to test_pkg.egg-info/requires.txt
+[15.618s] writing top-level names to test_pkg.egg-info/top_level.txt
+[15.622s] writing manifest file 'test_pkg.egg-info/SOURCES.txt'
+[15.874s] reading manifest file 'test_pkg.egg-info/SOURCES.txt'
+[15.884s] writing manifest file 'test_pkg.egg-info/SOURCES.txt'
+[16.163s] running build_ext
+[16.166s] Creating /home/pi/sunflower/install/test_pkg/lib/python3.8/site-packages/site.py
+[16.176s] Creating /home/pi/sunflower/install/test_pkg/lib/python3.8/site-packages/test-pkg.egg-link (link to .)
+[16.182s] 
+[16.183s] Installed /home/pi/sunflower/build/test_pkg
+[16.184s] running install_data
+[16.185s] creating /home/pi/sunflower/install/test_pkg/share/ament_index
+[16.185s] creating /home/pi/sunflower/install/test_pkg/share/ament_index/resource_index
+[16.186s] creating /home/pi/sunflower/install/test_pkg/share/ament_index/resource_index/packages
+[16.187s] copying resource/test_pkg -> /home/pi/sunflower/install/test_pkg/share/ament_index/resource_index/packages
+[16.188s] copying package.xml -> /home/pi/sunflower/install/test_pkg/share/test_pkg
+[16.338s] Invoked command in '/home/pi/sunflower/build/test_pkg' returned '0': PYTHONPATH=/home/pi/sunflower/install/test_pkg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/pi/sunflower/install/test_pkg --editable --build-directory /home/pi/sunflower/build/test_pkg/build --no-deps install_data --install-dir /home/pi/sunflower/install/test_pkg

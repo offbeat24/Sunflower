@@ -1,0 +1,43 @@
+running develop
+Removing /home/pi/sunflower/install/stem_pkg/lib/python3.8/site-packages/stem-pkg.egg-link (link to .)
+running egg_info
+writing ../../build/stem_pkg/stem_pkg.egg-info/PKG-INFO
+writing dependency_links to ../../build/stem_pkg/stem_pkg.egg-info/dependency_links.txt
+writing entry points to ../../build/stem_pkg/stem_pkg.egg-info/entry_points.txt
+writing requirements to ../../build/stem_pkg/stem_pkg.egg-info/requires.txt
+writing top-level names to ../../build/stem_pkg/stem_pkg.egg-info/top_level.txt
+reading manifest file '../../build/stem_pkg/stem_pkg.egg-info/SOURCES.txt'
+writing manifest file '../../build/stem_pkg/stem_pkg.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+creating /home/pi/sunflower/install/stem_pkg/lib/python3.8/site-packages/stem_pkg
+copying /home/pi/sunflower/build/stem_pkg/build/lib/stem_pkg/serial_talker.py -> /home/pi/sunflower/install/stem_pkg/lib/python3.8/site-packages/stem_pkg
+copying /home/pi/sunflower/build/stem_pkg/build/lib/stem_pkg/__init__.py -> /home/pi/sunflower/install/stem_pkg/lib/python3.8/site-packages/stem_pkg
+copying /home/pi/sunflower/build/stem_pkg/build/lib/stem_pkg/controller.py -> /home/pi/sunflower/install/stem_pkg/lib/python3.8/site-packages/stem_pkg
+copying /home/pi/sunflower/build/stem_pkg/build/lib/stem_pkg/async_serial_talker.py -> /home/pi/sunflower/install/stem_pkg/lib/python3.8/site-packages/stem_pkg
+copying /home/pi/sunflower/build/stem_pkg/build/lib/stem_pkg/cmd_selector.py -> /home/pi/sunflower/install/stem_pkg/lib/python3.8/site-packages/stem_pkg
+copying /home/pi/sunflower/build/stem_pkg/build/lib/stem_pkg/calculator.py -> /home/pi/sunflower/install/stem_pkg/lib/python3.8/site-packages/stem_pkg
+copying /home/pi/sunflower/build/stem_pkg/build/lib/stem_pkg/tensor.py -> /home/pi/sunflower/install/stem_pkg/lib/python3.8/site-packages/stem_pkg
+copying /home/pi/sunflower/build/stem_pkg/build/lib/stem_pkg/tester.py -> /home/pi/sunflower/install/stem_pkg/lib/python3.8/site-packages/stem_pkg
+copying /home/pi/sunflower/build/stem_pkg/build/lib/stem_pkg/tensor_publisher.py -> /home/pi/sunflower/install/stem_pkg/lib/python3.8/site-packages/stem_pkg
+byte-compiling /home/pi/sunflower/install/stem_pkg/lib/python3.8/site-packages/stem_pkg/serial_talker.py to serial_talker.cpython-38.pyc
+byte-compiling /home/pi/sunflower/install/stem_pkg/lib/python3.8/site-packages/stem_pkg/__init__.py to __init__.cpython-38.pyc
+byte-compiling /home/pi/sunflower/install/stem_pkg/lib/python3.8/site-packages/stem_pkg/controller.py to controller.cpython-38.pyc
+byte-compiling /home/pi/sunflower/install/stem_pkg/lib/python3.8/site-packages/stem_pkg/async_serial_talker.py to async_serial_talker.cpython-38.pyc
+byte-compiling /home/pi/sunflower/install/stem_pkg/lib/python3.8/site-packages/stem_pkg/cmd_selector.py to cmd_selector.cpython-38.pyc
+byte-compiling /home/pi/sunflower/install/stem_pkg/lib/python3.8/site-packages/stem_pkg/calculator.py to calculator.cpython-38.pyc
+byte-compiling /home/pi/sunflower/install/stem_pkg/lib/python3.8/site-packages/stem_pkg/tensor.py to tensor.cpython-38.pyc
+byte-compiling /home/pi/sunflower/install/stem_pkg/lib/python3.8/site-packages/stem_pkg/tester.py to tester.cpython-38.pyc
+byte-compiling /home/pi/sunflower/install/stem_pkg/lib/python3.8/site-packages/stem_pkg/tensor_publisher.py to tensor_publisher.cpython-38.pyc
+running install_data
+running install_egg_info
+Copying ../../build/stem_pkg/stem_pkg.egg-info to /home/pi/sunflower/install/stem_pkg/lib/python3.8/site-packages/stem_pkg-0.0.0-py3.8.egg-info
+running install_scripts
+Installing calculator script to /home/pi/sunflower/install/stem_pkg/lib/stem_pkg
+Installing cmd_selector script to /home/pi/sunflower/install/stem_pkg/lib/stem_pkg
+Installing serial_talker script to /home/pi/sunflower/install/stem_pkg/lib/stem_pkg
+Installing tensor script to /home/pi/sunflower/install/stem_pkg/lib/stem_pkg
+Installing tensor_publisher script to /home/pi/sunflower/install/stem_pkg/lib/stem_pkg
+writing list of installed files to '/home/pi/sunflower/build/stem_pkg/install.log'

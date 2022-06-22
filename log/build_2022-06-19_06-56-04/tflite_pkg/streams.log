@@ -1,0 +1,16 @@
+[5.445s] Invoking command in '/home/pi/sunflower/build/tflite_pkg': PYTHONPATH=/home/pi/sunflower/install/tflite_pkg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/pi/sunflower/install/tflite_pkg --editable --build-directory /home/pi/sunflower/build/tflite_pkg/build --no-deps install_data --install-dir /home/pi/sunflower/install/tflite_pkg
+[7.335s] running develop
+[8.481s] running egg_info
+[8.481s] writing tflite_pkg.egg-info/PKG-INFO
+[8.483s] writing dependency_links to tflite_pkg.egg-info/dependency_links.txt
+[8.483s] writing entry points to tflite_pkg.egg-info/entry_points.txt
+[8.484s] writing requirements to tflite_pkg.egg-info/requires.txt
+[8.485s] writing top-level names to tflite_pkg.egg-info/top_level.txt
+[8.626s] reading manifest file 'tflite_pkg.egg-info/SOURCES.txt'
+[8.629s] writing manifest file 'tflite_pkg.egg-info/SOURCES.txt'
+[8.817s] running build_ext
+[8.818s] Creating /home/pi/sunflower/install/tflite_pkg/lib/python3.8/site-packages/tflite-pkg.egg-link (link to .)
+[8.822s] 
+[8.823s] Installed /home/pi/sunflower/build/tflite_pkg
+[8.824s] running install_data
+[8.965s] Invoked command in '/home/pi/sunflower/build/tflite_pkg' returned '0': PYTHONPATH=/home/pi/sunflower/install/tflite_pkg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/pi/sunflower/install/tflite_pkg --editable --build-directory /home/pi/sunflower/build/tflite_pkg/build --no-deps install_data --install-dir /home/pi/sunflower/install/tflite_pkg

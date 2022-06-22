@@ -1,0 +1,2 @@
+Invoking command in '/home/pi/sunflower/src/tflite_pkg': PYTEST_ADDOPTS=--tb=short --junit-xml=/home/pi/sunflower/build/tflite_pkg/pytest.xml --junit-prefix=tflite_pkg -o cache_dir=/home/pi/sunflower/build/tflite_pkg/.pytest_cache /usr/bin/python3 -m pytest
+Invoked command in '/home/pi/sunflower/src/tflite_pkg' returned '0': PYTEST_ADDOPTS=--tb=short --junit-xml=/home/pi/sunflower/build/tflite_pkg/pytest.xml --junit-prefix=tflite_pkg -o cache_dir=/home/pi/sunflower/build/tflite_pkg/.pytest_cache /usr/bin/python3 -m pytest

@@ -1,0 +1,1089 @@
+[1.751s] Invoking command in '/home/pi/sunflower/src/stem_pkg': PYTEST_ADDOPTS=--tb=short --junit-xml=/home/pi/sunflower/build/stem_pkg/pytest.xml --junit-prefix=stem_pkg -o cache_dir=/home/pi/sunflower/build/stem_pkg/.pytest_cache PYTHONPATH=/home/pi/sunflower/build/stem_pkg:/home/pi/sunflower/install/stem_pkg/lib/python3.8/site-packages:/home/pi/sunflower/build/tflite_pkg:/home/pi/sunflower/install/tflite_pkg/lib/python3.8/site-packages:/home/pi/sunflower/build/test_pkg:/home/pi/sunflower/install/test_pkg/lib/python3.8/site-packages:/home/pi/sunflower/install/sunflower_interfaces/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/python3 -m pytest
+[5.440s] [1m============================= test session starts ==============================[0m
+[5.441s] platform linux -- Python 3.8.10, pytest-7.1.2, pluggy-0.13.0
+[5.485s] cachedir: /home/pi/sunflower/build/stem_pkg/.pytest_cache
+[5.486s] rootdir: /home/pi/sunflower/src/stem_pkg
+[5.487s] plugins: ament-flake8-0.9.6, ament-copyright-0.9.6, launch-testing-ros-0.11.6, ament-xmllint-0.9.6, ament-pep257-0.9.6, ament-lint-0.9.6, launch-testing-0.10.8, rerunfailures-10.2, repeat-0.9.1, colcon-core-0.8.3, cov-2.8.1
+[5.856s] [1mcollecting ... [0m[1m
+[5.857s] collected 3 items                                                              [0m
+[5.859s] 
+[6.231s] test/test_copyright.py [31mF[0m[31m                                                 [ 33%][0m
+[8.125s] test/test_flake8.py [31mF[0m[31m                                                    [ 66%][0m
+[8.486s] test/test_pep257.py [32m.[0m[31m                                                    [100%][0m
+[8.488s] 
+[8.488s] =================================== FAILURES ===================================
+[8.491s] [31m[1m________________________________ test_copyright ________________________________[0m
+[8.491s] [1m[31mtest/test_copyright.py[0m:23: in test_copyright
+[8.612s]     [34;01massert[39;49;00m rc == [34;01m0[39;49;00m, [33m'[39;49;00m[33mFound errors[39;49;00m[33m'[39;49;00m
+[8.613s] [1m[31mE   AssertionError: Found errors[0m
+[8.614s] [1m[31mE   assert 1 == 0[0m
+[8.616s] ----------------------------- Captured stderr call -----------------------------
+[8.617s] launch/stem.launch.py: could not find copyright notice
+[8.618s] stem_pkg/async_serial_talker.py: could not find copyright notice
+[8.618s] stem_pkg/calculator.py: could not find copyright notice
+[8.619s] stem_pkg/cmd_selector.py: could not find copyright notice
+[8.622s] stem_pkg/controller.py: could not find copyright notice
+[8.624s] stem_pkg/serial_talker.py: could not find copyright notice
+[8.629s] stem_pkg/tensor.py: could not find copyright notice
+[8.634s] stem_pkg/tensor_publisher.py: could not find copyright notice
+[8.639s] stem_pkg/tester.py: could not find copyright notice
+[8.644s] 9 errors, checked 13 files
+[8.659s] [31m[1m_________________________________ test_flake8 __________________________________[0m
+[8.664s] [1m[31mtest/test_flake8.py[0m:23: in test_flake8
+[8.666s]     [34;01massert[39;49;00m rc == [34;01m0[39;49;00m, \
+[8.676s] [1m[31mE   AssertionError: Found 199 code style errors / warnings:[0m
+[8.678s] [1m[31mE     ./setup.py:2:1: I100 Import statements are in the wrong order. 'import os' should be before 'from setuptools import setup' and in a different group.[0m
+[8.680s] [1m[31mE     ./setup.py:2:1: I201 Missing newline between import groups. 'import os' is identified as Stdlib and 'from setuptools import setup' is identified as Third Party.[0m
+[8.681s] [1m[31mE     ./setup.py:3:1: I100 Import statements are in the wrong order. 'from glob import glob' should be before 'import os'[0m
+[8.683s] [1m[31mE     ./setup.py:26:13: Q000 Double quotes found but single quotes preferred[0m
+[8.693s] [1m[31mE     ./setup.py:27:13: Q000 Double quotes found but single quotes preferred[0m
+[8.699s] [1m[31mE     ./setup.py:28:13: Q000 Double quotes found but single quotes preferred[0m
+[8.713s] [1m[31mE     ./setup.py:29:13: Q000 Double quotes found but single quotes preferred[0m
+[8.715s] [1m[31mE     ./setup.py:30:13: Q000 Double quotes found but single quotes preferred[0m
+[8.717s] [1m[31mE     ./setup.py:31:13: E265 block comment should start with '# '[0m
+[8.719s] [1m[31mE     ./setup.py:32:13: E265 block comment should start with '# '[0m
+[8.720s] [1m[31mE     ./setup.py:35:2: W292 no newline at end of file[0m
+[8.725s] [1m[31mE     ./launch/stem.launch.py:4:1: E302 expected 2 blank lines, found 1[0m
+[8.736s] [1m[31mE     ./launch/stem.launch.py:10:20: E251 unexpected spaces around keyword / parameter equals[0m
+[8.737s] [1m[31mE     ./launch/stem.launch.py:20:32: E202 whitespace before ')'[0m
+[8.739s] [1m[31mE     ./launch/stem.launch.py:26:20: E251 unexpected spaces around keyword / parameter equals[0m
+[8.741s] [1m[31mE     ./launch/stem.launch.py:26:29: E202 whitespace before ')'[0m
+[8.743s] [1m[31mE     ./launch/stem.launch.py:27:7: W292 no newline at end of file[0m
+[8.746s] [1m[31mE     ./stem_pkg/serial_talker.py:5:1: I100 Import statements are in the wrong order. 'import serial' should be before 'from std_msgs.msg import String'[0m
+[8.748s] [1m[31mE     ./stem_pkg/serial_talker.py:5:14: W291 trailing whitespace[0m
+[8.764s] [1m[31mE     ./stem_pkg/serial_talker.py:11:5: E301 expected 1 blank line, found 0[0m
+[8.766s] [1m[31mE     ./stem_pkg/serial_talker.py:19:32: Q000 Double quotes found but single quotes preferred[0m
+[8.768s] [1m[31mE     ./stem_pkg/serial_talker.py:22:24: Q000 Double quotes found but single quotes preferred[0m
+[8.769s] [1m[31mE     ./stem_pkg/serial_talker.py:40:1: E305 expected 2 blank lines after class or function definition, found 1[0m
+[8.771s] [1m[31mE     ./stem_pkg/serial_talker.py:40:26: E203 whitespace before ':'[0m
+[8.782s] [1m[31mE     ./stem_pkg/serial_talker.py:41:11: W292 no newline at end of file[0m
+[8.783s] [1m[31mE     ./stem_pkg/controller.py:5:1: I100 Import statements are in the wrong order. 'import RPi.GPIO' should be before 'from std_msgs.msg import String'[0m
+[8.785s] [1m[31mE     ./stem_pkg/controller.py:7:1: E302 expected 2 blank lines, found 1[0m
+[8.787s] [1m[31mE     ./stem_pkg/controller.py:7:23: E203 whitespace before ':'[0m
+[8.788s] [1m[31mE     ./stem_pkg/controller.py:8:1: CNL100 Class definition does not have a new line.[0m
+[8.790s] [1m[31mE     ./stem_pkg/controller.py:15:1: W293 blank line contains whitespace[0m
+[8.799s] [1m[31mE     ./stem_pkg/controller.py:19:60: E261 at least two spaces before inline comment[0m
+[8.800s] [1m[31mE     ./stem_pkg/controller.py:19:61: E262 inline comment should start with '# '[0m
+[8.801s] [1m[31mE     ./stem_pkg/controller.py:20:60: E261 at least two spaces before inline comment[0m
+[8.803s] [1m[31mE     ./stem_pkg/controller.py:20:61: E262 inline comment should start with '# '[0m
+[8.804s] [1m[31mE     ./stem_pkg/controller.py:22:60: E261 at least two spaces before inline comment[0m
+[8.805s] [1m[31mE     ./stem_pkg/controller.py:22:61: E262 inline comment should start with '# '[0m
+[8.806s] [1m[31mE     ./stem_pkg/controller.py:23:60: E261 at least two spaces before inline comment[0m
+[8.807s] [1m[31mE     ./stem_pkg/controller.py:23:61: E262 inline comment should start with '# '[0m
+[8.808s] [1m[31mE     ./stem_pkg/controller.py:25:60: E261 at least two spaces before inline comment[0m
+[8.809s] [1m[31mE     ./stem_pkg/controller.py:25:61: E262 inline comment should start with '# '[0m
+[8.822s] [1m[31mE     ./stem_pkg/controller.py:26:60: E261 at least two spaces before inline comment[0m
+[8.824s] [1m[31mE     ./stem_pkg/controller.py:26:61: E262 inline comment should start with '# '[0m
+[8.824s] [1m[31mE     ./stem_pkg/controller.py:28:60: E261 at least two spaces before inline comment[0m
+[8.825s] [1m[31mE     ./stem_pkg/controller.py:28:61: E262 inline comment should start with '# '[0m
+[8.826s] [1m[31mE     ./stem_pkg/controller.py:30:9: E265 block comment should start with '# '[0m
+[8.827s] [1m[31mE     ./stem_pkg/controller.py:31:9: E265 block comment should start with '# '[0m
+[8.828s] [1m[31mE     ./stem_pkg/controller.py:33:57: E251 unexpected spaces around keyword / parameter equals[0m
+[8.828s] [1m[31mE     ./stem_pkg/controller.py:33:59: E251 unexpected spaces around keyword / parameter equals[0m
+[8.835s] [1m[31mE     ./stem_pkg/controller.py:34:57: E251 unexpected spaces around keyword / parameter equals[0m
+[8.836s] [1m[31mE     ./stem_pkg/controller.py:34:59: E251 unexpected spaces around keyword / parameter equals[0m
+[8.837s] [1m[31mE     ./stem_pkg/controller.py:36:57: E251 unexpected spaces around keyword / parameter equals[0m
+[8.838s] [1m[31mE     ./stem_pkg/controller.py:36:59: E251 unexpected spaces around keyword / parameter equals[0m
+[8.839s] [1m[31mE     ./stem_pkg/controller.py:37:57: E251 unexpected spaces around keyword / parameter equals[0m
+[8.839s] [1m[31mE     ./stem_pkg/controller.py:37:59: E251 unexpected spaces around keyword / parameter equals[0m
+[8.840s] [1m[31mE     ./stem_pkg/controller.py:39:57: E251 unexpected spaces around keyword / parameter equals[0m
+[8.841s] [1m[31mE     ./stem_pkg/controller.py:39:59: E251 unexpected spaces around keyword / parameter equals[0m
+[8.842s] [1m[31mE     ./stem_pkg/controller.py:40:57: E251 unexpected spaces around keyword / parameter equals[0m
+[8.842s] [1m[31mE     ./stem_pkg/controller.py:40:59: E251 unexpected spaces around keyword / parameter equals[0m
+[8.843s] [1m[31mE     ./stem_pkg/controller.py:42:57: E251 unexpected spaces around keyword / parameter equals[0m
+[8.859s] [1m[31mE     ./stem_pkg/controller.py:42:59: E251 unexpected spaces around keyword / parameter equals[0m
+[8.859s] [1m[31mE     ./stem_pkg/controller.py:46:9: E265 block comment should start with '# '[0m
+[8.860s] [1m[31mE     ./stem_pkg/controller.py:48:43: E203 whitespace before ':'[0m
+[8.861s] [1m[31mE     ./stem_pkg/controller.py:55:32: E203 whitespace before ':'[0m
+[8.862s] [1m[31mE     ./stem_pkg/controller.py:60:19: E203 whitespace before ':'[0m
+[8.865s] [1m[31mE     ./stem_pkg/controller.py:61:17: Q000 Double quotes found but single quotes preferred[0m
+[8.865s] [1m[31mE     ./stem_pkg/controller.py:62:21: E203 whitespace before ':'[0m
+[8.866s] [1m[31mE     ./stem_pkg/controller.py:63:17: Q000 Double quotes found but single quotes preferred[0m
+[8.867s] [1m[31mE     ./stem_pkg/controller.py:64:21: E203 whitespace before ':'[0m
+[8.868s] [1m[31mE     ./stem_pkg/controller.py:65:17: Q000 Double quotes found but single quotes preferred[0m
+[8.869s] [1m[31mE     ./stem_pkg/controller.py:66:21: E203 whitespace before ':'[0m
+[8.871s] [1m[31mE     ./stem_pkg/controller.py:67:17: Q000 Double quotes found but single quotes preferred[0m
+[8.872s] [1m[31mE     ./stem_pkg/controller.py:68:21: E203 whitespace before ':'[0m
+[8.874s] [1m[31mE     ./stem_pkg/controller.py:69:17: Q000 Double quotes found but single quotes preferred[0m
+[8.891s] [1m[31mE     ./stem_pkg/controller.py:70:21: E203 whitespace before ':'[0m
+[8.892s] [1m[31mE     ./stem_pkg/controller.py:71:17: Q000 Double quotes found but single quotes preferred[0m
+[8.893s] [1m[31mE     ./stem_pkg/controller.py:72:21: E203 whitespace before ':'[0m
+[8.894s] [1m[31mE     ./stem_pkg/controller.py:73:17: Q000 Double quotes found but single quotes preferred[0m
+[8.895s] [1m[31mE     ./stem_pkg/controller.py:74:21: E203 whitespace before ':'[0m
+[8.896s] [1m[31mE     ./stem_pkg/controller.py:75:17: Q000 Double quotes found but single quotes preferred[0m
+[8.903s] [1m[31mE     ./stem_pkg/controller.py:76:21: E203 whitespace before ':'[0m
+[8.905s] [1m[31mE     ./stem_pkg/controller.py:77:17: Q000 Double quotes found but single quotes preferred[0m
+[8.906s] [1m[31mE     ./stem_pkg/controller.py:78:13: E203 whitespace before ':'[0m
+[8.908s] [1m[31mE     ./stem_pkg/controller.py:83:20: E203 whitespace before ':'[0m
+[8.909s] [1m[31mE     ./stem_pkg/controller.py:95:1: E305 expected 2 blank lines after class or function definition, found 1[0m
+[8.910s] [1m[31mE     ./stem_pkg/controller.py:95:26: E203 whitespace before ':'[0m
+[8.911s] [1m[31mE     ./stem_pkg/controller.py:96:11: W292 no newline at end of file[0m
+[8.913s] [1m[31mE     ./stem_pkg/async_serial_talker.py:5:1: I100 Import statements are in the wrong order. 'import asyncio' should be before 'from std_msgs.msg import String' and in a different group.[0m
+[8.913s] [1m[31mE     ./stem_pkg/async_serial_talker.py:5:1: I201 Missing newline between import groups. 'import asyncio' is identified as Stdlib and 'from std_msgs.msg import String' is identified as Third Party.[0m
+[8.931s] [1m[31mE     ./stem_pkg/async_serial_talker.py:6:1: I201 Missing newline between import groups. 'import serial_asyncio' is identified as Third Party and 'import asyncio' is identified as Stdlib.[0m
+[8.933s] [1m[31mE     ./stem_pkg/async_serial_talker.py:11:5: E301 expected 1 blank line, found 0[0m
+[8.935s] [1m[31mE     ./stem_pkg/async_serial_talker.py:20:32: Q000 Double quotes found but single quotes preferred[0m
+[8.937s] [1m[31mE     ./stem_pkg/async_serial_talker.py:29:100: E501 line too long (102 > 99 characters)[0m
+[8.938s] [1m[31mE     ./stem_pkg/async_serial_talker.py:38:38: E203 whitespace before ':'[0m
+[8.940s] [1m[31mE     ./stem_pkg/async_serial_talker.py:39:21: E203 whitespace before ':'[0m
+[8.941s] [1m[31mE     ./stem_pkg/async_serial_talker.py:42:9: E265 block comment should start with '# '[0m
+[8.943s] [1m[31mE     ./stem_pkg/async_serial_talker.py:57:1: E305 expected 2 blank lines after class or function definition, found 1[0m
+[8.957s] [1m[31mE     ./stem_pkg/async_serial_talker.py:57:26: E203 whitespace before ':'[0m
+[8.960s] [1m[31mE     ./stem_pkg/async_serial_talker.py:58:11: W292 no newline at end of file[0m
+[8.963s] [1m[31mE     ./stem_pkg/cmd_selector.py:6:1: E302 expected 2 blank lines, found 1[0m
+[8.966s] [1m[31mE     ./stem_pkg/cmd_selector.py:8:5: E301 expected 1 blank line, found 0[0m
+[8.968s] [1m[31mE     ./stem_pkg/cmd_selector.py:44:1: E303 too many blank lines (3)[0m
+[8.970s] [1m[31mE     ./stem_pkg/cmd_selector.py:55:1: E305 expected 2 blank lines after class or function definition, found 1[0m
+[8.971s] [1m[31mE     ./stem_pkg/cmd_selector.py:55:26: E203 whitespace before ':'[0m
+[8.973s] [1m[31mE     ./stem_pkg/cmd_selector.py:56:11: W292 no newline at end of file[0m
+[8.975s] [1m[31mE     ./stem_pkg/calculator.py:1:1: F401 'socket.NI_NUMERICHOST' imported but unused[0m
+[8.976s] [1m[31mE     ./stem_pkg/calculator.py:2:1: I201 Missing newline between import groups. 'import rclpy' is identified as Third Party and 'from socket import NI_NUMERICHOST' is identified as Stdlib.[0m
+[8.978s] [1m[31mE     ./stem_pkg/calculator.py:7:1: I100 Import statements are in the wrong order. 'import math' should be before 'from sunflower_interfaces.msg import TfliteResult' and in a different group.[0m
+[8.981s] [1m[31mE     ./stem_pkg/calculator.py:7:1: I201 Missing newline between import groups. 'import math' is identified as Stdlib and 'from sunflower_interfaces.msg import TfliteResult' is identified as Third Party.[0m
+[8.984s] [1m[31mE     ./stem_pkg/calculator.py:9:1: E302 expected 2 blank lines, found 1[0m
+[8.988s] [1m[31mE     ./stem_pkg/calculator.py:9:23: E203 whitespace before ':'[0m
+[8.991s] [1m[31mE     ./stem_pkg/calculator.py:10:1: CNL100 Class definition does not have a new line.[0m
+[8.992s] [1m[31mE     ./stem_pkg/calculator.py:23:35: E203 whitespace before ':'[0m
+[8.994s] [1m[31mE     ./stem_pkg/calculator.py:31:30: Q000 Double quotes found but single quotes preferred[0m
+[8.996s] [1m[31mE     ./stem_pkg/calculator.py:34:27: C417 Unnecessary use of map - use a generator expression instead.[0m
+[8.997s] [1m[31mE     ./stem_pkg/calculator.py:35:27: C417 Unnecessary use of map - use a generator expression instead.[0m
+[8.999s] [1m[31mE     ./stem_pkg/calculator.py:36:27: C417 Unnecessary use of map - use a generator expression instead.[0m
+[9.000s] [1m[31mE     ./stem_pkg/calculator.py:62:1: W293 blank line contains whitespace[0m
+[9.002s] [1m[31mE     ./stem_pkg/calculator.py:65:10: E203 whitespace before ','[0m
+[9.010s] [1m[31mE     ./stem_pkg/calculator.py:65:39: C417 Unnecessary use of map - use a generator expression instead.[0m
+[9.014s] [1m[31mE     ./stem_pkg/calculator.py:83:1: E302 expected 2 blank lines, found 1[0m
+[9.016s] [1m[31mE     ./stem_pkg/calculator.py:83:20: E203 whitespace before ':'[0m
+[9.018s] [1m[31mE     ./stem_pkg/calculator.py:94:1: E305 expected 2 blank lines after class or function definition, found 1[0m
+[9.019s] [1m[31mE     ./stem_pkg/calculator.py:94:26: E203 whitespace before ':'[0m
+[9.021s] [1m[31mE     ./stem_pkg/calculator.py:95:11: W292 no newline at end of file[0m
+[9.023s] [1m[31mE     ./stem_pkg/tensor.py:5:1: I100 Import statements are in the wrong order. 'import cv2' should be before 'from sunflower_interfaces.msg import TfliteResult'[0m
+[9.024s] [1m[31mE     ./stem_pkg/tensor.py:7:1: I100 Import statements are in the wrong order. 'import numpy' should be before 'import tensorflow'[0m
+[9.026s] [1m[31mE     ./stem_pkg/tensor.py:9:1: E302 expected 2 blank lines, found 1[0m
+[9.029s] [1m[31mE     ./stem_pkg/tensor.py:9:19: E203 whitespace before ':'[0m
+[9.032s] [1m[31mE     ./stem_pkg/tensor.py:10:1: CNL100 Class definition does not have a new line.[0m
+[9.035s] [1m[31mE     ./stem_pkg/tensor.py:20:46: E203 whitespace before ':'[0m
+[9.039s] [1m[31mE     ./stem_pkg/tensor.py:41:9: F841 local variable 'data' is assigned to but never used[0m
+[9.041s] [1m[31mE     ./stem_pkg/tensor.py:41:16: C408 Unnecessary list call - rewrite as a literal.[0m
+[9.042s] [1m[31mE     ./stem_pkg/tensor.py:53:1: E302 expected 2 blank lines, found 1[0m
+[9.044s] [1m[31mE     ./stem_pkg/tensor.py:53:20: E203 whitespace before ':'[0m
+[9.046s] [1m[31mE     ./stem_pkg/tensor.py:55:50: Q000 Double quotes found but single quotes preferred[0m
+[9.048s] [1m[31mE     ./stem_pkg/tensor.py:55:100: E501 line too long (100 > 99 characters)[0m
+[9.049s] [1m[31mE     ./stem_pkg/tensor.py:67:1: E305 expected 2 blank lines after class or function definition, found 1[0m
+[9.051s] [1m[31mE     ./stem_pkg/tensor.py:67:26: E203 whitespace before ':'[0m
+[9.055s] [1m[31mE     ./stem_pkg/tensor.py:70:1: E265 block comment should start with '# '[0m
+[9.063s] [1m[31mE     ./stem_pkg/tensor.py:70:29: W292 no newline at end of file[0m
+[9.065s] [1m[31mE     ./stem_pkg/tensor.py:70:29: W292 no newline at end of file[0m
+[9.067s] [1m[31mE     ./stem_pkg/tensor.py:70:29: W292 no newline at end of file[0m
+[9.068s] [1m[31mE     ./stem_pkg/tester.py:5:1: I100 Import statements are in the wrong order. 'from pynput import keyboard' should be before 'from std_msgs.msg import String'[0m
+[9.070s] [1m[31mE     ./stem_pkg/tester.py:7:1: E302 expected 2 blank lines, found 1[0m
+[9.083s] [1m[31mE     ./stem_pkg/tester.py:7:19: E203 whitespace before ':'[0m
+[9.084s] [1m[31mE     ./stem_pkg/tester.py:8:1: CNL100 Class definition does not have a new line.[0m
+[9.086s] [1m[31mE     ./stem_pkg/tester.py:16:21: E251 unexpected spaces around keyword / parameter equals[0m
+[9.088s] [1m[31mE     ./stem_pkg/tester.py:16:23: E251 unexpected spaces around keyword / parameter equals[0m
+[9.090s] [1m[31mE     ./stem_pkg/tester.py:17:23: E251 unexpected spaces around keyword / parameter equals[0m
+[9.091s] [1m[31mE     ./stem_pkg/tester.py:17:25: E251 unexpected spaces around keyword / parameter equals[0m
+[9.093s] [1m[31mE     ./stem_pkg/tester.py:21:43: E203 whitespace before ':'[0m
+[9.095s] [1m[31mE     ./stem_pkg/tester.py:29:1: B901 blind except: statement[0m
+[9.098s] [1m[31mE     ./stem_pkg/tester.py:29:9: E722 do not use bare 'except'[0m
+[9.110s] [1m[31mE     ./stem_pkg/tester.py:32:32: E203 whitespace before ':'[0m
+[9.113s] [1m[31mE     ./stem_pkg/tester.py:37:17: Q000 Double quotes found but single quotes preferred[0m
+[9.115s] [1m[31mE     ./stem_pkg/tester.py:37:20: E203 whitespace before ':'[0m
+[9.117s] [1m[31mE     ./stem_pkg/tester.py:38:17: Q000 Double quotes found but single quotes preferred[0m
+[9.119s] [1m[31mE     ./stem_pkg/tester.py:39:19: Q000 Double quotes found but single quotes preferred[0m
+[9.123s] [1m[31mE     ./stem_pkg/tester.py:39:22: E203 whitespace before ':'[0m
+[9.125s] [1m[31mE     ./stem_pkg/tester.py:40:17: Q000 Double quotes found but single quotes preferred[0m
+[9.139s] [1m[31mE     ./stem_pkg/tester.py:41:19: Q000 Double quotes found but single quotes preferred[0m
+[9.142s] [1m[31mE     ./stem_pkg/tester.py:41:22: E203 whitespace before ':'[0m
+[9.144s] [1m[31mE     ./stem_pkg/tester.py:42:17: Q000 Double quotes found but single quotes preferred[0m
+[9.146s] [1m[31mE     ./stem_pkg/tester.py:43:19: Q000 Double quotes found but single quotes preferred[0m
+[9.147s] [1m[31mE     ./stem_pkg/tester.py:43:22: E203 whitespace before ':'[0m
+[9.149s] [1m[31mE     ./stem_pkg/tester.py:44:17: Q000 Double quotes found but single quotes preferred[0m
+[9.151s] [1m[31mE     ./stem_pkg/tester.py:45:19: Q000 Double quotes found but single quotes preferred[0m
+[9.153s] [1m[31mE     ./stem_pkg/tester.py:45:22: E203 whitespace before ':'[0m
+[9.155s] [1m[31mE     ./stem_pkg/tester.py:46:17: Q000 Double quotes found but single quotes preferred[0m
+[9.158s] [1m[31mE     ./stem_pkg/tester.py:47:19: Q000 Double quotes found but single quotes preferred[0m
+[9.162s] [1m[31mE     ./stem_pkg/tester.py:47:22: E203 whitespace before ':'[0m
+[9.165s] [1m[31mE     ./stem_pkg/tester.py:48:17: Q000 Double quotes found but single quotes preferred[0m
+[9.167s] [1m[31mE     ./stem_pkg/tester.py:49:13: E203 whitespace before ':'[0m
+[9.169s] [1m[31mE     ./stem_pkg/tester.py:57:1: E302 expected 2 blank lines, found 1[0m
+[9.171s] [1m[31mE     ./stem_pkg/tester.py:57:20: E203 whitespace before ':'[0m
+[9.172s] [1m[31mE     ./stem_pkg/tester.py:68:1: E305 expected 2 blank lines after class or function definition, found 1[0m
+[9.174s] [1m[31mE     ./stem_pkg/tester.py:68:26: E203 whitespace before ':'[0m
+[9.176s] [1m[31mE     ./stem_pkg/tester.py:69:11: W292 no newline at end of file[0m
+[9.178s] [1m[31mE     ./stem_pkg/tensor_publisher.py:5:1: I100 Import statements are in the wrong order. 'import cv2' should be before 'from std_msgs.msg import String'[0m
+[9.186s] [1m[31mE     ./stem_pkg/tensor_publisher.py:7:1: I100 Import statements are in the wrong order. 'import numpy' should be before 'import tensorflow'[0m
+[9.190s] [1m[31mE     ./stem_pkg/tensor_publisher.py:8:1: F401 'pandas as pd' imported but unused[0m
+[9.203s] [1m[31mE     ./stem_pkg/tensor_publisher.py:10:1: E302 expected 2 blank lines, found 1[0m
+[9.205s] [1m[31mE     ./stem_pkg/tensor_publisher.py:10:28: E203 whitespace before ':'[0m
+[9.207s] [1m[31mE     ./stem_pkg/tensor_publisher.py:11:1: CNL100 Class definition does not have a new line.[0m
+[9.209s] [1m[31mE     ./stem_pkg/tensor_publisher.py:21:46: E203 whitespace before ':'[0m
+[9.212s] [1m[31mE     ./stem_pkg/tensor_publisher.py:42:16: C408 Unnecessary list call - rewrite as a literal.[0m
+[9.215s] [1m[31mE     ./stem_pkg/tensor_publisher.py:44:28: E203 whitespace before ':'[0m
+[9.230s] [1m[31mE     ./stem_pkg/tensor_publisher.py:47:20: Q000 Double quotes found but single quotes preferred[0m
+[9.233s] [1m[31mE     ./stem_pkg/tensor_publisher.py:48:20: Q000 Double quotes found but single quotes preferred[0m
+[9.235s] [1m[31mE     ./stem_pkg/tensor_publisher.py:52:1: E302 expected 2 blank lines, found 1[0m
+[9.237s] [1m[31mE     ./stem_pkg/tensor_publisher.py:52:20: E203 whitespace before ':'[0m
+[9.240s] [1m[31mE     ./stem_pkg/tensor_publisher.py:54:50: Q000 Double quotes found but single quotes preferred[0m
+[9.242s] [1m[31mE     ./stem_pkg/tensor_publisher.py:54:100: E501 line too long (100 > 99 characters)[0m
+[9.244s] [1m[31mE     ./stem_pkg/tensor_publisher.py:66:1: E305 expected 2 blank lines after class or function definition, found 1[0m
+[9.246s] [1m[31mE     ./stem_pkg/tensor_publisher.py:66:26: E203 whitespace before ':'[0m
+[9.248s] [1m[31mE     ./stem_pkg/tensor_publisher.py:69:1: E265 block comment should start with '# '[0m
+[9.250s] [1m[31mE     ./stem_pkg/tensor_publisher.py:69:29: W292 no newline at end of file[0m
+[9.262s] [1m[31mE     ./stem_pkg/tensor_publisher.py:69:29: W292 no newline at end of file[0m
+[9.265s] [1m[31mE     ./stem_pkg/tensor_publisher.py:69:29: W292 no newline at end of file[0m
+[9.267s] [1m[31mE   assert 1 == 0[0m
+[9.269s] ----------------------------- Captured stdout call -----------------------------
+[9.271s] 
+[9.273s] ./setup.py:2:1: I100 Import statements are in the wrong order. 'import os' should be before 'from setuptools import setup' and in a different group.
+[9.275s] import os
+[9.277s] ^
+[9.279s] 
+[9.293s] ./setup.py:2:1: I201 Missing newline between import groups. 'import os' is identified as Stdlib and 'from setuptools import setup' is identified as Third Party.
+[9.298s] import os
+[9.303s] ^
+[9.308s] 
+[9.314s] ./setup.py:3:1: I100 Import statements are in the wrong order. 'from glob import glob' should be before 'import os'
+[9.317s] from glob import glob
+[9.320s] ^
+[9.335s] 
+[9.337s] ./setup.py:26:13: Q000 Double quotes found but single quotes preferred
+[9.339s]             "serial_talker=stem_pkg.serial_talker:main",
+[9.340s]             ^
+[9.342s] 
+[9.346s] ./setup.py:27:13: Q000 Double quotes found but single quotes preferred
+[9.350s]             "cmd_selector=stem_pkg.cmd_selector:main",
+[9.353s]             ^
+[9.355s] 
+[9.357s] ./setup.py:28:13: Q000 Double quotes found but single quotes preferred
+[9.359s]             "calculator=stem_pkg.calculator:main",
+[9.361s]             ^
+[9.362s] 
+[9.364s] ./setup.py:29:13: Q000 Double quotes found but single quotes preferred
+[9.365s]             "tensor_publisher=stem_pkg.tensor_publisher:main",
+[9.367s]             ^
+[9.371s] 
+[9.374s] ./setup.py:30:13: Q000 Double quotes found but single quotes preferred
+[9.377s]             "tensor=stem_pkg.tensor:main"
+[9.379s]             ^
+[9.381s] 
+[9.382s] ./setup.py:31:13: E265 block comment should start with '# '
+[9.384s]             #"tester=stem_pkg.tester:main",
+[9.385s]             ^
+[9.387s] 
+[9.389s] ./setup.py:32:13: E265 block comment should start with '# '
+[9.390s]             #"controller=stem_pkg.controller:main"
+[9.393s]             ^
+[9.397s] 
+[9.399s] ./setup.py:35:2: W292 no newline at end of file
+[9.402s] ) ^
+[9.404s] 
+[9.406s] ./launch/stem.launch.py:4:1: E302 expected 2 blank lines, found 1
+[9.408s] def generate_launch_description():
+[9.410s] ^
+[9.411s] 
+[9.413s] ./launch/stem.launch.py:10:20: E251 unexpected spaces around keyword / parameter equals
+[9.415s]             output= 'screen'),
+[9.422s]                    ^
+[9.426s] 
+[9.429s] ./launch/stem.launch.py:20:32: E202 whitespace before ')'
+[9.431s]             name='cmd_selector' ),
+[9.433s]                                ^
+[9.435s] 
+[9.439s] ./launch/stem.launch.py:26:20: E251 unexpected spaces around keyword / parameter equals
+[9.442s]             output= 'screen' )
+[9.446s]                    ^
+[9.464s] 
+[9.466s] ./launch/stem.launch.py:26:29: E202 whitespace before ')'
+[9.468s]             output= 'screen' )
+[9.470s]                             ^
+[9.473s] 
+[9.487s] ./launch/stem.launch.py:27:7: W292 no newline at end of file
+[9.490s]     ])      ^
+[9.492s] 
+[9.495s] ./stem_pkg/serial_talker.py:5:1: I100 Import statements are in the wrong order. 'import serial' should be before 'from std_msgs.msg import String'
+[9.497s] import serial 
+[9.499s] ^
+[9.501s] 
+[9.507s] ./stem_pkg/serial_talker.py:5:14: W291 trailing whitespace
+[9.510s] import serial 
+[9.513s]              ^
+[9.522s] 
+[9.525s] ./stem_pkg/serial_talker.py:11:5: E301 expected 1 blank line, found 0
+[9.527s]     def __init__(self):
+[9.532s]     ^
+[9.537s] 
+[9.542s] ./stem_pkg/serial_talker.py:19:32: Q000 Double quotes found but single quotes preferred
+[9.544s]         self.get_logger().info("Serial connection started")
+[9.551s]                                ^
+[9.554s] 
+[9.560s] ./stem_pkg/serial_talker.py:22:24: Q000 Double quotes found but single quotes preferred
+[9.574s]         self.ser.write("^1*2*3*4*5*6*7*8*8".encode())
+[9.577s]                        ^
+[9.579s] 
+[9.582s] ./stem_pkg/serial_talker.py:40:1: E305 expected 2 blank lines after class or function definition, found 1
+[9.585s] if __name__ == '__main__' :
+[9.587s] ^
+[9.589s] 
+[9.592s] ./stem_pkg/serial_talker.py:40:26: E203 whitespace before ':'
+[9.602s] if __name__ == '__main__' :
+[9.604s]                          ^
+[9.607s] 
+[9.609s] ./stem_pkg/serial_talker.py:41:11: W292 no newline at end of file
+[9.612s]     main()          ^
+[9.623s] 
+[9.626s] ./stem_pkg/controller.py:5:1: I100 Import statements are in the wrong order. 'import RPi.GPIO' should be before 'from std_msgs.msg import String'
+[9.633s] import RPi.GPIO as GPIO
+[9.634s] ^
+[9.634s] 
+[9.635s] ./stem_pkg/controller.py:7:1: E302 expected 2 blank lines, found 1
+[9.636s] class Controller(Node) :
+[9.637s] ^
+[9.637s] 
+[9.640s] ./stem_pkg/controller.py:7:23: E203 whitespace before ':'
+[9.642s] class Controller(Node) :
+[9.644s]                       ^
+[9.647s] 
+[9.648s] ./stem_pkg/controller.py:8:1: CNL100 Class definition does not have a new line.
+[9.650s]     def __init__(self):
+[9.652s] ^
+[9.654s] 
+[9.656s] ./stem_pkg/controller.py:15:1: W293 blank line contains whitespace
+[9.657s]         
+[9.659s] ^
+[9.661s] 
+[9.663s] ./stem_pkg/controller.py:19:60: E261 at least two spaces before inline comment
+[9.665s]         GPIO.setup(12, GPIO.IN, pull_up_down=GPIO.PUD_DOWN) #RED
+[9.666s]                                                            ^
+[9.668s] 
+[9.671s] ./stem_pkg/controller.py:19:61: E262 inline comment should start with '# '
+[9.673s]         GPIO.setup(12, GPIO.IN, pull_up_down=GPIO.PUD_DOWN) #RED
+[9.675s]                                                             ^
+[9.677s] 
+[9.679s] ./stem_pkg/controller.py:20:60: E261 at least two spaces before inline comment
+[9.681s]         GPIO.setup(13, GPIO.IN, pull_up_down=GPIO.PUD_DOWN) #ORANGE
+[9.682s]                                                            ^
+[9.684s] 
+[9.686s] ./stem_pkg/controller.py:20:61: E262 inline comment should start with '# '
+[9.688s]         GPIO.setup(13, GPIO.IN, pull_up_down=GPIO.PUD_DOWN) #ORANGE
+[9.690s]                                                             ^
+[9.692s] 
+[9.694s] ./stem_pkg/controller.py:22:60: E261 at least two spaces before inline comment
+[9.696s]         GPIO.setup(19, GPIO.IN, pull_up_down=GPIO.PUD_DOWN) #YELLOW
+[9.698s]                                                            ^
+[9.700s] 
+[9.702s] ./stem_pkg/controller.py:22:61: E262 inline comment should start with '# '
+[9.704s]         GPIO.setup(19, GPIO.IN, pull_up_down=GPIO.PUD_DOWN) #YELLOW
+[9.706s]                                                             ^
+[9.708s] 
+[9.711s] ./stem_pkg/controller.py:23:60: E261 at least two spaces before inline comment
+[9.714s]         GPIO.setup(16, GPIO.IN, pull_up_down=GPIO.PUD_DOWN) #GREEN
+[9.716s]                                                            ^
+[9.717s] 
+[9.718s] ./stem_pkg/controller.py:23:61: E262 inline comment should start with '# '
+[9.720s]         GPIO.setup(16, GPIO.IN, pull_up_down=GPIO.PUD_DOWN) #GREEN
+[9.721s]                                                             ^
+[9.723s] 
+[9.724s] ./stem_pkg/controller.py:25:60: E261 at least two spaces before inline comment
+[9.728s]         GPIO.setup(20, GPIO.IN, pull_up_down=GPIO.PUD_DOWN) #BLUE
+[9.730s]                                                            ^
+[9.732s] 
+[9.734s] ./stem_pkg/controller.py:25:61: E262 inline comment should start with '# '
+[9.735s]         GPIO.setup(20, GPIO.IN, pull_up_down=GPIO.PUD_DOWN) #BLUE
+[9.737s]                                                             ^
+[9.739s] 
+[9.751s] ./stem_pkg/controller.py:26:60: E261 at least two spaces before inline comment
+[9.752s]         GPIO.setup(26, GPIO.IN, pull_up_down=GPIO.PUD_DOWN) #VIOLET
+[9.753s]                                                            ^
+[9.754s] 
+[9.754s] ./stem_pkg/controller.py:26:61: E262 inline comment should start with '# '
+[9.755s]         GPIO.setup(26, GPIO.IN, pull_up_down=GPIO.PUD_DOWN) #VIOLET
+[9.756s]                                                             ^
+[9.757s] 
+[9.758s] ./stem_pkg/controller.py:28:60: E261 at least two spaces before inline comment
+[9.759s]         GPIO.setup(21, GPIO.IN, pull_up_down=GPIO.PUD_DOWN) #BROWN
+[9.760s]                                                            ^
+[9.761s] 
+[9.762s] ./stem_pkg/controller.py:28:61: E262 inline comment should start with '# '
+[9.763s]         GPIO.setup(21, GPIO.IN, pull_up_down=GPIO.PUD_DOWN) #BROWN
+[9.764s]                                                             ^
+[9.765s] 
+[9.765s] ./stem_pkg/controller.py:30:9: E265 block comment should start with '# '
+[9.766s]         #GPIO.setup(17, GPIO.IN, GPIO.PUD_UP) #black toggle yellow
+[9.767s]         ^
+[9.769s] 
+[9.770s] ./stem_pkg/controller.py:31:9: E265 block comment should start with '# '
+[9.771s]         #GPIO.setup(18, GPIO.IN, GPIO.PUD_UP) #black toggle greeen
+[9.772s]         ^
+[9.773s] 
+[9.775s] ./stem_pkg/controller.py:33:57: E251 unexpected spaces around keyword / parameter equals
+[9.776s]         GPIO.add_event_detect(12, GPIO.FALLING, callback = self.on_press, bouncetime=100)
+[9.777s]                                                         ^
+[9.787s] 
+[9.788s] ./stem_pkg/controller.py:33:59: E251 unexpected spaces around keyword / parameter equals
+[9.789s]         GPIO.add_event_detect(12, GPIO.FALLING, callback = self.on_press, bouncetime=100)
+[9.790s]                                                           ^
+[9.795s] 
+[9.796s] ./stem_pkg/controller.py:34:57: E251 unexpected spaces around keyword / parameter equals
+[9.797s]         GPIO.add_event_detect(13, GPIO.FALLING, callback = self.on_press, bouncetime=100)
+[9.798s]                                                         ^
+[9.799s] 
+[9.799s] ./stem_pkg/controller.py:34:59: E251 unexpected spaces around keyword / parameter equals
+[9.800s]         GPIO.add_event_detect(13, GPIO.FALLING, callback = self.on_press, bouncetime=100)
+[9.802s]                                                           ^
+[9.803s] 
+[9.804s] ./stem_pkg/controller.py:36:57: E251 unexpected spaces around keyword / parameter equals
+[9.804s]         GPIO.add_event_detect(19, GPIO.FALLING, callback = self.on_press, bouncetime=100)
+[9.805s]                                                         ^
+[9.806s] 
+[9.807s] ./stem_pkg/controller.py:36:59: E251 unexpected spaces around keyword / parameter equals
+[9.808s]         GPIO.add_event_detect(19, GPIO.FALLING, callback = self.on_press, bouncetime=100)
+[9.808s]                                                           ^
+[9.809s] 
+[9.810s] ./stem_pkg/controller.py:37:57: E251 unexpected spaces around keyword / parameter equals
+[9.810s]         GPIO.add_event_detect(16, GPIO.FALLING, callback = self.on_press, bouncetime=100)
+[9.811s]                                                         ^
+[9.812s] 
+[9.812s] ./stem_pkg/controller.py:37:59: E251 unexpected spaces around keyword / parameter equals
+[9.813s]         GPIO.add_event_detect(16, GPIO.FALLING, callback = self.on_press, bouncetime=100)
+[9.814s]                                                           ^
+[9.815s] 
+[9.816s] ./stem_pkg/controller.py:39:57: E251 unexpected spaces around keyword / parameter equals
+[9.817s]         GPIO.add_event_detect(20, GPIO.FALLING, callback = self.on_press, bouncetime=100)
+[9.835s]                                                         ^
+[9.841s] 
+[9.842s] ./stem_pkg/controller.py:39:59: E251 unexpected spaces around keyword / parameter equals
+[9.843s]         GPIO.add_event_detect(20, GPIO.FALLING, callback = self.on_press, bouncetime=100)
+[9.843s]                                                           ^
+[9.844s] 
+[9.845s] ./stem_pkg/controller.py:40:57: E251 unexpected spaces around keyword / parameter equals
+[9.845s]         GPIO.add_event_detect(26, GPIO.FALLING, callback = self.on_press, bouncetime=100)
+[9.846s]                                                         ^
+[9.846s] 
+[9.847s] ./stem_pkg/controller.py:40:59: E251 unexpected spaces around keyword / parameter equals
+[9.848s]         GPIO.add_event_detect(26, GPIO.FALLING, callback = self.on_press, bouncetime=100)
+[9.848s]                                                           ^
+[9.849s] 
+[9.849s] ./stem_pkg/controller.py:42:57: E251 unexpected spaces around keyword / parameter equals
+[9.850s]         GPIO.add_event_detect(21, GPIO.FALLING, callback = self.on_press, bouncetime=100)
+[9.851s]                                                         ^
+[9.851s] 
+[9.852s] ./stem_pkg/controller.py:42:59: E251 unexpected spaces around keyword / parameter equals
+[9.853s]         GPIO.add_event_detect(21, GPIO.FALLING, callback = self.on_press, bouncetime=100)
+[9.853s]                                                           ^
+[9.854s] 
+[9.868s] ./stem_pkg/controller.py:46:9: E265 block comment should start with '# '
+[9.869s]         #GPIO.wait_for_edge(18, GPIO.RISING, bouncetime = 10)
+[9.870s]         ^
+[9.871s] 
+[9.871s] ./stem_pkg/controller.py:48:43: E203 whitespace before ':'
+[9.872s]     def publish_key_command_msg(self, msg) :
+[9.872s]                                           ^
+[9.873s] 
+[9.873s] ./stem_pkg/controller.py:55:32: E203 whitespace before ':'
+[9.873s]         if msg.data is not None :
+[9.874s]                                ^
+[9.875s] 
+[9.875s] ./stem_pkg/controller.py:60:19: E203 whitespace before ':'
+[9.876s]         if k == 12 :
+[9.877s]                   ^
+[9.890s] 
+[9.891s] ./stem_pkg/controller.py:61:17: Q000 Double quotes found but single quotes preferred
+[9.892s]             c = "up"
+[9.893s]                 ^
+[9.896s] 
+[9.907s] ./stem_pkg/controller.py:62:21: E203 whitespace before ':'
+[9.908s]         elif k == 13 :
+[9.908s]                     ^
+[9.909s] 
+[9.910s] ./stem_pkg/controller.py:63:17: Q000 Double quotes found but single quotes preferred
+[9.911s]             c = "left"
+[9.911s]                 ^
+[9.912s] 
+[9.912s] ./stem_pkg/controller.py:64:21: E203 whitespace before ':'
+[9.913s]         elif k == 19 :
+[9.914s]                     ^
+[9.915s] 
+[9.915s] ./stem_pkg/controller.py:65:17: Q000 Double quotes found but single quotes preferred
+[9.916s]             c = "init"
+[9.916s]                 ^
+[9.917s] 
+[9.918s] ./stem_pkg/controller.py:66:21: E203 whitespace before ':'
+[9.919s]         elif k == 16 :
+[9.919s]                     ^
+[9.920s] 
+[9.920s] ./stem_pkg/controller.py:67:17: Q000 Double quotes found but single quotes preferred
+[9.922s]             c = "down"
+[9.934s]                 ^
+[9.935s] 
+[9.937s] ./stem_pkg/controller.py:68:21: E203 whitespace before ':'
+[9.938s]         elif k == 20 :
+[9.939s]                     ^
+[9.940s] 
+[9.941s] ./stem_pkg/controller.py:69:17: Q000 Double quotes found but single quotes preferred
+[9.941s]             c = "turn left"
+[9.947s]                 ^
+[9.947s] 
+[9.948s] ./stem_pkg/controller.py:70:21: E203 whitespace before ':'
+[9.949s]         elif k == 26 :
+[9.950s]                     ^
+[9.958s] 
+[9.959s] ./stem_pkg/controller.py:71:17: Q000 Double quotes found but single quotes preferred
+[9.960s]             c = "turn right"
+[9.960s]                 ^
+[9.961s] 
+[9.962s] ./stem_pkg/controller.py:72:21: E203 whitespace before ':'
+[9.963s]         elif k == 21 :
+[9.964s]                     ^
+[9.964s] 
+[9.965s] ./stem_pkg/controller.py:73:17: Q000 Double quotes found but single quotes preferred
+[9.966s]             c = "right"
+[9.967s]                 ^
+[9.968s] 
+[9.969s] ./stem_pkg/controller.py:74:21: E203 whitespace before ':'
+[9.970s]         elif k == 18 :
+[9.971s]                     ^
+[9.971s] 
+[9.972s] ./stem_pkg/controller.py:75:17: Q000 Double quotes found but single quotes preferred
+[9.973s]             c = "True"
+[9.974s]                 ^
+[9.974s] 
+[9.975s] ./stem_pkg/controller.py:76:21: E203 whitespace before ':'
+[9.975s]         elif k == 17 :
+[9.976s]                     ^
+[9.977s] 
+[9.977s] ./stem_pkg/controller.py:77:17: Q000 Double quotes found but single quotes preferred
+[9.978s]             c = "False"
+[9.978s]                 ^
+[9.979s] 
+[9.979s] ./stem_pkg/controller.py:78:13: E203 whitespace before ':'
+[9.980s]         else :
+[9.980s]             ^
+[9.981s] 
+[9.981s] ./stem_pkg/controller.py:83:20: E203 whitespace before ':'
+[9.982s] def main(args=None) :
+[9.983s]                    ^
+[9.985s] 
+[9.986s] ./stem_pkg/controller.py:95:1: E305 expected 2 blank lines after class or function definition, found 1
+[9.987s] if __name__ == '__main__' :
+[9.987s] ^
+[9.988s] 
+[9.989s] ./stem_pkg/controller.py:95:26: E203 whitespace before ':'
+[9.989s] if __name__ == '__main__' :
+[9.990s]                          ^
+[9.990s] 
+[9.991s] ./stem_pkg/controller.py:96:11: W292 no newline at end of file
+[9.992s]     main()          ^
+[9.992s] 
+[9.993s] ./stem_pkg/async_serial_talker.py:5:1: I100 Import statements are in the wrong order. 'import asyncio' should be before 'from std_msgs.msg import String' and in a different group.
+[9.994s] import asyncio
+[9.994s] ^
+[9.996s] 
+[9.997s] ./stem_pkg/async_serial_talker.py:5:1: I201 Missing newline between import groups. 'import asyncio' is identified as Stdlib and 'from std_msgs.msg import String' is identified as Third Party.
+[10.002s] import asyncio
+[10.003s] ^
+[10.004s] 
+[10.005s] ./stem_pkg/async_serial_talker.py:6:1: I201 Missing newline between import groups. 'import serial_asyncio' is identified as Third Party and 'import asyncio' is identified as Stdlib.
+[10.006s] import serial_asyncio
+[10.007s] ^
+[10.008s] 
+[10.009s] ./stem_pkg/async_serial_talker.py:11:5: E301 expected 1 blank line, found 0
+[10.010s]     def __init__(self):
+[10.011s]     ^
+[10.012s] 
+[10.013s] ./stem_pkg/async_serial_talker.py:20:32: Q000 Double quotes found but single quotes preferred
+[10.013s]         self.get_logger().info("Serial connection started")
+[10.014s]                                ^
+[10.015s] 
+[10.015s] ./stem_pkg/async_serial_talker.py:29:100: E501 line too long (102 > 99 characters)
+[10.016s]         _, writer = await serial_asyncio.open_serial_connection(url=self.SERIAL_PORT, baudrate=115200)
+[10.017s]                                                                                                    ^
+[10.017s] 
+[10.018s] ./stem_pkg/async_serial_talker.py:38:38: E203 whitespace before ':'
+[10.022s]     async def send(self, writer, msg) :
+[10.023s]                                      ^
+[10.024s] 
+[10.031s] ./stem_pkg/async_serial_talker.py:39:21: E203 whitespace before ':'
+[10.032s]         for c in msg :
+[10.032s]                     ^
+[10.033s] 
+[10.033s] ./stem_pkg/async_serial_talker.py:42:9: E265 block comment should start with '# '
+[10.034s]         #writer.write(b'_')
+[10.034s]         ^
+[10.035s] 
+[10.035s] ./stem_pkg/async_serial_talker.py:57:1: E305 expected 2 blank lines after class or function definition, found 1
+[10.036s] if __name__ == '__main__' :
+[10.037s] ^
+[10.038s] 
+[10.039s] ./stem_pkg/async_serial_talker.py:57:26: E203 whitespace before ':'
+[10.039s] if __name__ == '__main__' :
+[10.040s]                          ^
+[10.041s] 
+[10.041s] ./stem_pkg/async_serial_talker.py:58:11: W292 no newline at end of file
+[10.042s]     main()          ^
+[10.055s] 
+[10.056s] ./stem_pkg/cmd_selector.py:6:1: E302 expected 2 blank lines, found 1
+[10.056s] class CommandSelector(Node):
+[10.057s] ^
+[10.057s] 
+[10.058s] ./stem_pkg/cmd_selector.py:8:5: E301 expected 1 blank line, found 0
+[10.058s]     def __init__(self):
+[10.059s]     ^
+[10.060s] 
+[10.060s] ./stem_pkg/cmd_selector.py:44:1: E303 too many blank lines (3)
+[10.061s] def main(args=None):
+[10.061s] ^
+[10.062s] 
+[10.062s] ./stem_pkg/cmd_selector.py:55:1: E305 expected 2 blank lines after class or function definition, found 1
+[10.063s] if __name__ == '__main__' :
+[10.064s] ^
+[10.064s] 
+[10.065s] ./stem_pkg/cmd_selector.py:55:26: E203 whitespace before ':'
+[10.065s] if __name__ == '__main__' :
+[10.066s]                          ^
+[10.072s] 
+[10.073s] ./stem_pkg/cmd_selector.py:56:11: W292 no newline at end of file
+[10.074s]     main()          ^
+[10.076s] 
+[10.077s] ./stem_pkg/calculator.py:1:1: F401 'socket.NI_NUMERICHOST' imported but unused
+[10.079s] from socket import NI_NUMERICHOST
+[10.081s] ^
+[10.082s] 
+[10.084s] ./stem_pkg/calculator.py:2:1: I201 Missing newline between import groups. 'import rclpy' is identified as Third Party and 'from socket import NI_NUMERICHOST' is identified as Stdlib.
+[10.087s] import rclpy
+[10.089s] ^
+[10.091s] 
+[10.092s] ./stem_pkg/calculator.py:7:1: I100 Import statements are in the wrong order. 'import math' should be before 'from sunflower_interfaces.msg import TfliteResult' and in a different group.
+[10.094s] import math
+[10.095s] ^
+[10.097s] 
+[10.099s] ./stem_pkg/calculator.py:7:1: I201 Missing newline between import groups. 'import math' is identified as Stdlib and 'from sunflower_interfaces.msg import TfliteResult' is identified as Third Party.
+[10.100s] import math
+[10.102s] ^
+[10.103s] 
+[10.104s] ./stem_pkg/calculator.py:9:1: E302 expected 2 blank lines, found 1
+[10.106s] class Calculator(Node) :
+[10.107s] ^
+[10.108s] 
+[10.109s] ./stem_pkg/calculator.py:9:23: E203 whitespace before ':'
+[10.110s] class Calculator(Node) :
+[10.112s]                       ^
+[10.113s] 
+[10.115s] ./stem_pkg/calculator.py:10:1: CNL100 Class definition does not have a new line.
+[10.139s]     def __init__(self):
+[10.142s] ^
+[10.146s] 
+[10.147s] ./stem_pkg/calculator.py:23:35: E203 whitespace before ':'
+[10.149s]     def publish_command(self, cmd) :
+[10.150s]                                   ^
+[10.152s] 
+[10.153s] ./stem_pkg/calculator.py:31:30: Q000 Double quotes found but single quotes preferred
+[10.155s]         self.publish_command("".join(data))
+[10.157s]                              ^
+[10.158s] 
+[10.160s] ./stem_pkg/calculator.py:34:27: C417 Unnecessary use of map - use a generator expression instead.
+[10.161s]         n_x, n_y, n_con = map(lambda x: x, nose)
+[10.172s]                           ^
+[10.173s] 
+[10.175s] ./stem_pkg/calculator.py:35:27: C417 Unnecessary use of map - use a generator expression instead.
+[10.177s]         l_x, l_y, l_con = map(lambda x: x, eye_l)
+[10.178s]                           ^
+[10.180s] 
+[10.181s] ./stem_pkg/calculator.py:36:27: C417 Unnecessary use of map - use a generator expression instead.
+[10.185s]         r_x, r_y, r_con = map(lambda x: x, eye_r)
+[10.195s]                           ^
+[10.199s] 
+[10.201s] ./stem_pkg/calculator.py:62:1: W293 blank line contains whitespace
+[10.204s]     
+[10.206s] ^
+[10.209s] 
+[10.215s] ./stem_pkg/calculator.py:65:10: E203 whitespace before ','
+[10.219s]         _ , nose_x, nose_confidence = map(lambda x: x, nose)
+[10.223s]          ^
+[10.232s] 
+[10.237s] ./stem_pkg/calculator.py:65:39: C417 Unnecessary use of map - use a generator expression instead.
+[10.242s]         _ , nose_x, nose_confidence = map(lambda x: x, nose)
+[10.250s]                                       ^
+[10.254s] 
+[10.258s] ./stem_pkg/calculator.py:83:1: E302 expected 2 blank lines, found 1
+[10.262s] def main(args=None) :
+[10.266s] ^
+[10.270s] 
+[10.274s] ./stem_pkg/calculator.py:83:20: E203 whitespace before ':'
+[10.278s] def main(args=None) :
+[10.281s]                    ^
+[10.285s] 
+[10.288s] ./stem_pkg/calculator.py:94:1: E305 expected 2 blank lines after class or function definition, found 1
+[10.292s] if __name__ == '__main__' :
+[10.295s] ^
+[10.298s] 
+[10.301s] ./stem_pkg/calculator.py:94:26: E203 whitespace before ':'
+[10.304s] if __name__ == '__main__' :
+[10.307s]                          ^
+[10.310s] 
+[10.313s] ./stem_pkg/calculator.py:95:11: W292 no newline at end of file
+[10.316s]     main()          ^
+[10.318s] 
+[10.321s] ./stem_pkg/tensor.py:5:1: I100 Import statements are in the wrong order. 'import cv2' should be before 'from sunflower_interfaces.msg import TfliteResult'
+[10.324s] import cv2
+[10.327s] ^
+[10.330s] 
+[10.334s] ./stem_pkg/tensor.py:7:1: I100 Import statements are in the wrong order. 'import numpy' should be before 'import tensorflow'
+[10.337s] import numpy as np
+[10.340s] ^
+[10.342s] 
+[10.345s] ./stem_pkg/tensor.py:9:1: E302 expected 2 blank lines, found 1
+[10.348s] class Tensor(Node) :
+[10.350s] ^
+[10.352s] 
+[10.354s] ./stem_pkg/tensor.py:9:19: E203 whitespace before ':'
+[10.356s] class Tensor(Node) :
+[10.358s]                   ^
+[10.361s] 
+[10.364s] ./stem_pkg/tensor.py:10:1: CNL100 Class definition does not have a new line.
+[10.366s]     def __init__(self, interpreter, cap):
+[10.369s] ^
+[10.371s] 
+[10.373s] ./stem_pkg/tensor.py:20:46: E203 whitespace before ':'
+[10.376s]     def tensor_result(self, interpreter, cap) :
+[10.379s]                                              ^
+[10.382s] 
+[10.385s] ./stem_pkg/tensor.py:41:9: F841 local variable 'data' is assigned to but never used
+[10.389s]         data = list()
+[10.402s]         ^
+[10.410s] 
+[10.414s] ./stem_pkg/tensor.py:41:16: C408 Unnecessary list call - rewrite as a literal.
+[10.418s]         data = list()
+[10.421s]                ^
+[10.426s] 
+[10.429s] ./stem_pkg/tensor.py:53:1: E302 expected 2 blank lines, found 1
+[10.432s] def main(args=None) :
+[10.435s] ^
+[10.439s] 
+[10.442s] ./stem_pkg/tensor.py:53:20: E203 whitespace before ':'
+[10.446s] def main(args=None) :
+[10.451s]                    ^
+[10.455s] 
+[10.458s] ./stem_pkg/tensor.py:55:50: Q000 Double quotes found but single quotes preferred
+[10.460s]     interpreter = tf.lite.Interpreter(model_path="lite-model_movenet_singlepose_lightning_3.tflite")
+[10.463s]                                                  ^
+[10.465s] 
+[10.467s] ./stem_pkg/tensor.py:55:100: E501 line too long (100 > 99 characters)
+[10.470s]     interpreter = tf.lite.Interpreter(model_path="lite-model_movenet_singlepose_lightning_3.tflite")
+[10.472s]                                                                                                    ^
+[10.475s] 
+[10.477s] ./stem_pkg/tensor.py:67:1: E305 expected 2 blank lines after class or function definition, found 1
+[10.479s] if __name__ == '__main__' :
+[10.483s] ^
+[10.486s] 
+[10.489s] ./stem_pkg/tensor.py:67:26: E203 whitespace before ':'
+[10.494s] if __name__ == '__main__' :
+[10.499s]                          ^
+[10.503s] 
+[10.507s] ./stem_pkg/tensor.py:70:1: E265 block comment should start with '# '
+[10.510s] #코, 왼눈, 오눈, 왼귀, 오귀, 왼어깨, 오어깨^
+[10.515s] 
+[10.520s] ./stem_pkg/tensor.py:70:29: W292 no newline at end of file
+[10.524s] #코, 왼눈, 오눈, 왼귀, 오귀, 왼어깨, 오어깨                            ^
+[10.529s] 
+[10.533s] ./stem_pkg/tensor.py:70:29: W292 no newline at end of file
+[10.536s] #코, 왼눈, 오눈, 왼귀, 오귀, 왼어깨, 오어깨                            ^
+[10.540s] 
+[10.546s] ./stem_pkg/tensor.py:70:29: W292 no newline at end of file
+[10.548s] #코, 왼눈, 오눈, 왼귀, 오귀, 왼어깨, 오어깨                            ^
+[10.551s] 
+[10.553s] ./stem_pkg/tester.py:5:1: I100 Import statements are in the wrong order. 'from pynput import keyboard' should be before 'from std_msgs.msg import String'
+[10.553s] from pynput import keyboard
+[10.554s] ^
+[10.554s] 
+[10.555s] ./stem_pkg/tester.py:7:1: E302 expected 2 blank lines, found 1
+[10.556s] class Tester(Node) :
+[10.556s] ^
+[10.557s] 
+[10.557s] ./stem_pkg/tester.py:7:19: E203 whitespace before ':'
+[10.558s] class Tester(Node) :
+[10.558s]                   ^
+[10.559s] 
+[10.560s] ./stem_pkg/tester.py:8:1: CNL100 Class definition does not have a new line.
+[10.560s]     def __init__(self):
+[10.561s] ^
+[10.561s] 
+[10.562s] ./stem_pkg/tester.py:16:21: E251 unexpected spaces around keyword / parameter equals
+[10.562s]             on_press = self.on_press,
+[10.563s]                     ^
+[10.563s] 
+[10.564s] ./stem_pkg/tester.py:16:23: E251 unexpected spaces around keyword / parameter equals
+[10.564s]             on_press = self.on_press,
+[10.565s]                       ^
+[10.566s] 
+[10.566s] ./stem_pkg/tester.py:17:23: E251 unexpected spaces around keyword / parameter equals
+[10.567s]             on_release = self.on_release)
+[10.568s]                       ^
+[10.568s] 
+[10.569s] ./stem_pkg/tester.py:17:25: E251 unexpected spaces around keyword / parameter equals
+[10.569s]             on_release = self.on_release)
+[10.570s]                         ^
+[10.571s] 
+[10.571s] ./stem_pkg/tester.py:21:43: E203 whitespace before ':'
+[10.572s]     def publish_key_command_msg(self, msg) :
+[10.573s]                                           ^
+[10.573s] 
+[10.574s] ./stem_pkg/tester.py:29:1: B901 blind except: statement
+[10.575s]         except:
+[10.575s] ^
+[10.576s] 
+[10.576s] ./stem_pkg/tester.py:29:9: E722 do not use bare 'except'
+[10.577s]         except:
+[10.577s]         ^
+[10.578s] 
+[10.579s] ./stem_pkg/tester.py:32:32: E203 whitespace before ':'
+[10.579s]         if msg.data is not None :
+[10.580s]                                ^
+[10.580s] 
+[10.581s] ./stem_pkg/tester.py:37:17: Q000 Double quotes found but single quotes preferred
+[10.582s]         if k == "w" :
+[10.582s]                 ^
+[10.583s] 
+[10.584s] ./stem_pkg/tester.py:37:20: E203 whitespace before ':'
+[10.584s]         if k == "w" :
+[10.585s]                    ^
+[10.585s] 
+[10.586s] ./stem_pkg/tester.py:38:17: Q000 Double quotes found but single quotes preferred
+[10.587s]             c = "up"
+[10.587s]                 ^
+[10.588s] 
+[10.588s] ./stem_pkg/tester.py:39:19: Q000 Double quotes found but single quotes preferred
+[10.589s]         elif k == "s" :
+[10.589s]                   ^
+[10.590s] 
+[10.590s] ./stem_pkg/tester.py:39:22: E203 whitespace before ':'
+[10.591s]         elif k == "s" :
+[10.592s]                      ^
+[10.592s] 
+[10.593s] ./stem_pkg/tester.py:40:17: Q000 Double quotes found but single quotes preferred
+[10.593s]             c = "down"
+[10.594s]                 ^
+[10.594s] 
+[10.595s] ./stem_pkg/tester.py:41:19: Q000 Double quotes found but single quotes preferred
+[10.595s]         elif k == "a" :
+[10.596s]                   ^
+[10.597s] 
+[10.597s] ./stem_pkg/tester.py:41:22: E203 whitespace before ':'
+[10.598s]         elif k == "a" :
+[10.598s]                      ^
+[10.599s] 
+[10.600s] ./stem_pkg/tester.py:42:17: Q000 Double quotes found but single quotes preferred
+[10.600s]             c = "left"
+[10.601s]                 ^
+[10.601s] 
+[10.602s] ./stem_pkg/tester.py:43:19: Q000 Double quotes found but single quotes preferred
+[10.603s]         elif k == "d" :
+[10.603s]                   ^
+[10.604s] 
+[10.604s] ./stem_pkg/tester.py:43:22: E203 whitespace before ':'
+[10.605s]         elif k == "d" :
+[10.605s]                      ^
+[10.606s] 
+[10.610s] ./stem_pkg/tester.py:44:17: Q000 Double quotes found but single quotes preferred
+[10.611s]             c = "right"
+[10.611s]                 ^
+[10.612s] 
+[10.612s] ./stem_pkg/tester.py:45:19: Q000 Double quotes found but single quotes preferred
+[10.613s]         elif k == "," :
+[10.614s]                   ^
+[10.614s] 
+[10.615s] ./stem_pkg/tester.py:45:22: E203 whitespace before ':'
+[10.616s]         elif k == "," :
+[10.616s]                      ^
+[10.617s] 
+[10.617s] ./stem_pkg/tester.py:46:17: Q000 Double quotes found but single quotes preferred
+[10.618s]             c = "turn left"
+[10.619s]                 ^
+[10.620s] 
+[10.620s] ./stem_pkg/tester.py:47:19: Q000 Double quotes found but single quotes preferred
+[10.621s]         elif k == "." :
+[10.622s]                   ^
+[10.622s] 
+[10.623s] ./stem_pkg/tester.py:47:22: E203 whitespace before ':'
+[10.624s]         elif k == "." :
+[10.624s]                      ^
+[10.625s] 
+[10.625s] ./stem_pkg/tester.py:48:17: Q000 Double quotes found but single quotes preferred
+[10.626s]             c = "turn right"
+[10.627s]                 ^
+[10.628s] 
+[10.629s] ./stem_pkg/tester.py:49:13: E203 whitespace before ':'
+[10.629s]         else :
+[10.630s]             ^
+[10.630s] 
+[10.631s] ./stem_pkg/tester.py:57:1: E302 expected 2 blank lines, found 1
+[10.632s] def main(args=None) :
+[10.632s] ^
+[10.633s] 
+[10.633s] ./stem_pkg/tester.py:57:20: E203 whitespace before ':'
+[10.634s] def main(args=None) :
+[10.635s]                    ^
+[10.635s] 
+[10.636s] ./stem_pkg/tester.py:68:1: E305 expected 2 blank lines after class or function definition, found 1
+[10.636s] if __name__ == '__main__' :
+[10.637s] ^
+[10.637s] 
+[10.638s] ./stem_pkg/tester.py:68:26: E203 whitespace before ':'
+[10.639s] if __name__ == '__main__' :
+[10.639s]                          ^
+[10.640s] 
+[10.641s] ./stem_pkg/tester.py:69:11: W292 no newline at end of file
+[10.641s]     main()          ^
+[10.642s] 
+[10.642s] ./stem_pkg/tensor_publisher.py:5:1: I100 Import statements are in the wrong order. 'import cv2' should be before 'from std_msgs.msg import String'
+[10.643s] import cv2
+[10.643s] ^
+[10.644s] 
+[10.645s] ./stem_pkg/tensor_publisher.py:7:1: I100 Import statements are in the wrong order. 'import numpy' should be before 'import tensorflow'
+[10.645s] import numpy as np
+[10.646s] ^
+[10.647s] 
+[10.647s] ./stem_pkg/tensor_publisher.py:8:1: F401 'pandas as pd' imported but unused
+[10.648s] import pandas as pd
+[10.648s] ^
+[10.649s] 
+[10.650s] ./stem_pkg/tensor_publisher.py:10:1: E302 expected 2 blank lines, found 1
+[10.651s] class TensorPublisher(Node) :
+[10.651s] ^
+[10.652s] 
+[10.653s] ./stem_pkg/tensor_publisher.py:10:28: E203 whitespace before ':'
+[10.654s] class TensorPublisher(Node) :
+[10.654s]                            ^
+[10.655s] 
+[10.655s] ./stem_pkg/tensor_publisher.py:11:1: CNL100 Class definition does not have a new line.
+[10.656s]     def __init__(self, interpreter, cap):
+[10.657s] ^
+[10.657s] 
+[10.658s] [33m=============================== warnings summary ===============================[0m
+[10.659s] ../../../.local/lib/python3.8/site-packages/_pytest/nodes.py:633
+[10.659s]   Warning: The (fspath: py.path.local) argument to Package is deprecated. Please use the (path: pathlib.Path) argument instead.
+[10.660s]   See https://docs.pytest.org/en/latest/deprecations.html#fspath-argument-for-node-constructors-replaced-with-pathlib-path
+[10.660s] 
+[10.661s] ../../../../../opt/ros/foxy/lib/python3.8/site-packages/launch_testing/pytest/hooks.py:179
+[10.662s] ../../../../../opt/ros/foxy/lib/python3.8/site-packages/launch_testing/pytest/hooks.py:179
+[10.662s] ../../../../../opt/ros/foxy/lib/python3.8/site-packages/launch_testing/pytest/hooks.py:179
+[10.663s]   Warning: The (fspath: py.path.local) argument to Module is deprecated. Please use the (path: pathlib.Path) argument instead.
+[10.663s]   See https://docs.pytest.org/en/latest/deprecations.html#fspath-argument-for-node-constructors-replaced-with-pathlib-path
+[10.664s] 
+[10.665s] ../../../../../usr/lib/python3/dist-packages/pydocstyle/config.py:6
+[10.665s]   Warning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.10 it will stop working
+[10.666s] 
+[10.666s] -- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+[10.667s] ./stem_pkg/tensor_publisher.py:21:46: E203 whitespace before ':'
+[10.668s]     def tensor_result(self, interpreter, cap) :
+[10.668s]                                              ^
+[10.669s] 
+[10.670s] ./stem_pkg/tensor_publisher.py:42:16: C408 Unnecessary list call - rewrite as a literal.
+[10.670s]         data = list()
+[10.671s]                ^
+[10.671s] 
+[10.672s] ./stem_pkg/tensor_publisher.py:44:28: E203 whitespace before ':'
+[10.673s]         for shape in shaped :
+[10.673s]                            ^
+[10.674s] 
+[10.674s] ./stem_pkg/tensor_publisher.py:47:20: Q000 Double quotes found but single quotes preferred
+[10.675s]         datastr = ["^"] + datastr
+[10.676s]                    ^
+[10.676s] 
+[10.677s] ./stem_pkg/tensor_publisher.py:48:20: Q000 Double quotes found but single quotes preferred
+[10.677s]         msg.data = "*".join(datastr)
+[10.678s]                    ^
+[10.679s] 
+[10.679s] ./stem_pkg/tensor_publisher.py:52:1: E302 expected 2 blank lines, found 1
+[10.680s] def main(args=None) :
+[10.680s] ^
+[10.681s] 
+[10.682s] ./stem_pkg/tensor_publisher.py:52:20: E203 whitespace before ':'
+[10.682s] def main(args=None) :
+[10.683s]                    ^
+[10.683s] 
+[10.684s] ./stem_pkg/tensor_publisher.py:54:50: Q000 Double quotes found but single quotes preferred
+[10.685s]     interpreter = tf.lite.Interpreter(model_path="lite-model_movenet_singlepose_lightning_3.tflite")
+[10.685s]                                                  ^
+[10.686s] 
+[10.686s] ./stem_pkg/tensor_publisher.py:54:100: E501 line too long (100 > 99 characters)
+[10.687s]     interpreter = tf.lite.Interpreter(model_path="lite-model_movenet_singlepose_lightning_3.tflite")
+[10.688s]                                                                                                    ^
+[10.688s] 
+[10.689s] ./stem_pkg/tensor_publisher.py:66:1: E305 expected 2 blank lines after class or function definition, found 1
+[10.689s] if __name__ == '__main__' :
+[10.690s] ^
+[10.691s] 
+[10.691s] ./stem_pkg/tensor_publisher.py:66:26: E203 whitespace before ':'
+[10.692s] if __name__ == '__main__' :
+[10.693s]                          ^
+[10.693s] 
+[10.694s] ./stem_pkg/tensor_publisher.py:69:1: E265 block comment should start with '# '
+[10.694s] #코, 왼눈, 오눈, 왼귀, 오귀, 왼어깨, 오어깨^
+[10.695s] 
+[10.696s] ./stem_pkg/tensor_publisher.py:69:29: W292 no newline at end of file
+[10.696s] #코, 왼눈, 오눈, 왼귀, 오귀, 왼어깨, 오어깨                            ^
+[10.697s] 
+[10.697s] ./stem_pkg/tensor_publisher.py:69:29: W292 no newline at end of file
+[10.698s] #코, 왼눈, 오눈, 왼귀, 오귀, 왼어깨, 오어깨                            ^
+[10.699s] 
+[10.699s] ./stem_pkg/tensor_publisher.py:69:29: W292 no newline at end of file
+[10.700s] #코, 왼눈, 오눈, 왼귀, 오귀, 왼어깨, 오어깨                            ^
+[10.700s] 
+[10.701s] 1     B901 blind except: statement
+[10.702s] 2     C408 Unnecessary list call - rewrite as a literal.
+[10.702s] 4     C417 Unnecessary use of map - use a generator expression instead.
+[10.703s] 5     CNL100 Class definition does not have a new line.
+[10.703s] 2     E202 whitespace before ')'
+[10.704s] 46    E203 whitespace before ':'
+[10.704s] 20    E251 unexpected spaces around keyword / parameter equals
+[10.705s] 7     E261 at least two spaces before inline comment
+[10.706s] 7     E262 inline comment should start with '# '
+[10.706s] 8     E265 block comment should start with '# '
+[10.707s] 3     E301 expected 1 blank line, found 0
+[10.708s] 11    E302 expected 2 blank lines, found 1
+[10.708s] 1     E303 too many blank lines (3)
+[10.709s] 8     E305 expected 2 blank lines after class or function definition, found 1
+[10.709s] 3     E501 line too long (102 > 99 characters)
+[10.710s] 1     E722 do not use bare 'except'
+[10.710s] 2     F401 'socket.NI_NUMERICHOST' imported but unused
+[10.711s] 1     F841 local variable 'data' is assigned to but never used
+[10.712s] 11    I100 Import statements are in the wrong order. 'import os' should be before 'from setuptools import setup' and in a different group.
+[10.712s] 5     I201 Missing newline between import groups. 'import os' is identified as Stdlib and 'from setuptools import setup' is identified as Third Party.
+[10.713s] 34    Q000 Double quotes found but single quotes preferred
+[10.714s] 1     W291 trailing whitespace
+[10.714s] 14    W292 no newline at end of file
+[10.715s] 2     W293 blank line contains whitespace
+[10.715s] 
+[10.716s] 14 files checked
+[10.717s] 199 errors
+[10.717s] 
+[10.718s] 'B'-type errors: 1
+[10.719s] 'C'-type errors: 11
+[10.719s] 'E'-type errors: 117
+[10.720s] 'F'-type errors: 3
+[10.720s] 'I'-type errors: 16
+[10.721s] 'Q'-type errors: 34
+[10.722s] 'W'-type errors: 17
+[10.722s] 
+[10.723s] Checked files:
+[10.723s] 
+[10.724s] * ./setup.py
+[10.725s] * ./launch/stem.launch.py
+[10.725s] * ./stem_pkg/serial_talker.py
+[10.726s] * ./stem_pkg/__init__.py
+[10.726s] * ./stem_pkg/controller.py
+[10.727s] * ./stem_pkg/async_serial_talker.py
+[10.728s] * ./stem_pkg/cmd_selector.py
+[10.728s] * ./stem_pkg/calculator.py
+[10.729s] * ./stem_pkg/tensor.py
+[10.729s] * ./stem_pkg/tester.py
+[10.731s] * ./stem_pkg/tensor_publisher.py
+[10.732s] * ./test/test_flake8.py
+[10.732s] * ./test/test_copyright.py
+[10.733s] * ./test/test_pep257.py
+[10.733s] ------- generated xml file: /home/pi/sunflower/build/stem_pkg/pytest.xml -------
+[10.734s] =========================== short test summary info ============================
+[10.734s] FAILED test/test_copyright.py::test_copyright - AssertionError: Found errors
+[10.735s] FAILED test/test_flake8.py::test_flake8 - AssertionError: Found 199 code styl...
+[10.735s] [31m=================== [31m[1m2 failed[0m, [32m1 passed[0m, [33m5 warnings[0m[31m in 3.27s[0m[31m ====================[0m
+[10.737s] Invoked command in '/home/pi/sunflower/src/stem_pkg' returned '1': PYTEST_ADDOPTS=--tb=short --junit-xml=/home/pi/sunflower/build/stem_pkg/pytest.xml --junit-prefix=stem_pkg -o cache_dir=/home/pi/sunflower/build/stem_pkg/.pytest_cache PYTHONPATH=/home/pi/sunflower/build/stem_pkg:/home/pi/sunflower/install/stem_pkg/lib/python3.8/site-packages:/home/pi/sunflower/build/tflite_pkg:/home/pi/sunflower/install/tflite_pkg/lib/python3.8/site-packages:/home/pi/sunflower/build/test_pkg:/home/pi/sunflower/install/test_pkg/lib/python3.8/site-packages:/home/pi/sunflower/install/sunflower_interfaces/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/python3 -m pytest

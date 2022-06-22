@@ -1,0 +1,1158 @@
+[1.660s] Invoking command in '/home/pi/sunflower/src/sf_pkg': AMENT_PREFIX_PATH=/home/pi/sunflower/install/sf_pkg:/home/pi/sunflower/install/tflite_pkg:/home/pi/sunflower/install/test_pkg:/home/pi/sunflower/install/sunflower_interfaces:/opt/ros/foxy PYTEST_ADDOPTS=--tb=short --junit-xml=/home/pi/sunflower/build/sf_pkg/pytest.xml --junit-prefix=sf_pkg -o cache_dir=/home/pi/sunflower/build/sf_pkg/.pytest_cache PYTHONPATH=/home/pi/sunflower/build/sf_pkg:/home/pi/sunflower/install/sf_pkg/lib/python3.8/site-packages:/home/pi/sunflower/build/tflite_pkg:/home/pi/sunflower/install/tflite_pkg/lib/python3.8/site-packages:/home/pi/sunflower/build/test_pkg:/home/pi/sunflower/install/test_pkg/lib/python3.8/site-packages:/home/pi/sunflower/install/sunflower_interfaces/lib/python3.8/site-packages:/home/pi/sunflower/build/stem_pkg:/home/pi/sunflower/install/stem_pkg/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/python3 -m pytest
+[5.803s] [1m============================= test session starts ==============================[0m
+[5.804s] platform linux -- Python 3.8.10, pytest-7.1.2, pluggy-0.13.0
+[5.840s] cachedir: /home/pi/sunflower/build/sf_pkg/.pytest_cache
+[5.841s] rootdir: /home/pi/sunflower/src/sf_pkg
+[5.842s] plugins: ament-flake8-0.9.6, ament-copyright-0.9.6, launch-testing-ros-0.11.6, ament-xmllint-0.9.6, ament-pep257-0.9.6, ament-lint-0.9.6, launch-testing-0.10.8, rerunfailures-10.2, repeat-0.9.1, colcon-core-0.8.3, cov-2.8.1
+[6.220s] [1mcollecting ... [0m[1m
+[6.221s] collected 3 items                                                              [0m
+[6.223s] 
+[6.571s] test/test_copyright.py [31mF[0m[31m                                                 [ 33%][0m
+[8.794s] test/test_flake8.py [31mF[0m[31m                                                    [ 66%][0m
+[9.320s] test/test_pep257.py [32m.[0m[31m                                                    [100%][0m
+[9.321s] 
+[9.323s] =================================== FAILURES ===================================
+[9.324s] [31m[1m________________________________ test_copyright ________________________________[0m
+[9.326s] [1m[31mtest/test_copyright.py[0m:23: in test_copyright
+[9.547s]     [34;01massert[39;49;00m rc == [34;01m0[39;49;00m, [33m'[39;49;00m[33mFound errors[39;49;00m[33m'[39;49;00m
+[9.550s] [1m[31mE   AssertionError: Found errors[0m
+[9.551s] [1m[31mE   assert 1 == 0[0m
+[9.556s] ----------------------------- Captured stderr call -----------------------------
+[9.556s] launch/sf.launch.py: could not find copyright notice
+[9.557s] sf_pkg/I2C_LCD_driver.py: could not find copyright notice
+[9.557s] sf_pkg/calculator.py: could not find copyright notice
+[9.563s] sf_pkg/cmd_selector.py: could not find copyright notice
+[9.582s] sf_pkg/serial_talker.py: could not find copyright notice
+[9.586s] sf_pkg/tensor.py: could not find copyright notice
+[9.592s] sf_pkg/tensor_publisher.py: could not find copyright notice
+[9.607s] 7 errors, checked 11 files
+[9.612s] [31m[1m_________________________________ test_flake8 __________________________________[0m
+[9.615s] [1m[31mtest/test_flake8.py[0m:23: in test_flake8
+[9.620s]     [34;01massert[39;49;00m rc == [34;01m0[39;49;00m, \
+[9.623s] [1m[31mE   AssertionError: Found 212 code style errors / warnings:[0m
+[9.625s] [1m[31mE     ./setup.py:2:1: I100 Import statements are in the wrong order. 'import os' should be before 'from setuptools import setup' and in a different group.[0m
+[9.627s] [1m[31mE     ./setup.py:2:1: I201 Missing newline between import groups. 'import os' is identified as Stdlib and 'from setuptools import setup' is identified as Third Party.[0m
+[9.629s] [1m[31mE     ./setup.py:3:1: I100 Import statements are in the wrong order. 'from glob import glob' should be before 'import os'[0m
+[9.636s] [1m[31mE     ./setup.py:26:13: Q000 Double quotes found but single quotes preferred[0m
+[9.642s] [1m[31mE     ./setup.py:27:13: Q000 Double quotes found but single quotes preferred[0m
+[9.644s] [1m[31mE     ./setup.py:28:13: Q000 Double quotes found but single quotes preferred[0m
+[9.647s] [1m[31mE     ./setup.py:29:13: Q000 Double quotes found but single quotes preferred[0m
+[9.650s] [1m[31mE     ./launch/sf.launch.py:4:1: E302 expected 2 blank lines, found 1[0m
+[9.653s] [1m[31mE     ./launch/sf.launch.py:10:13: E265 block comment should start with '# '[0m
+[9.657s] [1m[31mE     ./launch/sf.launch.py:21:32: E202 whitespace before ')'[0m
+[9.660s] [1m[31mE     ./launch/sf.launch.py:27:20: E251 unexpected spaces around keyword / parameter equals[0m
+[9.661s] [1m[31mE     ./launch/sf.launch.py:27:29: E202 whitespace before ')'[0m
+[9.664s] [1m[31mE     ./launch/sf.launch.py:28:7: W292 no newline at end of file[0m
+[9.666s] [1m[31mE     ./sf_pkg/serial_talker.py:5:1: I100 Import statements are in the wrong order. 'import serial' should be before 'from std_msgs.msg import String'[0m
+[9.668s] [1m[31mE     ./sf_pkg/serial_talker.py:5:14: W291 trailing whitespace[0m
+[9.670s] [1m[31mE     ./sf_pkg/serial_talker.py:11:5: E301 expected 1 blank line, found 0[0m
+[9.671s] [1m[31mE     ./sf_pkg/serial_talker.py:19:32: Q000 Double quotes found but single quotes preferred[0m
+[9.673s] [1m[31mE     ./sf_pkg/serial_talker.py:22:9: E265 block comment should start with '# '[0m
+[9.675s] [1m[31mE     ./sf_pkg/serial_talker.py:23:9: E265 block comment should start with '# '[0m
+[9.679s] [1m[31mE     ./sf_pkg/serial_talker.py:40:1: E305 expected 2 blank lines after class or function definition, found 1[0m
+[9.682s] [1m[31mE     ./sf_pkg/serial_talker.py:40:26: E203 whitespace before ':'[0m
+[9.684s] [1m[31mE     ./sf_pkg/serial_talker.py:41:11: W292 no newline at end of file[0m
+[9.685s] [1m[31mE     ./sf_pkg/I2C_LCD_driver.py:5:1: E402 module level import not at top of file[0m
+[9.686s] [1m[31mE     ./sf_pkg/I2C_LCD_driver.py:6:1: E402 module level import not at top of file[0m
+[9.687s] [1m[31mE     ./sf_pkg/I2C_LCD_driver.py:6:1: I100 Import statements are in the wrong order. 'from time import sleep' should be before 'import smbus' and in a different group.[0m
+[9.688s] [1m[31mE     ./sf_pkg/I2C_LCD_driver.py:6:1: I201 Missing newline between import groups. 'from time import sleep' is identified as Stdlib and 'import smbus' is identified as Third Party.[0m
+[9.689s] [1m[31mE     ./sf_pkg/I2C_LCD_driver.py:7:1: E302 expected 2 blank lines, found 0[0m
+[9.691s] [1m[31mE     ./sf_pkg/I2C_LCD_driver.py:8:1: CNL100 Class definition does not have a new line.[0m
+[9.692s] [1m[31mE     ./sf_pkg/I2C_LCD_driver.py:8:4: E111 indentation is not a multiple of four[0m
+[9.694s] [1m[31mE     ./sf_pkg/I2C_LCD_driver.py:9:7: E111 indentation is not a multiple of four[0m
+[9.702s] [1m[31mE     ./sf_pkg/I2C_LCD_driver.py:10:7: E111 indentation is not a multiple of four[0m
+[9.704s] [1m[31mE     ./sf_pkg/I2C_LCD_driver.py:12:4: E301 expected 1 blank line, found 0[0m
+[9.706s] [1m[31mE     ./sf_pkg/I2C_LCD_driver.py:12:4: E111 indentation is not a multiple of four[0m
+[9.707s] [1m[31mE     ./sf_pkg/I2C_LCD_driver.py:13:7: E111 indentation is not a multiple of four[0m
+[9.709s] [1m[31mE     ./sf_pkg/I2C_LCD_driver.py:14:7: E111 indentation is not a multiple of four[0m
+[9.711s] [1m[31mE     ./sf_pkg/I2C_LCD_driver.py:16:4: E301 expected 1 blank line, found 0[0m
+[9.712s] [1m[31mE     ./sf_pkg/I2C_LCD_driver.py:16:4: E111 indentation is not a multiple of four[0m
+[9.713s] [1m[31mE     ./sf_pkg/I2C_LCD_driver.py:17:7: E111 indentation is not a multiple of four[0m
+[9.717s] [1m[31mE     ./sf_pkg/I2C_LCD_driver.py:18:7: E111 indentation is not a multiple of four[0m
+[9.720s] [1m[31mE     ./sf_pkg/I2C_LCD_driver.py:20:4: E301 expected 1 blank line, found 0[0m
+[9.723s] [1m[31mE     ./sf_pkg/I2C_LCD_driver.py:20:4: E111 indentation is not a multiple of four[0m
+[9.726s] [1m[31mE     ./sf_pkg/I2C_LCD_driver.py:21:7: E111 indentation is not a multiple of four[0m
+[9.728s] [1m[31mE     ./sf_pkg/I2C_LCD_driver.py:22:7: E111 indentation is not a multiple of four[0m
+[9.730s] [1m[31mE     ./sf_pkg/I2C_LCD_driver.py:24:4: E301 expected 1 blank line, found 0[0m
+[9.745s] [1m[31mE     ./sf_pkg/I2C_LCD_driver.py:24:4: E111 indentation is not a multiple of four[0m
+[9.748s] [1m[31mE     ./sf_pkg/I2C_LCD_driver.py:25:7: E111 indentation is not a multiple of four[0m
+[9.751s] [1m[31mE     ./sf_pkg/I2C_LCD_driver.py:27:4: E301 expected 1 blank line, found 0[0m
+[9.752s] [1m[31mE     ./sf_pkg/I2C_LCD_driver.py:27:4: E111 indentation is not a multiple of four[0m
+[9.753s] [1m[31mE     ./sf_pkg/I2C_LCD_driver.py:28:7: E111 indentation is not a multiple of four[0m
+[9.758s] [1m[31mE     ./sf_pkg/I2C_LCD_driver.py:30:4: E301 expected 1 blank line, found 0[0m
+[9.760s] [1m[31mE     ./sf_pkg/I2C_LCD_driver.py:30:4: E111 indentation is not a multiple of four[0m
+[9.762s] [1m[31mE     ./sf_pkg/I2C_LCD_driver.py:31:7: E111 indentation is not a multiple of four[0m
+[9.764s] [1m[31mE     ./sf_pkg/I2C_LCD_driver.py:33:1: E305 expected 2 blank lines after class or function definition, found 0[0m
+[9.767s] [1m[31mE     ./sf_pkg/I2C_LCD_driver.py:68:16: E261 at least two spaces before inline comment[0m
+[9.772s] [1m[31mE     ./sf_pkg/I2C_LCD_driver.py:69:16: E261 at least two spaces before inline comment[0m
+[9.774s] [1m[31mE     ./sf_pkg/I2C_LCD_driver.py:70:16: E261 at least two spaces before inline comment[0m
+[9.776s] [1m[31mE     ./sf_pkg/I2C_LCD_driver.py:71:1: E302 expected 2 blank lines, found 0[0m
+[9.777s] [1m[31mE     ./sf_pkg/I2C_LCD_driver.py:72:4: E114 indentation is not a multiple of four (comment)[0m
+[9.779s] [1m[31mE     ./sf_pkg/I2C_LCD_driver.py:72:4: E265 block comment should start with '# '[0m
+[9.780s] [1m[31mE     ./sf_pkg/I2C_LCD_driver.py:73:4: E111 indentation is not a multiple of four[0m
+[9.782s] [1m[31mE     ./sf_pkg/I2C_LCD_driver.py:74:7: E111 indentation is not a multiple of four[0m
+[9.784s] [1m[31mE     ./sf_pkg/I2C_LCD_driver.py:75:7: E111 indentation is not a multiple of four[0m
+[9.786s] [1m[31mE     ./sf_pkg/I2C_LCD_driver.py:76:7: E111 indentation is not a multiple of four[0m
+[9.789s] [1m[31mE     ./sf_pkg/I2C_LCD_driver.py:77:7: E111 indentation is not a multiple of four[0m
+[9.793s] [1m[31mE     ./sf_pkg/I2C_LCD_driver.py:78:7: E111 indentation is not a multiple of four[0m
+[9.797s] [1m[31mE     ./sf_pkg/I2C_LCD_driver.py:79:7: E111 indentation is not a multiple of four[0m
+[9.804s] [1m[31mE     ./sf_pkg/I2C_LCD_driver.py:80:7: E111 indentation is not a multiple of four[0m
+[9.808s] [1m[31mE     ./sf_pkg/I2C_LCD_driver.py:81:7: E111 indentation is not a multiple of four[0m
+[9.812s] [1m[31mE     ./sf_pkg/I2C_LCD_driver.py:82:7: E111 indentation is not a multiple of four[0m
+[9.815s] [1m[31mE     ./sf_pkg/I2C_LCD_driver.py:83:7: E111 indentation is not a multiple of four[0m
+[9.817s] [1m[31mE     ./sf_pkg/I2C_LCD_driver.py:84:4: E114 indentation is not a multiple of four (comment)[0m
+[9.819s] [1m[31mE     ./sf_pkg/I2C_LCD_driver.py:85:4: E301 expected 1 blank line, found 0[0m
+[9.820s] [1m[31mE     ./sf_pkg/I2C_LCD_driver.py:85:4: E111 indentation is not a multiple of four[0m
+[9.822s] [1m[31mE     ./sf_pkg/I2C_LCD_driver.py:86:7: E111 indentation is not a multiple of four[0m
+[9.824s] [1m[31mE     ./sf_pkg/I2C_LCD_driver.py:87:7: E111 indentation is not a multiple of four[0m
+[9.825s] [1m[31mE     ./sf_pkg/I2C_LCD_driver.py:88:7: E111 indentation is not a multiple of four[0m
+[9.827s] [1m[31mE     ./sf_pkg/I2C_LCD_driver.py:89:7: E111 indentation is not a multiple of four[0m
+[9.833s] [1m[31mE     ./sf_pkg/I2C_LCD_driver.py:90:4: E301 expected 1 blank line, found 0[0m
+[9.836s] [1m[31mE     ./sf_pkg/I2C_LCD_driver.py:90:4: E111 indentation is not a multiple of four[0m
+[9.839s] [1m[31mE     ./sf_pkg/I2C_LCD_driver.py:91:7: E111 indentation is not a multiple of four[0m
+[9.840s] [1m[31mE     ./sf_pkg/I2C_LCD_driver.py:92:7: E111 indentation is not a multiple of four[0m
+[9.842s] [1m[31mE     ./sf_pkg/I2C_LCD_driver.py:93:4: E114 indentation is not a multiple of four (comment)[0m
+[9.844s] [1m[31mE     ./sf_pkg/I2C_LCD_driver.py:94:4: E301 expected 1 blank line, found 0[0m
+[9.846s] [1m[31mE     ./sf_pkg/I2C_LCD_driver.py:94:4: E111 indentation is not a multiple of four[0m
+[9.847s] [1m[31mE     ./sf_pkg/I2C_LCD_driver.py:95:7: E111 indentation is not a multiple of four[0m
+[9.849s] [1m[31mE     ./sf_pkg/I2C_LCD_driver.py:96:7: E111 indentation is not a multiple of four[0m
+[9.851s] [1m[31mE     ./sf_pkg/I2C_LCD_driver.py:97:4: E114 indentation is not a multiple of four (comment)[0m
+[9.856s] [1m[31mE     ./sf_pkg/I2C_LCD_driver.py:98:4: E114 indentation is not a multiple of four (comment)[0m
+[9.859s] [1m[31mE     ./sf_pkg/I2C_LCD_driver.py:99:4: E301 expected 1 blank line, found 0[0m
+[9.863s] [1m[31mE     ./sf_pkg/I2C_LCD_driver.py:99:4: E111 indentation is not a multiple of four[0m
+[9.864s] [1m[31mE     ./sf_pkg/I2C_LCD_driver.py:100:7: E111 indentation is not a multiple of four[0m
+[9.866s] [1m[31mE     ./sf_pkg/I2C_LCD_driver.py:101:7: E111 indentation is not a multiple of four[0m
+[9.868s] [1m[31mE     ./sf_pkg/I2C_LCD_driver.py:102:1: W293 blank line contains whitespace[0m
+[9.869s] [1m[31mE     ./sf_pkg/I2C_LCD_driver.py:103:4: E114 indentation is not a multiple of four (comment)[0m
+[9.871s] [1m[31mE     ./sf_pkg/I2C_LCD_driver.py:104:4: E111 indentation is not a multiple of four[0m
+[9.873s] [1m[31mE     ./sf_pkg/I2C_LCD_driver.py:106:7: E111 indentation is not a multiple of four[0m
+[9.875s] [1m[31mE     ./sf_pkg/I2C_LCD_driver.py:108:7: E111 indentation is not a multiple of four[0m
+[9.879s] [1m[31mE     ./sf_pkg/I2C_LCD_driver.py:110:7: E111 indentation is not a multiple of four[0m
+[9.882s] [1m[31mE     ./sf_pkg/I2C_LCD_driver.py:112:7: E111 indentation is not a multiple of four[0m
+[9.885s] [1m[31mE     ./sf_pkg/I2C_LCD_driver.py:115:7: E111 indentation is not a multiple of four[0m
+[9.887s] [1m[31mE     ./sf_pkg/I2C_LCD_driver.py:116:4: E114 indentation is not a multiple of four (comment)[0m
+[9.889s] [1m[31mE     ./sf_pkg/I2C_LCD_driver.py:117:4: E301 expected 1 blank line, found 0[0m
+[9.891s] [1m[31mE     ./sf_pkg/I2C_LCD_driver.py:117:4: E111 indentation is not a multiple of four[0m
+[9.893s] [1m[31mE     ./sf_pkg/I2C_LCD_driver.py:118:7: E111 indentation is not a multiple of four[0m
+[9.894s] [1m[31mE     ./sf_pkg/I2C_LCD_driver.py:119:7: E111 indentation is not a multiple of four[0m
+[9.896s] [1m[31mE     ./sf_pkg/I2C_LCD_driver.py:120:4: E114 indentation is not a multiple of four (comment)[0m
+[9.897s] [1m[31mE     ./sf_pkg/I2C_LCD_driver.py:121:4: E301 expected 1 blank line, found 0[0m
+[9.900s] [1m[31mE     ./sf_pkg/I2C_LCD_driver.py:121:4: E111 indentation is not a multiple of four[0m
+[9.910s] [1m[31mE     ./sf_pkg/I2C_LCD_driver.py:121:31: E261 at least two spaces before inline comment[0m
+[9.912s] [1m[31mE     ./sf_pkg/I2C_LCD_driver.py:122:7: E111 indentation is not a multiple of four[0m
+[9.914s] [1m[31mE     ./sf_pkg/I2C_LCD_driver.py:123:10: E111 indentation is not a multiple of four[0m
+[9.915s] [1m[31mE     ./sf_pkg/I2C_LCD_driver.py:124:7: E111 indentation is not a multiple of four[0m
+[9.917s] [1m[31mE     ./sf_pkg/I2C_LCD_driver.py:125:10: E111 indentation is not a multiple of four[0m
+[9.919s] [1m[31mE     ./sf_pkg/I2C_LCD_driver.py:126:4: E114 indentation is not a multiple of four (comment)[0m
+[9.921s] [1m[31mE     ./sf_pkg/I2C_LCD_driver.py:127:4: E301 expected 1 blank line, found 0[0m
+[9.923s] [1m[31mE     ./sf_pkg/I2C_LCD_driver.py:127:4: E111 indentation is not a multiple of four[0m
+[9.924s] [1m[31mE     ./sf_pkg/I2C_LCD_driver.py:128:7: E111 indentation is not a multiple of four[0m
+[9.927s] [1m[31mE     ./sf_pkg/I2C_LCD_driver.py:128:27: E703 statement ends with a semicolon[0m
+[9.930s] [1m[31mE     ./sf_pkg/I2C_LCD_driver.py:129:7: E111 indentation is not a multiple of four[0m
+[9.934s] [1m[31mE     ./sf_pkg/I2C_LCD_driver.py:130:10: E111 indentation is not a multiple of four[0m
+[9.937s] [1m[31mE     ./sf_pkg/I2C_LCD_driver.py:131:41: W292 no newline at end of file[0m
+[9.946s] [1m[31mE     ./sf_pkg/cmd_selector.py:6:1: E302 expected 2 blank lines, found 1[0m
+[9.951s] [1m[31mE     ./sf_pkg/cmd_selector.py:8:5: E301 expected 1 blank line, found 0[0m
+[9.955s] [1m[31mE     ./sf_pkg/cmd_selector.py:43:1: E303 too many blank lines (3)[0m
+[9.956s] [1m[31mE     ./sf_pkg/cmd_selector.py:54:1: E305 expected 2 blank lines after class or function definition, found 1[0m
+[9.958s] [1m[31mE     ./sf_pkg/cmd_selector.py:54:26: E203 whitespace before ':'[0m
+[9.960s] [1m[31mE     ./sf_pkg/cmd_selector.py:55:11: W292 no newline at end of file[0m
+[9.964s] [1m[31mE     ./sf_pkg/calculator.py:5:1: I100 Import statements are in the wrong order. 'import math' should be before 'from std_msgs.msg import String' and in a different group.[0m
+[9.967s] [1m[31mE     ./sf_pkg/calculator.py:5:1: I201 Missing newline between import groups. 'import math' is identified as Stdlib and 'from std_msgs.msg import String' is identified as Third Party.[0m
+[9.970s] [1m[31mE     ./sf_pkg/calculator.py:7:1: E302 expected 2 blank lines, found 1[0m
+[9.972s] [1m[31mE     ./sf_pkg/calculator.py:7:23: E203 whitespace before ':'[0m
+[9.973s] [1m[31mE     ./sf_pkg/calculator.py:8:1: CNL100 Class definition does not have a new line.[0m
+[9.975s] [1m[31mE     ./sf_pkg/calculator.py:21:35: E203 whitespace before ':'[0m
+[9.976s] [1m[31mE     ./sf_pkg/calculator.py:33:30: E201 whitespace after '('[0m
+[9.977s] [1m[31mE     ./sf_pkg/calculator.py:33:31: Q000 Double quotes found but single quotes preferred[0m
+[9.979s] [1m[31mE     ./sf_pkg/calculator.py:36:61: C417 Unnecessary use of map - use a generator expression instead.[0m
+[9.981s] [1m[31mE     ./sf_pkg/calculator.py:62:1: W293 blank line contains whitespace[0m
+[9.983s] [1m[31mE     ./sf_pkg/calculator.py:65:10: E203 whitespace before ','[0m
+[9.985s] [1m[31mE     ./sf_pkg/calculator.py:65:39: C417 Unnecessary use of map - use a generator expression instead.[0m
+[9.986s] [1m[31mE     ./sf_pkg/calculator.py:74:31: E272 multiple spaces before keyword[0m
+[9.988s] [1m[31mE     ./sf_pkg/calculator.py:82:1: W293 blank line contains whitespace[0m
+[9.989s] [1m[31mE     ./sf_pkg/calculator.py:83:28: E203 whitespace before ':'[0m
+[9.991s] [1m[31mE     ./sf_pkg/calculator.py:84:40: C417 Unnecessary use of map - use a generator expression instead.[0m
+[9.992s] [1m[31mE     ./sf_pkg/calculator.py:84:52: E203 whitespace before ':'[0m
+[9.994s] [1m[31mE     ./sf_pkg/calculator.py:86:9: E115 expected an indented block (comment)[0m
+[9.997s] [1m[31mE     ./sf_pkg/calculator.py:88:13: E203 whitespace before ':'[0m
+[10.000s] [1m[31mE     ./sf_pkg/calculator.py:92:1: E302 expected 2 blank lines, found 1[0m
+[10.003s] [1m[31mE     ./sf_pkg/calculator.py:92:20: E203 whitespace before ':'[0m
+[10.008s] [1m[31mE     ./sf_pkg/calculator.py:103:1: E305 expected 2 blank lines after class or function definition, found 1[0m
+[10.015s] [1m[31mE     ./sf_pkg/calculator.py:103:26: E203 whitespace before ':'[0m
+[10.019s] [1m[31mE     ./sf_pkg/calculator.py:104:11: W292 no newline at end of file[0m
+[10.022s] [1m[31mE     ./sf_pkg/tensor.py:5:1: I100 Import statements are in the wrong order. 'import cv2' should be before 'from sunflower_interfaces.msg import TfliteResult'[0m
+[10.024s] [1m[31mE     ./sf_pkg/tensor.py:7:1: I100 Import statements are in the wrong order. 'import numpy' should be before 'import tensorflow'[0m
+[10.026s] [1m[31mE     ./sf_pkg/tensor.py:9:1: E302 expected 2 blank lines, found 1[0m
+[10.028s] [1m[31mE     ./sf_pkg/tensor.py:9:19: E203 whitespace before ':'[0m
+[10.030s] [1m[31mE     ./sf_pkg/tensor.py:10:1: CNL100 Class definition does not have a new line.[0m
+[10.031s] [1m[31mE     ./sf_pkg/tensor.py:20:46: E203 whitespace before ':'[0m
+[10.033s] [1m[31mE     ./sf_pkg/tensor.py:41:9: F841 local variable 'data' is assigned to but never used[0m
+[10.035s] [1m[31mE     ./sf_pkg/tensor.py:41:16: C408 Unnecessary list call - rewrite as a literal.[0m
+[10.036s] [1m[31mE     ./sf_pkg/tensor.py:53:1: E302 expected 2 blank lines, found 1[0m
+[10.037s] [1m[31mE     ./sf_pkg/tensor.py:53:20: E203 whitespace before ':'[0m
+[10.039s] [1m[31mE     ./sf_pkg/tensor.py:55:50: Q000 Double quotes found but single quotes preferred[0m
+[10.041s] [1m[31mE     ./sf_pkg/tensor.py:55:100: E501 line too long (100 > 99 characters)[0m
+[10.043s] [1m[31mE     ./sf_pkg/tensor.py:67:1: E305 expected 2 blank lines after class or function definition, found 1[0m
+[10.045s] [1m[31mE     ./sf_pkg/tensor.py:67:26: E203 whitespace before ':'[0m
+[10.048s] [1m[31mE     ./sf_pkg/tensor.py:70:1: E265 block comment should start with '# '[0m
+[10.050s] [1m[31mE     ./sf_pkg/tensor.py:70:29: W292 no newline at end of file[0m
+[10.053s] [1m[31mE     ./sf_pkg/tensor.py:70:29: W292 no newline at end of file[0m
+[10.055s] [1m[31mE     ./sf_pkg/tensor.py:70:29: W292 no newline at end of file[0m
+[10.057s] [1m[31mE     ./sf_pkg/tensor_publisher.py:5:1: I100 Import statements are in the wrong order. 'import cv2' should be before 'from std_msgs.msg import String'[0m
+[10.058s] [1m[31mE     ./sf_pkg/tensor_publisher.py:7:1: I100 Import statements are in the wrong order. 'import numpy' should be before 'import tensorflow'[0m
+[10.061s] [1m[31mE     ./sf_pkg/tensor_publisher.py:8:1: I100 Import statements are in the wrong order. 'import time' should be before 'import numpy' and in a different group.[0m
+[10.062s] [1m[31mE     ./sf_pkg/tensor_publisher.py:8:1: I201 Missing newline between import groups. 'import time' is identified as Stdlib and 'import numpy' is identified as Third Party.[0m
+[10.064s] [1m[31mE     ./sf_pkg/tensor_publisher.py:9:1: I201 Missing newline between import groups. 'import I2C_LCD_driver' is identified as Third Party and 'import time' is identified as Stdlib.[0m
+[10.066s] [1m[31mE     ./sf_pkg/tensor_publisher.py:13:28: E203 whitespace before ':'[0m
+[10.068s] [1m[31mE     ./sf_pkg/tensor_publisher.py:14:1: CNL100 Class definition does not have a new line.[0m
+[10.070s] [1m[31mE     ./sf_pkg/tensor_publisher.py:18:34: Q000 Double quotes found but single quotes preferred[0m
+[10.073s] [1m[31mE     ./sf_pkg/tensor_publisher.py:18:36: E231 missing whitespace after ','[0m
+[10.075s] [1m[31mE     ./sf_pkg/tensor_publisher.py:25:16: Q000 Double quotes found but single quotes preferred[0m
+[10.078s] [1m[31mE     ./sf_pkg/tensor_publisher.py:25:19: E225 missing whitespace around operator[0m
+[10.080s] [1m[31mE     ./sf_pkg/tensor_publisher.py:25:80: E225 missing whitespace around operator[0m
+[10.081s] [1m[31mE     ./sf_pkg/tensor_publisher.py:25:80: Q000 Double quotes found but single quotes preferred[0m
+[10.083s] [1m[31mE     ./sf_pkg/tensor_publisher.py:27:34: Q000 Double quotes found but single quotes preferred[0m
+[10.085s] [1m[31mE     ./sf_pkg/tensor_publisher.py:27:36: E231 missing whitespace after ','[0m
+[10.087s] [1m[31mE     ./sf_pkg/tensor_publisher.py:28:34: Q000 Double quotes found but single quotes preferred[0m
+[10.089s] [1m[31mE     ./sf_pkg/tensor_publisher.py:28:43: E231 missing whitespace after ','[0m
+[10.090s] [1m[31mE     ./sf_pkg/tensor_publisher.py:33:50: E203 whitespace before ':'[0m
+[10.094s] [1m[31mE     ./sf_pkg/tensor_publisher.py:37:16: F821 undefined name 'now'[0m
+[10.098s] [1m[31mE     ./sf_pkg/tensor_publisher.py:37:44: E203 whitespace before ':'[0m
+[10.101s] [1m[31mE     ./sf_pkg/tensor_publisher.py:40:38: Q000 Double quotes found but single quotes preferred[0m
+[10.103s] [1m[31mE     ./sf_pkg/tensor_publisher.py:40:40: E231 missing whitespace after ','[0m
+[10.105s] [1m[31mE     ./sf_pkg/tensor_publisher.py:41:61: E231 missing whitespace after ','[0m
+[10.110s] [1m[31mE     ./sf_pkg/tensor_publisher.py:58:20: C408 Unnecessary list call - rewrite as a literal.[0m
+[10.112s] [1m[31mE     ./sf_pkg/tensor_publisher.py:60:32: E203 whitespace before ':'[0m
+[10.116s] [1m[31mE     ./sf_pkg/tensor_publisher.py:62:44: C417 Unnecessary use of map - use a generator expression instead.[0m
+[10.118s] [1m[31mE     ./sf_pkg/tensor_publisher.py:62:56: E203 whitespace before ':'[0m
+[10.122s] [1m[31mE     ./sf_pkg/tensor_publisher.py:64:13: E115 expected an indented block (comment)[0m
+[10.126s] [1m[31mE     ./sf_pkg/tensor_publisher.py:68:13: E203 whitespace before ':'[0m
+[10.128s] [1m[31mE     ./sf_pkg/tensor_publisher.py:71:46: E203 whitespace before ':'[0m
+[10.129s] [1m[31mE     ./sf_pkg/tensor_publisher.py:92:16: C408 Unnecessary list call - rewrite as a literal.[0m
+[10.131s] [1m[31mE     ./sf_pkg/tensor_publisher.py:94:28: E203 whitespace before ':'[0m
+[10.134s] [1m[31mE     ./sf_pkg/tensor_publisher.py:97:20: Q000 Double quotes found but single quotes preferred[0m
+[10.137s] [1m[31mE     ./sf_pkg/tensor_publisher.py:101:1: E302 expected 2 blank lines, found 1[0m
+[10.139s] [1m[31mE     ./sf_pkg/tensor_publisher.py:101:20: E203 whitespace before ':'[0m
+[10.142s] [1m[31mE     ./sf_pkg/tensor_publisher.py:103:50: Q000 Double quotes found but single quotes preferred[0m
+[10.155s] [1m[31mE     ./sf_pkg/tensor_publisher.py:103:100: E501 line too long (100 > 99 characters)[0m
+[10.159s] [1m[31mE     ./sf_pkg/tensor_publisher.py:117:1: E305 expected 2 blank lines after class or function definition, found 1[0m
+[10.161s] [1m[31mE     ./sf_pkg/tensor_publisher.py:117:26: E203 whitespace before ':'[0m
+[10.164s] [1m[31mE     ./sf_pkg/tensor_publisher.py:120:1: E265 block comment should start with '# '[0m
+[10.168s] [1m[31mE     ./sf_pkg/tensor_publisher.py:120:29: W292 no newline at end of file[0m
+[10.175s] [1m[31mE     ./sf_pkg/tensor_publisher.py:120:29: W292 no newline at end of file[0m
+[10.177s] [1m[31mE     ./sf_pkg/tensor_publisher.py:120:29: W292 no newline at end of file[0m
+[10.178s] [1m[31mE   assert 1 == 0[0m
+[10.180s] ----------------------------- Captured stdout call -----------------------------
+[10.181s] 
+[10.183s] ./setup.py:2:1: I100 Import statements are in the wrong order. 'import os' should be before 'from setuptools import setup' and in a different group.
+[10.185s] import os
+[10.187s] ^
+[10.191s] 
+[10.195s] ./setup.py:2:1: I201 Missing newline between import groups. 'import os' is identified as Stdlib and 'from setuptools import setup' is identified as Third Party.
+[10.198s] import os
+[10.200s] ^
+[10.202s] 
+[10.203s] ./setup.py:3:1: I100 Import statements are in the wrong order. 'from glob import glob' should be before 'import os'
+[10.205s] from glob import glob
+[10.206s] ^
+[10.212s] 
+[10.216s] ./setup.py:26:13: Q000 Double quotes found but single quotes preferred
+[10.221s]             "serial_talker=sf_pkg.serial_talker:main",
+[10.224s]             ^
+[10.226s] 
+[10.229s] ./setup.py:27:13: Q000 Double quotes found but single quotes preferred
+[10.232s]             "cmd_selector=sf_pkg.cmd_selector:main",
+[10.235s]             ^
+[10.238s] 
+[10.240s] ./setup.py:28:13: Q000 Double quotes found but single quotes preferred
+[10.242s]             "calculator=sf_pkg.calculator:main",
+[10.244s]             ^
+[10.245s] 
+[10.247s] ./setup.py:29:13: Q000 Double quotes found but single quotes preferred
+[10.248s]             "tensor_publisher=sf_pkg.tensor_publisher:main",
+[10.250s]             ^
+[10.252s] 
+[10.266s] ./launch/sf.launch.py:4:1: E302 expected 2 blank lines, found 1
+[10.267s] def generate_launch_description():
+[10.268s] ^
+[10.269s] 
+[10.269s] ./launch/sf.launch.py:10:13: E265 block comment should start with '# '
+[10.270s]             #output= 'screen'
+[10.271s]             ^
+[10.271s] 
+[10.272s] ./launch/sf.launch.py:21:32: E202 whitespace before ')'
+[10.273s]             name='cmd_selector' ),
+[10.274s]                                ^
+[10.287s] 
+[10.288s] ./launch/sf.launch.py:27:20: E251 unexpected spaces around keyword / parameter equals
+[10.288s]             output= 'screen' )
+[10.289s]                    ^
+[10.290s] 
+[10.291s] ./launch/sf.launch.py:27:29: E202 whitespace before ')'
+[10.291s]             output= 'screen' )
+[10.292s]                             ^
+[10.292s] 
+[10.293s] ./launch/sf.launch.py:28:7: W292 no newline at end of file
+[10.293s]     ])      ^
+[10.294s] 
+[10.302s] ./sf_pkg/serial_talker.py:5:1: I100 Import statements are in the wrong order. 'import serial' should be before 'from std_msgs.msg import String'
+[10.304s] import serial 
+[10.305s] ^
+[10.319s] 
+[10.324s] ./sf_pkg/serial_talker.py:5:14: W291 trailing whitespace
+[10.325s] import serial 
+[10.328s]              ^
+[10.330s] 
+[10.335s] ./sf_pkg/serial_talker.py:11:5: E301 expected 1 blank line, found 0
+[10.351s]     def __init__(self):
+[10.353s]     ^
+[10.356s] 
+[10.358s] ./sf_pkg/serial_talker.py:19:32: Q000 Double quotes found but single quotes preferred
+[10.360s]         self.get_logger().info("Serial connection started")
+[10.362s]                                ^
+[10.364s] 
+[10.365s] ./sf_pkg/serial_talker.py:22:9: E265 block comment should start with '# '
+[10.367s]         #self.ser.write("^1*2*3*4*5*6*7*8*8".encode())
+[10.369s]         ^
+[10.374s] 
+[10.376s] ./sf_pkg/serial_talker.py:23:9: E265 block comment should start with '# '
+[10.378s]         #self.get_logger().info('Transmitted')
+[10.384s]         ^
+[10.387s] 
+[10.399s] ./sf_pkg/serial_talker.py:40:1: E305 expected 2 blank lines after class or function definition, found 1
+[10.402s] if __name__ == '__main__' :
+[10.404s] ^
+[10.405s] 
+[10.410s] ./sf_pkg/serial_talker.py:40:26: E203 whitespace before ':'
+[10.412s] if __name__ == '__main__' :
+[10.424s]                          ^
+[10.427s] 
+[10.429s] ./sf_pkg/serial_talker.py:41:11: W292 no newline at end of file
+[10.431s]     main()          ^
+[10.434s] 
+[10.438s] ./sf_pkg/I2C_LCD_driver.py:5:1: E402 module level import not at top of file
+[10.441s] import smbus
+[10.443s] ^
+[10.445s] 
+[10.447s] ./sf_pkg/I2C_LCD_driver.py:6:1: E402 module level import not at top of file
+[10.453s] from time import sleep
+[10.457s] ^
+[10.461s] 
+[10.463s] ./sf_pkg/I2C_LCD_driver.py:6:1: I100 Import statements are in the wrong order. 'from time import sleep' should be before 'import smbus' and in a different group.
+[10.466s] from time import sleep
+[10.468s] ^
+[10.471s] 
+[10.476s] ./sf_pkg/I2C_LCD_driver.py:6:1: I201 Missing newline between import groups. 'from time import sleep' is identified as Stdlib and 'import smbus' is identified as Third Party.
+[10.478s] from time import sleep
+[10.480s] ^
+[10.482s] 
+[10.490s] ./sf_pkg/I2C_LCD_driver.py:7:1: E302 expected 2 blank lines, found 0
+[10.494s] class i2c_device:
+[10.497s] ^
+[10.503s] 
+[10.505s] ./sf_pkg/I2C_LCD_driver.py:8:1: CNL100 Class definition does not have a new line.
+[10.507s]    def __init__(self, addr, port=I2CBUS):
+[10.511s] ^
+[10.513s] 
+[10.515s] ./sf_pkg/I2C_LCD_driver.py:8:4: E111 indentation is not a multiple of four
+[10.518s]    def __init__(self, addr, port=I2CBUS):
+[10.522s]    ^
+[10.526s] 
+[10.530s] ./sf_pkg/I2C_LCD_driver.py:9:7: E111 indentation is not a multiple of four
+[10.532s]       self.addr = addr
+[10.536s]       ^
+[10.545s] 
+[10.549s] ./sf_pkg/I2C_LCD_driver.py:10:7: E111 indentation is not a multiple of four
+[10.552s]       self.bus = smbus.SMBus(port)
+[10.555s]       ^
+[10.556s] 
+[10.558s] ./sf_pkg/I2C_LCD_driver.py:12:4: E301 expected 1 blank line, found 0
+[10.561s]    def write_cmd(self, cmd):
+[10.563s]    ^
+[10.564s] 
+[10.566s] ./sf_pkg/I2C_LCD_driver.py:12:4: E111 indentation is not a multiple of four
+[10.569s]    def write_cmd(self, cmd):
+[10.573s]    ^
+[10.576s] 
+[10.579s] ./sf_pkg/I2C_LCD_driver.py:13:7: E111 indentation is not a multiple of four
+[10.581s]       self.bus.write_byte(self.addr, cmd)
+[10.584s]       ^
+[10.586s] 
+[10.589s] ./sf_pkg/I2C_LCD_driver.py:14:7: E111 indentation is not a multiple of four
+[10.592s]       sleep(0.0001)
+[10.593s]       ^
+[10.598s] 
+[10.600s] ./sf_pkg/I2C_LCD_driver.py:16:4: E301 expected 1 blank line, found 0
+[10.601s]    def write_cmd_arg(self, cmd, data):
+[10.603s]    ^
+[10.604s] 
+[10.605s] ./sf_pkg/I2C_LCD_driver.py:16:4: E111 indentation is not a multiple of four
+[10.608s]    def write_cmd_arg(self, cmd, data):
+[10.610s]    ^
+[10.612s] 
+[10.613s] ./sf_pkg/I2C_LCD_driver.py:17:7: E111 indentation is not a multiple of four
+[10.615s]       self.bus.write_byte_data(self.addr, cmd, data)
+[10.617s]       ^
+[10.619s] 
+[10.621s] ./sf_pkg/I2C_LCD_driver.py:18:7: E111 indentation is not a multiple of four
+[10.623s]       sleep(0.0001)
+[10.625s]       ^
+[10.627s] 
+[10.632s] ./sf_pkg/I2C_LCD_driver.py:20:4: E301 expected 1 blank line, found 0
+[10.634s]    def write_block_data(self, cmd, data):
+[10.636s]    ^
+[10.638s] 
+[10.640s] ./sf_pkg/I2C_LCD_driver.py:20:4: E111 indentation is not a multiple of four
+[10.642s]    def write_block_data(self, cmd, data):
+[10.644s]    ^
+[10.646s] 
+[10.648s] ./sf_pkg/I2C_LCD_driver.py:21:7: E111 indentation is not a multiple of four
+[10.649s]       self.bus.write_block_data(self.addr, cmd, data)
+[10.651s]       ^
+[10.653s] 
+[10.656s] ./sf_pkg/I2C_LCD_driver.py:22:7: E111 indentation is not a multiple of four
+[10.658s]       sleep(0.0001)
+[10.659s]       ^
+[10.661s] 
+[10.663s] ./sf_pkg/I2C_LCD_driver.py:24:4: E301 expected 1 blank line, found 0
+[10.665s]    def read(self):
+[10.667s]    ^
+[10.668s] 
+[10.670s] ./sf_pkg/I2C_LCD_driver.py:24:4: E111 indentation is not a multiple of four
+[10.671s]    def read(self):
+[10.673s]    ^
+[10.674s] 
+[10.676s] ./sf_pkg/I2C_LCD_driver.py:25:7: E111 indentation is not a multiple of four
+[10.677s]       return self.bus.read_byte(self.addr)
+[10.679s]       ^
+[10.680s] 
+[10.682s] ./sf_pkg/I2C_LCD_driver.py:27:4: E301 expected 1 blank line, found 0
+[10.683s]    def read_data(self, cmd):
+[10.685s]    ^
+[10.687s] 
+[10.688s] ./sf_pkg/I2C_LCD_driver.py:27:4: E111 indentation is not a multiple of four
+[10.690s]    def read_data(self, cmd):
+[10.691s]    ^
+[10.693s] 
+[10.694s] ./sf_pkg/I2C_LCD_driver.py:28:7: E111 indentation is not a multiple of four
+[10.696s]       return self.bus.read_byte_data(self.addr, cmd)
+[10.697s]       ^
+[10.699s] 
+[10.700s] ./sf_pkg/I2C_LCD_driver.py:30:4: E301 expected 1 blank line, found 0
+[10.702s]    def read_block_data(self, cmd):
+[10.704s]    ^
+[10.706s] 
+[10.707s] ./sf_pkg/I2C_LCD_driver.py:30:4: E111 indentation is not a multiple of four
+[10.709s]    def read_block_data(self, cmd):
+[10.710s]    ^
+[10.712s] 
+[10.714s] ./sf_pkg/I2C_LCD_driver.py:31:7: E111 indentation is not a multiple of four
+[10.715s]       return self.bus.read_block_data(self.addr, cmd)
+[10.717s]       ^
+[10.718s] 
+[10.720s] ./sf_pkg/I2C_LCD_driver.py:33:1: E305 expected 2 blank lines after class or function definition, found 0
+[10.721s] LCD_CLEARDISPLAY = 0x01
+[10.722s] ^
+[10.724s] 
+[10.725s] ./sf_pkg/I2C_LCD_driver.py:68:16: E261 at least two spaces before inline comment
+[10.726s] En = 0b00000100 # Enable bit
+[10.728s]                ^
+[10.732s] 
+[10.734s] ./sf_pkg/I2C_LCD_driver.py:69:16: E261 at least two spaces before inline comment
+[10.736s] Rw = 0b00000010 # Read/Write bit
+[10.738s]                ^
+[10.740s] 
+[10.742s] ./sf_pkg/I2C_LCD_driver.py:70:16: E261 at least two spaces before inline comment
+[10.744s] Rs = 0b00000001 # Register select bit
+[10.745s]                ^
+[10.747s] 
+[10.749s] ./sf_pkg/I2C_LCD_driver.py:71:1: E302 expected 2 blank lines, found 0
+[10.751s] class lcd:
+[10.752s] ^
+[10.754s] 
+[10.755s] ./sf_pkg/I2C_LCD_driver.py:72:4: E114 indentation is not a multiple of four (comment)
+[10.757s]    #initializes objects and lcd
+[10.758s]    ^
+[10.760s] 
+[10.762s] ./sf_pkg/I2C_LCD_driver.py:72:4: E265 block comment should start with '# '
+[10.764s]    #initializes objects and lcd
+[10.765s]    ^
+[10.767s] 
+[10.768s] ./sf_pkg/I2C_LCD_driver.py:73:4: E111 indentation is not a multiple of four
+[10.769s]    def __init__(self):
+[10.771s]    ^
+[10.772s] 
+[10.774s] ./sf_pkg/I2C_LCD_driver.py:74:7: E111 indentation is not a multiple of four
+[10.776s]       self.lcd_device = i2c_device(ADDRESS)
+[10.778s]       ^
+[10.779s] 
+[10.781s] ./sf_pkg/I2C_LCD_driver.py:75:7: E111 indentation is not a multiple of four
+[10.782s]       self.lcd_write(0x03)
+[10.784s]       ^
+[10.785s] 
+[10.787s] ./sf_pkg/I2C_LCD_driver.py:76:7: E111 indentation is not a multiple of four
+[10.789s]       self.lcd_write(0x03)
+[10.790s]       ^
+[10.792s] 
+[10.793s] ./sf_pkg/I2C_LCD_driver.py:77:7: E111 indentation is not a multiple of four
+[10.795s]       self.lcd_write(0x03)
+[10.797s]       ^
+[10.798s] 
+[10.808s] ./sf_pkg/I2C_LCD_driver.py:78:7: E111 indentation is not a multiple of four
+[10.811s]       self.lcd_write(0x02)
+[10.814s]       ^
+[10.817s] 
+[10.818s] ./sf_pkg/I2C_LCD_driver.py:79:7: E111 indentation is not a multiple of four
+[10.830s]       self.lcd_write(LCD_FUNCTIONSET | LCD_2LINE | LCD_5x8DOTS | LCD_4BITMODE)
+[10.833s]       ^
+[10.835s] 
+[10.837s] ./sf_pkg/I2C_LCD_driver.py:80:7: E111 indentation is not a multiple of four
+[10.839s]       self.lcd_write(LCD_DISPLAYCONTROL | LCD_DISPLAYON)
+[10.841s]       ^
+[10.843s] 
+[10.844s] ./sf_pkg/I2C_LCD_driver.py:81:7: E111 indentation is not a multiple of four
+[10.846s]       self.lcd_write(LCD_CLEARDISPLAY)
+[10.859s]       ^
+[10.861s] 
+[10.863s] ./sf_pkg/I2C_LCD_driver.py:82:7: E111 indentation is not a multiple of four
+[10.865s]       self.lcd_write(LCD_ENTRYMODESET | LCD_ENTRYLEFT)
+[10.867s]       ^
+[10.869s] 
+[10.871s] ./sf_pkg/I2C_LCD_driver.py:83:7: E111 indentation is not a multiple of four
+[10.873s]       sleep(0.2)
+[10.875s]       ^
+[10.877s] 
+[10.891s] ./sf_pkg/I2C_LCD_driver.py:84:4: E114 indentation is not a multiple of four (comment)
+[10.893s]    # clocks EN to latch command
+[10.895s]    ^
+[10.897s] 
+[10.899s] ./sf_pkg/I2C_LCD_driver.py:85:4: E301 expected 1 blank line, found 0
+[10.900s]    def lcd_strobe(self, data):
+[10.902s]    ^
+[10.904s] 
+[10.906s] ./sf_pkg/I2C_LCD_driver.py:85:4: E111 indentation is not a multiple of four
+[10.908s]    def lcd_strobe(self, data):
+[10.909s]    ^
+[10.918s] 
+[10.920s] ./sf_pkg/I2C_LCD_driver.py:86:7: E111 indentation is not a multiple of four
+[10.921s]       self.lcd_device.write_cmd(data | En | LCD_BACKLIGHT)
+[10.923s]       ^
+[10.925s] 
+[10.927s] ./sf_pkg/I2C_LCD_driver.py:87:7: E111 indentation is not a multiple of four
+[10.939s]       sleep(.0005)
+[10.942s]       ^
+[10.943s] 
+[10.945s] ./sf_pkg/I2C_LCD_driver.py:88:7: E111 indentation is not a multiple of four
+[10.947s]       self.lcd_device.write_cmd(((data & ~En) | LCD_BACKLIGHT))
+[10.948s]       ^
+[10.949s] 
+[10.951s] ./sf_pkg/I2C_LCD_driver.py:89:7: E111 indentation is not a multiple of four
+[10.953s]       sleep(.0001)
+[10.966s]       ^
+[10.969s] 
+[10.970s] ./sf_pkg/I2C_LCD_driver.py:90:4: E301 expected 1 blank line, found 0
+[10.971s]    def lcd_write_four_bits(self, data):
+[10.973s]    ^
+[10.975s] 
+[10.977s] ./sf_pkg/I2C_LCD_driver.py:90:4: E111 indentation is not a multiple of four
+[10.979s]    def lcd_write_four_bits(self, data):
+[10.980s]    ^
+[10.982s] 
+[10.983s] ./sf_pkg/I2C_LCD_driver.py:91:7: E111 indentation is not a multiple of four
+[10.996s]       self.lcd_device.write_cmd(data | LCD_BACKLIGHT)
+[10.998s]       ^
+[11.000s] 
+[11.002s] ./sf_pkg/I2C_LCD_driver.py:92:7: E111 indentation is not a multiple of four
+[11.003s]       self.lcd_strobe(data)
+[11.005s]       ^
+[11.007s] 
+[11.009s] ./sf_pkg/I2C_LCD_driver.py:93:4: E114 indentation is not a multiple of four (comment)
+[11.011s]    # write a command to lcd
+[11.024s]    ^
+[11.026s] 
+[11.027s] ./sf_pkg/I2C_LCD_driver.py:94:4: E301 expected 1 blank line, found 0
+[11.029s]    def lcd_write(self, cmd, mode=0):
+[11.030s]    ^
+[11.032s] 
+[11.034s] ./sf_pkg/I2C_LCD_driver.py:94:4: E111 indentation is not a multiple of four
+[11.037s]    def lcd_write(self, cmd, mode=0):
+[11.039s]    ^
+[11.040s] 
+[11.043s] ./sf_pkg/I2C_LCD_driver.py:95:7: E111 indentation is not a multiple of four
+[11.044s]       self.lcd_write_four_bits(mode | (cmd & 0xF0))
+[11.046s]       ^
+[11.048s] 
+[11.050s] ./sf_pkg/I2C_LCD_driver.py:96:7: E111 indentation is not a multiple of four
+[11.051s]       self.lcd_write_four_bits(mode | ((cmd << 4) & 0xF0))
+[11.053s]       ^
+[11.055s] 
+[11.057s] ./sf_pkg/I2C_LCD_driver.py:97:4: E114 indentation is not a multiple of four (comment)
+[11.059s]    # write a character to lcd (or character rom) 0x09: backlight | RS=DR<
+[11.061s]    ^
+[11.063s] 
+[11.065s] ./sf_pkg/I2C_LCD_driver.py:98:4: E114 indentation is not a multiple of four (comment)
+[11.068s]    # works!
+[11.070s]    ^
+[11.071s] 
+[11.073s] ./sf_pkg/I2C_LCD_driver.py:99:4: E301 expected 1 blank line, found 0
+[11.075s]    def lcd_write_char(self, charvalue, mode=1):
+[11.076s]    ^
+[11.077s] 
+[11.079s] ./sf_pkg/I2C_LCD_driver.py:99:4: E111 indentation is not a multiple of four
+[11.081s]    def lcd_write_char(self, charvalue, mode=1):
+[11.083s]    ^
+[11.084s] 
+[11.086s] ./sf_pkg/I2C_LCD_driver.py:100:7: E111 indentation is not a multiple of four
+[11.087s]       self.lcd_write_four_bits(mode | (charvalue & 0xF0))
+[11.089s]       ^
+[11.090s] 
+[11.092s] ./sf_pkg/I2C_LCD_driver.py:101:7: E111 indentation is not a multiple of four
+[11.093s]       self.lcd_write_four_bits(mode | ((charvalue << 4) & 0xF0))
+[11.095s]       ^
+[11.097s] 
+[11.099s] ./sf_pkg/I2C_LCD_driver.py:102:1: W293 blank line contains whitespace
+[11.100s]   
+[11.102s] ^
+[11.104s] 
+[11.106s] ./sf_pkg/I2C_LCD_driver.py:103:4: E114 indentation is not a multiple of four (comment)
+[11.108s]    # put string function with optional char positioning
+[11.109s]    ^
+[11.112s] 
+[11.114s] ./sf_pkg/I2C_LCD_driver.py:104:4: E111 indentation is not a multiple of four
+[11.117s]    def lcd_display_string(self, string, line=1, pos=0):
+[11.120s]    ^
+[11.122s] 
+[11.126s] ./sf_pkg/I2C_LCD_driver.py:106:7: E111 indentation is not a multiple of four
+[11.128s]       pos_new = pos
+[11.131s]       ^
+[11.139s] 
+[11.141s] ./sf_pkg/I2C_LCD_driver.py:108:7: E111 indentation is not a multiple of four
+[11.144s]       pos_new = 0x40 + pos
+[11.146s]       ^
+[11.147s] 
+[11.149s] ./sf_pkg/I2C_LCD_driver.py:110:7: E111 indentation is not a multiple of four
+[11.151s]       pos_new = 0x14 + pos
+[11.152s]       ^
+[11.154s] 
+[11.156s] ./sf_pkg/I2C_LCD_driver.py:112:7: E111 indentation is not a multiple of four
+[11.157s]       pos_new = 0x54 + pos
+[11.159s]       ^
+[11.161s] 
+[11.163s] ./sf_pkg/I2C_LCD_driver.py:115:7: E111 indentation is not a multiple of four
+[11.165s]       self.lcd_write(ord(char), Rs)
+[11.167s]       ^
+[11.170s] 
+[11.172s] ./sf_pkg/I2C_LCD_driver.py:116:4: E114 indentation is not a multiple of four (comment)
+[11.175s]    # clear lcd and set to home
+[11.176s]    ^
+[11.178s] 
+[11.179s] ./sf_pkg/I2C_LCD_driver.py:117:4: E301 expected 1 blank line, found 0
+[11.181s]    def lcd_clear(self):
+[11.195s]    ^
+[11.197s] 
+[11.198s] ./sf_pkg/I2C_LCD_driver.py:117:4: E111 indentation is not a multiple of four
+[11.212s]    def lcd_clear(self):
+[11.213s]    ^
+[11.214s] 
+[11.216s] ./sf_pkg/I2C_LCD_driver.py:118:7: E111 indentation is not a multiple of four
+[11.219s]       self.lcd_write(LCD_CLEARDISPLAY)
+[11.221s]       ^
+[11.223s] 
+[11.226s] ./sf_pkg/I2C_LCD_driver.py:119:7: E111 indentation is not a multiple of four
+[11.228s] [33m=============================== warnings summary ===============================[0m
+[11.243s] ../../../.local/lib/python3.8/site-packages/_pytest/nodes.py:633
+[11.245s]   Warning: The (fspath: py.path.local) argument to Package is deprecated. Please use the (path: pathlib.Path) argument instead.
+[11.247s]   See https://docs.pytest.org/en/latest/deprecations.html#fspath-argument-for-node-constructors-replaced-with-pathlib-path
+[11.249s] 
+[11.251s] ../../../../../opt/ros/foxy/lib/python3.8/site-packages/launch_testing/pytest/hooks.py:179
+[11.253s] ../../../../../opt/ros/foxy/lib/python3.8/site-packages/launch_testing/pytest/hooks.py:179
+[11.255s] ../../../../../opt/ros/foxy/lib/python3.8/site-packages/launch_testing/pytest/hooks.py:179
+[11.257s]   Warning: The (fspath: py.path.local) argument to Module is deprecated. Please use the (path: pathlib.Path) argument instead.
+[11.259s]   See https://docs.pytest.org/en/latest/deprecations.html#fspath-argument-for-node-constructors-replaced-with-pathlib-path
+[11.260s] 
+[11.261s] ../../../../../usr/lib/python3/dist-packages/pydocstyle/config.py:6
+[11.274s]   Warning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.10 it will stop working
+[11.277s] 
+[11.279s] -- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+[11.280s]       self.lcd_write(LCD_RETURNHOME)
+[11.281s]       ^
+[11.282s] 
+[11.284s] ./sf_pkg/I2C_LCD_driver.py:120:4: E114 indentation is not a multiple of four (comment)
+[11.285s]    # define backlight on/off (lcd.backlight(1); off= lcd.backlight(0)
+[11.287s]    ^
+[11.288s] 
+[11.290s] ./sf_pkg/I2C_LCD_driver.py:121:4: E301 expected 1 blank line, found 0
+[11.292s]    def backlight(self, state): # for state, 1 = on, 0 = off
+[11.302s]    ^
+[11.304s] 
+[11.306s] ./sf_pkg/I2C_LCD_driver.py:121:4: E111 indentation is not a multiple of four
+[11.307s]    def backlight(self, state): # for state, 1 = on, 0 = off
+[11.309s]    ^
+[11.311s] 
+[11.313s] ./sf_pkg/I2C_LCD_driver.py:121:31: E261 at least two spaces before inline comment
+[11.315s]    def backlight(self, state): # for state, 1 = on, 0 = off
+[11.316s]                               ^
+[11.327s] 
+[11.330s] ./sf_pkg/I2C_LCD_driver.py:122:7: E111 indentation is not a multiple of four
+[11.332s]       if state == 1:
+[11.333s]       ^
+[11.335s] 
+[11.336s] ./sf_pkg/I2C_LCD_driver.py:123:10: E111 indentation is not a multiple of four
+[11.338s]          self.lcd_device.write_cmd(LCD_BACKLIGHT)
+[11.340s]          ^
+[11.341s] 
+[11.358s] ./sf_pkg/I2C_LCD_driver.py:124:7: E111 indentation is not a multiple of four
+[11.360s]       elif state == 0:
+[11.361s]       ^
+[11.362s] 
+[11.364s] ./sf_pkg/I2C_LCD_driver.py:125:10: E111 indentation is not a multiple of four
+[11.366s]          self.lcd_device.write_cmd(LCD_NOBACKLIGHT)
+[11.367s]          ^
+[11.369s] 
+[11.370s] ./sf_pkg/I2C_LCD_driver.py:126:4: E114 indentation is not a multiple of four (comment)
+[11.372s]    # add custom characters (0 - 7)
+[11.373s]    ^
+[11.374s] 
+[11.387s] ./sf_pkg/I2C_LCD_driver.py:127:4: E301 expected 1 blank line, found 0
+[11.389s]    def lcd_load_custom_chars(self, fontdata):
+[11.390s]    ^
+[11.392s] 
+[11.393s] ./sf_pkg/I2C_LCD_driver.py:127:4: E111 indentation is not a multiple of four
+[11.395s]    def lcd_load_custom_chars(self, fontdata):
+[11.397s]    ^
+[11.399s] 
+[11.401s] ./sf_pkg/I2C_LCD_driver.py:128:7: E111 indentation is not a multiple of four
+[11.403s]       self.lcd_write(0x40);
+[11.405s]       ^
+[11.416s] 
+[11.417s] ./sf_pkg/I2C_LCD_driver.py:128:27: E703 statement ends with a semicolon
+[11.419s]       self.lcd_write(0x40);
+[11.421s]                           ^
+[11.423s] 
+[11.425s] ./sf_pkg/I2C_LCD_driver.py:129:7: E111 indentation is not a multiple of four
+[11.427s]       for char in fontdata:
+[11.429s]       ^
+[11.447s] 
+[11.449s] ./sf_pkg/I2C_LCD_driver.py:130:10: E111 indentation is not a multiple of four
+[11.451s]          for line in char:
+[11.454s]          ^
+[11.456s] 
+[11.458s] ./sf_pkg/I2C_LCD_driver.py:131:41: W292 no newline at end of file
+[11.479s]             self.lcd_write_char(line)                                           ^
+[11.481s] 
+[11.482s] ./sf_pkg/cmd_selector.py:6:1: E302 expected 2 blank lines, found 1
+[11.484s] class CommandSelector(Node):
+[11.486s] ^
+[11.488s] 
+[11.490s] ./sf_pkg/cmd_selector.py:8:5: E301 expected 1 blank line, found 0
+[11.491s]     def __init__(self):
+[11.494s]     ^
+[11.496s] 
+[11.507s] ./sf_pkg/cmd_selector.py:43:1: E303 too many blank lines (3)
+[11.509s] def main(args=None):
+[11.510s] ^
+[11.512s] 
+[11.514s] ./sf_pkg/cmd_selector.py:54:1: E305 expected 2 blank lines after class or function definition, found 1
+[11.516s] if __name__ == '__main__' :
+[11.517s] ^
+[11.519s] 
+[11.530s] ./sf_pkg/cmd_selector.py:54:26: E203 whitespace before ':'
+[11.532s] if __name__ == '__main__' :
+[11.534s]                          ^
+[11.536s] 
+[11.538s] ./sf_pkg/cmd_selector.py:55:11: W292 no newline at end of file
+[11.539s]     main()          ^
+[11.541s] 
+[11.543s] ./sf_pkg/calculator.py:5:1: I100 Import statements are in the wrong order. 'import math' should be before 'from std_msgs.msg import String' and in a different group.
+[11.545s] import math
+[11.546s] ^
+[11.556s] 
+[11.558s] ./sf_pkg/calculator.py:5:1: I201 Missing newline between import groups. 'import math' is identified as Stdlib and 'from std_msgs.msg import String' is identified as Third Party.
+[11.560s] import math
+[11.562s] ^
+[11.564s] 
+[11.565s] ./sf_pkg/calculator.py:7:1: E302 expected 2 blank lines, found 1
+[11.571s] class Calculator(Node) :
+[11.573s] ^
+[11.574s] 
+[11.582s] ./sf_pkg/calculator.py:7:23: E203 whitespace before ':'
+[11.593s] class Calculator(Node) :
+[11.594s]                       ^
+[11.595s] 
+[11.595s] ./sf_pkg/calculator.py:8:1: CNL100 Class definition does not have a new line.
+[11.596s]     def __init__(self):
+[11.597s] ^
+[11.597s] 
+[11.598s] ./sf_pkg/calculator.py:21:35: E203 whitespace before ':'
+[11.600s]     def publish_command(self, cmd) :
+[11.602s]                                   ^
+[11.604s] 
+[11.606s] ./sf_pkg/calculator.py:33:30: E201 whitespace after '('
+[11.608s]         self.publish_command( "*" + f'{cmd}')
+[11.611s]                              ^
+[11.614s] 
+[11.615s] ./sf_pkg/calculator.py:33:31: Q000 Double quotes found but single quotes preferred
+[11.617s]         self.publish_command( "*" + f'{cmd}')
+[11.619s]                               ^
+[11.620s] 
+[11.623s] ./sf_pkg/calculator.py:36:61: C417 Unnecessary use of map - use a generator expression instead.
+[11.625s]         n_x, n_y, n_con, l_x, l_y, l_con, r_x, r_y, r_con = map(lambda x: int(x), tensor)
+[11.626s]                                                             ^
+[11.628s] 
+[11.629s] ./sf_pkg/calculator.py:62:1: W293 blank line contains whitespace
+[11.631s]     
+[11.634s] ^
+[11.635s] 
+[11.637s] ./sf_pkg/calculator.py:65:10: E203 whitespace before ','
+[11.638s]         _ , nose_x, nose_confidence = map(lambda x: int(x), nose)
+[11.640s]          ^
+[11.641s] 
+[11.643s] ./sf_pkg/calculator.py:65:39: C417 Unnecessary use of map - use a generator expression instead.
+[11.645s]         _ , nose_x, nose_confidence = map(lambda x: int(x), nose)
+[11.647s]                                       ^
+[11.648s] 
+[11.650s] ./sf_pkg/calculator.py:74:31: E272 multiple spaces before keyword
+[11.651s]             elif (nose_x == 2)  or (nose_x == 3) or (nose_x == 4):
+[11.652s]                               ^
+[11.654s] 
+[11.656s] ./sf_pkg/calculator.py:82:1: W293 blank line contains whitespace
+[11.657s]     
+[11.660s] ^
+[11.661s] 
+[11.663s] ./sf_pkg/calculator.py:83:28: E203 whitespace before ':'
+[11.665s]     def eye_dist(self, eye) :
+[11.667s]                            ^
+[11.669s] 
+[11.670s] ./sf_pkg/calculator.py:84:40: C417 Unnecessary use of map - use a generator expression instead.
+[11.672s]         l_x, l_y, l_c, r_x, r_y, r_c = map(lambda x : x, eye)
+[11.673s]                                        ^
+[11.675s] 
+[11.677s] ./sf_pkg/calculator.py:84:52: E203 whitespace before ':'
+[11.679s]         l_x, l_y, l_c, r_x, r_y, r_c = map(lambda x : x, eye)
+[11.680s]                                                    ^
+[11.681s] 
+[11.683s] ./sf_pkg/calculator.py:86:9: E115 expected an indented block (comment)
+[11.684s]         # length를 float으로 보내도 되쥬?
+[11.685s]         ^
+[11.687s] 
+[11.689s] ./sf_pkg/calculator.py:88:13: E203 whitespace before ':'
+[11.690s]         else :
+[11.692s]             ^
+[11.693s] 
+[11.695s] ./sf_pkg/calculator.py:92:1: E302 expected 2 blank lines, found 1
+[11.696s] def main(args=None) :
+[11.698s] ^
+[11.700s] 
+[11.701s] ./sf_pkg/calculator.py:92:20: E203 whitespace before ':'
+[11.703s] def main(args=None) :
+[11.705s]                    ^
+[11.706s] 
+[11.709s] ./sf_pkg/calculator.py:103:1: E305 expected 2 blank lines after class or function definition, found 1
+[11.712s] if __name__ == '__main__' :
+[11.714s] ^
+[11.715s] 
+[11.716s] ./sf_pkg/calculator.py:103:26: E203 whitespace before ':'
+[11.718s] if __name__ == '__main__' :
+[11.719s]                          ^
+[11.721s] 
+[11.722s] ./sf_pkg/calculator.py:104:11: W292 no newline at end of file
+[11.724s]     main()          ^
+[11.725s] 
+[11.727s] ./sf_pkg/tensor.py:5:1: I100 Import statements are in the wrong order. 'import cv2' should be before 'from sunflower_interfaces.msg import TfliteResult'
+[11.728s] import cv2
+[11.729s] ^
+[11.731s] 
+[11.732s] ./sf_pkg/tensor.py:7:1: I100 Import statements are in the wrong order. 'import numpy' should be before 'import tensorflow'
+[11.734s] import numpy as np
+[11.735s] ^
+[11.737s] 
+[11.739s] ./sf_pkg/tensor.py:9:1: E302 expected 2 blank lines, found 1
+[11.741s] class Tensor(Node) :
+[11.743s] ^
+[11.744s] 
+[11.746s] ./sf_pkg/tensor.py:9:19: E203 whitespace before ':'
+[11.748s] class Tensor(Node) :
+[11.749s]                   ^
+[11.751s] 
+[11.752s] ./sf_pkg/tensor.py:10:1: CNL100 Class definition does not have a new line.
+[11.755s]     def __init__(self, interpreter, cap):
+[11.757s] ^
+[11.758s] 
+[11.761s] ./sf_pkg/tensor.py:20:46: E203 whitespace before ':'
+[11.762s]     def tensor_result(self, interpreter, cap) :
+[11.764s]                                              ^
+[11.766s] 
+[11.768s] ./sf_pkg/tensor.py:41:9: F841 local variable 'data' is assigned to but never used
+[11.769s]         data = list()
+[11.772s]         ^
+[11.775s] 
+[11.776s] ./sf_pkg/tensor.py:41:16: C408 Unnecessary list call - rewrite as a literal.
+[11.778s]         data = list()
+[11.780s]                ^
+[11.781s] 
+[11.783s] ./sf_pkg/tensor.py:53:1: E302 expected 2 blank lines, found 1
+[11.784s] def main(args=None) :
+[11.786s] ^
+[11.788s] 
+[11.789s] ./sf_pkg/tensor.py:53:20: E203 whitespace before ':'
+[11.791s] def main(args=None) :
+[11.793s]                    ^
+[11.794s] 
+[11.796s] ./sf_pkg/tensor.py:55:50: Q000 Double quotes found but single quotes preferred
+[11.797s]     interpreter = tf.lite.Interpreter(model_path="lite-model_movenet_singlepose_lightning_3.tflite")
+[11.799s]                                                  ^
+[11.801s] 
+[11.802s] ./sf_pkg/tensor.py:55:100: E501 line too long (100 > 99 characters)
+[11.804s]     interpreter = tf.lite.Interpreter(model_path="lite-model_movenet_singlepose_lightning_3.tflite")
+[11.805s]                                                                                                    ^
+[11.807s] 
+[11.808s] ./sf_pkg/tensor.py:67:1: E305 expected 2 blank lines after class or function definition, found 1
+[11.810s] if __name__ == '__main__' :
+[11.812s] ^
+[11.813s] 
+[11.815s] ./sf_pkg/tensor.py:67:26: E203 whitespace before ':'
+[11.817s] if __name__ == '__main__' :
+[11.819s]                          ^
+[11.820s] 
+[11.821s] ./sf_pkg/tensor.py:70:1: E265 block comment should start with '# '
+[11.827s] #코, 왼눈, 오눈, 왼귀, 오귀, 왼어깨, 오어깨^
+[11.829s] 
+[11.830s] ./sf_pkg/tensor.py:70:29: W292 no newline at end of file
+[11.831s] #코, 왼눈, 오눈, 왼귀, 오귀, 왼어깨, 오어깨                            ^
+[11.833s] 
+[11.843s] ./sf_pkg/tensor.py:70:29: W292 no newline at end of file
+[11.846s] #코, 왼눈, 오눈, 왼귀, 오귀, 왼어깨, 오어깨                            ^
+[11.847s] 
+[11.849s] ./sf_pkg/tensor.py:70:29: W292 no newline at end of file
+[11.850s] #코, 왼눈, 오눈, 왼귀, 오귀, 왼어깨, 오어깨                            ^
+[11.852s] 
+[11.854s] ./sf_pkg/tensor_publisher.py:5:1: I100 Import statements are in the wrong order. 'import cv2' should be before 'from std_msgs.msg import String'
+[11.855s] import cv2
+[11.857s] ^
+[11.871s] 
+[11.874s] ./sf_pkg/tensor_publisher.py:7:1: I100 Import statements are in the wrong order. 'import numpy' should be before 'import tensorflow'
+[11.875s] import numpy as np
+[11.877s] ^
+[11.878s] 
+[11.880s] ./sf_pkg/tensor_publisher.py:8:1: I100 Import statements are in the wrong order. 'import time' should be before 'import numpy' and in a different group.
+[11.881s] import time
+[11.883s] ^
+[11.885s] 
+[11.887s] ./sf_pkg/tensor_publisher.py:8:1: I201 Missing newline between import groups. 'import time' is identified as Stdlib and 'import numpy' is identified as Third Party.
+[11.888s] import time
+[11.890s] ^
+[11.902s] 
+[11.904s] ./sf_pkg/tensor_publisher.py:9:1: I201 Missing newline between import groups. 'import I2C_LCD_driver' is identified as Third Party and 'import time' is identified as Stdlib.
+[11.906s] import I2C_LCD_driver
+[11.907s] ^
+[11.909s] 
+[11.910s] ./sf_pkg/tensor_publisher.py:13:28: E203 whitespace before ':'
+[11.912s] class TensorPublisher(Node) :
+[11.913s]                            ^
+[11.915s] 
+[11.917s] ./sf_pkg/tensor_publisher.py:14:1: CNL100 Class definition does not have a new line.
+[11.918s]     def __init__(self, interpreter, cap, mylcd):
+[11.920s] ^
+[11.935s] 
+[11.937s] ./sf_pkg/tensor_publisher.py:18:34: Q000 Double quotes found but single quotes preferred
+[11.938s]         mylcd.lcd_display_string("",2)
+[11.940s]                                  ^
+[11.942s] 
+[11.943s] ./sf_pkg/tensor_publisher.py:18:36: E231 missing whitespace after ','
+[11.945s]         mylcd.lcd_display_string("",2)
+[11.947s]                                    ^
+[11.948s] 
+[11.950s] ./sf_pkg/tensor_publisher.py:25:16: Q000 Double quotes found but single quotes preferred
+[11.951s]         data = "!"+ '{0:0^3}'.format(f'{small}') + '{0:0^3}'.format(f'{big}') +"!"
+[11.952s]                ^
+[11.954s] 
+[11.958s] ./sf_pkg/tensor_publisher.py:25:19: E225 missing whitespace around operator
+[11.960s]         data = "!"+ '{0:0^3}'.format(f'{small}') + '{0:0^3}'.format(f'{big}') +"!"
+[11.974s]                   ^
+[11.977s] 
+[11.979s] ./sf_pkg/tensor_publisher.py:25:80: E225 missing whitespace around operator
+[11.981s]         data = "!"+ '{0:0^3}'.format(f'{small}') + '{0:0^3}'.format(f'{big}') +"!"
+[11.982s]                                                                                ^
+[11.984s] 
+[11.986s] ./sf_pkg/tensor_publisher.py:25:80: Q000 Double quotes found but single quotes preferred
+[11.988s]         data = "!"+ '{0:0^3}'.format(f'{small}') + '{0:0^3}'.format(f'{big}') +"!"
+[11.991s]                                                                                ^
+[11.994s] 
+[11.998s] ./sf_pkg/tensor_publisher.py:27:34: Q000 Double quotes found but single quotes preferred
+[12.011s]         mylcd.lcd_display_string("",2)
+[12.012s]                                  ^
+[12.013s] 
+[12.016s] ./sf_pkg/tensor_publisher.py:27:36: E231 missing whitespace after ','
+[12.018s]         mylcd.lcd_display_string("",2)
+[12.020s]                                    ^
+[12.021s] 
+[12.023s] ./sf_pkg/tensor_publisher.py:28:34: Q000 Double quotes found but single quotes preferred
+[12.024s]         mylcd.lcd_display_string("Started",2)
+[12.026s]                                  ^
+[12.027s] 
+[12.040s] ./sf_pkg/tensor_publisher.py:28:43: E231 missing whitespace after ','
+[12.041s]         mylcd.lcd_display_string("Started",2)
+[12.043s]                                           ^
+[12.044s] 
+[12.046s] ./sf_pkg/tensor_publisher.py:33:50: E203 whitespace before ':'
+[12.047s]     def max_tensor(self, interpreter, cap, mylcd) :
+[12.048s]                                                  ^
+[12.049s] 
+[12.051s] ./sf_pkg/tensor_publisher.py:37:16: F821 undefined name 'now'
+[12.053s]         while (now <= 5) and cap.isOpened() :
+[12.054s]                ^
+[12.056s] 
+[12.058s] ./sf_pkg/tensor_publisher.py:37:44: E203 whitespace before ':'
+[12.060s]         while (now <= 5) and cap.isOpened() :
+[12.061s]                                            ^
+[12.063s] 
+[12.065s] ./sf_pkg/tensor_publisher.py:40:38: Q000 Double quotes found but single quotes preferred
+[12.066s]             mylcd.lcd_display_string("",2)
+[12.068s]                                      ^
+[12.069s] 
+[12.071s] ./sf_pkg/tensor_publisher.py:40:40: E231 missing whitespace after ','
+[12.072s]             mylcd.lcd_display_string("",2)
+[12.074s]                                        ^
+[12.075s] 
+[12.078s] ./sf_pkg/tensor_publisher.py:41:61: E231 missing whitespace after ','
+[12.079s]             mylcd.lcd_display_string(f'Started in {now} sec',2)
+[12.081s]                                                             ^
+[12.082s] 
+[12.084s] ./sf_pkg/tensor_publisher.py:58:20: C408 Unnecessary list call - rewrite as a literal.
+[12.085s]             data = list()
+[12.087s]                    ^
+[12.089s] 
+[12.091s] ./sf_pkg/tensor_publisher.py:60:32: E203 whitespace before ':'
+[12.092s]             for shape in shaped :
+[12.094s]                                ^
+[12.095s] 
+[12.097s] ./sf_pkg/tensor_publisher.py:62:44: C417 Unnecessary use of map - use a generator expression instead.
+[12.098s]             l_x, l_y, l_c, r_x, r_y, r_c = map(lambda x : x, data)
+[12.100s]                                            ^
+[12.101s] 
+[12.102s] ./sf_pkg/tensor_publisher.py:62:56: E203 whitespace before ':'
+[12.104s]             l_x, l_y, l_c, r_x, r_y, r_c = map(lambda x : x, data)
+[12.106s]                                                        ^
+[12.108s] 
+[12.109s] ./sf_pkg/tensor_publisher.py:64:13: E115 expected an indented block (comment)
+[12.111s]             # length를 float으로 보내도 되쥬?
+[12.112s]             ^
+[12.113s] 
+[12.115s] ./sf_pkg/tensor_publisher.py:68:13: E203 whitespace before ':'
+[12.116s]         else :
+[12.117s]             ^
+[12.119s] 
+[12.121s] ./sf_pkg/tensor_publisher.py:71:46: E203 whitespace before ':'
+[12.123s]     def tensor_result(self, interpreter, cap) :
+[12.124s]                                              ^
+[12.125s] 
+[12.127s] ./sf_pkg/tensor_publisher.py:92:16: C408 Unnecessary list call - rewrite as a literal.
+[12.128s]         data = list()
+[12.129s]                ^
+[12.131s] 
+[12.132s] ./sf_pkg/tensor_publisher.py:94:28: E203 whitespace before ':'
+[12.134s]         for shape in shaped :
+[12.135s]                            ^
+[12.137s] 
+[12.139s] ./sf_pkg/tensor_publisher.py:97:20: Q000 Double quotes found but single quotes preferred
+[12.140s]         msg.data = "*".join(datastr)
+[12.142s]                    ^
+[12.144s] 
+[12.145s] ./sf_pkg/tensor_publisher.py:101:1: E302 expected 2 blank lines, found 1
+[12.147s] def main(args=None) :
+[12.148s] ^
+[12.150s] 
+[12.151s] ./sf_pkg/tensor_publisher.py:101:20: E203 whitespace before ':'
+[12.152s] def main(args=None) :
+[12.154s]                    ^
+[12.155s] 
+[12.157s] ./sf_pkg/tensor_publisher.py:103:50: Q000 Double quotes found but single quotes preferred
+[12.159s]     interpreter = tf.lite.Interpreter(model_path="lite-model_movenet_singlepose_lightning_3.tflite")
+[12.160s]                                                  ^
+[12.162s] 
+[12.164s] ./sf_pkg/tensor_publisher.py:103:100: E501 line too long (100 > 99 characters)
+[12.166s]     interpreter = tf.lite.Interpreter(model_path="lite-model_movenet_singlepose_lightning_3.tflite")
+[12.167s]                                                                                                    ^
+[12.169s] 
+[12.171s] ./sf_pkg/tensor_publisher.py:117:1: E305 expected 2 blank lines after class or function definition, found 1
+[12.172s] if __name__ == '__main__' :
+[12.174s] ^
+[12.175s] 
+[12.177s] ./sf_pkg/tensor_publisher.py:117:26: E203 whitespace before ':'
+[12.179s] if __name__ == '__main__' :
+[12.181s]                          ^
+[12.182s] 
+[12.184s] ./sf_pkg/tensor_publisher.py:120:1: E265 block comment should start with '# '
+[12.186s] #코, 왼눈, 오눈, 왼귀, 오귀, 왼어깨, 오어깨^
+[12.187s] 
+[12.189s] ./sf_pkg/tensor_publisher.py:120:29: W292 no newline at end of file
+[12.191s] #코, 왼눈, 오눈, 왼귀, 오귀, 왼어깨, 오어깨                            ^
+[12.192s] 
+[12.194s] ./sf_pkg/tensor_publisher.py:120:29: W292 no newline at end of file
+[12.196s] #코, 왼눈, 오눈, 왼귀, 오귀, 왼어깨, 오어깨                            ^
+[12.197s] 
+[12.199s] ./sf_pkg/tensor_publisher.py:120:29: W292 no newline at end of file
+[12.200s] #코, 왼눈, 오눈, 왼귀, 오귀, 왼어깨, 오어깨                            ^
+[12.201s] 
+[12.203s] 3     C408 Unnecessary list call - rewrite as a literal.
+[12.205s] 4     C417 Unnecessary use of map - use a generator expression instead.
+[12.206s] 4     CNL100 Class definition does not have a new line.
+[12.220s] 61    E111 indentation is not a multiple of four
+[12.221s] 9     E114 indentation is not a multiple of four (comment)
+[12.223s] 2     E115 expected an indented block (comment)
+[12.224s] 1     E201 whitespace after '('
+[12.225s] 2     E202 whitespace before ')'
+[12.227s] 24    E203 whitespace before ':'
+[12.228s] 2     E225 missing whitespace around operator
+[12.230s] 5     E231 missing whitespace after ','
+[12.232s] 1     E251 unexpected spaces around keyword / parameter equals
+[12.233s] 4     E261 at least two spaces before inline comment
+[12.235s] 6     E265 block comment should start with '# '
+[12.237s] 1     E272 multiple spaces before keyword
+[12.247s] 15    E301 expected 1 blank line, found 0
+[12.248s] 9     E302 expected 2 blank lines, found 1
+[12.248s] 1     E303 too many blank lines (3)
+[12.249s] 6     E305 expected 2 blank lines after class or function definition, found 0
+[12.250s] 2     E402 module level import not at top of file
+[12.251s] 2     E501 line too long (100 > 99 characters)
+[12.251s] 1     E703 statement ends with a semicolon
+[12.252s] 1     F821 undefined name 'now'
+[12.252s] 1     F841 local variable 'data' is assigned to but never used
+[12.253s] 10    I100 Import statements are in the wrong order. 'import os' should be before 'from setuptools import setup' and in a different group.
+[12.254s] 5     I201 Missing newline between import groups. 'import os' is identified as Stdlib and 'from setuptools import setup' is identified as Third Party.
+[12.255s] 15    Q000 Double quotes found but single quotes preferred
+[12.255s] 1     W291 trailing whitespace
+[12.256s] 11    W292 no newline at end of file
+[12.256s] 3     W293 blank line contains whitespace
+[12.257s] 
+[12.257s] 12 files checked
+[12.258s] 212 errors
+[12.271s] 
+[12.272s] 'C'-type errors: 11
+[12.272s] 'E'-type errors: 154
+[12.273s] 'F'-type errors: 2
+[12.274s] 'I'-type errors: 15
+[12.274s] 'Q'-type errors: 15
+[12.275s] 'W'-type errors: 15
+[12.276s] 
+[12.276s] Checked files:
+[12.277s] 
+[12.278s] * ./setup.py
+[12.290s] * ./launch/sf.launch.py
+[12.291s] * ./sf_pkg/serial_talker.py
+[12.292s] * ./sf_pkg/__init__.py
+[12.292s] * ./sf_pkg/I2C_LCD_driver.py
+[12.293s] * ./sf_pkg/cmd_selector.py
+[12.293s] * ./sf_pkg/calculator.py
+[12.294s] * ./sf_pkg/tensor.py
+[12.295s] * ./sf_pkg/tensor_publisher.py
+[12.295s] * ./test/test_flake8.py
+[12.296s] * ./test/test_copyright.py
+[12.297s] * ./test/test_pep257.py
+[12.297s] -------- generated xml file: /home/pi/sunflower/build/sf_pkg/pytest.xml --------
+[12.298s] =========================== short test summary info ============================
+[12.299s] FAILED test/test_copyright.py::test_copyright - AssertionError: Found errors
+[12.299s] FAILED test/test_flake8.py::test_flake8 - AssertionError: Found 212 code styl...
+[12.300s] [31m=================== [31m[1m2 failed[0m, [32m1 passed[0m, [33m5 warnings[0m[31m in 3.80s[0m[31m ====================[0m
+[12.302s] Invoked command in '/home/pi/sunflower/src/sf_pkg' returned '1': AMENT_PREFIX_PATH=/home/pi/sunflower/install/sf_pkg:/home/pi/sunflower/install/tflite_pkg:/home/pi/sunflower/install/test_pkg:/home/pi/sunflower/install/sunflower_interfaces:/opt/ros/foxy PYTEST_ADDOPTS=--tb=short --junit-xml=/home/pi/sunflower/build/sf_pkg/pytest.xml --junit-prefix=sf_pkg -o cache_dir=/home/pi/sunflower/build/sf_pkg/.pytest_cache PYTHONPATH=/home/pi/sunflower/build/sf_pkg:/home/pi/sunflower/install/sf_pkg/lib/python3.8/site-packages:/home/pi/sunflower/build/tflite_pkg:/home/pi/sunflower/install/tflite_pkg/lib/python3.8/site-packages:/home/pi/sunflower/build/test_pkg:/home/pi/sunflower/install/test_pkg/lib/python3.8/site-packages:/home/pi/sunflower/install/sunflower_interfaces/lib/python3.8/site-packages:/home/pi/sunflower/build/stem_pkg:/home/pi/sunflower/install/stem_pkg/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/python3 -m pytest

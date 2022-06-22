@@ -1,0 +1,31 @@
+[6.076s] Invoking command in '/home/pi/sunflower/src/test_pkg': AMENT_PREFIX_PATH=/home/pi/sunflower/install/test_pkg:/home/pi/sunflower/install/tflite_pkg:/home/pi/sunflower/install/sunflower_interfaces:/opt/ros/foxy PYTEST_ADDOPTS=--tb=short --junit-xml=/home/pi/sunflower/build/test_pkg/pytest.xml --junit-prefix=test_pkg -o cache_dir=/home/pi/sunflower/build/test_pkg/.pytest_cache PYTHONPATH=/home/pi/sunflower/build/test_pkg:/home/pi/sunflower/install/test_pkg/lib/python3.8/site-packages:/home/pi/sunflower/build/tflite_pkg:/home/pi/sunflower/install/tflite_pkg/lib/python3.8/site-packages:/home/pi/sunflower/install/sunflower_interfaces/lib/python3.8/site-packages:/home/pi/sunflower/build/stem_pkg:/home/pi/sunflower/install/stem_pkg/lib/python3.8/site-packages:/home/pi/sunflower/build/sf_pkg:/home/pi/sunflower/install/sf_pkg/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/python3 -m pytest
+[11.904s] [1m============================= test session starts ==============================[0m
+[11.906s] platform linux -- Python 3.8.10, pytest-7.1.2, pluggy-0.13.0
+[11.946s] cachedir: /home/pi/sunflower/build/test_pkg/.pytest_cache
+[11.947s] rootdir: /home/pi/sunflower/src/test_pkg
+[11.947s] plugins: ament-flake8-0.9.6, ament-copyright-0.9.6, launch-testing-ros-0.11.6, ament-xmllint-0.9.6, ament-pep257-0.9.6, ament-lint-0.9.6, launch-testing-0.10.8, rerunfailures-10.2, repeat-0.9.1, colcon-core-0.8.3, cov-2.8.1
+[12.391s] [1mcollecting ... [0m[1m
+[12.394s] collected 3 items                                                              [0m
+[12.464s] 
+[14.191s] test/test_copyright.py [32m.[0m[33m                                                 [ 33%][0m
+[14.197s] test/test_flake8.py [32m.[0m[33m                                                    [ 66%][0m
+[14.198s] test/test_pep257.py [32m.[0m[33m                                                    [100%][0m
+[14.199s] 
+[14.200s] [33m=============================== warnings summary ===============================[0m
+[14.201s] ../../../../../opt/ros/foxy/lib/python3.8/site-packages/launch_testing/pytest/hooks.py:179
+[14.201s] ../../../../../opt/ros/foxy/lib/python3.8/site-packages/launch_testing/pytest/hooks.py:179
+[14.202s] ../../../../../opt/ros/foxy/lib/python3.8/site-packages/launch_testing/pytest/hooks.py:179
+[14.203s]   Warning: The (fspath: py.path.local) argument to Module is deprecated. Please use the (path: pathlib.Path) argument instead.
+[14.204s]   See https://docs.pytest.org/en/latest/deprecations.html#fspath-argument-for-node-constructors-replaced-with-pathlib-path
+[14.205s] 
+[14.205s] ../../../../../usr/lib/python3/dist-packages/pydocstyle/config.py:6
+[14.206s]   Warning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.10 it will stop working
+[14.207s] 
+[14.208s] ../../../.local/lib/python3.8/site-packages/_pytest/nodes.py:633
+[14.209s]   Warning: The (fspath: py.path.local) argument to Package is deprecated. Please use the (path: pathlib.Path) argument instead.
+[14.210s]   See https://docs.pytest.org/en/latest/deprecations.html#fspath-argument-for-node-constructors-replaced-with-pathlib-path
+[14.211s] 
+[14.212s] -- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+[14.213s] ------- generated xml file: /home/pi/sunflower/build/test_pkg/pytest.xml -------
+[14.214s] [33m======================== [32m3 passed[0m, [33m[1m5 warnings[0m[33m in 1.83s[0m[33m =========================[0m
+[14.215s] Invoked command in '/home/pi/sunflower/src/test_pkg' returned '0': AMENT_PREFIX_PATH=/home/pi/sunflower/install/test_pkg:/home/pi/sunflower/install/tflite_pkg:/home/pi/sunflower/install/sunflower_interfaces:/opt/ros/foxy PYTEST_ADDOPTS=--tb=short --junit-xml=/home/pi/sunflower/build/test_pkg/pytest.xml --junit-prefix=test_pkg -o cache_dir=/home/pi/sunflower/build/test_pkg/.pytest_cache PYTHONPATH=/home/pi/sunflower/build/test_pkg:/home/pi/sunflower/install/test_pkg/lib/python3.8/site-packages:/home/pi/sunflower/build/tflite_pkg:/home/pi/sunflower/install/tflite_pkg/lib/python3.8/site-packages:/home/pi/sunflower/install/sunflower_interfaces/lib/python3.8/site-packages:/home/pi/sunflower/build/stem_pkg:/home/pi/sunflower/install/stem_pkg/lib/python3.8/site-packages:/home/pi/sunflower/build/sf_pkg:/home/pi/sunflower/install/sf_pkg/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/python3 -m pytest

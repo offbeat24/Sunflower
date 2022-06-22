@@ -1,0 +1,19 @@
+running develop
+running egg_info
+writing stem_pkg.egg-info/PKG-INFO
+writing dependency_links to stem_pkg.egg-info/dependency_links.txt
+writing entry points to stem_pkg.egg-info/entry_points.txt
+writing requirements to stem_pkg.egg-info/requires.txt
+writing top-level names to stem_pkg.egg-info/top_level.txt
+reading manifest file 'stem_pkg.egg-info/SOURCES.txt'
+writing manifest file 'stem_pkg.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/pi/sunflower/install/stem_pkg/lib/python3.8/site-packages/stem-pkg.egg-link (link to .)
+Installing calculator script to /home/pi/sunflower/install/stem_pkg/lib/stem_pkg
+Installing cmd_selector script to /home/pi/sunflower/install/stem_pkg/lib/stem_pkg
+Installing serial_talker script to /home/pi/sunflower/install/stem_pkg/lib/stem_pkg
+Installing tensor script to /home/pi/sunflower/install/stem_pkg/lib/stem_pkg
+Installing tensor_publisher script to /home/pi/sunflower/install/stem_pkg/lib/stem_pkg
+
+Installed /home/pi/sunflower/build/stem_pkg
+running install_data

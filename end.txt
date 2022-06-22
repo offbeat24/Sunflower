@@ -1,0 +1,2 @@
+cd sunflower
+python3 tensor_serial.py

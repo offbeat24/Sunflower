@@ -1,0 +1,511 @@
+[1.696s] Invoking command in '/home/pi/sunflower/src/sf_pkg': PYTEST_ADDOPTS=--tb=short --junit-xml=/home/pi/sunflower/build/sf_pkg/pytest.xml --junit-prefix=sf_pkg -o cache_dir=/home/pi/sunflower/build/sf_pkg/.pytest_cache PYTHONPATH=/home/pi/sunflower/build/sf_pkg:/home/pi/sunflower/install/sf_pkg/lib/python3.8/site-packages:/home/pi/sunflower/build/tflite_pkg:/home/pi/sunflower/install/tflite_pkg/lib/python3.8/site-packages:/home/pi/sunflower/build/test_pkg:/home/pi/sunflower/install/test_pkg/lib/python3.8/site-packages:/home/pi/sunflower/install/sunflower_interfaces/lib/python3.8/site-packages:/home/pi/sunflower/build/stem_pkg:/home/pi/sunflower/install/stem_pkg/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/python3 -m pytest
+[5.870s] [1m============================= test session starts ==============================[0m
+[5.871s] platform linux -- Python 3.8.10, pytest-7.1.2, pluggy-0.13.0
+[5.910s] cachedir: /home/pi/sunflower/build/sf_pkg/.pytest_cache
+[5.911s] rootdir: /home/pi/sunflower/src/sf_pkg
+[5.913s] plugins: ament-flake8-0.9.6, ament-copyright-0.9.6, launch-testing-ros-0.11.6, ament-xmllint-0.9.6, ament-pep257-0.9.6, ament-lint-0.9.6, launch-testing-0.10.8, rerunfailures-10.2, repeat-0.9.1, colcon-core-0.8.3, cov-2.8.1
+[6.304s] [1mcollecting ... [0m[1m
+[6.306s] collected 3 items                                                              [0m
+[6.310s] 
+[6.662s] test/test_copyright.py [31mF[0m[31m                                                 [ 33%][0m
+[8.205s] test/test_flake8.py [31mF[0m[31m                                                    [ 66%][0m
+[8.494s] test/test_pep257.py [32m.[0m[31m                                                    [100%][0m
+[8.495s] 
+[8.496s] =================================== FAILURES ===================================
+[8.496s] [31m[1m________________________________ test_copyright ________________________________[0m
+[8.497s] [1m[31mtest/test_copyright.py[0m:23: in test_copyright
+[8.647s]     [34;01massert[39;49;00m rc == [34;01m0[39;49;00m, [33m'[39;49;00m[33mFound errors[39;49;00m[33m'[39;49;00m
+[8.648s] [1m[31mE   AssertionError: Found errors[0m
+[8.649s] [1m[31mE   assert 1 == 0[0m
+[8.650s] ----------------------------- Captured stderr call -----------------------------
+[8.651s] launch/sf.launch.py: could not find copyright notice
+[8.652s] sf_pkg/calculator.py: could not find copyright notice
+[8.653s] sf_pkg/cmd_selector.py: could not find copyright notice
+[8.664s] sf_pkg/serial_talker.py: could not find copyright notice
+[8.668s] sf_pkg/tensor.py: could not find copyright notice
+[8.669s] sf_pkg/tensor_publisher.py: could not find copyright notice
+[8.670s] 6 errors, checked 10 files
+[8.672s] [31m[1m_________________________________ test_flake8 __________________________________[0m
+[8.673s] [1m[31mtest/test_flake8.py[0m:23: in test_flake8
+[8.675s]     [34;01massert[39;49;00m rc == [34;01m0[39;49;00m, \
+[8.676s] [1m[31mE   AssertionError: Found 85 code style errors / warnings:[0m
+[8.693s] [1m[31mE     ./setup.py:2:1: I100 Import statements are in the wrong order. 'import os' should be before 'from setuptools import setup' and in a different group.[0m
+[8.694s] [1m[31mE     ./setup.py:2:1: I201 Missing newline between import groups. 'import os' is identified as Stdlib and 'from setuptools import setup' is identified as Third Party.[0m
+[8.695s] [1m[31mE     ./setup.py:3:1: I100 Import statements are in the wrong order. 'from glob import glob' should be before 'import os'[0m
+[8.698s] [1m[31mE     ./setup.py:26:13: Q000 Double quotes found but single quotes preferred[0m
+[8.700s] [1m[31mE     ./setup.py:27:13: Q000 Double quotes found but single quotes preferred[0m
+[8.702s] [1m[31mE     ./setup.py:28:13: Q000 Double quotes found but single quotes preferred[0m
+[8.704s] [1m[31mE     ./setup.py:29:13: Q000 Double quotes found but single quotes preferred[0m
+[8.707s] [1m[31mE     ./setup.py:30:13: E265 block comment should start with '# '[0m
+[8.716s] [1m[31mE     ./launch/sf.launch.py:4:1: E302 expected 2 blank lines, found 1[0m
+[8.726s] [1m[31mE     ./launch/sf.launch.py:10:20: E251 unexpected spaces around keyword / parameter equals[0m
+[8.730s] [1m[31mE     ./launch/sf.launch.py:20:32: E202 whitespace before ')'[0m
+[8.733s] [1m[31mE     ./launch/sf.launch.py:26:20: E251 unexpected spaces around keyword / parameter equals[0m
+[8.754s] [1m[31mE     ./launch/sf.launch.py:26:29: E202 whitespace before ')'[0m
+[8.757s] [1m[31mE     ./launch/sf.launch.py:27:7: W292 no newline at end of file[0m
+[8.761s] [1m[31mE     ./sf_pkg/serial_talker.py:5:1: I100 Import statements are in the wrong order. 'import serial' should be before 'from std_msgs.msg import String'[0m
+[8.772s] [1m[31mE     ./sf_pkg/serial_talker.py:5:14: W291 trailing whitespace[0m
+[8.789s] [1m[31mE     ./sf_pkg/serial_talker.py:11:5: E301 expected 1 blank line, found 0[0m
+[8.792s] [1m[31mE     ./sf_pkg/serial_talker.py:19:32: Q000 Double quotes found but single quotes preferred[0m
+[8.795s] [1m[31mE     ./sf_pkg/serial_talker.py:22:24: Q000 Double quotes found but single quotes preferred[0m
+[8.798s] [1m[31mE     ./sf_pkg/serial_talker.py:40:1: E305 expected 2 blank lines after class or function definition, found 1[0m
+[8.800s] [1m[31mE     ./sf_pkg/serial_talker.py:40:26: E203 whitespace before ':'[0m
+[8.802s] [1m[31mE     ./sf_pkg/serial_talker.py:41:11: W292 no newline at end of file[0m
+[8.804s] [1m[31mE     ./sf_pkg/cmd_selector.py:6:1: E302 expected 2 blank lines, found 1[0m
+[8.806s] [1m[31mE     ./sf_pkg/cmd_selector.py:8:5: E301 expected 1 blank line, found 0[0m
+[8.820s] [1m[31mE     ./sf_pkg/cmd_selector.py:44:1: E303 too many blank lines (3)[0m
+[8.823s] [1m[31mE     ./sf_pkg/cmd_selector.py:55:1: E305 expected 2 blank lines after class or function definition, found 1[0m
+[8.825s] [1m[31mE     ./sf_pkg/cmd_selector.py:55:26: E203 whitespace before ':'[0m
+[8.828s] [1m[31mE     ./sf_pkg/cmd_selector.py:56:11: W292 no newline at end of file[0m
+[8.830s] [1m[31mE     ./sf_pkg/calculator.py:1:1: F401 'socket.NI_NUMERICHOST' imported but unused[0m
+[8.834s] [1m[31mE     ./sf_pkg/calculator.py:2:1: I201 Missing newline between import groups. 'import rclpy' is identified as Third Party and 'from socket import NI_NUMERICHOST' is identified as Stdlib.[0m
+[8.837s] [1m[31mE     ./sf_pkg/calculator.py:7:1: I100 Import statements are in the wrong order. 'import math' should be before 'from sunflower_interfaces.msg import TfliteResult' and in a different group.[0m
+[8.852s] [1m[31mE     ./sf_pkg/calculator.py:7:1: I201 Missing newline between import groups. 'import math' is identified as Stdlib and 'from sunflower_interfaces.msg import TfliteResult' is identified as Third Party.[0m
+[8.855s] [1m[31mE     ./sf_pkg/calculator.py:9:1: E302 expected 2 blank lines, found 1[0m
+[8.858s] [1m[31mE     ./sf_pkg/calculator.py:9:23: E203 whitespace before ':'[0m
+[8.861s] [1m[31mE     ./sf_pkg/calculator.py:10:1: CNL100 Class definition does not have a new line.[0m
+[8.864s] [1m[31mE     ./sf_pkg/calculator.py:23:35: E203 whitespace before ':'[0m
+[8.868s] [1m[31mE     ./sf_pkg/calculator.py:31:30: Q000 Double quotes found but single quotes preferred[0m
+[8.869s] [1m[31mE     ./sf_pkg/calculator.py:34:27: C417 Unnecessary use of map - use a generator expression instead.[0m
+[8.871s] [1m[31mE     ./sf_pkg/calculator.py:35:27: C417 Unnecessary use of map - use a generator expression instead.[0m
+[8.873s] [1m[31mE     ./sf_pkg/calculator.py:36:27: C417 Unnecessary use of map - use a generator expression instead.[0m
+[8.876s] [1m[31mE     ./sf_pkg/calculator.py:62:1: W293 blank line contains whitespace[0m
+[8.877s] [1m[31mE     ./sf_pkg/calculator.py:65:10: E203 whitespace before ','[0m
+[8.879s] [1m[31mE     ./sf_pkg/calculator.py:65:39: C417 Unnecessary use of map - use a generator expression instead.[0m
+[8.880s] [1m[31mE     ./sf_pkg/calculator.py:83:1: E302 expected 2 blank lines, found 1[0m
+[8.882s] [1m[31mE     ./sf_pkg/calculator.py:83:20: E203 whitespace before ':'[0m
+[8.884s] [1m[31mE     ./sf_pkg/calculator.py:94:1: E305 expected 2 blank lines after class or function definition, found 1[0m
+[8.886s] [1m[31mE     ./sf_pkg/calculator.py:94:26: E203 whitespace before ':'[0m
+[8.888s] [1m[31mE     ./sf_pkg/calculator.py:95:11: W292 no newline at end of file[0m
+[8.898s] [1m[31mE     ./sf_pkg/tensor.py:5:1: I100 Import statements are in the wrong order. 'import cv2' should be before 'from sunflower_interfaces.msg import TfliteResult'[0m
+[8.902s] [1m[31mE     ./sf_pkg/tensor.py:7:1: I100 Import statements are in the wrong order. 'import numpy' should be before 'import tensorflow'[0m
+[8.904s] [1m[31mE     ./sf_pkg/tensor.py:9:1: E302 expected 2 blank lines, found 1[0m
+[8.906s] [1m[31mE     ./sf_pkg/tensor.py:9:19: E203 whitespace before ':'[0m
+[8.908s] [1m[31mE     ./sf_pkg/tensor.py:10:1: CNL100 Class definition does not have a new line.[0m
+[8.910s] [1m[31mE     ./sf_pkg/tensor.py:20:46: E203 whitespace before ':'[0m
+[8.912s] [1m[31mE     ./sf_pkg/tensor.py:52:1: E302 expected 2 blank lines, found 1[0m
+[8.914s] [1m[31mE     ./sf_pkg/tensor.py:52:20: E203 whitespace before ':'[0m
+[8.917s] [1m[31mE     ./sf_pkg/tensor.py:54:50: Q000 Double quotes found but single quotes preferred[0m
+[8.919s] [1m[31mE     ./sf_pkg/tensor.py:54:100: E501 line too long (100 > 99 characters)[0m
+[8.920s] [1m[31mE     ./sf_pkg/tensor.py:66:1: E305 expected 2 blank lines after class or function definition, found 1[0m
+[8.923s] [1m[31mE     ./sf_pkg/tensor.py:66:26: E203 whitespace before ':'[0m
+[8.927s] [1m[31mE     ./sf_pkg/tensor.py:69:1: E265 block comment should start with '# '[0m
+[8.929s] [1m[31mE     ./sf_pkg/tensor.py:69:29: W292 no newline at end of file[0m
+[8.931s] [1m[31mE     ./sf_pkg/tensor.py:69:29: W292 no newline at end of file[0m
+[8.933s] [1m[31mE     ./sf_pkg/tensor.py:69:29: W292 no newline at end of file[0m
+[8.935s] [1m[31mE     ./sf_pkg/tensor_publisher.py:5:1: I100 Import statements are in the wrong order. 'import cv2' should be before 'from std_msgs.msg import String'[0m
+[8.936s] [1m[31mE     ./sf_pkg/tensor_publisher.py:7:1: I100 Import statements are in the wrong order. 'import numpy' should be before 'import tensorflow'[0m
+[8.938s] [1m[31mE     ./sf_pkg/tensor_publisher.py:8:1: F401 'pandas as pd' imported but unused[0m
+[8.940s] [1m[31mE     ./sf_pkg/tensor_publisher.py:10:1: E302 expected 2 blank lines, found 1[0m
+[8.943s] [1m[31mE     ./sf_pkg/tensor_publisher.py:10:28: E203 whitespace before ':'[0m
+[8.945s] [1m[31mE     ./sf_pkg/tensor_publisher.py:11:1: CNL100 Class definition does not have a new line.[0m
+[8.948s] [1m[31mE     ./sf_pkg/tensor_publisher.py:21:46: E203 whitespace before ':'[0m
+[8.951s] [1m[31mE     ./sf_pkg/tensor_publisher.py:42:16: C408 Unnecessary list call - rewrite as a literal.[0m
+[8.953s] [1m[31mE     ./sf_pkg/tensor_publisher.py:44:28: E203 whitespace before ':'[0m
+[8.955s] [1m[31mE     ./sf_pkg/tensor_publisher.py:47:20: Q000 Double quotes found but single quotes preferred[0m
+[8.957s] [1m[31mE     ./sf_pkg/tensor_publisher.py:48:20: Q000 Double quotes found but single quotes preferred[0m
+[8.959s] [1m[31mE     ./sf_pkg/tensor_publisher.py:52:1: E302 expected 2 blank lines, found 1[0m
+[8.961s] [1m[31mE     ./sf_pkg/tensor_publisher.py:52:20: E203 whitespace before ':'[0m
+[8.962s] [1m[31mE     ./sf_pkg/tensor_publisher.py:54:50: Q000 Double quotes found but single quotes preferred[0m
+[8.964s] [1m[31mE     ./sf_pkg/tensor_publisher.py:54:100: E501 line too long (100 > 99 characters)[0m
+[8.968s] [1m[31mE     ./sf_pkg/tensor_publisher.py:66:1: E305 expected 2 blank lines after class or function definition, found 1[0m
+[8.971s] [1m[31mE     ./sf_pkg/tensor_publisher.py:66:26: E203 whitespace before ':'[0m
+[8.973s] [1m[31mE     ./sf_pkg/tensor_publisher.py:69:1: E265 block comment should start with '# '[0m
+[8.977s] [1m[31mE     ./sf_pkg/tensor_publisher.py:69:29: W292 no newline at end of file[0m
+[8.979s] [1m[31mE     ./sf_pkg/tensor_publisher.py:69:29: W292 no newline at end of file[0m
+[8.981s] [1m[31mE     ./sf_pkg/tensor_publisher.py:69:29: W292 no newline at end of file[0m
+[8.984s] [1m[31mE   assert 1 == 0[0m
+[8.987s] ----------------------------- Captured stdout call -----------------------------
+[8.990s] 
+[8.993s] ./setup.py:2:1: I100 Import statements are in the wrong order. 'import os' should be before 'from setuptools import setup' and in a different group.
+[8.995s] import os
+[8.997s] ^
+[8.999s] 
+[9.000s] ./setup.py:2:1: I201 Missing newline between import groups. 'import os' is identified as Stdlib and 'from setuptools import setup' is identified as Third Party.
+[9.002s] import os
+[9.003s] ^
+[9.005s] 
+[9.007s] ./setup.py:3:1: I100 Import statements are in the wrong order. 'from glob import glob' should be before 'import os'
+[9.009s] from glob import glob
+[9.012s] ^
+[9.014s] 
+[9.016s] ./setup.py:26:13: Q000 Double quotes found but single quotes preferred
+[9.018s]             "serial_talker=sf_pkg.serial_talker:main",
+[9.019s]             ^
+[9.021s] 
+[9.023s] ./setup.py:27:13: Q000 Double quotes found but single quotes preferred
+[9.025s]             "cmd_selector=sf_pkg.cmd_selector:main",
+[9.029s]             ^
+[9.032s] 
+[9.033s] ./setup.py:28:13: Q000 Double quotes found but single quotes preferred
+[9.035s]             "calculator=sf_pkg.calculator:main",
+[9.037s]             ^
+[9.038s] 
+[9.040s] ./setup.py:29:13: Q000 Double quotes found but single quotes preferred
+[9.042s]             "tensor_publisher=sf_pkg.tensor_publisher:main"
+[9.044s]             ^
+[9.047s] 
+[9.049s] ./setup.py:30:13: E265 block comment should start with '# '
+[9.051s]             #"tensor=sf_pkg.tensor:main"
+[9.053s]             ^
+[9.055s] 
+[9.056s] ./launch/sf.launch.py:4:1: E302 expected 2 blank lines, found 1
+[9.059s] def generate_launch_description():
+[9.061s] ^
+[9.063s] 
+[9.069s] ./launch/sf.launch.py:10:20: E251 unexpected spaces around keyword / parameter equals
+[9.070s]             output= 'screen'),
+[9.072s]                    ^
+[9.085s] 
+[9.088s] ./launch/sf.launch.py:20:32: E202 whitespace before ')'
+[9.089s]             name='cmd_selector' ),
+[9.091s]                                ^
+[9.093s] 
+[9.095s] ./launch/sf.launch.py:26:20: E251 unexpected spaces around keyword / parameter equals
+[9.097s]             output= 'screen' )
+[9.099s]                    ^
+[9.108s] 
+[9.110s] ./launch/sf.launch.py:26:29: E202 whitespace before ')'
+[9.112s]             output= 'screen' )
+[9.113s]                             ^
+[9.115s] 
+[9.117s] ./launch/sf.launch.py:27:7: W292 no newline at end of file
+[9.119s]     ])      ^
+[9.133s] 
+[9.134s] ./sf_pkg/serial_talker.py:5:1: I100 Import statements are in the wrong order. 'import serial' should be before 'from std_msgs.msg import String'
+[9.136s] import serial 
+[9.138s] ^
+[9.139s] 
+[9.141s] ./sf_pkg/serial_talker.py:5:14: W291 trailing whitespace
+[9.143s] import serial 
+[9.145s]              ^
+[9.147s] 
+[9.150s] ./sf_pkg/serial_talker.py:11:5: E301 expected 1 blank line, found 0
+[9.165s]     def __init__(self):
+[9.166s]     ^
+[9.168s] 
+[9.170s] ./sf_pkg/serial_talker.py:19:32: Q000 Double quotes found but single quotes preferred
+[9.171s]         self.get_logger().info("Serial connection started")
+[9.175s]                                ^
+[9.180s] 
+[9.196s] ./sf_pkg/serial_talker.py:22:24: Q000 Double quotes found but single quotes preferred
+[9.200s]         self.ser.write("^1*2*3*4*5*6*7*8*8".encode())
+[9.204s]                        ^
+[9.208s] 
+[9.211s] ./sf_pkg/serial_talker.py:40:1: E305 expected 2 blank lines after class or function definition, found 1
+[9.214s] if __name__ == '__main__' :
+[9.230s] ^
+[9.234s] 
+[9.237s] ./sf_pkg/serial_talker.py:40:26: E203 whitespace before ':'
+[9.240s] if __name__ == '__main__' :
+[9.241s]                          ^
+[9.243s] 
+[9.245s] ./sf_pkg/serial_talker.py:41:11: W292 no newline at end of file
+[9.246s]     main()          ^
+[9.248s] 
+[9.251s] ./sf_pkg/cmd_selector.py:6:1: E302 expected 2 blank lines, found 1
+[9.265s] class CommandSelector(Node):
+[9.266s] ^
+[9.268s] 
+[9.269s] ./sf_pkg/cmd_selector.py:8:5: E301 expected 1 blank line, found 0
+[9.271s]     def __init__(self):
+[9.273s]     ^
+[9.274s] 
+[9.276s] ./sf_pkg/cmd_selector.py:44:1: E303 too many blank lines (3)
+[9.279s] def main(args=None):
+[9.296s] ^
+[9.299s] 
+[9.301s] ./sf_pkg/cmd_selector.py:55:1: E305 expected 2 blank lines after class or function definition, found 1
+[9.303s] if __name__ == '__main__' :
+[9.306s] ^
+[9.308s] 
+[9.310s] ./sf_pkg/cmd_selector.py:55:26: E203 whitespace before ':'
+[9.312s] if __name__ == '__main__' :
+[9.313s]                          ^
+[9.315s] 
+[9.317s] ./sf_pkg/cmd_selector.py:56:11: W292 no newline at end of file
+[9.320s]     main()          ^
+[9.324s] 
+[9.328s] ./sf_pkg/calculator.py:1:1: F401 'socket.NI_NUMERICHOST' imported but unused
+[9.330s] from socket import NI_NUMERICHOST
+[9.333s] ^
+[9.336s] 
+[9.339s] ./sf_pkg/calculator.py:2:1: I201 Missing newline between import groups. 'import rclpy' is identified as Third Party and 'from socket import NI_NUMERICHOST' is identified as Stdlib.
+[9.341s] import rclpy
+[9.343s] ^
+[9.346s] 
+[9.350s] ./sf_pkg/calculator.py:7:1: I100 Import statements are in the wrong order. 'import math' should be before 'from sunflower_interfaces.msg import TfliteResult' and in a different group.
+[9.352s] import math
+[9.356s] ^
+[9.358s] 
+[9.360s] ./sf_pkg/calculator.py:7:1: I201 Missing newline between import groups. 'import math' is identified as Stdlib and 'from sunflower_interfaces.msg import TfliteResult' is identified as Third Party.
+[9.362s] import math
+[9.364s] ^
+[9.366s] 
+[9.367s] ./sf_pkg/calculator.py:9:1: E302 expected 2 blank lines, found 1
+[9.386s] class Calculator(Node) :
+[9.390s] ^
+[9.392s] 
+[9.394s] ./sf_pkg/calculator.py:9:23: E203 whitespace before ':'
+[9.396s] class Calculator(Node) :
+[9.401s]                       ^
+[9.403s] 
+[9.406s] ./sf_pkg/calculator.py:10:1: CNL100 Class definition does not have a new line.
+[9.408s]     def __init__(self):
+[9.410s] ^
+[9.412s] 
+[9.415s] ./sf_pkg/calculator.py:23:35: E203 whitespace before ':'
+[9.417s]     def publish_command(self, cmd) :
+[9.426s]                                   ^
+[9.428s] 
+[9.430s] ./sf_pkg/calculator.py:31:30: Q000 Double quotes found but single quotes preferred
+[9.431s]         self.publish_command("".join(data))
+[9.434s]                              ^
+[9.436s] 
+[9.449s] ./sf_pkg/calculator.py:34:27: C417 Unnecessary use of map - use a generator expression instead.
+[9.451s]         n_x, n_y, n_con = map(lambda x: x, nose)
+[9.453s]                           ^
+[9.454s] 
+[9.456s] ./sf_pkg/calculator.py:35:27: C417 Unnecessary use of map - use a generator expression instead.
+[9.458s]         l_x, l_y, l_con = map(lambda x: x, eye_l)
+[9.460s]                           ^
+[9.463s] 
+[9.464s] ./sf_pkg/calculator.py:36:27: C417 Unnecessary use of map - use a generator expression instead.
+[9.466s]         r_x, r_y, r_con = map(lambda x: x, eye_r)
+[9.470s]                           ^
+[9.471s] 
+[9.486s] ./sf_pkg/calculator.py:62:1: W293 blank line contains whitespace
+[9.488s]     
+[9.491s] ^
+[9.494s] 
+[9.497s] ./sf_pkg/calculator.py:65:10: E203 whitespace before ','
+[9.500s]         _ , nose_x, nose_confidence = map(lambda x: x, nose)
+[9.512s]          ^
+[9.514s] 
+[9.517s] ./sf_pkg/calculator.py:65:39: C417 Unnecessary use of map - use a generator expression instead.
+[9.519s]         _ , nose_x, nose_confidence = map(lambda x: x, nose)
+[9.521s]                                       ^
+[9.522s] 
+[9.524s] ./sf_pkg/calculator.py:83:1: E302 expected 2 blank lines, found 1
+[9.526s] def main(args=None) :
+[9.541s] ^
+[9.543s] 
+[9.545s] ./sf_pkg/calculator.py:83:20: E203 whitespace before ':'
+[9.546s] def main(args=None) :
+[9.548s]                    ^
+[9.550s] 
+[9.552s] ./sf_pkg/calculator.py:94:1: E305 expected 2 blank lines after class or function definition, found 1
+[9.554s] if __name__ == '__main__' :
+[9.556s] ^
+[9.558s] 
+[9.560s] ./sf_pkg/calculator.py:94:26: E203 whitespace before ':'
+[9.572s] if __name__ == '__main__' :
+[9.574s]                          ^
+[9.577s] 
+[9.579s] ./sf_pkg/calculator.py:95:11: W292 no newline at end of file
+[9.581s]     main()          ^
+[9.582s] 
+[9.584s] ./sf_pkg/tensor.py:5:1: I100 Import statements are in the wrong order. 'import cv2' should be before 'from sunflower_interfaces.msg import TfliteResult'
+[9.586s] import cv2
+[9.587s] ^
+[9.600s] 
+[9.602s] ./sf_pkg/tensor.py:7:1: I100 Import statements are in the wrong order. 'import numpy' should be before 'import tensorflow'
+[9.604s] import numpy as np
+[9.606s] ^
+[9.607s] 
+[9.609s] ./sf_pkg/tensor.py:9:1: E302 expected 2 blank lines, found 1
+[9.611s] class Tensor(Node) :
+[9.612s] ^
+[9.614s] 
+[9.616s] ./sf_pkg/tensor.py:9:19: E203 whitespace before ':'
+[9.629s] class Tensor(Node) :
+[9.630s]                   ^
+[9.632s] 
+[9.634s] ./sf_pkg/tensor.py:10:1: CNL100 Class definition does not have a new line.
+[9.635s]     def __init__(self, interpreter, cap):
+[9.637s] ^
+[9.639s] 
+[9.640s] ./sf_pkg/tensor.py:20:46: E203 whitespace before ':'
+[9.642s]     def tensor_result(self, interpreter, cap) :
+[9.656s]                                              ^
+[9.658s] 
+[9.660s] ./sf_pkg/tensor.py:52:1: E302 expected 2 blank lines, found 1
+[9.661s] def main(args=None) :
+[9.663s] ^
+[9.664s] 
+[9.666s] ./sf_pkg/tensor.py:52:20: E203 whitespace before ':'
+[9.668s] def main(args=None) :
+[9.669s]                    ^
+[9.671s] 
+[9.672s] ./sf_pkg/tensor.py:54:50: Q000 Double quotes found but single quotes preferred
+[9.673s]     interpreter = tf.lite.Interpreter(model_path="lite-model_movenet_singlepose_lightning_3.tflite")
+[9.675s]                                                  ^
+[9.681s] 
+[9.683s] ./sf_pkg/tensor.py:54:100: E501 line too long (100 > 99 characters)
+[9.685s]     interpreter = tf.lite.Interpreter(model_path="lite-model_movenet_singlepose_lightning_3.tflite")
+[9.697s]                                                                                                    ^
+[9.699s] 
+[9.701s] ./sf_pkg/tensor.py:66:1: E305 expected 2 blank lines after class or function definition, found 1
+[9.704s] if __name__ == '__main__' :
+[9.706s] ^
+[9.708s] 
+[9.710s] ./sf_pkg/tensor.py:66:26: E203 whitespace before ':'
+[9.712s] if __name__ == '__main__' :
+[9.725s]                          ^
+[9.726s] 
+[9.728s] ./sf_pkg/tensor.py:69:1: E265 block comment should start with '# '
+[9.730s] #코, 왼눈, 오눈, 왼귀, 오귀, 왼어깨, 오어깨^
+[9.732s] 
+[9.734s] ./sf_pkg/tensor.py:69:29: W292 no newline at end of file
+[9.736s] #코, 왼눈, 오눈, 왼귀, 오귀, 왼어깨, 오어깨                            ^
+[9.745s] 
+[9.746s] ./sf_pkg/tensor.py:69:29: W292 no newline at end of file
+[9.748s] #코, 왼눈, 오눈, 왼귀, 오귀, 왼어깨, 오어깨                            ^
+[9.750s] 
+[9.752s] ./sf_pkg/tensor.py:69:29: W292 no newline at end of file
+[9.754s] #코, 왼눈, 오눈, 왼귀, 오귀, 왼어깨, 오어깨                            ^
+[9.755s] 
+[9.757s] ./sf_pkg/tensor_publisher.py:5:1: I100 Import statements are in the wrong order. 'import cv2' should be before 'from std_msgs.msg import String'
+[9.759s] import cv2
+[9.773s] ^
+[9.775s] 
+[9.777s] ./sf_pkg/tensor_publisher.py:7:1: I100 Import statements are in the wrong order. 'import numpy' should be before 'import tensorflow'
+[9.779s] import numpy as np
+[9.780s] ^
+[9.782s] 
+[9.784s] ./sf_pkg/tensor_publisher.py:8:1: F401 'pandas as pd' imported but unused
+[9.787s] import pandas as pd
+[9.789s] ^
+[9.790s] 
+[9.792s] ./sf_pkg/tensor_publisher.py:10:1: E302 expected 2 blank lines, found 1
+[9.805s] class TensorPublisher(Node) :
+[9.807s] ^
+[9.809s] 
+[9.811s] ./sf_pkg/tensor_publisher.py:10:28: E203 whitespace before ':'
+[9.813s] class TensorPublisher(Node) :
+[9.815s]                            ^
+[9.817s] 
+[9.819s] ./sf_pkg/tensor_publisher.py:11:1: CNL100 Class definition does not have a new line.
+[9.821s]     def __init__(self, interpreter, cap):
+[9.832s] ^
+[9.834s] 
+[9.836s] ./sf_pkg/tensor_publisher.py:21:46: E203 whitespace before ':'
+[9.838s]     def tensor_result(self, interpreter, cap) :
+[9.840s]                                              ^
+[9.842s] 
+[9.844s] ./sf_pkg/tensor_publisher.py:42:16: C408 Unnecessary list call - rewrite as a literal.
+[9.846s]         data = list()
+[9.847s]                ^
+[9.862s] 
+[9.864s] ./sf_pkg/tensor_publisher.py:44:28: E203 whitespace before ':'
+[9.868s]         for shape in shaped :
+[9.870s]                            ^
+[9.872s] 
+[9.874s] ./sf_pkg/tensor_publisher.py:47:20: Q000 Double quotes found but single quotes preferred
+[9.876s]         datastr = ["^"] + datastr
+[9.879s]                    ^
+[9.893s] 
+[9.896s] ./sf_pkg/tensor_publisher.py:48:20: Q000 Double quotes found but single quotes preferred
+[9.899s]         msg.data = "*".join(datastr)
+[9.903s]                    ^
+[9.906s] 
+[9.911s] ./sf_pkg/tensor_publisher.py:52:1: E302 expected 2 blank lines, found 1
+[9.926s] def main(args=None) :
+[9.930s] ^
+[9.932s] 
+[9.935s] ./sf_pkg/tensor_publisher.py:52:20: E203 whitespace before ':'
+[9.936s] def main(args=None) :
+[9.938s]                    ^
+[9.940s] 
+[9.942s] ./sf_pkg/tensor_publisher.py:54:50: Q000 Double quotes found but single quotes preferred
+[9.956s]     interpreter = tf.lite.Interpreter(model_path="lite-model_movenet_singlepose_lightning_3.tflite")
+[9.958s]                                                  ^
+[9.960s] 
+[9.961s] ./sf_pkg/tensor_publisher.py:54:100: E501 line too long (100 > 99 characters)
+[9.963s]     interpreter = tf.lite.Interpreter(model_path="lite-model_movenet_singlepose_lightning_3.tflite")
+[9.966s]                                                                                                    ^
+[9.969s] 
+[9.972s] ./sf_pkg/tensor_publisher.py:66:1: E305 expected 2 blank lines after class or function definition, found 1
+[9.974s] if __name__ == '__main__' :
+[9.989s] ^
+[9.992s] 
+[9.995s] ./sf_pkg/tensor_publisher.py:66:26: E203 whitespace before ':'
+[9.997s] if __name__ == '__main__' :
+[9.999s]                          ^
+[10.001s] 
+[10.003s] ./sf_pkg/tensor_publisher.py:69:1: E265 block comment should start with '# '
+[10.005s] #코, 왼눈, 오눈, 왼귀, 오귀, 왼어깨, 오어깨^
+[10.007s] 
+[10.021s] ./sf_pkg/tensor_publisher.py:69:29: W292 no newline at end of file
+[10.022s] [33m=============================== warnings summary ===============================[0m
+[10.024s] ../../../.local/lib/python3.8/site-packages/_pytest/nodes.py:633
+[10.026s]   Warning: The (fspath: py.path.local) argument to Package is deprecated. Please use the (path: pathlib.Path) argument instead.
+[10.028s] #코, 왼눈, 오눈, 왼귀, 오귀, 왼어깨, 오어깨                            ^
+[10.029s] 
+[10.031s] ./sf_pkg/tensor_publisher.py:69:29: W292 no newline at end of file
+[10.032s] #코, 왼눈, 오눈, 왼귀, 오귀, 왼어깨, 오어깨                            ^
+[10.033s] 
+[10.034s] ./sf_pkg/tensor_publisher.py:69:29: W292 no newline at end of file
+[10.035s] #코, 왼눈, 오눈, 왼귀, 오귀, 왼어깨, 오어깨                            ^
+[10.036s] 
+[10.037s] 1     C408 Unnecessary list call - rewrite as a literal.
+[10.048s] 4     C417 Unnecessary use of map - use a generator expression instead.
+[10.050s] 3     CNL100 Class definition does not have a new line.
+[10.051s] 2     E202 whitespace before ')'
+[10.052s] 16    E203 whitespace before ':'
+[10.054s] 2     E251 unexpected spaces around keyword / parameter equals
+[10.055s] 3     E265 block comment should start with '# '
+[10.056s] 2     E301 expected 1 blank line, found 0
+[10.058s] 8     E302 expected 2 blank lines, found 1
+[10.059s] 1     E303 too many blank lines (3)
+[10.060s] 5     E305 expected 2 blank lines after class or function definition, found 1
+[10.061s] 2     E501 line too long (100 > 99 characters)
+[10.062s] 2     F401 'socket.NI_NUMERICHOST' imported but unused
+[10.064s] 8     I100 Import statements are in the wrong order. 'import os' should be before 'from setuptools import setup' and in a different group.
+[10.073s] 3     I201 Missing newline between import groups. 'import os' is identified as Stdlib and 'from setuptools import setup' is identified as Third Party.
+[10.074s] 11    Q000 Double quotes found but single quotes preferred
+[10.076s] 1     W291 trailing whitespace
+[10.077s] 10    W292 no newline at end of file
+[10.079s] 1     W293 blank line contains whitespace
+[10.080s] 
+[10.082s] 11 files checked
+[10.083s] 85 errors
+[10.096s] 
+[10.098s] 'C'-type errors: 8
+[10.099s] 'E'-type errors: 41
+[10.101s] 'F'-type errors: 2
+[10.103s] 'I'-type errors: 11
+[10.105s] 'Q'-type errors: 11
+[10.106s] 'W'-type errors: 12
+[10.108s] 
+[10.110s] Checked files:
+[10.112s] 
+[10.118s] * ./setup.py
+[10.120s] * ./launch/sf.launch.py
+[10.121s] * ./sf_pkg/serial_talker.py
+[10.122s] * ./sf_pkg/__init__.py
+[10.123s] * ./sf_pkg/cmd_selector.py
+[10.125s] * ./sf_pkg/calculator.py
+[10.127s] * ./sf_pkg/tensor.py
+[10.129s] * ./sf_pkg/tensor_publisher.py
+[10.131s] * ./test/test_flake8.py
+[10.133s] * ./test/test_copyright.py
+[10.135s] * ./test/test_pep257.py
+[10.136s]   See https://docs.pytest.org/en/latest/deprecations.html#fspath-argument-for-node-constructors-replaced-with-pathlib-path
+[10.138s] 
+[10.139s] ../../../../../opt/ros/foxy/lib/python3.8/site-packages/launch_testing/pytest/hooks.py:179
+[10.141s] ../../../../../opt/ros/foxy/lib/python3.8/site-packages/launch_testing/pytest/hooks.py:179
+[10.142s] ../../../../../opt/ros/foxy/lib/python3.8/site-packages/launch_testing/pytest/hooks.py:179
+[10.144s]   Warning: The (fspath: py.path.local) argument to Module is deprecated. Please use the (path: pathlib.Path) argument instead.
+[10.145s]   See https://docs.pytest.org/en/latest/deprecations.html#fspath-argument-for-node-constructors-replaced-with-pathlib-path
+[10.148s] 
+[10.149s] ../../../../../usr/lib/python3/dist-packages/pydocstyle/config.py:6
+[10.151s]   Warning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.10 it will stop working
+[10.164s] 
+[10.166s] -- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+[10.168s] -------- generated xml file: /home/pi/sunflower/build/sf_pkg/pytest.xml --------
+[10.180s] =========================== short test summary info ============================
+[10.182s] FAILED test/test_copyright.py::test_copyright - AssertionError: Found errors
+[10.184s] FAILED test/test_flake8.py::test_flake8 - AssertionError: Found 85 code style...
+[10.186s] [31m=================== [31m[1m2 failed[0m, [32m1 passed[0m, [33m5 warnings[0m[31m in 2.83s[0m[31m ====================[0m
+[10.218s] Invoked command in '/home/pi/sunflower/src/sf_pkg' returned '1': PYTEST_ADDOPTS=--tb=short --junit-xml=/home/pi/sunflower/build/sf_pkg/pytest.xml --junit-prefix=sf_pkg -o cache_dir=/home/pi/sunflower/build/sf_pkg/.pytest_cache PYTHONPATH=/home/pi/sunflower/build/sf_pkg:/home/pi/sunflower/install/sf_pkg/lib/python3.8/site-packages:/home/pi/sunflower/build/tflite_pkg:/home/pi/sunflower/install/tflite_pkg/lib/python3.8/site-packages:/home/pi/sunflower/build/test_pkg:/home/pi/sunflower/install/test_pkg/lib/python3.8/site-packages:/home/pi/sunflower/install/sunflower_interfaces/lib/python3.8/site-packages:/home/pi/sunflower/build/stem_pkg:/home/pi/sunflower/install/stem_pkg/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/python3 -m pytest

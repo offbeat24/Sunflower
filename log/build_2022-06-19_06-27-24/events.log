@@ -1,0 +1,305 @@
+[0.000000] (-) TimerEvent: {}
+[0.002009] (stem_pkg) JobQueued: {'identifier': 'stem_pkg', 'dependencies': OrderedDict()}
+[0.011120] (sunflower_interfaces) JobQueued: {'identifier': 'sunflower_interfaces', 'dependencies': OrderedDict()}
+[0.011411] (test_pkg) JobQueued: {'identifier': 'test_pkg', 'dependencies': OrderedDict()}
+[0.011738] (tflite_pkg) JobQueued: {'identifier': 'tflite_pkg', 'dependencies': OrderedDict()}
+[0.018941] (stem_pkg) JobStarted: {'identifier': 'stem_pkg'}
+[0.063380] (sunflower_interfaces) JobStarted: {'identifier': 'sunflower_interfaces'}
+[0.098779] (-) TimerEvent: {}
+[0.102301] (test_pkg) JobStarted: {'identifier': 'test_pkg'}
+[0.146410] (tflite_pkg) JobStarted: {'identifier': 'tflite_pkg'}
+[0.198976] (-) TimerEvent: {}
+[0.303568] (-) TimerEvent: {}
+[0.404638] (-) TimerEvent: {}
+[0.505552] (-) TimerEvent: {}
+[0.606529] (-) TimerEvent: {}
+[0.707433] (-) TimerEvent: {}
+[0.808293] (-) TimerEvent: {}
+[0.909073] (-) TimerEvent: {}
+[1.009900] (-) TimerEvent: {}
+[1.110782] (-) TimerEvent: {}
+[1.211666] (-) TimerEvent: {}
+[1.312491] (-) TimerEvent: {}
+[1.413356] (-) TimerEvent: {}
+[1.514450] (-) TimerEvent: {}
+[1.618688] (-) TimerEvent: {}
+[1.719534] (-) TimerEvent: {}
+[1.820654] (-) TimerEvent: {}
+[1.901002] (sunflower_interfaces) JobProgress: {'identifier': 'sunflower_interfaces', 'progress': 'cmake'}
+[1.906571] (sunflower_interfaces) JobProgress: {'identifier': 'sunflower_interfaces', 'progress': 'build'}
+[1.910061] (sunflower_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/pi/sunflower/build/sunflower_interfaces', '--', '-j4', '-l4'], 'cwd': '/home/pi/sunflower/build/sunflower_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'pi'), ('SSH_CLIENT', '211.217.28.227 64484 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/pi/.vscode-server/bin/30d9c6cd9483b2cc586687151bcbcd635f373630/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/pi/sunflower/install/sunflower_interfaces/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('BROWSER', '/home/pi/.vscode-server/bin/30d9c6cd9483b2cc586687151bcbcd635f373630/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/pi'), ('OLDPWD', '/home/pi/sunflower/src'), ('TERM_PROGRAM_VERSION', '1.68.1'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-c48b095c-90e8-4efe-a769-ca831d1ded48.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/pi/.vscode-server/bin/30d9c6cd9483b2cc586687151bcbcd635f373630/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/pi/.vscode-server/bin/30d9c6cd9483b2cc586687151bcbcd635f373630/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/pi/sunflower/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'pi'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '4'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/pi/.vscode-server/bin/30d9c6cd9483b2cc586687151bcbcd635f373630/bin/remote-cli:/home/pi/.local/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-ad91e88160.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/pi/sunflower/install/tflite_pkg:/home/pi/sunflower/install/test_pkg:/home/pi/sunflower/install/sunflower_interfaces:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/pi/sunflower/build/sunflower_interfaces'), ('SSH_CONNECTION', '211.217.28.227 64484 211.217.27.80 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/pi/sunflower/build/tflite_pkg:/home/pi/sunflower/install/tflite_pkg/lib/python3.8/site-packages:/home/pi/sunflower/build/test_pkg:/home/pi/sunflower/install/test_pkg/lib/python3.8/site-packages:/home/pi/sunflower/build/stem_pkg:/home/pi/sunflower/install/sunflower_interfaces/lib/python3.8/site-packages:/home/pi/sunflower/install/stem_pkg/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/pi/sunflower/install/sunflower_interfaces:/home/pi/sunflower/install/tflite_pkg:/home/pi/sunflower/install/test_pkg:/opt/ros/foxy')]), 'shell': False}
+[1.931061] (-) TimerEvent: {}
+[2.034210] (-) TimerEvent: {}
+[2.137042] (-) TimerEvent: {}
+[2.237936] (-) TimerEvent: {}
+[2.339093] (-) TimerEvent: {}
+[2.440119] (-) TimerEvent: {}
+[2.541063] (-) TimerEvent: {}
+[2.641975] (-) TimerEvent: {}
+[2.742960] (-) TimerEvent: {}
+[2.843844] (-) TimerEvent: {}
+[2.944884] (-) TimerEvent: {}
+[3.046080] (-) TimerEvent: {}
+[3.147182] (-) TimerEvent: {}
+[3.248362] (-) TimerEvent: {}
+[3.349527] (-) TimerEvent: {}
+[3.450622] (-) TimerEvent: {}
+[3.551564] (-) TimerEvent: {}
+[3.652534] (-) TimerEvent: {}
+[3.753511] (-) TimerEvent: {}
+[3.854408] (-) TimerEvent: {}
+[3.955357] (-) TimerEvent: {}
+[4.057706] (-) TimerEvent: {}
+[4.160091] (-) TimerEvent: {}
+[4.261132] (-) TimerEvent: {}
+[4.362005] (-) TimerEvent: {}
+[4.463095] (-) TimerEvent: {}
+[4.553953] (sunflower_interfaces) StdoutLine: {'line': b'[  3%] Built target sunflower_interfaces__cpp\n'}
+[4.556933] (sunflower_interfaces) StdoutLine: {'line': b'[ 12%] Built target sunflower_interfaces__rosidl_generator_c\n'}
+[4.561103] (sunflower_interfaces) StdoutLine: {'line': b'[ 22%] Built target sunflower_interfaces__rosidl_typesupport_introspection_c\n'}
+[4.561781] (sunflower_interfaces) StdoutLine: {'line': b'[ 32%] Built target sunflower_interfaces__rosidl_typesupport_cpp\n'}
+[4.562496] (sunflower_interfaces) StdoutLine: {'line': b'[ 41%] Built target sunflower_interfaces__rosidl_typesupport_introspection_cpp\n'}
+[4.563112] (-) TimerEvent: {}
+[4.568856] (sunflower_interfaces) StdoutLine: {'line': b'[ 51%] Built target sunflower_interfaces__rosidl_typesupport_fastrtps_cpp\n'}
+[4.571527] (sunflower_interfaces) StdoutLine: {'line': b'[ 61%] Built target sunflower_interfaces__rosidl_typesupport_c\n'}
+[4.572284] (sunflower_interfaces) StdoutLine: {'line': b'[ 70%] Built target sunflower_interfaces__rosidl_typesupport_fastrtps_c\n'}
+[4.572861] (sunflower_interfaces) StdoutLine: {'line': b'[ 70%] Built target sunflower_interfaces\n'}
+[4.573486] (sunflower_interfaces) StdoutLine: {'line': b'[ 74%] Built target sunflower_interfaces__py\n'}
+[4.574061] (sunflower_interfaces) StdoutLine: {'line': b'[ 80%] Built target sunflower_interfaces__python\n'}
+[4.574890] (sunflower_interfaces) StdoutLine: {'line': b'[ 87%] Built target sunflower_interfaces__rosidl_typesupport_c__pyext\n'}
+[4.575633] (sunflower_interfaces) StdoutLine: {'line': b'[ 93%] Built target sunflower_interfaces__rosidl_typesupport_fastrtps_c__pyext\n'}
+[4.576307] (sunflower_interfaces) StdoutLine: {'line': b'[100%] Built target sunflower_interfaces__rosidl_typesupport_introspection_c__pyext\n'}
+[4.666298] (-) TimerEvent: {}
+[4.771781] (-) TimerEvent: {}
+[4.874939] (-) TimerEvent: {}
+[4.976433] (-) TimerEvent: {}
+[5.081288] (-) TimerEvent: {}
+[5.182645] (-) TimerEvent: {}
+[5.292329] (-) TimerEvent: {}
+[5.393369] (-) TimerEvent: {}
+[5.496394] (-) TimerEvent: {}
+[5.597320] (-) TimerEvent: {}
+[5.698197] (-) TimerEvent: {}
+[5.799070] (-) TimerEvent: {}
+[5.899913] (-) TimerEvent: {}
+[6.000832] (-) TimerEvent: {}
+[6.106324] (-) TimerEvent: {}
+[6.207343] (-) TimerEvent: {}
+[6.309529] (-) TimerEvent: {}
+[6.345434] (sunflower_interfaces) CommandEnded: {'returncode': 0}
+[6.393536] (stem_pkg) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'develop', '--prefix', '/home/pi/sunflower/install/stem_pkg', '--editable', '--build-directory', '/home/pi/sunflower/build/stem_pkg/build', '--no-deps', 'install_data', '--install-dir', '/home/pi/sunflower/install/stem_pkg'], 'cwd': '/home/pi/sunflower/build/stem_pkg', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'pi', 'SSH_CLIENT': '211.217.28.227 64484 22', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/pi/.vscode-server/bin/30d9c6cd9483b2cc586687151bcbcd635f373630/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/pi/sunflower/install/sunflower_interfaces/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib', 'BROWSER': '/home/pi/.vscode-server/bin/30d9c6cd9483b2cc586687151bcbcd635f373630/bin/helpers/browser.sh', 'MOTD_SHOWN': 'pam', 'HOME': '/home/pi', 'OLDPWD': '/home/pi/sunflower/src', 'TERM_PROGRAM_VERSION': '1.68.1', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-c48b095c-90e8-4efe-a769-ca831d1ded48.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/pi/.vscode-server/bin/30d9c6cd9483b2cc586687151bcbcd635f373630/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/pi/.vscode-server/bin/30d9c6cd9483b2cc586687151bcbcd635f373630/node', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'COLCON_PREFIX_PATH': '/home/pi/sunflower/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'pi', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '4', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/pi/.vscode-server/bin/30d9c6cd9483b2cc586687151bcbcd635f373630/bin/remote-cli:/home/pi/.local/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-ad91e88160.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/pi/sunflower/install/tflite_pkg:/home/pi/sunflower/install/test_pkg:/home/pi/sunflower/install/sunflower_interfaces:/opt/ros/foxy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/pi/sunflower/build/stem_pkg', 'SSH_CONNECTION': '211.217.28.227 64484 211.217.27.80 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/pi/sunflower/install/stem_pkg/lib/python3.8/site-packages:/home/pi/sunflower/build/tflite_pkg:/home/pi/sunflower/install/tflite_pkg/lib/python3.8/site-packages:/home/pi/sunflower/build/test_pkg:/home/pi/sunflower/install/test_pkg/lib/python3.8/site-packages:/home/pi/sunflower/build/stem_pkg:/home/pi/sunflower/install/sunflower_interfaces/lib/python3.8/site-packages:/home/pi/sunflower/install/stem_pkg/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/pi/sunflower/install/sunflower_interfaces'}, 'shell': False}
+[6.409913] (-) TimerEvent: {}
+[6.512315] (-) TimerEvent: {}
+[6.613473] (-) TimerEvent: {}
+[6.714426] (-) TimerEvent: {}
+[6.815650] (-) TimerEvent: {}
+[6.916604] (-) TimerEvent: {}
+[7.017600] (-) TimerEvent: {}
+[7.118514] (-) TimerEvent: {}
+[7.221064] (-) TimerEvent: {}
+[7.321990] (-) TimerEvent: {}
+[7.423029] (-) TimerEvent: {}
+[7.524352] (-) TimerEvent: {}
+[7.625425] (-) TimerEvent: {}
+[7.727071] (-) TimerEvent: {}
+[7.828145] (-) TimerEvent: {}
+[7.929008] (-) TimerEvent: {}
+[8.029890] (-) TimerEvent: {}
+[8.110886] (sunflower_interfaces) JobProgress: {'identifier': 'sunflower_interfaces', 'progress': 'install'}
+[8.130977] (-) TimerEvent: {}
+[8.233907] (-) TimerEvent: {}
+[8.250263] (sunflower_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/pi/sunflower/build/sunflower_interfaces'], 'cwd': '/home/pi/sunflower/build/sunflower_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'pi'), ('SSH_CLIENT', '211.217.28.227 64484 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/pi/.vscode-server/bin/30d9c6cd9483b2cc586687151bcbcd635f373630/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/pi/sunflower/install/sunflower_interfaces/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('BROWSER', '/home/pi/.vscode-server/bin/30d9c6cd9483b2cc586687151bcbcd635f373630/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/pi'), ('OLDPWD', '/home/pi/sunflower/src'), ('TERM_PROGRAM_VERSION', '1.68.1'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-c48b095c-90e8-4efe-a769-ca831d1ded48.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/pi/.vscode-server/bin/30d9c6cd9483b2cc586687151bcbcd635f373630/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/pi/.vscode-server/bin/30d9c6cd9483b2cc586687151bcbcd635f373630/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/pi/sunflower/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'pi'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '4'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/pi/.vscode-server/bin/30d9c6cd9483b2cc586687151bcbcd635f373630/bin/remote-cli:/home/pi/.local/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-ad91e88160.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/pi/sunflower/install/tflite_pkg:/home/pi/sunflower/install/test_pkg:/home/pi/sunflower/install/sunflower_interfaces:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/pi/sunflower/build/sunflower_interfaces'), ('SSH_CONNECTION', '211.217.28.227 64484 211.217.27.80 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/pi/sunflower/build/tflite_pkg:/home/pi/sunflower/install/tflite_pkg/lib/python3.8/site-packages:/home/pi/sunflower/build/test_pkg:/home/pi/sunflower/install/test_pkg/lib/python3.8/site-packages:/home/pi/sunflower/build/stem_pkg:/home/pi/sunflower/install/sunflower_interfaces/lib/python3.8/site-packages:/home/pi/sunflower/install/stem_pkg/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/pi/sunflower/install/sunflower_interfaces:/home/pi/sunflower/install/tflite_pkg:/home/pi/sunflower/install/test_pkg:/opt/ros/foxy')]), 'shell': False}
+[8.334330] (-) TimerEvent: {}
+[8.340789] (sunflower_interfaces) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[8.345635] (sunflower_interfaces) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[8.350681] (sunflower_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/sunflower/install/sunflower_interfaces/share/ament_index/resource_index/rosidl_interfaces/sunflower_interfaces\n'}
+[8.356797] (sunflower_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/sunflower/install/sunflower_interfaces/include/sunflower_interfaces/msg/detail/tflite_result__functions.h\n'}
+[8.361094] (sunflower_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/sunflower/install/sunflower_interfaces/include/sunflower_interfaces/msg/detail/tflite_result__struct.h\n'}
+[8.364585] (sunflower_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/sunflower/install/sunflower_interfaces/include/sunflower_interfaces/msg/detail/tflite_result__type_support.h\n'}
+[8.368042] (sunflower_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/sunflower/install/sunflower_interfaces/include/sunflower_interfaces/msg/rosidl_generator_c__visibility_control.h\n'}
+[8.371749] (sunflower_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/sunflower/install/sunflower_interfaces/include/sunflower_interfaces/msg/tflite_result.h\n'}
+[8.377576] (sunflower_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/sunflower/install/sunflower_interfaces/share/sunflower_interfaces/environment/library_path.sh\n'}
+[8.381857] (sunflower_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/sunflower/install/sunflower_interfaces/share/sunflower_interfaces/environment/library_path.dsv\n'}
+[8.388865] (sunflower_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/sunflower/install/sunflower_interfaces/include/sunflower_interfaces/msg/detail/tflite_result__rosidl_typesupport_fastrtps_c.h\n'}
+[8.392620] (sunflower_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/sunflower/install/sunflower_interfaces/include/sunflower_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[8.397081] (sunflower_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/sunflower/install/sunflower_interfaces/lib/libsunflower_interfaces__rosidl_typesupport_fastrtps_c.so\n'}
+[8.405172] (sunflower_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/sunflower/install/sunflower_interfaces/include/sunflower_interfaces/msg/detail/tflite_result__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[8.409285] (sunflower_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/sunflower/install/sunflower_interfaces/include/sunflower_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[8.415095] (sunflower_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/sunflower/install/sunflower_interfaces/lib/libsunflower_interfaces__rosidl_typesupport_fastrtps_cpp.so\n'}
+[8.422714] (sunflower_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/sunflower/install/sunflower_interfaces/include/sunflower_interfaces/msg/detail/tflite_result__rosidl_typesupport_introspection_c.h\n'}
+[8.427192] (sunflower_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/sunflower/install/sunflower_interfaces/include/sunflower_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[8.434600] (-) TimerEvent: {}
+[8.437939] (sunflower_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/sunflower/install/sunflower_interfaces/include/sunflower_interfaces/msg/detail/tflite_result__builder.hpp\n'}
+[8.442402] (sunflower_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/sunflower/install/sunflower_interfaces/include/sunflower_interfaces/msg/detail/tflite_result__struct.hpp\n'}
+[8.446624] (sunflower_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/sunflower/install/sunflower_interfaces/include/sunflower_interfaces/msg/detail/tflite_result__traits.hpp\n'}
+[8.451857] (sunflower_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/sunflower/install/sunflower_interfaces/include/sunflower_interfaces/msg/tflite_result.hpp\n'}
+[8.458208] (sunflower_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/sunflower/install/sunflower_interfaces/include/sunflower_interfaces/msg/detail/tflite_result__rosidl_typesupport_introspection_cpp.hpp\n'}
+[8.464595] (sunflower_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/sunflower/install/sunflower_interfaces/share/sunflower_interfaces/environment/pythonpath.sh\n'}
+[8.468945] (sunflower_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/sunflower/install/sunflower_interfaces/share/sunflower_interfaces/environment/pythonpath.dsv\n'}
+[8.473269] (sunflower_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/sunflower/install/sunflower_interfaces/lib/python3.8/site-packages/sunflower_interfaces/__init__.py\n'}
+[8.479610] (sunflower_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/sunflower/install/sunflower_interfaces/lib/python3.8/site-packages/sunflower_interfaces/msg/__init__.py\n'}
+[8.483718] (sunflower_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/sunflower/install/sunflower_interfaces/lib/python3.8/site-packages/sunflower_interfaces/msg/_tflite_result.py\n'}
+[8.489593] (sunflower_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/sunflower/install/sunflower_interfaces/lib/python3.8/site-packages/sunflower_interfaces/sunflower_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-38-aarch64-linux-gnu.so\n'}
+[8.495675] (sunflower_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/sunflower/install/sunflower_interfaces/lib/python3.8/site-packages/sunflower_interfaces/sunflower_interfaces_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so\n'}
+[8.502355] (sunflower_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/sunflower/install/sunflower_interfaces/lib/python3.8/site-packages/sunflower_interfaces/sunflower_interfaces_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so\n'}
+[8.508802] (sunflower_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/sunflower/install/sunflower_interfaces/lib/libsunflower_interfaces__python.so\n'}
+[8.512768] (sunflower_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/sunflower/install/sunflower_interfaces/share/sunflower_interfaces/msg/TfliteResult.idl\n'}
+[8.516772] (sunflower_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/sunflower/install/sunflower_interfaces/share/sunflower_interfaces/msg/TfliteResult.msg\n'}
+[8.522668] (sunflower_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/sunflower/install/sunflower_interfaces/share/ament_index/resource_index/package_run_dependencies/sunflower_interfaces\n'}
+[8.534890] (-) TimerEvent: {}
+[8.538341] (sunflower_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/sunflower/install/sunflower_interfaces/share/ament_index/resource_index/parent_prefix_path/sunflower_interfaces\n'}
+[8.544521] (sunflower_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/sunflower/install/sunflower_interfaces/share/sunflower_interfaces/environment/ament_prefix_path.sh\n'}
+[8.548943] (sunflower_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/sunflower/install/sunflower_interfaces/share/sunflower_interfaces/environment/ament_prefix_path.dsv\n'}
+[8.563897] (sunflower_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/sunflower/install/sunflower_interfaces/share/sunflower_interfaces/environment/path.sh\n'}
+[8.567635] (sunflower_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/sunflower/install/sunflower_interfaces/share/sunflower_interfaces/environment/path.dsv\n'}
+[8.571898] (sunflower_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/sunflower/install/sunflower_interfaces/share/sunflower_interfaces/local_setup.bash\n'}
+[8.577070] (sunflower_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/sunflower/install/sunflower_interfaces/share/sunflower_interfaces/local_setup.sh\n'}
+[8.581351] (sunflower_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/sunflower/install/sunflower_interfaces/share/sunflower_interfaces/local_setup.zsh\n'}
+[8.585438] (sunflower_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/sunflower/install/sunflower_interfaces/share/sunflower_interfaces/local_setup.dsv\n'}
+[8.590533] (sunflower_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/pi/sunflower/install/sunflower_interfaces/share/sunflower_interfaces/package.dsv\n'}
+[8.611054] (stem_pkg) StdoutLine: {'line': b'running develop\n'}
+[8.635108] (-) TimerEvent: {}
+[8.648083] (sunflower_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/sunflower/install/sunflower_interfaces/share/ament_index/resource_index/packages/sunflower_interfaces\n'}
+[8.649998] (sunflower_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/sunflower/install/sunflower_interfaces/share/sunflower_interfaces/cmake/rosidl_cmake-extras.cmake\n'}
+[8.651927] (sunflower_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/sunflower/install/sunflower_interfaces/share/sunflower_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[8.653847] (sunflower_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/sunflower/install/sunflower_interfaces/share/sunflower_interfaces/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[8.657525] (sunflower_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/sunflower/install/sunflower_interfaces/share/sunflower_interfaces/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[8.672511] (sunflower_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/sunflower/install/sunflower_interfaces/share/sunflower_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[8.675493] (sunflower_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/sunflower/install/sunflower_interfaces/share/sunflower_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[8.678667] (sunflower_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/sunflower/install/sunflower_interfaces/share/sunflower_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[8.681661] (sunflower_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/sunflower/install/sunflower_interfaces/share/sunflower_interfaces/cmake/sunflower_interfacesConfig.cmake\n'}
+[8.683678] (sunflower_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/sunflower/install/sunflower_interfaces/share/sunflower_interfaces/cmake/sunflower_interfacesConfig-version.cmake\n'}
+[8.695562] (sunflower_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/sunflower/install/sunflower_interfaces/share/sunflower_interfaces/package.xml\n'}
+[8.698217] (sunflower_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/pi/sunflower/install/sunflower_interfaces/lib/libsunflower_interfaces__rosidl_generator_c.so\n'}
+[8.702084] (sunflower_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/pi/sunflower/install/sunflower_interfaces/lib/libsunflower_interfaces__rosidl_typesupport_introspection_c.so\n'}
+[8.706182] (sunflower_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/pi/sunflower/install/sunflower_interfaces/lib/libsunflower_interfaces__rosidl_typesupport_c.so\n'}
+[8.721888] (sunflower_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/pi/sunflower/install/sunflower_interfaces/lib/libsunflower_interfaces__rosidl_typesupport_introspection_cpp.so\n'}
+[8.725879] (sunflower_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/pi/sunflower/install/sunflower_interfaces/lib/libsunflower_interfaces__rosidl_typesupport_cpp.so\n'}
+[8.735337] (-) TimerEvent: {}
+[8.836435] (-) TimerEvent: {}
+[8.937419] (-) TimerEvent: {}
+[9.038316] (-) TimerEvent: {}
+[9.139263] (-) TimerEvent: {}
+[9.226236] (sunflower_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/pi/sunflower/install/sunflower_interfaces/share/sunflower_interfaces/cmake/sunflower_interfaces__rosidl_generator_cExport.cmake\n'}
+[9.227261] (sunflower_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/pi/sunflower/install/sunflower_interfaces/share/sunflower_interfaces/cmake/sunflower_interfaces__rosidl_generator_cExport-noconfig.cmake\n'}
+[9.228055] (sunflower_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/pi/sunflower/install/sunflower_interfaces/share/sunflower_interfaces/cmake/sunflower_interfaces__rosidl_typesupport_introspection_cExport.cmake\n'}
+[9.229356] (sunflower_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/pi/sunflower/install/sunflower_interfaces/share/sunflower_interfaces/cmake/sunflower_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[9.232136] (sunflower_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/pi/sunflower/install/sunflower_interfaces/share/sunflower_interfaces/cmake/sunflower_interfaces__rosidl_typesupport_cExport.cmake\n'}
+[9.233687] (sunflower_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/pi/sunflower/install/sunflower_interfaces/share/sunflower_interfaces/cmake/sunflower_interfaces__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[9.236312] (sunflower_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/pi/sunflower/install/sunflower_interfaces/share/sunflower_interfaces/cmake/sunflower_interfaces__rosidl_generator_cppExport.cmake\n'}
+[9.239489] (-) TimerEvent: {}
+[9.247381] (sunflower_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/pi/sunflower/install/sunflower_interfaces/share/sunflower_interfaces/cmake/sunflower_interfaces__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[9.251366] (sunflower_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/pi/sunflower/install/sunflower_interfaces/share/sunflower_interfaces/cmake/sunflower_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[9.255882] (sunflower_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/pi/sunflower/install/sunflower_interfaces/share/sunflower_interfaces/cmake/sunflower_interfaces__rosidl_typesupport_cppExport.cmake\n'}
+[9.259734] (sunflower_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/pi/sunflower/install/sunflower_interfaces/share/sunflower_interfaces/cmake/sunflower_interfaces__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[9.278410] (sunflower_interfaces) CommandEnded: {'returncode': 0}
+[9.339710] (-) TimerEvent: {}
+[9.444481] (-) TimerEvent: {}
+[9.545528] (-) TimerEvent: {}
+[9.647008] (-) TimerEvent: {}
+[9.748394] (-) TimerEvent: {}
+[9.849403] (-) TimerEvent: {}
+[9.950332] (-) TimerEvent: {}
+[10.051512] (-) TimerEvent: {}
+[10.152466] (-) TimerEvent: {}
+[10.253500] (-) TimerEvent: {}
+[10.355069] (-) TimerEvent: {}
+[10.456744] (-) TimerEvent: {}
+[10.558356] (-) TimerEvent: {}
+[10.600842] (tflite_pkg) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'develop', '--prefix', '/home/pi/sunflower/install/tflite_pkg', '--editable', '--build-directory', '/home/pi/sunflower/build/tflite_pkg/build', '--no-deps', 'install_data', '--install-dir', '/home/pi/sunflower/install/tflite_pkg'], 'cwd': '/home/pi/sunflower/build/tflite_pkg', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'pi', 'SSH_CLIENT': '211.217.28.227 64484 22', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/pi/.vscode-server/bin/30d9c6cd9483b2cc586687151bcbcd635f373630/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/pi/sunflower/install/sunflower_interfaces/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib', 'BROWSER': '/home/pi/.vscode-server/bin/30d9c6cd9483b2cc586687151bcbcd635f373630/bin/helpers/browser.sh', 'MOTD_SHOWN': 'pam', 'HOME': '/home/pi', 'OLDPWD': '/home/pi/sunflower/src', 'TERM_PROGRAM_VERSION': '1.68.1', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-c48b095c-90e8-4efe-a769-ca831d1ded48.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/pi/.vscode-server/bin/30d9c6cd9483b2cc586687151bcbcd635f373630/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/pi/.vscode-server/bin/30d9c6cd9483b2cc586687151bcbcd635f373630/node', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'COLCON_PREFIX_PATH': '/home/pi/sunflower/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'pi', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '4', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/pi/.vscode-server/bin/30d9c6cd9483b2cc586687151bcbcd635f373630/bin/remote-cli:/home/pi/.local/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-ad91e88160.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/pi/sunflower/install/tflite_pkg:/home/pi/sunflower/install/test_pkg:/home/pi/sunflower/install/sunflower_interfaces:/opt/ros/foxy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/pi/sunflower/build/tflite_pkg', 'SSH_CONNECTION': '211.217.28.227 64484 211.217.27.80 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/pi/sunflower/install/tflite_pkg/lib/python3.8/site-packages:/home/pi/sunflower/build/tflite_pkg:/home/pi/sunflower/install/tflite_pkg/lib/python3.8/site-packages:/home/pi/sunflower/build/test_pkg:/home/pi/sunflower/install/test_pkg/lib/python3.8/site-packages:/home/pi/sunflower/build/stem_pkg:/home/pi/sunflower/install/sunflower_interfaces/lib/python3.8/site-packages:/home/pi/sunflower/install/stem_pkg/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/pi/sunflower/install/sunflower_interfaces'}, 'shell': False}
+[10.624173] (test_pkg) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'develop', '--prefix', '/home/pi/sunflower/install/test_pkg', '--editable', '--build-directory', '/home/pi/sunflower/build/test_pkg/build', '--no-deps', 'install_data', '--install-dir', '/home/pi/sunflower/install/test_pkg'], 'cwd': '/home/pi/sunflower/build/test_pkg', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'pi', 'SSH_CLIENT': '211.217.28.227 64484 22', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/pi/.vscode-server/bin/30d9c6cd9483b2cc586687151bcbcd635f373630/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/pi/sunflower/install/sunflower_interfaces/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib', 'BROWSER': '/home/pi/.vscode-server/bin/30d9c6cd9483b2cc586687151bcbcd635f373630/bin/helpers/browser.sh', 'MOTD_SHOWN': 'pam', 'HOME': '/home/pi', 'OLDPWD': '/home/pi/sunflower/src', 'TERM_PROGRAM_VERSION': '1.68.1', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-c48b095c-90e8-4efe-a769-ca831d1ded48.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/pi/.vscode-server/bin/30d9c6cd9483b2cc586687151bcbcd635f373630/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/pi/.vscode-server/bin/30d9c6cd9483b2cc586687151bcbcd635f373630/node', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'COLCON_PREFIX_PATH': '/home/pi/sunflower/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'pi', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '4', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/pi/.vscode-server/bin/30d9c6cd9483b2cc586687151bcbcd635f373630/bin/remote-cli:/home/pi/.local/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-ad91e88160.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/pi/sunflower/install/tflite_pkg:/home/pi/sunflower/install/test_pkg:/home/pi/sunflower/install/sunflower_interfaces:/opt/ros/foxy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/pi/sunflower/build/test_pkg', 'SSH_CONNECTION': '211.217.28.227 64484 211.217.27.80 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/pi/sunflower/install/test_pkg/lib/python3.8/site-packages:/home/pi/sunflower/build/tflite_pkg:/home/pi/sunflower/install/tflite_pkg/lib/python3.8/site-packages:/home/pi/sunflower/build/test_pkg:/home/pi/sunflower/install/test_pkg/lib/python3.8/site-packages:/home/pi/sunflower/build/stem_pkg:/home/pi/sunflower/install/sunflower_interfaces/lib/python3.8/site-packages:/home/pi/sunflower/install/stem_pkg/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/pi/sunflower/install/sunflower_interfaces'}, 'shell': False}
+[10.658625] (-) TimerEvent: {}
+[10.759907] (-) TimerEvent: {}
+[10.860799] (-) TimerEvent: {}
+[10.933085] (stem_pkg) StdoutLine: {'line': b'running egg_info\n'}
+[10.935207] (stem_pkg) StdoutLine: {'line': b'writing stem_pkg.egg-info/PKG-INFO\n'}
+[10.936783] (stem_pkg) StdoutLine: {'line': b'writing dependency_links to stem_pkg.egg-info/dependency_links.txt\n'}
+[10.938242] (stem_pkg) StdoutLine: {'line': b'writing entry points to stem_pkg.egg-info/entry_points.txt\n'}
+[10.939617] (stem_pkg) StdoutLine: {'line': b'writing requirements to stem_pkg.egg-info/requires.txt\n'}
+[10.941037] (stem_pkg) StdoutLine: {'line': b'writing top-level names to stem_pkg.egg-info/top_level.txt\n'}
+[10.961067] (-) TimerEvent: {}
+[11.062038] (-) TimerEvent: {}
+[11.122924] (stem_pkg) StdoutLine: {'line': b"reading manifest file 'stem_pkg.egg-info/SOURCES.txt'\n"}
+[11.127901] (stem_pkg) StdoutLine: {'line': b"writing manifest file 'stem_pkg.egg-info/SOURCES.txt'\n"}
+[11.162302] (-) TimerEvent: {}
+[11.267442] (-) TimerEvent: {}
+[11.374769] (-) TimerEvent: {}
+[11.436297] (sunflower_interfaces) JobEnded: {'identifier': 'sunflower_interfaces', 'rc': 0}
+[11.463666] (stem_pkg) StdoutLine: {'line': b'running build_ext\n'}
+[11.466612] (stem_pkg) StdoutLine: {'line': b'Creating /home/pi/sunflower/install/stem_pkg/lib/python3.8/site-packages/stem-pkg.egg-link (link to .)\n'}
+[11.473080] (stem_pkg) StdoutLine: {'line': b'Installing calculator script to /home/pi/sunflower/install/stem_pkg/lib/stem_pkg\n'}
+[11.474971] (-) TimerEvent: {}
+[11.478327] (stem_pkg) StdoutLine: {'line': b'Installing cmd_selector script to /home/pi/sunflower/install/stem_pkg/lib/stem_pkg\n'}
+[11.481375] (stem_pkg) StdoutLine: {'line': b'Installing serial_talker script to /home/pi/sunflower/install/stem_pkg/lib/stem_pkg\n'}
+[11.485922] (stem_pkg) StdoutLine: {'line': b'Installing tensor script to /home/pi/sunflower/install/stem_pkg/lib/stem_pkg\n'}
+[11.488431] (stem_pkg) StdoutLine: {'line': b'Installing tensor_publisher script to /home/pi/sunflower/install/stem_pkg/lib/stem_pkg\n'}
+[11.491975] (stem_pkg) StdoutLine: {'line': b'\n'}
+[11.493160] (stem_pkg) StdoutLine: {'line': b'Installed /home/pi/sunflower/build/stem_pkg\n'}
+[11.495042] (stem_pkg) StdoutLine: {'line': b'running install_data\n'}
+[11.575181] (-) TimerEvent: {}
+[11.677336] (-) TimerEvent: {}
+[11.713595] (stem_pkg) CommandEnded: {'returncode': 0}
+[11.777558] (-) TimerEvent: {}
+[11.828274] (stem_pkg) JobEnded: {'identifier': 'stem_pkg', 'rc': 0}
+[11.877842] (-) TimerEvent: {}
+[11.979699] (-) TimerEvent: {}
+[12.082071] (-) TimerEvent: {}
+[12.183017] (-) TimerEvent: {}
+[12.283924] (-) TimerEvent: {}
+[12.386263] (-) TimerEvent: {}
+[12.492379] (-) TimerEvent: {}
+[12.597975] (-) TimerEvent: {}
+[12.701343] (tflite_pkg) StdoutLine: {'line': b'running develop\n'}
+[12.702745] (-) TimerEvent: {}
+[12.807552] (-) TimerEvent: {}
+[12.880120] (test_pkg) StdoutLine: {'line': b'running develop\n'}
+[12.907718] (-) TimerEvent: {}
+[13.009853] (-) TimerEvent: {}
+[13.113632] (-) TimerEvent: {}
+[13.215871] (-) TimerEvent: {}
+[13.318540] (-) TimerEvent: {}
+[13.420297] (-) TimerEvent: {}
+[13.524353] (-) TimerEvent: {}
+[13.626839] (-) TimerEvent: {}
+[13.730604] (-) TimerEvent: {}
+[13.821775] (tflite_pkg) StdoutLine: {'line': b'running egg_info\n'}
+[13.824172] (tflite_pkg) StdoutLine: {'line': b'writing tflite_pkg.egg-info/PKG-INFO\n'}
+[13.825859] (tflite_pkg) StdoutLine: {'line': b'writing dependency_links to tflite_pkg.egg-info/dependency_links.txt\n'}
+[13.826950] (tflite_pkg) StdoutLine: {'line': b'writing entry points to tflite_pkg.egg-info/entry_points.txt\n'}
+[13.828307] (tflite_pkg) StdoutLine: {'line': b'writing requirements to tflite_pkg.egg-info/requires.txt\n'}
+[13.830858] (-) TimerEvent: {}
+[13.832571] (tflite_pkg) StdoutLine: {'line': b'writing top-level names to tflite_pkg.egg-info/top_level.txt\n'}
+[13.931100] (-) TimerEvent: {}
+[14.006236] (tflite_pkg) StdoutLine: {'line': b"reading manifest file 'tflite_pkg.egg-info/SOURCES.txt'\n"}
+[14.011837] (tflite_pkg) StdoutLine: {'line': b"writing manifest file 'tflite_pkg.egg-info/SOURCES.txt'\n"}
+[14.029224] (test_pkg) StdoutLine: {'line': b'running egg_info\n'}
+[14.030750] (test_pkg) StdoutLine: {'line': b'writing test_pkg.egg-info/PKG-INFO\n'}
+[14.031667] (-) TimerEvent: {}
+[14.036989] (test_pkg) StdoutLine: {'line': b'writing dependency_links to test_pkg.egg-info/dependency_links.txt\n'}
+[14.040775] (test_pkg) StdoutLine: {'line': b'writing entry points to test_pkg.egg-info/entry_points.txt\n'}
+[14.043530] (test_pkg) StdoutLine: {'line': b'writing requirements to test_pkg.egg-info/requires.txt\n'}
+[14.050088] (test_pkg) StdoutLine: {'line': b'writing top-level names to test_pkg.egg-info/top_level.txt\n'}
+[14.131886] (-) TimerEvent: {}
+[14.222430] (test_pkg) StdoutLine: {'line': b"reading manifest file 'test_pkg.egg-info/SOURCES.txt'\n"}
+[14.226340] (test_pkg) StdoutLine: {'line': b"writing manifest file 'test_pkg.egg-info/SOURCES.txt'\n"}
+[14.232094] (-) TimerEvent: {}
+[14.253013] (tflite_pkg) StdoutLine: {'line': b'running build_ext\n'}
+[14.256292] (tflite_pkg) StdoutLine: {'line': b'Creating /home/pi/sunflower/install/tflite_pkg/lib/python3.8/site-packages/tflite-pkg.egg-link (link to .)\n'}
+[14.263203] (tflite_pkg) StdoutLine: {'line': b'\n'}
+[14.263966] (tflite_pkg) StdoutLine: {'line': b'Installed /home/pi/sunflower/build/tflite_pkg\n'}
+[14.265094] (tflite_pkg) StdoutLine: {'line': b'running install_data\n'}
+[14.332399] (-) TimerEvent: {}
+[14.433488] (-) TimerEvent: {}
+[14.496463] (tflite_pkg) CommandEnded: {'returncode': 0}
+[14.533790] (-) TimerEvent: {}
+[14.549902] (test_pkg) StdoutLine: {'line': b'running build_ext\n'}
+[14.551966] (test_pkg) StdoutLine: {'line': b'Creating /home/pi/sunflower/install/test_pkg/lib/python3.8/site-packages/test-pkg.egg-link (link to .)\n'}
+[14.557110] (test_pkg) StdoutLine: {'line': b'\n'}
+[14.559080] (test_pkg) StdoutLine: {'line': b'Installed /home/pi/sunflower/build/test_pkg\n'}
+[14.563672] (test_pkg) StdoutLine: {'line': b'running install_data\n'}
+[14.573850] (tflite_pkg) JobEnded: {'identifier': 'tflite_pkg', 'rc': 0}
+[14.644235] (-) TimerEvent: {}
+[14.721130] (test_pkg) CommandEnded: {'returncode': 0}
+[14.744457] (-) TimerEvent: {}
+[14.767957] (test_pkg) JobEnded: {'identifier': 'test_pkg', 'rc': 0}
+[14.773534] (-) EventReactorShutdown: {}

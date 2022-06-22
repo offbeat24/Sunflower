@@ -1,0 +1,65 @@
+[3.417s] Invoking command in '/home/pi/sunflower/src/stem_pkg': PYTHONPATH=/home/pi/sunflower/install/stem_pkg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/stem_pkg build --build-base /home/pi/sunflower/build/stem_pkg/build install --prefix /home/pi/sunflower/install/stem_pkg --record /home/pi/sunflower/build/stem_pkg/install.log --single-version-externally-managed
+[5.123s] running egg_info
+[5.126s] creating ../../build/stem_pkg/stem_pkg.egg-info
+[5.128s] writing ../../build/stem_pkg/stem_pkg.egg-info/PKG-INFO
+[5.130s] writing dependency_links to ../../build/stem_pkg/stem_pkg.egg-info/dependency_links.txt
+[5.132s] writing entry points to ../../build/stem_pkg/stem_pkg.egg-info/entry_points.txt
+[5.133s] writing requirements to ../../build/stem_pkg/stem_pkg.egg-info/requires.txt
+[5.134s] writing top-level names to ../../build/stem_pkg/stem_pkg.egg-info/top_level.txt
+[5.141s] writing manifest file '../../build/stem_pkg/stem_pkg.egg-info/SOURCES.txt'
+[5.290s] reading manifest file '../../build/stem_pkg/stem_pkg.egg-info/SOURCES.txt'
+[5.295s] writing manifest file '../../build/stem_pkg/stem_pkg.egg-info/SOURCES.txt'
+[5.296s] running build
+[5.296s] running build_py
+[5.299s] creating /home/pi/sunflower/build/stem_pkg/build
+[5.301s] creating /home/pi/sunflower/build/stem_pkg/build/lib
+[5.303s] creating /home/pi/sunflower/build/stem_pkg/build/lib/stem_pkg
+[5.306s] copying stem_pkg/serial_talker.py -> /home/pi/sunflower/build/stem_pkg/build/lib/stem_pkg
+[5.308s] copying stem_pkg/__init__.py -> /home/pi/sunflower/build/stem_pkg/build/lib/stem_pkg
+[5.312s] copying stem_pkg/controller.py -> /home/pi/sunflower/build/stem_pkg/build/lib/stem_pkg
+[5.314s] copying stem_pkg/async_serial_talker.py -> /home/pi/sunflower/build/stem_pkg/build/lib/stem_pkg
+[5.315s] copying stem_pkg/cmd_selector.py -> /home/pi/sunflower/build/stem_pkg/build/lib/stem_pkg
+[5.317s] copying stem_pkg/calculator.py -> /home/pi/sunflower/build/stem_pkg/build/lib/stem_pkg
+[5.319s] copying stem_pkg/tensor.py -> /home/pi/sunflower/build/stem_pkg/build/lib/stem_pkg
+[5.320s] copying stem_pkg/tester.py -> /home/pi/sunflower/build/stem_pkg/build/lib/stem_pkg
+[5.324s] copying stem_pkg/tensor_publisher.py -> /home/pi/sunflower/build/stem_pkg/build/lib/stem_pkg
+[5.326s] running install
+[5.330s] running install_lib
+[5.336s] creating /home/pi/sunflower/install/stem_pkg/lib/python3.8/site-packages/stem_pkg
+[5.338s] copying /home/pi/sunflower/build/stem_pkg/build/lib/stem_pkg/serial_talker.py -> /home/pi/sunflower/install/stem_pkg/lib/python3.8/site-packages/stem_pkg
+[5.341s] copying /home/pi/sunflower/build/stem_pkg/build/lib/stem_pkg/__init__.py -> /home/pi/sunflower/install/stem_pkg/lib/python3.8/site-packages/stem_pkg
+[5.343s] copying /home/pi/sunflower/build/stem_pkg/build/lib/stem_pkg/controller.py -> /home/pi/sunflower/install/stem_pkg/lib/python3.8/site-packages/stem_pkg
+[5.345s] copying /home/pi/sunflower/build/stem_pkg/build/lib/stem_pkg/async_serial_talker.py -> /home/pi/sunflower/install/stem_pkg/lib/python3.8/site-packages/stem_pkg
+[5.348s] copying /home/pi/sunflower/build/stem_pkg/build/lib/stem_pkg/cmd_selector.py -> /home/pi/sunflower/install/stem_pkg/lib/python3.8/site-packages/stem_pkg
+[5.349s] copying /home/pi/sunflower/build/stem_pkg/build/lib/stem_pkg/calculator.py -> /home/pi/sunflower/install/stem_pkg/lib/python3.8/site-packages/stem_pkg
+[5.352s] copying /home/pi/sunflower/build/stem_pkg/build/lib/stem_pkg/tensor.py -> /home/pi/sunflower/install/stem_pkg/lib/python3.8/site-packages/stem_pkg
+[5.353s] copying /home/pi/sunflower/build/stem_pkg/build/lib/stem_pkg/tester.py -> /home/pi/sunflower/install/stem_pkg/lib/python3.8/site-packages/stem_pkg
+[5.353s] copying /home/pi/sunflower/build/stem_pkg/build/lib/stem_pkg/tensor_publisher.py -> /home/pi/sunflower/install/stem_pkg/lib/python3.8/site-packages/stem_pkg
+[5.355s] byte-compiling /home/pi/sunflower/install/stem_pkg/lib/python3.8/site-packages/stem_pkg/serial_talker.py to serial_talker.cpython-38.pyc
+[5.361s] byte-compiling /home/pi/sunflower/install/stem_pkg/lib/python3.8/site-packages/stem_pkg/__init__.py to __init__.cpython-38.pyc
+[5.362s] byte-compiling /home/pi/sunflower/install/stem_pkg/lib/python3.8/site-packages/stem_pkg/controller.py to controller.cpython-38.pyc
+[5.366s] byte-compiling /home/pi/sunflower/install/stem_pkg/lib/python3.8/site-packages/stem_pkg/async_serial_talker.py to async_serial_talker.cpython-38.pyc
+[5.368s] byte-compiling /home/pi/sunflower/install/stem_pkg/lib/python3.8/site-packages/stem_pkg/cmd_selector.py to cmd_selector.cpython-38.pyc
+[5.371s] byte-compiling /home/pi/sunflower/install/stem_pkg/lib/python3.8/site-packages/stem_pkg/calculator.py to calculator.cpython-38.pyc
+[5.374s] byte-compiling /home/pi/sunflower/install/stem_pkg/lib/python3.8/site-packages/stem_pkg/tensor.py to tensor.cpython-38.pyc
+[5.377s] byte-compiling /home/pi/sunflower/install/stem_pkg/lib/python3.8/site-packages/stem_pkg/tester.py to tester.cpython-38.pyc
+[5.379s] byte-compiling /home/pi/sunflower/install/stem_pkg/lib/python3.8/site-packages/stem_pkg/tensor_publisher.py to tensor_publisher.cpython-38.pyc
+[5.382s] running install_data
+[5.387s] creating /home/pi/sunflower/install/stem_pkg/share
+[5.393s] creating /home/pi/sunflower/install/stem_pkg/share/ament_index
+[5.394s] creating /home/pi/sunflower/install/stem_pkg/share/ament_index/resource_index
+[5.395s] creating /home/pi/sunflower/install/stem_pkg/share/ament_index/resource_index/packages
+[5.396s] copying resource/stem_pkg -> /home/pi/sunflower/install/stem_pkg/share/ament_index/resource_index/packages
+[5.397s] creating /home/pi/sunflower/install/stem_pkg/share/stem_pkg
+[5.398s] copying package.xml -> /home/pi/sunflower/install/stem_pkg/share/stem_pkg
+[5.399s] copying launch/stem.launch.py -> /home/pi/sunflower/install/stem_pkg/share/stem_pkg
+[5.399s] running install_egg_info
+[5.412s] Copying ../../build/stem_pkg/stem_pkg.egg-info to /home/pi/sunflower/install/stem_pkg/lib/python3.8/site-packages/stem_pkg-0.0.0-py3.8.egg-info
+[5.416s] running install_scripts
+[5.523s] Installing calculator script to /home/pi/sunflower/install/stem_pkg/lib/stem_pkg
+[5.524s] Installing cmd_selector script to /home/pi/sunflower/install/stem_pkg/lib/stem_pkg
+[5.525s] Installing serial_talker script to /home/pi/sunflower/install/stem_pkg/lib/stem_pkg
+[5.526s] Installing tensor script to /home/pi/sunflower/install/stem_pkg/lib/stem_pkg
+[5.526s] Installing tensor_publisher script to /home/pi/sunflower/install/stem_pkg/lib/stem_pkg
+[5.528s] writing list of installed files to '/home/pi/sunflower/build/stem_pkg/install.log'
+[5.696s] Invoked command in '/home/pi/sunflower/src/stem_pkg' returned '0': PYTHONPATH=/home/pi/sunflower/install/stem_pkg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/stem_pkg build --build-base /home/pi/sunflower/build/stem_pkg/build install --prefix /home/pi/sunflower/install/stem_pkg --record /home/pi/sunflower/build/stem_pkg/install.log --single-version-externally-managed

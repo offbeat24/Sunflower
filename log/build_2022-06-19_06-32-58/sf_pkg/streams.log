@@ -1,0 +1,24 @@
+[10.878s] Invoking command in '/home/pi/sunflower/build/sf_pkg': PYTHONPATH=/home/pi/sunflower/install/sf_pkg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/pi/sunflower/install/sf_pkg --editable --build-directory /home/pi/sunflower/build/sf_pkg/build --no-deps install_data --install-dir /home/pi/sunflower/install/sf_pkg
+[13.834s] running develop
+[15.274s] running egg_info
+[15.275s] creating sf_pkg.egg-info
+[15.276s] writing sf_pkg.egg-info/PKG-INFO
+[15.278s] writing dependency_links to sf_pkg.egg-info/dependency_links.txt
+[15.279s] writing entry points to sf_pkg.egg-info/entry_points.txt
+[15.279s] writing requirements to sf_pkg.egg-info/requires.txt
+[15.280s] writing top-level names to sf_pkg.egg-info/top_level.txt
+[15.289s] writing manifest file 'sf_pkg.egg-info/SOURCES.txt'
+[15.467s] reading manifest file 'sf_pkg.egg-info/SOURCES.txt'
+[15.470s] writing manifest file 'sf_pkg.egg-info/SOURCES.txt'
+[15.734s] running build_ext
+[15.735s] Creating /home/pi/sunflower/install/sf_pkg/lib/python3.8/site-packages/site.py
+[15.748s] Creating /home/pi/sunflower/install/sf_pkg/lib/python3.8/site-packages/sf-pkg.egg-link (link to .)
+[15.756s] 
+[15.758s] Installed /home/pi/sunflower/build/sf_pkg
+[15.760s] running install_data
+[15.762s] creating /home/pi/sunflower/install/sf_pkg/share/ament_index
+[15.764s] creating /home/pi/sunflower/install/sf_pkg/share/ament_index/resource_index
+[15.771s] creating /home/pi/sunflower/install/sf_pkg/share/ament_index/resource_index/packages
+[15.774s] copying resource/sf_pkg -> /home/pi/sunflower/install/sf_pkg/share/ament_index/resource_index/packages
+[15.787s] copying package.xml -> /home/pi/sunflower/install/sf_pkg/share/sf_pkg
+[16.111s] Invoked command in '/home/pi/sunflower/build/sf_pkg' returned '0': PYTHONPATH=/home/pi/sunflower/install/sf_pkg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/pi/sunflower/install/sf_pkg --editable --build-directory /home/pi/sunflower/build/sf_pkg/build --no-deps install_data --install-dir /home/pi/sunflower/install/sf_pkg

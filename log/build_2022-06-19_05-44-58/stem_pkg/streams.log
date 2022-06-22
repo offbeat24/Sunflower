@@ -1,0 +1,29 @@
+[3.978s] Invoking command in '/home/pi/sunflower/build/stem_pkg': PYTHONPATH=/home/pi/sunflower/install/stem_pkg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/pi/sunflower/install/stem_pkg --uninstall --editable --build-directory /home/pi/sunflower/build/stem_pkg/build
+[5.745s] running develop
+[6.949s] Invoked command in '/home/pi/sunflower/build/stem_pkg' returned '0': PYTHONPATH=/home/pi/sunflower/install/stem_pkg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/pi/sunflower/install/stem_pkg --uninstall --editable --build-directory /home/pi/sunflower/build/stem_pkg/build
+[6.958s] Invoking command in '/home/pi/sunflower/src/stem_pkg': PYTHONPATH=/home/pi/sunflower/install/stem_pkg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/stem_pkg build --build-base /home/pi/sunflower/build/stem_pkg/build install --prefix /home/pi/sunflower/install/stem_pkg --record /home/pi/sunflower/build/stem_pkg/install.log --single-version-externally-managed
+[8.431s] running egg_info
+[8.434s] writing ../../build/stem_pkg/stem_pkg.egg-info/PKG-INFO
+[8.435s] writing dependency_links to ../../build/stem_pkg/stem_pkg.egg-info/dependency_links.txt
+[8.436s] writing entry points to ../../build/stem_pkg/stem_pkg.egg-info/entry_points.txt
+[8.437s] writing requirements to ../../build/stem_pkg/stem_pkg.egg-info/requires.txt
+[8.438s] writing top-level names to ../../build/stem_pkg/stem_pkg.egg-info/top_level.txt
+[8.602s] reading manifest file '../../build/stem_pkg/stem_pkg.egg-info/SOURCES.txt'
+[8.608s] writing manifest file '../../build/stem_pkg/stem_pkg.egg-info/SOURCES.txt'
+[8.609s] running build
+[8.609s] running build_py
+[8.613s] running install
+[8.616s] running install_lib
+[8.626s] running install_data
+[8.628s] copying package.xml -> /home/pi/sunflower/install/stem_pkg/share/stem_pkg
+[8.629s] running install_egg_info
+[8.638s] removing '/home/pi/sunflower/install/stem_pkg/lib/python3.8/site-packages/stem_pkg-0.0.0-py3.8.egg-info' (and everything under it)
+[8.640s] Copying ../../build/stem_pkg/stem_pkg.egg-info to /home/pi/sunflower/install/stem_pkg/lib/python3.8/site-packages/stem_pkg-0.0.0-py3.8.egg-info
+[8.647s] running install_scripts
+[8.731s] Installing calculator script to /home/pi/sunflower/install/stem_pkg/lib/stem_pkg
+[8.733s] Installing cmd_selector script to /home/pi/sunflower/install/stem_pkg/lib/stem_pkg
+[8.734s] Installing serial_talker script to /home/pi/sunflower/install/stem_pkg/lib/stem_pkg
+[8.735s] Installing tensor script to /home/pi/sunflower/install/stem_pkg/lib/stem_pkg
+[8.736s] Installing tensor_publisher script to /home/pi/sunflower/install/stem_pkg/lib/stem_pkg
+[8.738s] writing list of installed files to '/home/pi/sunflower/build/stem_pkg/install.log'
+[8.862s] Invoked command in '/home/pi/sunflower/src/stem_pkg' returned '0': PYTHONPATH=/home/pi/sunflower/install/stem_pkg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/stem_pkg build --build-base /home/pi/sunflower/build/stem_pkg/build install --prefix /home/pi/sunflower/install/stem_pkg --record /home/pi/sunflower/build/stem_pkg/install.log --single-version-externally-managed

@@ -1,0 +1,1843 @@
+[0.000000] (-) TimerEvent: {}
+[0.001901] (sf_pkg) JobQueued: {'identifier': 'sf_pkg', 'dependencies': OrderedDict([('sf_pkg', '/home/pi/sunflower/install/sf_pkg')])}
+[0.003314] (stem_pkg) JobQueued: {'identifier': 'stem_pkg', 'dependencies': OrderedDict([('stem_pkg', '/home/pi/sunflower/install/stem_pkg')])}
+[0.005044] (sunflower_interfaces) JobQueued: {'identifier': 'sunflower_interfaces', 'dependencies': OrderedDict([('sunflower_interfaces', '/home/pi/sunflower/install/sunflower_interfaces')])}
+[0.005458] (test_pkg) JobQueued: {'identifier': 'test_pkg', 'dependencies': OrderedDict([('test_pkg', '/home/pi/sunflower/install/test_pkg')])}
+[0.005675] (tflite_pkg) JobQueued: {'identifier': 'tflite_pkg', 'dependencies': OrderedDict([('tflite_pkg', '/home/pi/sunflower/install/tflite_pkg')])}
+[0.005851] (sf_pkg) JobStarted: {'identifier': 'sf_pkg'}
+[0.065269] (stem_pkg) JobStarted: {'identifier': 'stem_pkg'}
+[0.098155] (sunflower_interfaces) JobStarted: {'identifier': 'sunflower_interfaces'}
+[0.103803] (-) TimerEvent: {}
+[0.134493] (test_pkg) JobStarted: {'identifier': 'test_pkg'}
+[0.204176] (-) TimerEvent: {}
+[0.305456] (-) TimerEvent: {}
+[0.406416] (-) TimerEvent: {}
+[0.507400] (-) TimerEvent: {}
+[0.608366] (-) TimerEvent: {}
+[0.709473] (-) TimerEvent: {}
+[0.810416] (-) TimerEvent: {}
+[0.911264] (-) TimerEvent: {}
+[1.012136] (-) TimerEvent: {}
+[1.113112] (-) TimerEvent: {}
+[1.213903] (-) TimerEvent: {}
+[1.314741] (-) TimerEvent: {}
+[1.415724] (-) TimerEvent: {}
+[1.516670] (-) TimerEvent: {}
+[1.617691] (-) TimerEvent: {}
+[1.661891] (sf_pkg) Command: {'cmd': ['/usr/bin/python3', '-m', 'pytest'], 'cwd': '/home/pi/sunflower/src/sf_pkg', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'pi', 'SSH_CLIENT': '211.217.28.227 64484 22', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/pi/.vscode-server/bin/30d9c6cd9483b2cc586687151bcbcd635f373630/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/pi/sunflower/install/sunflower_interfaces/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib', 'BROWSER': '/home/pi/.vscode-server/bin/30d9c6cd9483b2cc586687151bcbcd635f373630/bin/helpers/browser.sh', 'MOTD_SHOWN': 'pam', 'HOME': '/home/pi', 'OLDPWD': '/home/pi/sunflower/src', 'TERM_PROGRAM_VERSION': '1.68.1', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-cf2a709b-6e9d-49bf-bea4-aec8d084bc57.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/pi/.vscode-server/bin/30d9c6cd9483b2cc586687151bcbcd635f373630/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/pi/.vscode-server/bin/30d9c6cd9483b2cc586687151bcbcd635f373630/node', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'COLCON_PREFIX_PATH': '/home/pi/sunflower/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'pi', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '4', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/pi/.vscode-server/bin/30d9c6cd9483b2cc586687151bcbcd635f373630/bin/remote-cli:/home/pi/.local/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-7841f96d5d.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/pi/sunflower/install/tflite_pkg:/home/pi/sunflower/install/test_pkg:/home/pi/sunflower/install/sunflower_interfaces:/opt/ros/foxy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/pi/sunflower/build/sf_pkg', 'SSH_CONNECTION': '211.217.28.227 64484 211.217.27.80 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/pi/sunflower/build/sf_pkg:/home/pi/sunflower/install/sf_pkg/lib/python3.8/site-packages:/home/pi/sunflower/build/tflite_pkg:/home/pi/sunflower/install/tflite_pkg/lib/python3.8/site-packages:/home/pi/sunflower/build/test_pkg:/home/pi/sunflower/install/test_pkg/lib/python3.8/site-packages:/home/pi/sunflower/install/sunflower_interfaces/lib/python3.8/site-packages:/home/pi/sunflower/build/stem_pkg:/home/pi/sunflower/install/stem_pkg/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/pi/sunflower/install/sunflower_interfaces', 'PYTEST_ADDOPTS': '--tb=short --junit-xml=/home/pi/sunflower/build/sf_pkg/pytest.xml --junit-prefix=sf_pkg -o cache_dir=/home/pi/sunflower/build/sf_pkg/.pytest_cache'}, 'shell': False}
+[1.718275] (-) TimerEvent: {}
+[1.821372] (-) TimerEvent: {}
+[1.923172] (-) TimerEvent: {}
+[2.025627] (-) TimerEvent: {}
+[2.128217] (-) TimerEvent: {}
+[2.231999] (-) TimerEvent: {}
+[2.334676] (-) TimerEvent: {}
+[2.438965] (-) TimerEvent: {}
+[2.541228] (-) TimerEvent: {}
+[2.642195] (-) TimerEvent: {}
+[2.744912] (-) TimerEvent: {}
+[2.850142] (-) TimerEvent: {}
+[2.957020] (-) TimerEvent: {}
+[3.061111] (-) TimerEvent: {}
+[3.163081] (-) TimerEvent: {}
+[3.266352] (-) TimerEvent: {}
+[3.367653] (-) TimerEvent: {}
+[3.473228] (-) TimerEvent: {}
+[3.575520] (-) TimerEvent: {}
+[3.621720] (stem_pkg) Command: {'cmd': ['/usr/bin/python3', '-m', 'pytest'], 'cwd': '/home/pi/sunflower/src/stem_pkg', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'pi', 'SSH_CLIENT': '211.217.28.227 64484 22', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/pi/.vscode-server/bin/30d9c6cd9483b2cc586687151bcbcd635f373630/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/pi/sunflower/install/sunflower_interfaces/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib', 'BROWSER': '/home/pi/.vscode-server/bin/30d9c6cd9483b2cc586687151bcbcd635f373630/bin/helpers/browser.sh', 'MOTD_SHOWN': 'pam', 'HOME': '/home/pi', 'OLDPWD': '/home/pi/sunflower/src', 'TERM_PROGRAM_VERSION': '1.68.1', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-cf2a709b-6e9d-49bf-bea4-aec8d084bc57.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/pi/.vscode-server/bin/30d9c6cd9483b2cc586687151bcbcd635f373630/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/pi/.vscode-server/bin/30d9c6cd9483b2cc586687151bcbcd635f373630/node', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'COLCON_PREFIX_PATH': '/home/pi/sunflower/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'pi', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '4', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/pi/.vscode-server/bin/30d9c6cd9483b2cc586687151bcbcd635f373630/bin/remote-cli:/home/pi/.local/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-7841f96d5d.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/pi/sunflower/install/tflite_pkg:/home/pi/sunflower/install/test_pkg:/home/pi/sunflower/install/sunflower_interfaces:/opt/ros/foxy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/pi/sunflower/build/stem_pkg', 'SSH_CONNECTION': '211.217.28.227 64484 211.217.27.80 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/pi/sunflower/build/stem_pkg:/home/pi/sunflower/install/stem_pkg/lib/python3.8/site-packages:/home/pi/sunflower/build/tflite_pkg:/home/pi/sunflower/install/tflite_pkg/lib/python3.8/site-packages:/home/pi/sunflower/build/test_pkg:/home/pi/sunflower/install/test_pkg/lib/python3.8/site-packages:/home/pi/sunflower/install/sunflower_interfaces/lib/python3.8/site-packages:/home/pi/sunflower/build/sf_pkg:/home/pi/sunflower/install/sf_pkg/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/pi/sunflower/install/sunflower_interfaces', 'PYTEST_ADDOPTS': '--tb=short --junit-xml=/home/pi/sunflower/build/stem_pkg/pytest.xml --junit-prefix=stem_pkg -o cache_dir=/home/pi/sunflower/build/stem_pkg/.pytest_cache'}, 'shell': False}
+[3.675853] (-) TimerEvent: {}
+[3.777422] (-) TimerEvent: {}
+[3.878722] (-) TimerEvent: {}
+[3.980045] (-) TimerEvent: {}
+[4.080964] (-) TimerEvent: {}
+[4.181924] (-) TimerEvent: {}
+[4.282863] (-) TimerEvent: {}
+[4.383997] (-) TimerEvent: {}
+[4.485198] (-) TimerEvent: {}
+[4.586089] (-) TimerEvent: {}
+[4.687133] (-) TimerEvent: {}
+[4.788504] (-) TimerEvent: {}
+[4.889684] (-) TimerEvent: {}
+[4.990599] (-) TimerEvent: {}
+[5.091508] (-) TimerEvent: {}
+[5.195632] (-) TimerEvent: {}
+[5.298306] (-) TimerEvent: {}
+[5.402118] (-) TimerEvent: {}
+[5.503031] (-) TimerEvent: {}
+[5.538775] (sf_pkg) StdoutLine: {'line': b'\x1b[1m============================= test session starts ==============================\x1b[0m\n'}
+[5.540882] (sf_pkg) StdoutLine: {'line': b'platform linux -- Python 3.8.10, pytest-7.1.2, pluggy-0.13.0\n'}
+[5.579489] (sf_pkg) StdoutLine: {'line': b'cachedir: /home/pi/sunflower/build/sf_pkg/.pytest_cache\n'}
+[5.580380] (sf_pkg) StdoutLine: {'line': b'rootdir: /home/pi/sunflower/src/sf_pkg\n'}
+[5.581809] (sf_pkg) StdoutLine: {'line': b'plugins: ament-flake8-0.9.6, ament-copyright-0.9.6, launch-testing-ros-0.11.6, ament-xmllint-0.9.6, ament-pep257-0.9.6, ament-lint-0.9.6, launch-testing-0.10.8, rerunfailures-10.2, repeat-0.9.1, colcon-core-0.8.3, cov-2.8.1\n'}
+[5.603290] (-) TimerEvent: {}
+[5.705681] (-) TimerEvent: {}
+[5.803794] (test_pkg) Command: {'cmd': ['/usr/bin/python3', '-m', 'pytest'], 'cwd': '/home/pi/sunflower/src/test_pkg', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'pi', 'SSH_CLIENT': '211.217.28.227 64484 22', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/pi/.vscode-server/bin/30d9c6cd9483b2cc586687151bcbcd635f373630/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/pi/sunflower/install/sunflower_interfaces/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib', 'BROWSER': '/home/pi/.vscode-server/bin/30d9c6cd9483b2cc586687151bcbcd635f373630/bin/helpers/browser.sh', 'MOTD_SHOWN': 'pam', 'HOME': '/home/pi', 'OLDPWD': '/home/pi/sunflower/src', 'TERM_PROGRAM_VERSION': '1.68.1', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-cf2a709b-6e9d-49bf-bea4-aec8d084bc57.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/pi/.vscode-server/bin/30d9c6cd9483b2cc586687151bcbcd635f373630/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/pi/.vscode-server/bin/30d9c6cd9483b2cc586687151bcbcd635f373630/node', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'COLCON_PREFIX_PATH': '/home/pi/sunflower/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'pi', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '4', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/pi/.vscode-server/bin/30d9c6cd9483b2cc586687151bcbcd635f373630/bin/remote-cli:/home/pi/.local/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-7841f96d5d.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/pi/sunflower/install/test_pkg:/home/pi/sunflower/install/tflite_pkg:/home/pi/sunflower/install/sunflower_interfaces:/opt/ros/foxy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/pi/sunflower/build/test_pkg', 'SSH_CONNECTION': '211.217.28.227 64484 211.217.27.80 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/pi/sunflower/build/test_pkg:/home/pi/sunflower/install/test_pkg/lib/python3.8/site-packages:/home/pi/sunflower/build/tflite_pkg:/home/pi/sunflower/install/tflite_pkg/lib/python3.8/site-packages:/home/pi/sunflower/install/sunflower_interfaces/lib/python3.8/site-packages:/home/pi/sunflower/build/stem_pkg:/home/pi/sunflower/install/stem_pkg/lib/python3.8/site-packages:/home/pi/sunflower/build/sf_pkg:/home/pi/sunflower/install/sf_pkg/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/pi/sunflower/install/sunflower_interfaces', 'PYTEST_ADDOPTS': '--tb=short --junit-xml=/home/pi/sunflower/build/test_pkg/pytest.xml --junit-prefix=test_pkg -o cache_dir=/home/pi/sunflower/build/test_pkg/.pytest_cache'}, 'shell': False}
+[5.812368] (-) TimerEvent: {}
+[5.836678] (sunflower_interfaces) JobEnded: {'identifier': 'sunflower_interfaces', 'rc': 0}
+[5.877794] (tflite_pkg) JobStarted: {'identifier': 'tflite_pkg'}
+[5.912619] (-) TimerEvent: {}
+[5.970670] (sf_pkg) StdoutLine: {'line': b'\x1b[1mcollecting ... \x1b[0m\x1b[1m\n'}
+[5.972025] (sf_pkg) StdoutLine: {'line': b'collected 3 items                                                              \x1b[0m\n'}
+[5.976277] (sf_pkg) StdoutLine: {'line': b'\n'}
+[6.013084] (-) TimerEvent: {}
+[6.114843] (-) TimerEvent: {}
+[6.216143] (-) TimerEvent: {}
+[6.316974] (-) TimerEvent: {}
+[6.417381] (sf_pkg) StdoutLine: {'line': b'test/test_copyright.py \x1b[31mF\x1b[0m\x1b[31m                                                 [ 33%]\x1b[0m\n'}
+[6.418494] (-) TimerEvent: {}
+[6.519433] (-) TimerEvent: {}
+[6.620415] (-) TimerEvent: {}
+[6.721472] (-) TimerEvent: {}
+[6.822538] (-) TimerEvent: {}
+[6.923644] (-) TimerEvent: {}
+[7.024921] (-) TimerEvent: {}
+[7.125943] (-) TimerEvent: {}
+[7.226931] (-) TimerEvent: {}
+[7.328332] (-) TimerEvent: {}
+[7.429269] (-) TimerEvent: {}
+[7.532926] (-) TimerEvent: {}
+[7.633803] (-) TimerEvent: {}
+[7.734722] (-) TimerEvent: {}
+[7.839602] (-) TimerEvent: {}
+[7.940720] (-) TimerEvent: {}
+[8.041682] (-) TimerEvent: {}
+[8.046714] (stem_pkg) StdoutLine: {'line': b'\x1b[1m============================= test session starts ==============================\x1b[0m\n'}
+[8.048636] (stem_pkg) StdoutLine: {'line': b'platform linux -- Python 3.8.10, pytest-7.1.2, pluggy-0.13.0\n'}
+[8.067489] (sf_pkg) StdoutLine: {'line': b'test/test_flake8.py \x1b[31mF\x1b[0m\x1b[31m                                                    [ 66%]\x1b[0m\n'}
+[8.091406] (stem_pkg) StdoutLine: {'line': b'cachedir: /home/pi/sunflower/build/stem_pkg/.pytest_cache\n'}
+[8.092298] (stem_pkg) StdoutLine: {'line': b'rootdir: /home/pi/sunflower/src/stem_pkg\n'}
+[8.093178] (stem_pkg) StdoutLine: {'line': b'plugins: ament-flake8-0.9.6, ament-copyright-0.9.6, launch-testing-ros-0.11.6, ament-xmllint-0.9.6, ament-pep257-0.9.6, ament-lint-0.9.6, launch-testing-0.10.8, rerunfailures-10.2, repeat-0.9.1, colcon-core-0.8.3, cov-2.8.1\n'}
+[8.141935] (-) TimerEvent: {}
+[8.243024] (-) TimerEvent: {}
+[8.332153] (sf_pkg) StdoutLine: {'line': b'test/test_pep257.py \x1b[32m.\x1b[0m\x1b[31m                                                    [100%]\x1b[0m\n'}
+[8.333558] (sf_pkg) StdoutLine: {'line': b'\n'}
+[8.335303] (sf_pkg) StdoutLine: {'line': b'=================================== FAILURES ===================================\n'}
+[8.336884] (sf_pkg) StdoutLine: {'line': b'\x1b[31m\x1b[1m________________________________ test_copyright ________________________________\x1b[0m\n'}
+[8.338430] (sf_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mtest/test_copyright.py\x1b[0m:23: in test_copyright\n'}
+[8.343263] (-) TimerEvent: {}
+[8.444356] (-) TimerEvent: {}
+[8.456865] (sf_pkg) StdoutLine: {'line': b"    \x1b[34;01massert\x1b[39;49;00m rc == \x1b[34;01m0\x1b[39;49;00m, \x1b[33m'\x1b[39;49;00m\x1b[33mFound errors\x1b[39;49;00m\x1b[33m'\x1b[39;49;00m\n"}
+[8.458572] (sf_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE   AssertionError: Found errors\x1b[0m\n'}
+[8.460002] (sf_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE   assert 1 == 0\x1b[0m\n'}
+[8.460810] (sf_pkg) StdoutLine: {'line': b'----------------------------- Captured stderr call -----------------------------\n'}
+[8.461469] (sf_pkg) StdoutLine: {'line': b'launch/sf.launch.py: could not find copyright notice\n'}
+[8.462149] (sf_pkg) StdoutLine: {'line': b'sf_pkg/calculator.py: could not find copyright notice\n'}
+[8.462876] (sf_pkg) StdoutLine: {'line': b'sf_pkg/cmd_selector.py: could not find copyright notice\n'}
+[8.463567] (sf_pkg) StdoutLine: {'line': b'sf_pkg/serial_talker.py: could not find copyright notice\n'}
+[8.476354] (sf_pkg) StdoutLine: {'line': b'sf_pkg/tensor.py: could not find copyright notice\n'}
+[8.478050] (sf_pkg) StdoutLine: {'line': b'sf_pkg/tensor_publisher.py: could not find copyright notice\n'}
+[8.489132] (sf_pkg) StdoutLine: {'line': b'6 errors, checked 10 files\n'}
+[8.490732] (sf_pkg) StdoutLine: {'line': b'\x1b[31m\x1b[1m_________________________________ test_flake8 __________________________________\x1b[0m\n'}
+[8.492258] (sf_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mtest/test_flake8.py\x1b[0m:23: in test_flake8\n'}
+[8.494798] (sf_pkg) StdoutLine: {'line': b'    \x1b[34;01massert\x1b[39;49;00m rc == \x1b[34;01m0\x1b[39;49;00m, \\\n'}
+[8.496580] (sf_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE   AssertionError: Found 87 code style errors / warnings:\x1b[0m\n'}
+[8.498522] (sf_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./setup.py:2:1: I100 Import statements are in the wrong order. 'import os' should be before 'from setuptools import setup' and in a different group.\x1b[0m\n"}
+[8.508558] (sf_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./setup.py:2:1: I201 Missing newline between import groups. 'import os' is identified as Stdlib and 'from setuptools import setup' is identified as Third Party.\x1b[0m\n"}
+[8.510867] (sf_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./setup.py:3:1: I100 Import statements are in the wrong order. 'from glob import glob' should be before 'import os'\x1b[0m\n"}
+[8.512335] (sf_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./setup.py:26:13: Q000 Double quotes found but single quotes preferred\x1b[0m\n'}
+[8.514065] (sf_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./setup.py:27:13: Q000 Double quotes found but single quotes preferred\x1b[0m\n'}
+[8.516521] (sf_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./setup.py:28:13: Q000 Double quotes found but single quotes preferred\x1b[0m\n'}
+[8.517403] (sf_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./setup.py:29:13: Q000 Double quotes found but single quotes preferred\x1b[0m\n'}
+[8.518023] (sf_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./setup.py:30:13: Q000 Double quotes found but single quotes preferred\x1b[0m\n'}
+[8.518727] (sf_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./launch/sf.launch.py:4:1: E302 expected 2 blank lines, found 1\x1b[0m\n'}
+[8.534045] (sf_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./launch/sf.launch.py:10:20: E251 unexpected spaces around keyword / parameter equals\x1b[0m\n'}
+[8.536736] (sf_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./launch/sf.launch.py:20:32: E202 whitespace before ')'\x1b[0m\n"}
+[8.548601] (-) TimerEvent: {}
+[8.550171] (sf_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./launch/sf.launch.py:26:20: E251 unexpected spaces around keyword / parameter equals\x1b[0m\n'}
+[8.552685] (sf_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./launch/sf.launch.py:26:29: E202 whitespace before ')'\x1b[0m\n"}
+[8.555155] (sf_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./launch/sf.launch.py:27:7: W292 no newline at end of file\x1b[0m\n'}
+[8.560235] (sf_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./sf_pkg/serial_talker.py:5:1: I100 Import statements are in the wrong order. 'import serial' should be before 'from std_msgs.msg import String'\x1b[0m\n"}
+[8.563952] (sf_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./sf_pkg/serial_talker.py:5:14: W291 trailing whitespace\x1b[0m\n'}
+[8.567327] (sf_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./sf_pkg/serial_talker.py:11:5: E301 expected 1 blank line, found 0\x1b[0m\n'}
+[8.571126] (sf_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./sf_pkg/serial_talker.py:19:32: Q000 Double quotes found but single quotes preferred\x1b[0m\n'}
+[8.574302] (sf_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./sf_pkg/serial_talker.py:22:24: Q000 Double quotes found but single quotes preferred\x1b[0m\n'}
+[8.577623] (sf_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./sf_pkg/serial_talker.py:40:1: E305 expected 2 blank lines after class or function definition, found 1\x1b[0m\n'}
+[8.581238] (sf_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./sf_pkg/serial_talker.py:40:26: E203 whitespace before ':'\x1b[0m\n"}
+[8.584620] (sf_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./sf_pkg/serial_talker.py:41:11: W292 no newline at end of file\x1b[0m\n'}
+[8.588316] (sf_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./sf_pkg/cmd_selector.py:6:1: E302 expected 2 blank lines, found 1\x1b[0m\n'}
+[8.591066] (sf_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./sf_pkg/cmd_selector.py:8:5: E301 expected 1 blank line, found 0\x1b[0m\n'}
+[8.594042] (sf_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./sf_pkg/cmd_selector.py:44:1: E303 too many blank lines (3)\x1b[0m\n'}
+[8.596963] (sf_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./sf_pkg/cmd_selector.py:55:1: E305 expected 2 blank lines after class or function definition, found 1\x1b[0m\n'}
+[8.600206] (sf_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./sf_pkg/cmd_selector.py:55:26: E203 whitespace before ':'\x1b[0m\n"}
+[8.603476] (sf_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./sf_pkg/cmd_selector.py:56:11: W292 no newline at end of file\x1b[0m\n'}
+[8.606638] (sf_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./sf_pkg/calculator.py:1:1: F401 'socket.NI_NUMERICHOST' imported but unused\x1b[0m\n"}
+[8.609685] (sf_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./sf_pkg/calculator.py:2:1: I201 Missing newline between import groups. 'import rclpy' is identified as Third Party and 'from socket import NI_NUMERICHOST' is identified as Stdlib.\x1b[0m\n"}
+[8.613081] (sf_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./sf_pkg/calculator.py:7:1: I100 Import statements are in the wrong order. 'import math' should be before 'from sunflower_interfaces.msg import TfliteResult' and in a different group.\x1b[0m\n"}
+[8.615989] (sf_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./sf_pkg/calculator.py:7:1: I201 Missing newline between import groups. 'import math' is identified as Stdlib and 'from sunflower_interfaces.msg import TfliteResult' is identified as Third Party.\x1b[0m\n"}
+[8.619015] (sf_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./sf_pkg/calculator.py:9:1: E302 expected 2 blank lines, found 1\x1b[0m\n'}
+[8.622154] (sf_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./sf_pkg/calculator.py:9:23: E203 whitespace before ':'\x1b[0m\n"}
+[8.624663] (sf_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./sf_pkg/calculator.py:10:1: CNL100 Class definition does not have a new line.\x1b[0m\n'}
+[8.627153] (sf_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./sf_pkg/calculator.py:23:35: E203 whitespace before ':'\x1b[0m\n"}
+[8.629815] (sf_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./sf_pkg/calculator.py:31:30: Q000 Double quotes found but single quotes preferred\x1b[0m\n'}
+[8.632221] (sf_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./sf_pkg/calculator.py:34:27: C417 Unnecessary use of map - use a generator expression instead.\x1b[0m\n'}
+[8.635737] (sf_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./sf_pkg/calculator.py:35:27: C417 Unnecessary use of map - use a generator expression instead.\x1b[0m\n'}
+[8.638658] (sf_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./sf_pkg/calculator.py:36:27: C417 Unnecessary use of map - use a generator expression instead.\x1b[0m\n'}
+[8.641752] (sf_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./sf_pkg/calculator.py:62:1: W293 blank line contains whitespace\x1b[0m\n'}
+[8.645046] (sf_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./sf_pkg/calculator.py:65:10: E203 whitespace before ','\x1b[0m\n"}
+[8.648131] (sf_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./sf_pkg/calculator.py:65:39: C417 Unnecessary use of map - use a generator expression instead.\x1b[0m\n'}
+[8.652278] (-) TimerEvent: {}
+[8.654390] (sf_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./sf_pkg/calculator.py:83:1: E302 expected 2 blank lines, found 1\x1b[0m\n'}
+[8.658371] (sf_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./sf_pkg/calculator.py:83:20: E203 whitespace before ':'\x1b[0m\n"}
+[8.661594] (sf_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./sf_pkg/calculator.py:94:1: E305 expected 2 blank lines after class or function definition, found 1\x1b[0m\n'}
+[8.664568] (sf_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./sf_pkg/calculator.py:94:26: E203 whitespace before ':'\x1b[0m\n"}
+[8.667838] (sf_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./sf_pkg/calculator.py:95:11: W292 no newline at end of file\x1b[0m\n'}
+[8.670784] (sf_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./sf_pkg/tensor.py:5:1: I100 Import statements are in the wrong order. 'import cv2' should be before 'from sunflower_interfaces.msg import TfliteResult'\x1b[0m\n"}
+[8.673956] (sf_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./sf_pkg/tensor.py:7:1: I100 Import statements are in the wrong order. 'import numpy' should be before 'import tensorflow'\x1b[0m\n"}
+[8.676518] (sf_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./sf_pkg/tensor.py:9:1: E302 expected 2 blank lines, found 1\x1b[0m\n'}
+[8.679499] (sf_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./sf_pkg/tensor.py:9:19: E203 whitespace before ':'\x1b[0m\n"}
+[8.682692] (sf_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./sf_pkg/tensor.py:10:1: CNL100 Class definition does not have a new line.\x1b[0m\n'}
+[8.686225] (sf_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./sf_pkg/tensor.py:20:46: E203 whitespace before ':'\x1b[0m\n"}
+[8.689167] (sf_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./sf_pkg/tensor.py:41:9: F841 local variable 'data' is assigned to but never used\x1b[0m\n"}
+[8.692557] (sf_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./sf_pkg/tensor.py:41:16: C408 Unnecessary list call - rewrite as a literal.\x1b[0m\n'}
+[8.695967] (sf_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./sf_pkg/tensor.py:53:1: E302 expected 2 blank lines, found 1\x1b[0m\n'}
+[8.699140] (sf_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./sf_pkg/tensor.py:53:20: E203 whitespace before ':'\x1b[0m\n"}
+[8.702183] (sf_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./sf_pkg/tensor.py:55:50: Q000 Double quotes found but single quotes preferred\x1b[0m\n'}
+[8.705455] (sf_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./sf_pkg/tensor.py:55:100: E501 line too long (100 > 99 characters)\x1b[0m\n'}
+[8.708622] (sf_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./sf_pkg/tensor.py:67:1: E305 expected 2 blank lines after class or function definition, found 1\x1b[0m\n'}
+[8.711644] (sf_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./sf_pkg/tensor.py:67:26: E203 whitespace before ':'\x1b[0m\n"}
+[8.714544] (sf_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./sf_pkg/tensor.py:70:1: E265 block comment should start with '# '\x1b[0m\n"}
+[8.717489] (sf_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./sf_pkg/tensor.py:70:29: W292 no newline at end of file\x1b[0m\n'}
+[8.719849] (sf_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./sf_pkg/tensor.py:70:29: W292 no newline at end of file\x1b[0m\n'}
+[8.722973] (sf_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./sf_pkg/tensor.py:70:29: W292 no newline at end of file\x1b[0m\n'}
+[8.725880] (sf_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./sf_pkg/tensor_publisher.py:5:1: I100 Import statements are in the wrong order. 'import cv2' should be before 'from std_msgs.msg import String'\x1b[0m\n"}
+[8.728448] (sf_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./sf_pkg/tensor_publisher.py:7:1: I100 Import statements are in the wrong order. 'import numpy' should be before 'import tensorflow'\x1b[0m\n"}
+[8.731006] (sf_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./sf_pkg/tensor_publisher.py:8:1: F401 'pandas as pd' imported but unused\x1b[0m\n"}
+[8.758835] (-) TimerEvent: {}
+[8.760693] (sf_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./sf_pkg/tensor_publisher.py:10:1: E302 expected 2 blank lines, found 1\x1b[0m\n'}
+[8.762796] (sf_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./sf_pkg/tensor_publisher.py:10:28: E203 whitespace before ':'\x1b[0m\n"}
+[8.764698] (sf_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./sf_pkg/tensor_publisher.py:11:1: CNL100 Class definition does not have a new line.\x1b[0m\n'}
+[8.766764] (sf_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./sf_pkg/tensor_publisher.py:21:46: E203 whitespace before ':'\x1b[0m\n"}
+[8.779150] (sf_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./sf_pkg/tensor_publisher.py:42:16: C408 Unnecessary list call - rewrite as a literal.\x1b[0m\n'}
+[8.781767] (sf_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./sf_pkg/tensor_publisher.py:44:28: E203 whitespace before ':'\x1b[0m\n"}
+[8.784230] (sf_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./sf_pkg/tensor_publisher.py:47:20: Q000 Double quotes found but single quotes preferred\x1b[0m\n'}
+[8.786666] (sf_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./sf_pkg/tensor_publisher.py:48:20: Q000 Double quotes found but single quotes preferred\x1b[0m\n'}
+[8.789270] (sf_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./sf_pkg/tensor_publisher.py:52:1: E302 expected 2 blank lines, found 1\x1b[0m\n'}
+[8.791425] (sf_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./sf_pkg/tensor_publisher.py:52:20: E203 whitespace before ':'\x1b[0m\n"}
+[8.801179] (sf_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./sf_pkg/tensor_publisher.py:54:50: Q000 Double quotes found but single quotes preferred\x1b[0m\n'}
+[8.803816] (sf_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./sf_pkg/tensor_publisher.py:54:100: E501 line too long (100 > 99 characters)\x1b[0m\n'}
+[8.806432] (sf_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./sf_pkg/tensor_publisher.py:66:1: E305 expected 2 blank lines after class or function definition, found 1\x1b[0m\n'}
+[8.809580] (sf_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./sf_pkg/tensor_publisher.py:66:26: E203 whitespace before ':'\x1b[0m\n"}
+[8.812524] (sf_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./sf_pkg/tensor_publisher.py:69:1: E265 block comment should start with '# '\x1b[0m\n"}
+[8.830278] (sf_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./sf_pkg/tensor_publisher.py:69:29: W292 no newline at end of file\x1b[0m\n'}
+[8.834052] (sf_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./sf_pkg/tensor_publisher.py:69:29: W292 no newline at end of file\x1b[0m\n'}
+[8.837652] (sf_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./sf_pkg/tensor_publisher.py:69:29: W292 no newline at end of file\x1b[0m\n'}
+[8.840620] (sf_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE   assert 1 == 0\x1b[0m\n'}
+[8.843176] (sf_pkg) StdoutLine: {'line': b'----------------------------- Captured stdout call -----------------------------\n'}
+[8.845737] (sf_pkg) StdoutLine: {'line': b'\n'}
+[8.848351] (sf_pkg) StdoutLine: {'line': b"./setup.py:2:1: I100 Import statements are in the wrong order. 'import os' should be before 'from setuptools import setup' and in a different group.\n"}
+[8.851160] (sf_pkg) StdoutLine: {'line': b'import os\n'}
+[8.863329] (-) TimerEvent: {}
+[8.864692] (sf_pkg) StdoutLine: {'line': b'^\n'}
+[8.866468] (sf_pkg) StdoutLine: {'line': b'\n'}
+[8.868527] (sf_pkg) StdoutLine: {'line': b"./setup.py:2:1: I201 Missing newline between import groups. 'import os' is identified as Stdlib and 'from setuptools import setup' is identified as Third Party.\n"}
+[8.871022] (sf_pkg) StdoutLine: {'line': b'import os\n'}
+[8.874103] (sf_pkg) StdoutLine: {'line': b'^\n'}
+[8.885493] (sf_pkg) StdoutLine: {'line': b'\n'}
+[8.886183] (sf_pkg) StdoutLine: {'line': b"./setup.py:3:1: I100 Import statements are in the wrong order. 'from glob import glob' should be before 'import os'\n"}
+[8.886890] (sf_pkg) StdoutLine: {'line': b'from glob import glob\n'}
+[8.887623] (sf_pkg) StdoutLine: {'line': b'^\n'}
+[8.888247] (sf_pkg) StdoutLine: {'line': b'\n'}
+[8.888993] (sf_pkg) StdoutLine: {'line': b'./setup.py:26:13: Q000 Double quotes found but single quotes preferred\n'}
+[8.889650] (sf_pkg) StdoutLine: {'line': b'            "serial_talker=sf_pkg.serial_talker:main",\n'}
+[8.890403] (sf_pkg) StdoutLine: {'line': b'            ^\n'}
+[8.890980] (sf_pkg) StdoutLine: {'line': b'\n'}
+[8.891607] (sf_pkg) StdoutLine: {'line': b'./setup.py:27:13: Q000 Double quotes found but single quotes preferred\n'}
+[8.892206] (sf_pkg) StdoutLine: {'line': b'            "cmd_selector=sf_pkg.cmd_selector:main",\n'}
+[8.900964] (sf_pkg) StdoutLine: {'line': b'            ^\n'}
+[8.901870] (sf_pkg) StdoutLine: {'line': b'\n'}
+[8.902646] (sf_pkg) StdoutLine: {'line': b'./setup.py:28:13: Q000 Double quotes found but single quotes preferred\n'}
+[8.903473] (sf_pkg) StdoutLine: {'line': b'            "calculator=sf_pkg.calculator:main",\n'}
+[8.904297] (sf_pkg) StdoutLine: {'line': b'            ^\n'}
+[8.905241] (sf_pkg) StdoutLine: {'line': b'\n'}
+[8.906044] (sf_pkg) StdoutLine: {'line': b'./setup.py:29:13: Q000 Double quotes found but single quotes preferred\n'}
+[8.906839] (sf_pkg) StdoutLine: {'line': b'            "tensor_publisher=sf_pkg.tensor_publisher:main",\n'}
+[8.907975] (sf_pkg) StdoutLine: {'line': b'            ^\n'}
+[8.916871] (sf_pkg) StdoutLine: {'line': b'\n'}
+[8.917745] (sf_pkg) StdoutLine: {'line': b'./setup.py:30:13: Q000 Double quotes found but single quotes preferred\n'}
+[8.918338] (sf_pkg) StdoutLine: {'line': b'            "tensor=sf_pkg.tensor:main"\n'}
+[8.918962] (sf_pkg) StdoutLine: {'line': b'            ^\n'}
+[8.919618] (sf_pkg) StdoutLine: {'line': b'\n'}
+[8.925193] (sf_pkg) StdoutLine: {'line': b'./launch/sf.launch.py:4:1: E302 expected 2 blank lines, found 1\n'}
+[8.925928] (sf_pkg) StdoutLine: {'line': b'def generate_launch_description():\n'}
+[8.926597] (sf_pkg) StdoutLine: {'line': b'^\n'}
+[8.927227] (sf_pkg) StdoutLine: {'line': b'\n'}
+[8.927869] (sf_pkg) StdoutLine: {'line': b'./launch/sf.launch.py:10:20: E251 unexpected spaces around keyword / parameter equals\n'}
+[8.928530] (sf_pkg) StdoutLine: {'line': b"            output= 'screen'),\n"}
+[8.929696] (sf_pkg) StdoutLine: {'line': b'                   ^\n'}
+[8.930928] (sf_pkg) StdoutLine: {'line': b'\n'}
+[8.932157] (sf_pkg) StdoutLine: {'line': b"./launch/sf.launch.py:20:32: E202 whitespace before ')'\n"}
+[8.941035] (sf_pkg) StdoutLine: {'line': b"            name='cmd_selector' ),\n"}
+[8.941955] (sf_pkg) StdoutLine: {'line': b'                               ^\n'}
+[8.942757] (sf_pkg) StdoutLine: {'line': b'\n'}
+[8.943598] (sf_pkg) StdoutLine: {'line': b'./launch/sf.launch.py:26:20: E251 unexpected spaces around keyword / parameter equals\n'}
+[8.944496] (sf_pkg) StdoutLine: {'line': b"            output= 'screen' )\n"}
+[8.945423] (sf_pkg) StdoutLine: {'line': b'                   ^\n'}
+[8.946090] (sf_pkg) StdoutLine: {'line': b'\n'}
+[8.946759] (sf_pkg) StdoutLine: {'line': b"./launch/sf.launch.py:26:29: E202 whitespace before ')'\n"}
+[8.966397] (-) TimerEvent: {}
+[8.977447] (sf_pkg) StdoutLine: {'line': b"            output= 'screen' )\n"}
+[8.978835] (sf_pkg) StdoutLine: {'line': b'                            ^\n'}
+[8.980381] (sf_pkg) StdoutLine: {'line': b'\n'}
+[8.981226] (sf_pkg) StdoutLine: {'line': b'./launch/sf.launch.py:27:7: W292 no newline at end of file\n'}
+[8.982293] (sf_pkg) StdoutLine: {'line': b'    ])      ^\n'}
+[8.983044] (sf_pkg) StdoutLine: {'line': b'\n'}
+[8.983926] (sf_pkg) StdoutLine: {'line': b"./sf_pkg/serial_talker.py:5:1: I100 Import statements are in the wrong order. 'import serial' should be before 'from std_msgs.msg import String'\n"}
+[8.984758] (sf_pkg) StdoutLine: {'line': b'import serial \n'}
+[8.985473] (sf_pkg) StdoutLine: {'line': b'^\n'}
+[8.986144] (sf_pkg) StdoutLine: {'line': b'\n'}
+[8.986832] (sf_pkg) StdoutLine: {'line': b'./sf_pkg/serial_talker.py:5:14: W291 trailing whitespace\n'}
+[8.987486] (sf_pkg) StdoutLine: {'line': b'import serial \n'}
+[8.988188] (sf_pkg) StdoutLine: {'line': b'             ^\n'}
+[8.997120] (sf_pkg) StdoutLine: {'line': b'\n'}
+[8.998159] (sf_pkg) StdoutLine: {'line': b'./sf_pkg/serial_talker.py:11:5: E301 expected 1 blank line, found 0\n'}
+[8.999107] (sf_pkg) StdoutLine: {'line': b'    def __init__(self):\n'}
+[8.999869] (sf_pkg) StdoutLine: {'line': b'    ^\n'}
+[9.000751] (sf_pkg) StdoutLine: {'line': b'\n'}
+[9.001614] (sf_pkg) StdoutLine: {'line': b'./sf_pkg/serial_talker.py:19:32: Q000 Double quotes found but single quotes preferred\n'}
+[9.002466] (sf_pkg) StdoutLine: {'line': b'        self.get_logger().info("Serial connection started")\n'}
+[9.003244] (sf_pkg) StdoutLine: {'line': b'                               ^\n'}
+[9.004009] (sf_pkg) StdoutLine: {'line': b'\n'}
+[9.013237] (sf_pkg) StdoutLine: {'line': b'./sf_pkg/serial_talker.py:22:24: Q000 Double quotes found but single quotes preferred\n'}
+[9.014789] (sf_pkg) StdoutLine: {'line': b'        self.ser.write("^1*2*3*4*5*6*7*8*8".encode())\n'}
+[9.016503] (sf_pkg) StdoutLine: {'line': b'                       ^\n'}
+[9.018401] (sf_pkg) StdoutLine: {'line': b'\n'}
+[9.020263] (sf_pkg) StdoutLine: {'line': b'./sf_pkg/serial_talker.py:40:1: E305 expected 2 blank lines after class or function definition, found 1\n'}
+[9.029520] (sf_pkg) StdoutLine: {'line': b"if __name__ == '__main__' :\n"}
+[9.030262] (sf_pkg) StdoutLine: {'line': b'^\n'}
+[9.030974] (sf_pkg) StdoutLine: {'line': b'\n'}
+[9.031655] (sf_pkg) StdoutLine: {'line': b"./sf_pkg/serial_talker.py:40:26: E203 whitespace before ':'\n"}
+[9.032346] (sf_pkg) StdoutLine: {'line': b"if __name__ == '__main__' :\n"}
+[9.033207] (sf_pkg) StdoutLine: {'line': b'                         ^\n'}
+[9.034593] (sf_pkg) StdoutLine: {'line': b'\n'}
+[9.035891] (sf_pkg) StdoutLine: {'line': b'./sf_pkg/serial_talker.py:41:11: W292 no newline at end of file\n'}
+[9.045260] (sf_pkg) StdoutLine: {'line': b'    main()          ^\n'}
+[9.046046] (sf_pkg) StdoutLine: {'line': b'\n'}
+[9.046941] (sf_pkg) StdoutLine: {'line': b'./sf_pkg/cmd_selector.py:6:1: E302 expected 2 blank lines, found 1\n'}
+[9.047667] (sf_pkg) StdoutLine: {'line': b'class CommandSelector(Node):\n'}
+[9.048386] (sf_pkg) StdoutLine: {'line': b'^\n'}
+[9.059786] (sf_pkg) StdoutLine: {'line': b'\n'}
+[9.061205] (sf_pkg) StdoutLine: {'line': b'./sf_pkg/cmd_selector.py:8:5: E301 expected 1 blank line, found 0\n'}
+[9.062730] (sf_pkg) StdoutLine: {'line': b'    def __init__(self):\n'}
+[9.064138] (sf_pkg) StdoutLine: {'line': b'    ^\n'}
+[9.065266] (sf_pkg) StdoutLine: {'line': b'\n'}
+[9.066114] (sf_pkg) StdoutLine: {'line': b'./sf_pkg/cmd_selector.py:44:1: E303 too many blank lines (3)\n'}
+[9.066863] (-) TimerEvent: {}
+[9.072451] (sf_pkg) StdoutLine: {'line': b'def main(args=None):\n'}
+[9.074107] (sf_pkg) StdoutLine: {'line': b'^\n'}
+[9.075373] (sf_pkg) StdoutLine: {'line': b'\n'}
+[9.076481] (sf_pkg) StdoutLine: {'line': b'./sf_pkg/cmd_selector.py:55:1: E305 expected 2 blank lines after class or function definition, found 1\n'}
+[9.077350] (sf_pkg) StdoutLine: {'line': b"if __name__ == '__main__' :\n"}
+[9.078010] (sf_pkg) StdoutLine: {'line': b'^\n'}
+[9.078609] (sf_pkg) StdoutLine: {'line': b'\n'}
+[9.079248] (sf_pkg) StdoutLine: {'line': b"./sf_pkg/cmd_selector.py:55:26: E203 whitespace before ':'\n"}
+[9.079891] (sf_pkg) StdoutLine: {'line': b"if __name__ == '__main__' :\n"}
+[9.080519] (sf_pkg) StdoutLine: {'line': b'                         ^\n'}
+[9.081319] (sf_pkg) StdoutLine: {'line': b'\n'}
+[9.081958] (sf_pkg) StdoutLine: {'line': b'./sf_pkg/cmd_selector.py:56:11: W292 no newline at end of file\n'}
+[9.082572] (sf_pkg) StdoutLine: {'line': b'    main()          ^\n'}
+[9.083189] (sf_pkg) StdoutLine: {'line': b'\n'}
+[9.083815] (sf_pkg) StdoutLine: {'line': b"./sf_pkg/calculator.py:1:1: F401 'socket.NI_NUMERICHOST' imported but unused\n"}
+[9.084407] (sf_pkg) StdoutLine: {'line': b'from socket import NI_NUMERICHOST\n'}
+[9.085321] (sf_pkg) StdoutLine: {'line': b'^\n'}
+[9.086280] (sf_pkg) StdoutLine: {'line': b'\n'}
+[9.087121] (sf_pkg) StdoutLine: {'line': b"./sf_pkg/calculator.py:2:1: I201 Missing newline between import groups. 'import rclpy' is identified as Third Party and 'from socket import NI_NUMERICHOST' is identified as Stdlib.\n"}
+[9.088077] (sf_pkg) StdoutLine: {'line': b'import rclpy\n'}
+[9.089107] (sf_pkg) StdoutLine: {'line': b'^\n'}
+[9.090454] (sf_pkg) StdoutLine: {'line': b'\n'}
+[9.091769] (sf_pkg) StdoutLine: {'line': b"./sf_pkg/calculator.py:7:1: I100 Import statements are in the wrong order. 'import math' should be before 'from sunflower_interfaces.msg import TfliteResult' and in a different group.\n"}
+[9.093268] (sf_pkg) StdoutLine: {'line': b'import math\n'}
+[9.094587] (sf_pkg) StdoutLine: {'line': b'^\n'}
+[9.095876] (sf_pkg) StdoutLine: {'line': b'\n'}
+[9.097211] (sf_pkg) StdoutLine: {'line': b"./sf_pkg/calculator.py:7:1: I201 Missing newline between import groups. 'import math' is identified as Stdlib and 'from sunflower_interfaces.msg import TfliteResult' is identified as Third Party.\n"}
+[9.098271] (sf_pkg) StdoutLine: {'line': b'import math\n'}
+[9.099191] (sf_pkg) StdoutLine: {'line': b'^\n'}
+[9.100077] (sf_pkg) StdoutLine: {'line': b'\n'}
+[9.101514] (sf_pkg) StdoutLine: {'line': b'./sf_pkg/calculator.py:9:1: E302 expected 2 blank lines, found 1\n'}
+[9.102141] (sf_pkg) StdoutLine: {'line': b'class Calculator(Node) :\n'}
+[9.102734] (sf_pkg) StdoutLine: {'line': b'^\n'}
+[9.104206] (sf_pkg) StdoutLine: {'line': b'\n'}
+[9.105078] (sf_pkg) StdoutLine: {'line': b"./sf_pkg/calculator.py:9:23: E203 whitespace before ':'\n"}
+[9.106202] (sf_pkg) StdoutLine: {'line': b'class Calculator(Node) :\n'}
+[9.107144] (sf_pkg) StdoutLine: {'line': b'                      ^\n'}
+[9.108102] (sf_pkg) StdoutLine: {'line': b'\n'}
+[9.109165] (sf_pkg) StdoutLine: {'line': b'./sf_pkg/calculator.py:10:1: CNL100 Class definition does not have a new line.\n'}
+[9.110265] (sf_pkg) StdoutLine: {'line': b'    def __init__(self):\n'}
+[9.111682] (sf_pkg) StdoutLine: {'line': b'^\n'}
+[9.113122] (sf_pkg) StdoutLine: {'line': b'\n'}
+[9.114449] (sf_pkg) StdoutLine: {'line': b"./sf_pkg/calculator.py:23:35: E203 whitespace before ':'\n"}
+[9.115806] (sf_pkg) StdoutLine: {'line': b'    def publish_command(self, cmd) :\n'}
+[9.117122] (sf_pkg) StdoutLine: {'line': b'                                  ^\n'}
+[9.118010] (sf_pkg) StdoutLine: {'line': b'\n'}
+[9.118743] (sf_pkg) StdoutLine: {'line': b'./sf_pkg/calculator.py:31:30: Q000 Double quotes found but single quotes preferred\n'}
+[9.119653] (sf_pkg) StdoutLine: {'line': b'        self.publish_command("".join(data))\n'}
+[9.120854] (sf_pkg) StdoutLine: {'line': b'                             ^\n'}
+[9.121941] (sf_pkg) StdoutLine: {'line': b'\n'}
+[9.122515] (sf_pkg) StdoutLine: {'line': b'./sf_pkg/calculator.py:34:27: C417 Unnecessary use of map - use a generator expression instead.\n'}
+[9.123061] (sf_pkg) StdoutLine: {'line': b'        n_x, n_y, n_con = map(lambda x: x, nose)\n'}
+[9.123621] (sf_pkg) StdoutLine: {'line': b'                          ^\n'}
+[9.124202] (sf_pkg) StdoutLine: {'line': b'\n'}
+[9.124749] (sf_pkg) StdoutLine: {'line': b'./sf_pkg/calculator.py:35:27: C417 Unnecessary use of map - use a generator expression instead.\n'}
+[9.125450] (sf_pkg) StdoutLine: {'line': b'        l_x, l_y, l_con = map(lambda x: x, eye_l)\n'}
+[9.125902] (sf_pkg) StdoutLine: {'line': b'                          ^\n'}
+[9.126400] (sf_pkg) StdoutLine: {'line': b'\n'}
+[9.127004] (sf_pkg) StdoutLine: {'line': b'./sf_pkg/calculator.py:36:27: C417 Unnecessary use of map - use a generator expression instead.\n'}
+[9.127608] (sf_pkg) StdoutLine: {'line': b'        r_x, r_y, r_con = map(lambda x: x, eye_r)\n'}
+[9.128206] (sf_pkg) StdoutLine: {'line': b'                          ^\n'}
+[9.128859] (sf_pkg) StdoutLine: {'line': b'\n'}
+[9.130062] (sf_pkg) StdoutLine: {'line': b'./sf_pkg/calculator.py:62:1: W293 blank line contains whitespace\n'}
+[9.130870] (sf_pkg) StdoutLine: {'line': b'    \n'}
+[9.131618] (sf_pkg) StdoutLine: {'line': b'^\n'}
+[9.132340] (sf_pkg) StdoutLine: {'line': b'\n'}
+[9.133325] (sf_pkg) StdoutLine: {'line': b"./sf_pkg/calculator.py:65:10: E203 whitespace before ','\n"}
+[9.134643] (sf_pkg) StdoutLine: {'line': b'        _ , nose_x, nose_confidence = map(lambda x: x, nose)\n'}
+[9.136314] (sf_pkg) StdoutLine: {'line': b'         ^\n'}
+[9.138153] (sf_pkg) StdoutLine: {'line': b'\n'}
+[9.139313] (sf_pkg) StdoutLine: {'line': b'./sf_pkg/calculator.py:65:39: C417 Unnecessary use of map - use a generator expression instead.\n'}
+[9.140284] (sf_pkg) StdoutLine: {'line': b'        _ , nose_x, nose_confidence = map(lambda x: x, nose)\n'}
+[9.141275] (sf_pkg) StdoutLine: {'line': b'                                      ^\n'}
+[9.142214] (sf_pkg) StdoutLine: {'line': b'\n'}
+[9.143065] (sf_pkg) StdoutLine: {'line': b'./sf_pkg/calculator.py:83:1: E302 expected 2 blank lines, found 1\n'}
+[9.143808] (sf_pkg) StdoutLine: {'line': b'def main(args=None) :\n'}
+[9.144417] (sf_pkg) StdoutLine: {'line': b'^\n'}
+[9.145153] (sf_pkg) StdoutLine: {'line': b'\n'}
+[9.145774] (sf_pkg) StdoutLine: {'line': b"./sf_pkg/calculator.py:83:20: E203 whitespace before ':'\n"}
+[9.146390] (sf_pkg) StdoutLine: {'line': b'def main(args=None) :\n'}
+[9.147033] (sf_pkg) StdoutLine: {'line': b'                   ^\n'}
+[9.147678] (sf_pkg) StdoutLine: {'line': b'\n'}
+[9.148295] (sf_pkg) StdoutLine: {'line': b'./sf_pkg/calculator.py:94:1: E305 expected 2 blank lines after class or function definition, found 1\n'}
+[9.149059] (sf_pkg) StdoutLine: {'line': b"if __name__ == '__main__' :\n"}
+[9.149795] (sf_pkg) StdoutLine: {'line': b'^\n'}
+[9.150450] (sf_pkg) StdoutLine: {'line': b'\n'}
+[9.151197] (sf_pkg) StdoutLine: {'line': b"./sf_pkg/calculator.py:94:26: E203 whitespace before ':'\n"}
+[9.151895] (sf_pkg) StdoutLine: {'line': b"if __name__ == '__main__' :\n"}
+[9.152580] (sf_pkg) StdoutLine: {'line': b'                         ^\n'}
+[9.153825] (sf_pkg) StdoutLine: {'line': b'\n'}
+[9.154583] (sf_pkg) StdoutLine: {'line': b'./sf_pkg/calculator.py:95:11: W292 no newline at end of file\n'}
+[9.155275] (sf_pkg) StdoutLine: {'line': b'    main()          ^\n'}
+[9.155945] (sf_pkg) StdoutLine: {'line': b'\n'}
+[9.156585] (sf_pkg) StdoutLine: {'line': b"./sf_pkg/tensor.py:5:1: I100 Import statements are in the wrong order. 'import cv2' should be before 'from sunflower_interfaces.msg import TfliteResult'\n"}
+[9.157349] (sf_pkg) StdoutLine: {'line': b'import cv2\n'}
+[9.158123] (sf_pkg) StdoutLine: {'line': b'^\n'}
+[9.158832] (sf_pkg) StdoutLine: {'line': b'\n'}
+[9.159630] (sf_pkg) StdoutLine: {'line': b"./sf_pkg/tensor.py:7:1: I100 Import statements are in the wrong order. 'import numpy' should be before 'import tensorflow'\n"}
+[9.160386] (sf_pkg) StdoutLine: {'line': b'import numpy as np\n'}
+[9.161200] (sf_pkg) StdoutLine: {'line': b'^\n'}
+[9.161868] (sf_pkg) StdoutLine: {'line': b'\n'}
+[9.162427] (sf_pkg) StdoutLine: {'line': b'./sf_pkg/tensor.py:9:1: E302 expected 2 blank lines, found 1\n'}
+[9.162907] (sf_pkg) StdoutLine: {'line': b'class Tensor(Node) :\n'}
+[9.163482] (sf_pkg) StdoutLine: {'line': b'^\n'}
+[9.164082] (sf_pkg) StdoutLine: {'line': b'\n'}
+[9.164686] (sf_pkg) StdoutLine: {'line': b"./sf_pkg/tensor.py:9:19: E203 whitespace before ':'\n"}
+[9.180936] (-) TimerEvent: {}
+[9.186222] (sf_pkg) StdoutLine: {'line': b'class Tensor(Node) :\n'}
+[9.187146] (sf_pkg) StdoutLine: {'line': b'                  ^\n'}
+[9.190375] (sf_pkg) StdoutLine: {'line': b'\n'}
+[9.191920] (sf_pkg) StdoutLine: {'line': b'./sf_pkg/tensor.py:10:1: CNL100 Class definition does not have a new line.\n'}
+[9.192624] (sf_pkg) StdoutLine: {'line': b'    def __init__(self, interpreter, cap):\n'}
+[9.193428] (sf_pkg) StdoutLine: {'line': b'^\n'}
+[9.194165] (sf_pkg) StdoutLine: {'line': b'\n'}
+[9.194831] (sf_pkg) StdoutLine: {'line': b"./sf_pkg/tensor.py:20:46: E203 whitespace before ':'\n"}
+[9.195496] (sf_pkg) StdoutLine: {'line': b'    def tensor_result(self, interpreter, cap) :\n'}
+[9.196167] (sf_pkg) StdoutLine: {'line': b'                                             ^\n'}
+[9.196908] (sf_pkg) StdoutLine: {'line': b'\n'}
+[9.197658] (sf_pkg) StdoutLine: {'line': b"./sf_pkg/tensor.py:41:9: F841 local variable 'data' is assigned to but never used\n"}
+[9.198542] (sf_pkg) StdoutLine: {'line': b'        data = list()\n'}
+[9.199751] (sf_pkg) StdoutLine: {'line': b'        ^\n'}
+[9.201262] (sf_pkg) StdoutLine: {'line': b'\n'}
+[9.202243] (sf_pkg) StdoutLine: {'line': b'./sf_pkg/tensor.py:41:16: C408 Unnecessary list call - rewrite as a literal.\n'}
+[9.203120] (sf_pkg) StdoutLine: {'line': b'        data = list()\n'}
+[9.204198] (sf_pkg) StdoutLine: {'line': b'               ^\n'}
+[9.204961] (sf_pkg) StdoutLine: {'line': b'\n'}
+[9.205841] (sf_pkg) StdoutLine: {'line': b'./sf_pkg/tensor.py:53:1: E302 expected 2 blank lines, found 1\n'}
+[9.206551] (sf_pkg) StdoutLine: {'line': b'def main(args=None) :\n'}
+[9.207237] (sf_pkg) StdoutLine: {'line': b'^\n'}
+[9.207958] (sf_pkg) StdoutLine: {'line': b'\n'}
+[9.208738] (sf_pkg) StdoutLine: {'line': b"./sf_pkg/tensor.py:53:20: E203 whitespace before ':'\n"}
+[9.209766] (sf_pkg) StdoutLine: {'line': b'def main(args=None) :\n'}
+[9.210626] (sf_pkg) StdoutLine: {'line': b'                   ^\n'}
+[9.211420] (sf_pkg) StdoutLine: {'line': b'\n'}
+[9.217109] (sf_pkg) StdoutLine: {'line': b'./sf_pkg/tensor.py:55:50: Q000 Double quotes found but single quotes preferred\n'}
+[9.221224] (sf_pkg) StdoutLine: {'line': b'    interpreter = tf.lite.Interpreter(model_path="lite-model_movenet_singlepose_lightning_3.tflite")\n'}
+[9.221954] (sf_pkg) StdoutLine: {'line': b'                                                 ^\n'}
+[9.222611] (sf_pkg) StdoutLine: {'line': b'\n'}
+[9.223347] (sf_pkg) StdoutLine: {'line': b'./sf_pkg/tensor.py:55:100: E501 line too long (100 > 99 characters)\n'}
+[9.224023] (sf_pkg) StdoutLine: {'line': b'    interpreter = tf.lite.Interpreter(model_path="lite-model_movenet_singlepose_lightning_3.tflite")\n'}
+[9.224710] (sf_pkg) StdoutLine: {'line': b'                                                                                                   ^\n'}
+[9.225498] (sf_pkg) StdoutLine: {'line': b'\n'}
+[9.226222] (sf_pkg) StdoutLine: {'line': b'./sf_pkg/tensor.py:67:1: E305 expected 2 blank lines after class or function definition, found 1\n'}
+[9.226875] (sf_pkg) StdoutLine: {'line': b"if __name__ == '__main__' :\n"}
+[9.227525] (sf_pkg) StdoutLine: {'line': b'^\n'}
+[9.228164] (sf_pkg) StdoutLine: {'line': b'\n'}
+[9.228847] (sf_pkg) StdoutLine: {'line': b"./sf_pkg/tensor.py:67:26: E203 whitespace before ':'\n"}
+[9.237117] (sf_pkg) StdoutLine: {'line': b"if __name__ == '__main__' :\n"}
+[9.237890] (sf_pkg) StdoutLine: {'line': b'                         ^\n'}
+[9.238541] (sf_pkg) StdoutLine: {'line': b'\n'}
+[9.239208] (sf_pkg) StdoutLine: {'line': b"./sf_pkg/tensor.py:70:1: E265 block comment should start with '# '\n"}
+[9.239844] (sf_pkg) StdoutLine: {'line': b'#\xec\xbd\x94, \xec\x99\xbc\xeb\x88\x88, \xec\x98\xa4\xeb\x88\x88, \xec\x99\xbc\xea\xb7\x80, \xec\x98\xa4\xea\xb7\x80, \xec\x99\xbc\xec\x96\xb4\xea\xb9\xa8, \xec\x98\xa4\xec\x96\xb4\xea\xb9\xa8^\n'}
+[9.240519] (sf_pkg) StdoutLine: {'line': b'\n'}
+[9.245989] (sf_pkg) StdoutLine: {'line': b'./sf_pkg/tensor.py:70:29: W292 no newline at end of file\n'}
+[9.246716] (sf_pkg) StdoutLine: {'line': b'#\xec\xbd\x94, \xec\x99\xbc\xeb\x88\x88, \xec\x98\xa4\xeb\x88\x88, \xec\x99\xbc\xea\xb7\x80, \xec\x98\xa4\xea\xb7\x80, \xec\x99\xbc\xec\x96\xb4\xea\xb9\xa8, \xec\x98\xa4\xec\x96\xb4\xea\xb9\xa8                            ^\n'}
+[9.247498] (sf_pkg) StdoutLine: {'line': b'\n'}
+[9.260883] (sf_pkg) StdoutLine: {'line': b'./sf_pkg/tensor.py:70:29: W292 no newline at end of file\n'}
+[9.261724] (sf_pkg) StdoutLine: {'line': b'#\xec\xbd\x94, \xec\x99\xbc\xeb\x88\x88, \xec\x98\xa4\xeb\x88\x88, \xec\x99\xbc\xea\xb7\x80, \xec\x98\xa4\xea\xb7\x80, \xec\x99\xbc\xec\x96\xb4\xea\xb9\xa8, \xec\x98\xa4\xec\x96\xb4\xea\xb9\xa8                            ^\n'}
+[9.262463] (sf_pkg) StdoutLine: {'line': b'\n'}
+[9.263069] (sf_pkg) StdoutLine: {'line': b'./sf_pkg/tensor.py:70:29: W292 no newline at end of file\n'}
+[9.263732] (sf_pkg) StdoutLine: {'line': b'#\xec\xbd\x94, \xec\x99\xbc\xeb\x88\x88, \xec\x98\xa4\xeb\x88\x88, \xec\x99\xbc\xea\xb7\x80, \xec\x98\xa4\xea\xb7\x80, \xec\x99\xbc\xec\x96\xb4\xea\xb9\xa8, \xec\x98\xa4\xec\x96\xb4\xea\xb9\xa8                            ^\n'}
+[9.264381] (sf_pkg) StdoutLine: {'line': b'\n'}
+[9.265224] (sf_pkg) StdoutLine: {'line': b"./sf_pkg/tensor_publisher.py:5:1: I100 Import statements are in the wrong order. 'import cv2' should be before 'from std_msgs.msg import String'\n"}
+[9.265835] (sf_pkg) StdoutLine: {'line': b'import cv2\n'}
+[9.266515] (sf_pkg) StdoutLine: {'line': b'^\n'}
+[9.267218] (sf_pkg) StdoutLine: {'line': b'\n'}
+[9.267893] (sf_pkg) StdoutLine: {'line': b"./sf_pkg/tensor_publisher.py:7:1: I100 Import statements are in the wrong order. 'import numpy' should be before 'import tensorflow'\n"}
+[9.268560] (sf_pkg) StdoutLine: {'line': b'import numpy as np\n'}
+[9.269246] (sf_pkg) StdoutLine: {'line': b'^\n'}
+[9.269777] (sf_pkg) StdoutLine: {'line': b'\n'}
+[9.270288] (sf_pkg) StdoutLine: {'line': b"./sf_pkg/tensor_publisher.py:8:1: F401 'pandas as pd' imported but unused\n"}
+[9.270863] (sf_pkg) StdoutLine: {'line': b'import pandas as pd\n'}
+[9.271444] (sf_pkg) StdoutLine: {'line': b'^\n'}
+[9.272063] (sf_pkg) StdoutLine: {'line': b'\n'}
+[9.272669] (sf_pkg) StdoutLine: {'line': b'./sf_pkg/tensor_publisher.py:10:1: E302 expected 2 blank lines, found 1\n'}
+[9.273289] (sf_pkg) StdoutLine: {'line': b'class TensorPublisher(Node) :\n'}
+[9.273859] (sf_pkg) StdoutLine: {'line': b'^\n'}
+[9.274445] (sf_pkg) StdoutLine: {'line': b'\n'}
+[9.275000] (sf_pkg) StdoutLine: {'line': b"./sf_pkg/tensor_publisher.py:10:28: E203 whitespace before ':'\n"}
+[9.275591] (sf_pkg) StdoutLine: {'line': b'class TensorPublisher(Node) :\n'}
+[9.276190] (sf_pkg) StdoutLine: {'line': b'                           ^\n'}
+[9.289592] (-) TimerEvent: {}
+[9.293830] (sf_pkg) StderrLine: {'line': b'\x1b[33m=============================== warnings summary ===============================\x1b[0m\n'}
+[9.294725] (sf_pkg) StderrLine: {'line': b'../../../.local/lib/python3.8/site-packages/_pytest/nodes.py:633\n'}
+[9.295412] (sf_pkg) StderrLine: {'line': b'  Warning: The (fspath: py.path.local) argument to Package is deprecated. Please use the (path: pathlib.Path) argument instead.\n'}
+[9.296446] (sf_pkg) StderrLine: {'line': b'  See https://docs.pytest.org/en/latest/deprecations.html#fspath-argument-for-node-constructors-replaced-with-pathlib-path\n'}
+[9.297438] (sf_pkg) StderrLine: {'line': b'\n'}
+[9.298161] (sf_pkg) StdoutLine: {'line': b'\n'}
+[9.298833] (sf_pkg) StdoutLine: {'line': b'./sf_pkg/tensor_publisher.py:11:1: CNL100 Class definition does not have a new line.\n'}
+[9.299464] (sf_pkg) StdoutLine: {'line': b'    def __init__(self, interpreter, cap):\n'}
+[9.300087] (sf_pkg) StdoutLine: {'line': b'^\n'}
+[9.300729] (sf_pkg) StdoutLine: {'line': b'\n'}
+[9.301543] (sf_pkg) StdoutLine: {'line': b"./sf_pkg/tensor_publisher.py:21:46: E203 whitespace before ':'\n"}
+[9.302264] (sf_pkg) StdoutLine: {'line': b'    def tensor_result(self, interpreter, cap) :\n'}
+[9.302897] (sf_pkg) StdoutLine: {'line': b'                                             ^\n'}
+[9.303531] (sf_pkg) StdoutLine: {'line': b'\n'}
+[9.304164] (sf_pkg) StdoutLine: {'line': b'./sf_pkg/tensor_publisher.py:42:16: C408 Unnecessary list call - rewrite as a literal.\n'}
+[9.304841] (sf_pkg) StdoutLine: {'line': b'        data = list()\n'}
+[9.305599] (sf_pkg) StdoutLine: {'line': b'               ^\n'}
+[9.306292] (sf_pkg) StdoutLine: {'line': b'\n'}
+[9.306969] (sf_pkg) StdoutLine: {'line': b"./sf_pkg/tensor_publisher.py:44:28: E203 whitespace before ':'\n"}
+[9.307602] (sf_pkg) StdoutLine: {'line': b'        for shape in shaped :\n'}
+[9.308235] (sf_pkg) StdoutLine: {'line': b'                           ^\n'}
+[9.321046] (sf_pkg) StdoutLine: {'line': b'\n'}
+[9.321868] (sf_pkg) StdoutLine: {'line': b'./sf_pkg/tensor_publisher.py:47:20: Q000 Double quotes found but single quotes preferred\n'}
+[9.322603] (sf_pkg) StdoutLine: {'line': b'        datastr = ["^"] + datastr\n'}
+[9.323359] (sf_pkg) StdoutLine: {'line': b'                   ^\n'}
+[9.323941] (sf_pkg) StdoutLine: {'line': b'\n'}
+[9.324591] (sf_pkg) StdoutLine: {'line': b'./sf_pkg/tensor_publisher.py:48:20: Q000 Double quotes found but single quotes preferred\n'}
+[9.325480] (sf_pkg) StdoutLine: {'line': b'        msg.data = "*".join(datastr)\n'}
+[9.326294] (sf_pkg) StdoutLine: {'line': b'                   ^\n'}
+[9.326984] (sf_pkg) StdoutLine: {'line': b'\n'}
+[9.327712] (sf_pkg) StdoutLine: {'line': b'./sf_pkg/tensor_publisher.py:52:1: E302 expected 2 blank lines, found 1\n'}
+[9.328397] (sf_pkg) StdoutLine: {'line': b'def main(args=None) :\n'}
+[9.329189] (sf_pkg) StdoutLine: {'line': b'^\n'}
+[9.329967] (sf_pkg) StdoutLine: {'line': b'\n'}
+[9.330710] (sf_pkg) StdoutLine: {'line': b"./sf_pkg/tensor_publisher.py:52:20: E203 whitespace before ':'\n"}
+[9.331320] (sf_pkg) StdoutLine: {'line': b'def main(args=None) :\n'}
+[9.332119] (sf_pkg) StdoutLine: {'line': b'                   ^\n'}
+[9.333078] (sf_pkg) StdoutLine: {'line': b'\n'}
+[9.333771] (sf_pkg) StdoutLine: {'line': b'./sf_pkg/tensor_publisher.py:54:50: Q000 Double quotes found but single quotes preferred\n'}
+[9.334577] (sf_pkg) StdoutLine: {'line': b'    interpreter = tf.lite.Interpreter(model_path="lite-model_movenet_singlepose_lightning_3.tflite")\n'}
+[9.335373] (sf_pkg) StdoutLine: {'line': b'                                                 ^\n'}
+[9.336135] (sf_pkg) StdoutLine: {'line': b'\n'}
+[9.341046] (sf_pkg) StdoutLine: {'line': b'./sf_pkg/tensor_publisher.py:54:100: E501 line too long (100 > 99 characters)\n'}
+[9.341841] (sf_pkg) StdoutLine: {'line': b'    interpreter = tf.lite.Interpreter(model_path="lite-model_movenet_singlepose_lightning_3.tflite")\n'}
+[9.342447] (sf_pkg) StdoutLine: {'line': b'                                                                                                   ^\n'}
+[9.343015] (sf_pkg) StdoutLine: {'line': b'\n'}
+[9.343563] (sf_pkg) StdoutLine: {'line': b'./sf_pkg/tensor_publisher.py:66:1: E305 expected 2 blank lines after class or function definition, found 1\n'}
+[9.344108] (sf_pkg) StdoutLine: {'line': b"if __name__ == '__main__' :\n"}
+[9.344657] (sf_pkg) StdoutLine: {'line': b'^\n'}
+[9.345319] (sf_pkg) StdoutLine: {'line': b'\n'}
+[9.345896] (sf_pkg) StdoutLine: {'line': b"./sf_pkg/tensor_publisher.py:66:26: E203 whitespace before ':'\n"}
+[9.346474] (sf_pkg) StdoutLine: {'line': b"if __name__ == '__main__' :\n"}
+[9.347032] (sf_pkg) StdoutLine: {'line': b'                         ^\n'}
+[9.347566] (sf_pkg) StdoutLine: {'line': b'\n'}
+[9.348115] (sf_pkg) StdoutLine: {'line': b"./sf_pkg/tensor_publisher.py:69:1: E265 block comment should start with '# '\n"}
+[9.348651] (sf_pkg) StdoutLine: {'line': b'#\xec\xbd\x94, \xec\x99\xbc\xeb\x88\x88, \xec\x98\xa4\xeb\x88\x88, \xec\x99\xbc\xea\xb7\x80, \xec\x98\xa4\xea\xb7\x80, \xec\x99\xbc\xec\x96\xb4\xea\xb9\xa8, \xec\x98\xa4\xec\x96\xb4\xea\xb9\xa8^\n'}
+[9.349271] (sf_pkg) StdoutLine: {'line': b'\n'}
+[9.349818] (sf_pkg) StdoutLine: {'line': b'./sf_pkg/tensor_publisher.py:69:29: W292 no newline at end of file\n'}
+[9.350399] (sf_pkg) StdoutLine: {'line': b'#\xec\xbd\x94, \xec\x99\xbc\xeb\x88\x88, \xec\x98\xa4\xeb\x88\x88, \xec\x99\xbc\xea\xb7\x80, \xec\x98\xa4\xea\xb7\x80, \xec\x99\xbc\xec\x96\xb4\xea\xb9\xa8, \xec\x98\xa4\xec\x96\xb4\xea\xb9\xa8                            ^\n'}
+[9.350950] (sf_pkg) StdoutLine: {'line': b'\n'}
+[9.351480] (sf_pkg) StdoutLine: {'line': b'./sf_pkg/tensor_publisher.py:69:29: W292 no newline at end of file\n'}
+[9.352036] (sf_pkg) StdoutLine: {'line': b'#\xec\xbd\x94, \xec\x99\xbc\xeb\x88\x88, \xec\x98\xa4\xeb\x88\x88, \xec\x99\xbc\xea\xb7\x80, \xec\x98\xa4\xea\xb7\x80, \xec\x99\xbc\xec\x96\xb4\xea\xb9\xa8, \xec\x98\xa4\xec\x96\xb4\xea\xb9\xa8                            ^\n'}
+[9.352584] (sf_pkg) StdoutLine: {'line': b'\n'}
+[9.353697] (sf_pkg) StdoutLine: {'line': b'./sf_pkg/tensor_publisher.py:69:29: W292 no newline at end of file\n'}
+[9.355162] (sf_pkg) StdoutLine: {'line': b'#\xec\xbd\x94, \xec\x99\xbc\xeb\x88\x88, \xec\x98\xa4\xeb\x88\x88, \xec\x99\xbc\xea\xb7\x80, \xec\x98\xa4\xea\xb7\x80, \xec\x99\xbc\xec\x96\xb4\xea\xb9\xa8, \xec\x98\xa4\xec\x96\xb4\xea\xb9\xa8                            ^\n'}
+[9.356347] (sf_pkg) StdoutLine: {'line': b'\n'}
+[9.357071] (sf_pkg) StdoutLine: {'line': b'2     C408 Unnecessary list call - rewrite as a literal.\n'}
+[9.357681] (sf_pkg) StdoutLine: {'line': b'4     C417 Unnecessary use of map - use a generator expression instead.\n'}
+[9.358308] (sf_pkg) StdoutLine: {'line': b'3     CNL100 Class definition does not have a new line.\n'}
+[9.358943] (sf_pkg) StdoutLine: {'line': b"2     E202 whitespace before ')'\n"}
+[9.359557] (sf_pkg) StdoutLine: {'line': b"16    E203 whitespace before ':'\n"}
+[9.360177] (sf_pkg) StdoutLine: {'line': b'2     E251 unexpected spaces around keyword / parameter equals\n'}
+[9.360893] (sf_pkg) StdoutLine: {'line': b"2     E265 block comment should start with '# '\n"}
+[9.361677] (sf_pkg) StdoutLine: {'line': b'2     E301 expected 1 blank line, found 0\n'}
+[9.362319] (sf_pkg) StdoutLine: {'line': b'8     E302 expected 2 blank lines, found 1\n'}
+[9.362839] (sf_pkg) StdoutLine: {'line': b'1     E303 too many blank lines (3)\n'}
+[9.363407] (sf_pkg) StdoutLine: {'line': b'5     E305 expected 2 blank lines after class or function definition, found 1\n'}
+[9.364033] (sf_pkg) StdoutLine: {'line': b'2     E501 line too long (100 > 99 characters)\n'}
+[9.364565] (sf_pkg) StdoutLine: {'line': b"2     F401 'socket.NI_NUMERICHOST' imported but unused\n"}
+[9.365296] (sf_pkg) StdoutLine: {'line': b"1     F841 local variable 'data' is assigned to but never used\n"}
+[9.365842] (sf_pkg) StdoutLine: {'line': b"8     I100 Import statements are in the wrong order. 'import os' should be before 'from setuptools import setup' and in a different group.\n"}
+[9.366378] (sf_pkg) StdoutLine: {'line': b"3     I201 Missing newline between import groups. 'import os' is identified as Stdlib and 'from setuptools import setup' is identified as Third Party.\n"}
+[9.366931] (sf_pkg) StdoutLine: {'line': b'12    Q000 Double quotes found but single quotes preferred\n'}
+[9.367453] (sf_pkg) StdoutLine: {'line': b'1     W291 trailing whitespace\n'}
+[9.367970] (sf_pkg) StdoutLine: {'line': b'10    W292 no newline at end of file\n'}
+[9.368463] (sf_pkg) StdoutLine: {'line': b'1     W293 blank line contains whitespace\n'}
+[9.379655] (sf_pkg) StdoutLine: {'line': b'\n'}
+[9.380527] (sf_pkg) StdoutLine: {'line': b'11 files checked\n'}
+[9.381112] (sf_pkg) StdoutLine: {'line': b'87 errors\n'}
+[9.381740] (sf_pkg) StdoutLine: {'line': b'\n'}
+[9.382310] (sf_pkg) StdoutLine: {'line': b"'C'-type errors: 9\n"}
+[9.382895] (sf_pkg) StdoutLine: {'line': b"'E'-type errors: 40\n"}
+[9.383664] (sf_pkg) StdoutLine: {'line': b"'F'-type errors: 3\n"}
+[9.384346] (sf_pkg) StdoutLine: {'line': b"'I'-type errors: 11\n"}
+[9.385456] (sf_pkg) StdoutLine: {'line': b"'Q'-type errors: 12\n"}
+[9.386179] (sf_pkg) StdoutLine: {'line': b"'W'-type errors: 12\n"}
+[9.387839] (sf_pkg) StdoutLine: {'line': b'\n'}
+[9.388410] (sf_pkg) StdoutLine: {'line': b'Checked files:\n'}
+[9.388942] (sf_pkg) StdoutLine: {'line': b'\n'}
+[9.389560] (sf_pkg) StdoutLine: {'line': b'* ./setup.py\n'}
+[9.390019] (-) TimerEvent: {}
+[9.390608] (sf_pkg) StdoutLine: {'line': b'* ./launch/sf.launch.py\n'}
+[9.391421] (sf_pkg) StdoutLine: {'line': b'* ./sf_pkg/serial_talker.py\n'}
+[9.392128] (sf_pkg) StdoutLine: {'line': b'* ./sf_pkg/__init__.py\n'}
+[9.400623] (sf_pkg) StdoutLine: {'line': b'* ./sf_pkg/cmd_selector.py\n'}
+[9.413528] (sf_pkg) StdoutLine: {'line': b'* ./sf_pkg/calculator.py\n'}
+[9.414272] (sf_pkg) StdoutLine: {'line': b'* ./sf_pkg/tensor.py\n'}
+[9.414931] (sf_pkg) StdoutLine: {'line': b'* ./sf_pkg/tensor_publisher.py\n'}
+[9.415614] (sf_pkg) StdoutLine: {'line': b'* ./test/test_flake8.py\n'}
+[9.416253] (sf_pkg) StdoutLine: {'line': b'* ./test/test_copyright.py\n'}
+[9.416936] (sf_pkg) StdoutLine: {'line': b'* ./test/test_pep257.py\n'}
+[9.417631] (sf_pkg) StderrLine: {'line': b'../../../../../opt/ros/foxy/lib/python3.8/site-packages/launch_testing/pytest/hooks.py:179\n'}
+[9.418263] (sf_pkg) StderrLine: {'line': b'../../../../../opt/ros/foxy/lib/python3.8/site-packages/launch_testing/pytest/hooks.py:179\n'}
+[9.418836] (sf_pkg) StderrLine: {'line': b'../../../../../opt/ros/foxy/lib/python3.8/site-packages/launch_testing/pytest/hooks.py:179\n'}
+[9.419383] (sf_pkg) StderrLine: {'line': b'  Warning: The (fspath: py.path.local) argument to Module is deprecated. Please use the (path: pathlib.Path) argument instead.\n'}
+[9.420049] (sf_pkg) StderrLine: {'line': b'  See https://docs.pytest.org/en/latest/deprecations.html#fspath-argument-for-node-constructors-replaced-with-pathlib-path\n'}
+[9.420682] (sf_pkg) StderrLine: {'line': b'\n'}
+[9.421279] (sf_pkg) StderrLine: {'line': b'../../../../../usr/lib/python3/dist-packages/pydocstyle/config.py:6\n'}
+[9.421807] (sf_pkg) StderrLine: {'line': b"  Warning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.10 it will stop working\n"}
+[9.422397] (sf_pkg) StderrLine: {'line': b'\n'}
+[9.422954] (sf_pkg) StderrLine: {'line': b'-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n'}
+[9.423436] (sf_pkg) StdoutLine: {'line': b'-------- generated xml file: /home/pi/sunflower/build/sf_pkg/pytest.xml --------\n'}
+[9.423992] (sf_pkg) StdoutLine: {'line': b'=========================== short test summary info ============================\n'}
+[9.424501] (sf_pkg) StdoutLine: {'line': b'FAILED test/test_copyright.py::test_copyright - AssertionError: Found errors\n'}
+[9.425192] (sf_pkg) StdoutLine: {'line': b'FAILED test/test_flake8.py::test_flake8 - AssertionError: Found 87 code style...\n'}
+[9.425755] (sf_pkg) StdoutLine: {'line': b'\x1b[31m=================== \x1b[31m\x1b[1m2 failed\x1b[0m, \x1b[32m1 passed\x1b[0m, \x1b[33m5 warnings\x1b[0m\x1b[31m in 2.99s\x1b[0m\x1b[31m ====================\x1b[0m\n'}
+[9.426343] (stem_pkg) StdoutLine: {'line': b'\x1b[1mcollecting ... \x1b[0m\x1b[1m\n'}
+[9.426928] (stem_pkg) StdoutLine: {'line': b'collecting 3 items                                                             \x1b[0m\x1b[1m\n'}
+[9.427417] (stem_pkg) StdoutLine: {'line': b'collected 3 items                                                              \x1b[0m\n'}
+[9.427874] (stem_pkg) StdoutLine: {'line': b'\n'}
+[9.428276] (tflite_pkg) Command: {'cmd': ['/usr/bin/python3', '-m', 'pytest'], 'cwd': '/home/pi/sunflower/src/tflite_pkg', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'pi', 'SSH_CLIENT': '211.217.28.227 64484 22', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/pi/.vscode-server/bin/30d9c6cd9483b2cc586687151bcbcd635f373630/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/pi/sunflower/install/sunflower_interfaces/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib', 'BROWSER': '/home/pi/.vscode-server/bin/30d9c6cd9483b2cc586687151bcbcd635f373630/bin/helpers/browser.sh', 'MOTD_SHOWN': 'pam', 'HOME': '/home/pi', 'OLDPWD': '/home/pi/sunflower/src', 'TERM_PROGRAM_VERSION': '1.68.1', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-cf2a709b-6e9d-49bf-bea4-aec8d084bc57.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/pi/.vscode-server/bin/30d9c6cd9483b2cc586687151bcbcd635f373630/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/pi/.vscode-server/bin/30d9c6cd9483b2cc586687151bcbcd635f373630/node', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'COLCON_PREFIX_PATH': '/home/pi/sunflower/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'pi', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '4', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/pi/.vscode-server/bin/30d9c6cd9483b2cc586687151bcbcd635f373630/bin/remote-cli:/home/pi/.local/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-7841f96d5d.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/pi/sunflower/install/tflite_pkg:/home/pi/sunflower/install/test_pkg:/home/pi/sunflower/install/sunflower_interfaces:/opt/ros/foxy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/pi/sunflower/build/tflite_pkg', 'SSH_CONNECTION': '211.217.28.227 64484 211.217.27.80 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/pi/sunflower/build/tflite_pkg:/home/pi/sunflower/install/tflite_pkg/lib/python3.8/site-packages:/home/pi/sunflower/build/test_pkg:/home/pi/sunflower/install/test_pkg/lib/python3.8/site-packages:/home/pi/sunflower/install/sunflower_interfaces/lib/python3.8/site-packages:/home/pi/sunflower/build/stem_pkg:/home/pi/sunflower/install/stem_pkg/lib/python3.8/site-packages:/home/pi/sunflower/build/sf_pkg:/home/pi/sunflower/install/sf_pkg/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/pi/sunflower/install/sunflower_interfaces', 'PYTEST_ADDOPTS': '--tb=short --junit-xml=/home/pi/sunflower/build/tflite_pkg/pytest.xml --junit-prefix=tflite_pkg -o cache_dir=/home/pi/sunflower/build/tflite_pkg/.pytest_cache'}, 'shell': False}
+[9.444375] (sf_pkg) CommandEnded: {'returncode': 1}
+[9.446139] (sf_pkg) TestFailure: {'identifier': 'sf_pkg'}
+[9.446420] (sf_pkg) JobEnded: {'identifier': 'sf_pkg', 'rc': 0}
+[9.449079] (stem_pkg) StdoutLine: {'line': b'test/test_copyright.py \x1b[31mF\x1b[0m\x1b[31m                                                 [ 33%]\x1b[0m\n'}
+[9.490286] (-) TimerEvent: {}
+[9.591333] (-) TimerEvent: {}
+[9.692360] (-) TimerEvent: {}
+[9.793345] (-) TimerEvent: {}
+[9.896890] (-) TimerEvent: {}
+[9.997875] (-) TimerEvent: {}
+[10.098842] (-) TimerEvent: {}
+[10.199740] (-) TimerEvent: {}
+[10.300569] (-) TimerEvent: {}
+[10.401427] (-) TimerEvent: {}
+[10.502251] (-) TimerEvent: {}
+[10.603451] (-) TimerEvent: {}
+[10.704312] (-) TimerEvent: {}
+[10.805604] (-) TimerEvent: {}
+[10.906415] (-) TimerEvent: {}
+[11.007377] (-) TimerEvent: {}
+[11.037955] (stem_pkg) StdoutLine: {'line': b'test/test_flake8.py \x1b[31mF\x1b[0m\x1b[31m                                                    [ 66%]\x1b[0m\n'}
+[11.107582] (-) TimerEvent: {}
+[11.208450] (-) TimerEvent: {}
+[11.309369] (-) TimerEvent: {}
+[11.348502] (stem_pkg) StdoutLine: {'line': b'test/test_pep257.py \x1b[32m.\x1b[0m\x1b[31m                                                    [100%]\x1b[0m\n'}
+[11.349812] (stem_pkg) StdoutLine: {'line': b'\n'}
+[11.351182] (stem_pkg) StdoutLine: {'line': b'=================================== FAILURES ===================================\n'}
+[11.351876] (stem_pkg) StdoutLine: {'line': b'\x1b[31m\x1b[1m________________________________ test_copyright ________________________________\x1b[0m\n'}
+[11.352420] (stem_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mtest/test_copyright.py\x1b[0m:23: in test_copyright\n'}
+[11.409583] (-) TimerEvent: {}
+[11.458726] (stem_pkg) StdoutLine: {'line': b"    \x1b[34;01massert\x1b[39;49;00m rc == \x1b[34;01m0\x1b[39;49;00m, \x1b[33m'\x1b[39;49;00m\x1b[33mFound errors\x1b[39;49;00m\x1b[33m'\x1b[39;49;00m\n"}
+[11.460054] (stem_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE   AssertionError: Found errors\x1b[0m\n'}
+[11.461522] (stem_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE   assert 1 == 0\x1b[0m\n'}
+[11.462761] (stem_pkg) StdoutLine: {'line': b'----------------------------- Captured stderr call -----------------------------\n'}
+[11.464208] (stem_pkg) StdoutLine: {'line': b'launch/stem.launch.py: could not find copyright notice\n'}
+[11.465410] (stem_pkg) StdoutLine: {'line': b'stem_pkg/async_serial_talker.py: could not find copyright notice\n'}
+[11.466847] (stem_pkg) StdoutLine: {'line': b'stem_pkg/calculator.py: could not find copyright notice\n'}
+[11.468242] (stem_pkg) StdoutLine: {'line': b'stem_pkg/cmd_selector.py: could not find copyright notice\n'}
+[11.477318] (stem_pkg) StdoutLine: {'line': b'stem_pkg/controller.py: could not find copyright notice\n'}
+[11.478995] (stem_pkg) StdoutLine: {'line': b'stem_pkg/serial_talker.py: could not find copyright notice\n'}
+[11.480808] (stem_pkg) StdoutLine: {'line': b'stem_pkg/tensor.py: could not find copyright notice\n'}
+[11.482667] (stem_pkg) StdoutLine: {'line': b'stem_pkg/tensor_publisher.py: could not find copyright notice\n'}
+[11.484415] (stem_pkg) StdoutLine: {'line': b'stem_pkg/tester.py: could not find copyright notice\n'}
+[11.486224] (stem_pkg) StdoutLine: {'line': b'9 errors, checked 13 files\n'}
+[11.488329] (stem_pkg) StdoutLine: {'line': b'\x1b[31m\x1b[1m_________________________________ test_flake8 __________________________________\x1b[0m\n'}
+[11.490213] (stem_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mtest/test_flake8.py\x1b[0m:23: in test_flake8\n'}
+[11.492489] (stem_pkg) StdoutLine: {'line': b'    \x1b[34;01massert\x1b[39;49;00m rc == \x1b[34;01m0\x1b[39;49;00m, \\\n'}
+[11.496175] (stem_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE   AssertionError: Found 199 code style errors / warnings:\x1b[0m\n'}
+[11.510007] (-) TimerEvent: {}
+[11.511335] (stem_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./setup.py:2:1: I100 Import statements are in the wrong order. 'import os' should be before 'from setuptools import setup' and in a different group.\x1b[0m\n"}
+[11.518027] (stem_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./setup.py:2:1: I201 Missing newline between import groups. 'import os' is identified as Stdlib and 'from setuptools import setup' is identified as Third Party.\x1b[0m\n"}
+[11.518631] (stem_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./setup.py:3:1: I100 Import statements are in the wrong order. 'from glob import glob' should be before 'import os'\x1b[0m\n"}
+[11.519117] (stem_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./setup.py:26:13: Q000 Double quotes found but single quotes preferred\x1b[0m\n'}
+[11.519686] (stem_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./setup.py:27:13: Q000 Double quotes found but single quotes preferred\x1b[0m\n'}
+[11.524061] (stem_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./setup.py:28:13: Q000 Double quotes found but single quotes preferred\x1b[0m\n'}
+[11.525138] (stem_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./setup.py:29:13: Q000 Double quotes found but single quotes preferred\x1b[0m\n'}
+[11.526411] (stem_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./setup.py:30:13: Q000 Double quotes found but single quotes preferred\x1b[0m\n'}
+[11.527074] (stem_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./setup.py:31:13: E265 block comment should start with '# '\x1b[0m\n"}
+[11.527755] (stem_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./setup.py:32:13: E265 block comment should start with '# '\x1b[0m\n"}
+[11.528369] (stem_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./setup.py:35:2: W292 no newline at end of file\x1b[0m\n'}
+[11.529596] (stem_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./launch/stem.launch.py:4:1: E302 expected 2 blank lines, found 1\x1b[0m\n'}
+[11.531890] (stem_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./launch/stem.launch.py:10:20: E251 unexpected spaces around keyword / parameter equals\x1b[0m\n'}
+[11.534558] (stem_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./launch/stem.launch.py:20:32: E202 whitespace before ')'\x1b[0m\n"}
+[11.547818] (stem_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./launch/stem.launch.py:26:20: E251 unexpected spaces around keyword / parameter equals\x1b[0m\n'}
+[11.551234] (stem_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./launch/stem.launch.py:26:29: E202 whitespace before ')'\x1b[0m\n"}
+[11.554397] (stem_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./launch/stem.launch.py:27:7: W292 no newline at end of file\x1b[0m\n'}
+[11.556757] (stem_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./stem_pkg/serial_talker.py:5:1: I100 Import statements are in the wrong order. 'import serial' should be before 'from std_msgs.msg import String'\x1b[0m\n"}
+[11.560211] (stem_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./stem_pkg/serial_talker.py:5:14: W291 trailing whitespace\x1b[0m\n'}
+[11.574691] (stem_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./stem_pkg/serial_talker.py:11:5: E301 expected 1 blank line, found 0\x1b[0m\n'}
+[11.577654] (stem_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./stem_pkg/serial_talker.py:19:32: Q000 Double quotes found but single quotes preferred\x1b[0m\n'}
+[11.580429] (stem_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./stem_pkg/serial_talker.py:22:24: Q000 Double quotes found but single quotes preferred\x1b[0m\n'}
+[11.583265] (stem_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./stem_pkg/serial_talker.py:40:1: E305 expected 2 blank lines after class or function definition, found 1\x1b[0m\n'}
+[11.586025] (stem_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./stem_pkg/serial_talker.py:40:26: E203 whitespace before ':'\x1b[0m\n"}
+[11.589088] (stem_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./stem_pkg/serial_talker.py:41:11: W292 no newline at end of file\x1b[0m\n'}
+[11.605207] (stem_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./stem_pkg/controller.py:5:1: I100 Import statements are in the wrong order. 'import RPi.GPIO' should be before 'from std_msgs.msg import String'\x1b[0m\n"}
+[11.608216] (stem_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./stem_pkg/controller.py:7:1: E302 expected 2 blank lines, found 1\x1b[0m\n'}
+[11.611289] (-) TimerEvent: {}
+[11.612891] (stem_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./stem_pkg/controller.py:7:23: E203 whitespace before ':'\x1b[0m\n"}
+[11.615287] (stem_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./stem_pkg/controller.py:8:1: CNL100 Class definition does not have a new line.\x1b[0m\n'}
+[11.617499] (stem_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./stem_pkg/controller.py:15:1: W293 blank line contains whitespace\x1b[0m\n'}
+[11.619822] (stem_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./stem_pkg/controller.py:19:60: E261 at least two spaces before inline comment\x1b[0m\n'}
+[11.621980] (stem_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./stem_pkg/controller.py:19:61: E262 inline comment should start with '# '\x1b[0m\n"}
+[11.625158] (stem_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./stem_pkg/controller.py:20:60: E261 at least two spaces before inline comment\x1b[0m\n'}
+[11.628329] (stem_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./stem_pkg/controller.py:20:61: E262 inline comment should start with '# '\x1b[0m\n"}
+[11.630222] (stem_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./stem_pkg/controller.py:22:60: E261 at least two spaces before inline comment\x1b[0m\n'}
+[11.631967] (stem_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./stem_pkg/controller.py:22:61: E262 inline comment should start with '# '\x1b[0m\n"}
+[11.633746] (stem_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./stem_pkg/controller.py:23:60: E261 at least two spaces before inline comment\x1b[0m\n'}
+[11.635451] (stem_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./stem_pkg/controller.py:23:61: E262 inline comment should start with '# '\x1b[0m\n"}
+[11.637122] (stem_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./stem_pkg/controller.py:25:60: E261 at least two spaces before inline comment\x1b[0m\n'}
+[11.638799] (stem_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./stem_pkg/controller.py:25:61: E262 inline comment should start with '# '\x1b[0m\n"}
+[11.640833] (stem_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./stem_pkg/controller.py:26:60: E261 at least two spaces before inline comment\x1b[0m\n'}
+[11.643920] (stem_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./stem_pkg/controller.py:26:61: E262 inline comment should start with '# '\x1b[0m\n"}
+[11.647464] (stem_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./stem_pkg/controller.py:28:60: E261 at least two spaces before inline comment\x1b[0m\n'}
+[11.662231] (stem_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./stem_pkg/controller.py:28:61: E262 inline comment should start with '# '\x1b[0m\n"}
+[11.665653] (stem_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./stem_pkg/controller.py:30:9: E265 block comment should start with '# '\x1b[0m\n"}
+[11.669096] (stem_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./stem_pkg/controller.py:31:9: E265 block comment should start with '# '\x1b[0m\n"}
+[11.671896] (stem_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./stem_pkg/controller.py:33:57: E251 unexpected spaces around keyword / parameter equals\x1b[0m\n'}
+[11.674588] (stem_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./stem_pkg/controller.py:33:59: E251 unexpected spaces around keyword / parameter equals\x1b[0m\n'}
+[11.699027] (stem_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./stem_pkg/controller.py:34:57: E251 unexpected spaces around keyword / parameter equals\x1b[0m\n'}
+[11.702294] (stem_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./stem_pkg/controller.py:34:59: E251 unexpected spaces around keyword / parameter equals\x1b[0m\n'}
+[11.705057] (stem_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./stem_pkg/controller.py:36:57: E251 unexpected spaces around keyword / parameter equals\x1b[0m\n'}
+[11.707274] (stem_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./stem_pkg/controller.py:36:59: E251 unexpected spaces around keyword / parameter equals\x1b[0m\n'}
+[11.709779] (stem_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./stem_pkg/controller.py:37:57: E251 unexpected spaces around keyword / parameter equals\x1b[0m\n'}
+[11.712578] (-) TimerEvent: {}
+[11.714088] (stem_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./stem_pkg/controller.py:37:59: E251 unexpected spaces around keyword / parameter equals\x1b[0m\n'}
+[11.717357] (stem_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./stem_pkg/controller.py:39:57: E251 unexpected spaces around keyword / parameter equals\x1b[0m\n'}
+[11.722231] (stem_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./stem_pkg/controller.py:39:59: E251 unexpected spaces around keyword / parameter equals\x1b[0m\n'}
+[11.727771] (stem_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./stem_pkg/controller.py:40:57: E251 unexpected spaces around keyword / parameter equals\x1b[0m\n'}
+[11.749194] (stem_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./stem_pkg/controller.py:40:59: E251 unexpected spaces around keyword / parameter equals\x1b[0m\n'}
+[11.751704] (stem_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./stem_pkg/controller.py:42:57: E251 unexpected spaces around keyword / parameter equals\x1b[0m\n'}
+[11.754499] (stem_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./stem_pkg/controller.py:42:59: E251 unexpected spaces around keyword / parameter equals\x1b[0m\n'}
+[11.756902] (stem_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./stem_pkg/controller.py:46:9: E265 block comment should start with '# '\x1b[0m\n"}
+[11.759162] (stem_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./stem_pkg/controller.py:48:43: E203 whitespace before ':'\x1b[0m\n"}
+[11.761443] (stem_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./stem_pkg/controller.py:55:32: E203 whitespace before ':'\x1b[0m\n"}
+[11.763857] (stem_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./stem_pkg/controller.py:60:19: E203 whitespace before ':'\x1b[0m\n"}
+[11.765913] (stem_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./stem_pkg/controller.py:61:17: Q000 Double quotes found but single quotes preferred\x1b[0m\n'}
+[11.768100] (stem_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./stem_pkg/controller.py:62:21: E203 whitespace before ':'\x1b[0m\n"}
+[11.783091] (stem_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./stem_pkg/controller.py:63:17: Q000 Double quotes found but single quotes preferred\x1b[0m\n'}
+[11.785606] (stem_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./stem_pkg/controller.py:64:21: E203 whitespace before ':'\x1b[0m\n"}
+[11.787746] (stem_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./stem_pkg/controller.py:65:17: Q000 Double quotes found but single quotes preferred\x1b[0m\n'}
+[11.790561] (stem_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./stem_pkg/controller.py:66:21: E203 whitespace before ':'\x1b[0m\n"}
+[11.792666] (stem_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./stem_pkg/controller.py:67:17: Q000 Double quotes found but single quotes preferred\x1b[0m\n'}
+[11.795541] (stem_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./stem_pkg/controller.py:68:21: E203 whitespace before ':'\x1b[0m\n"}
+[11.798389] (stem_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./stem_pkg/controller.py:69:17: Q000 Double quotes found but single quotes preferred\x1b[0m\n'}
+[11.801829] (stem_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./stem_pkg/controller.py:70:21: E203 whitespace before ':'\x1b[0m\n"}
+[11.808336] (stem_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./stem_pkg/controller.py:71:17: Q000 Double quotes found but single quotes preferred\x1b[0m\n'}
+[11.818886] (-) TimerEvent: {}
+[11.820227] (stem_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./stem_pkg/controller.py:72:21: E203 whitespace before ':'\x1b[0m\n"}
+[11.823004] (stem_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./stem_pkg/controller.py:73:17: Q000 Double quotes found but single quotes preferred\x1b[0m\n'}
+[11.837178] (stem_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./stem_pkg/controller.py:74:21: E203 whitespace before ':'\x1b[0m\n"}
+[11.840175] (stem_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./stem_pkg/controller.py:75:17: Q000 Double quotes found but single quotes preferred\x1b[0m\n'}
+[11.843525] (stem_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./stem_pkg/controller.py:76:21: E203 whitespace before ':'\x1b[0m\n"}
+[11.846445] (stem_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./stem_pkg/controller.py:77:17: Q000 Double quotes found but single quotes preferred\x1b[0m\n'}
+[11.849865] (stem_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./stem_pkg/controller.py:78:13: E203 whitespace before ':'\x1b[0m\n"}
+[11.853310] (stem_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./stem_pkg/controller.py:83:20: E203 whitespace before ':'\x1b[0m\n"}
+[11.858917] (stem_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./stem_pkg/controller.py:95:1: E305 expected 2 blank lines after class or function definition, found 1\x1b[0m\n'}
+[11.877151] (stem_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./stem_pkg/controller.py:95:26: E203 whitespace before ':'\x1b[0m\n"}
+[11.879704] (stem_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./stem_pkg/controller.py:96:11: W292 no newline at end of file\x1b[0m\n'}
+[11.881977] (stem_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./stem_pkg/async_serial_talker.py:5:1: I100 Import statements are in the wrong order. 'import asyncio' should be before 'from std_msgs.msg import String' and in a different group.\x1b[0m\n"}
+[11.884229] (stem_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./stem_pkg/async_serial_talker.py:5:1: I201 Missing newline between import groups. 'import asyncio' is identified as Stdlib and 'from std_msgs.msg import String' is identified as Third Party.\x1b[0m\n"}
+[11.886187] (stem_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./stem_pkg/async_serial_talker.py:6:1: I201 Missing newline between import groups. 'import serial_asyncio' is identified as Third Party and 'import asyncio' is identified as Stdlib.\x1b[0m\n"}
+[11.888226] (stem_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./stem_pkg/async_serial_talker.py:11:5: E301 expected 1 blank line, found 0\x1b[0m\n'}
+[11.890085] (stem_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./stem_pkg/async_serial_talker.py:20:32: Q000 Double quotes found but single quotes preferred\x1b[0m\n'}
+[11.891778] (stem_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./stem_pkg/async_serial_talker.py:29:100: E501 line too long (102 > 99 characters)\x1b[0m\n'}
+[11.893675] (stem_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./stem_pkg/async_serial_talker.py:38:38: E203 whitespace before ':'\x1b[0m\n"}
+[11.895996] (stem_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./stem_pkg/async_serial_talker.py:39:21: E203 whitespace before ':'\x1b[0m\n"}
+[11.898315] (stem_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./stem_pkg/async_serial_talker.py:42:9: E265 block comment should start with '# '\x1b[0m\n"}
+[11.910756] (stem_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./stem_pkg/async_serial_talker.py:57:1: E305 expected 2 blank lines after class or function definition, found 1\x1b[0m\n'}
+[11.912957] (stem_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./stem_pkg/async_serial_talker.py:57:26: E203 whitespace before ':'\x1b[0m\n"}
+[11.915494] (stem_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./stem_pkg/async_serial_talker.py:58:11: W292 no newline at end of file\x1b[0m\n'}
+[11.917805] (stem_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./stem_pkg/cmd_selector.py:6:1: E302 expected 2 blank lines, found 1\x1b[0m\n'}
+[11.920077] (-) TimerEvent: {}
+[11.921199] (stem_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./stem_pkg/cmd_selector.py:8:5: E301 expected 1 blank line, found 0\x1b[0m\n'}
+[11.923659] (stem_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./stem_pkg/cmd_selector.py:44:1: E303 too many blank lines (3)\x1b[0m\n'}
+[11.937770] (stem_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./stem_pkg/cmd_selector.py:55:1: E305 expected 2 blank lines after class or function definition, found 1\x1b[0m\n'}
+[11.940275] (stem_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./stem_pkg/cmd_selector.py:55:26: E203 whitespace before ':'\x1b[0m\n"}
+[11.943049] (stem_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./stem_pkg/cmd_selector.py:56:11: W292 no newline at end of file\x1b[0m\n'}
+[11.943736] (stem_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./stem_pkg/calculator.py:1:1: F401 'socket.NI_NUMERICHOST' imported but unused\x1b[0m\n"}
+[11.944354] (stem_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./stem_pkg/calculator.py:2:1: I201 Missing newline between import groups. 'import rclpy' is identified as Third Party and 'from socket import NI_NUMERICHOST' is identified as Stdlib.\x1b[0m\n"}
+[11.945103] (stem_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./stem_pkg/calculator.py:7:1: I100 Import statements are in the wrong order. 'import math' should be before 'from sunflower_interfaces.msg import TfliteResult' and in a different group.\x1b[0m\n"}
+[11.945788] (stem_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./stem_pkg/calculator.py:7:1: I201 Missing newline between import groups. 'import math' is identified as Stdlib and 'from sunflower_interfaces.msg import TfliteResult' is identified as Third Party.\x1b[0m\n"}
+[11.946450] (stem_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./stem_pkg/calculator.py:9:1: E302 expected 2 blank lines, found 1\x1b[0m\n'}
+[11.947056] (stem_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./stem_pkg/calculator.py:9:23: E203 whitespace before ':'\x1b[0m\n"}
+[11.947675] (stem_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./stem_pkg/calculator.py:10:1: CNL100 Class definition does not have a new line.\x1b[0m\n'}
+[11.948298] (stem_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./stem_pkg/calculator.py:23:35: E203 whitespace before ':'\x1b[0m\n"}
+[11.950341] (stem_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./stem_pkg/calculator.py:31:30: Q000 Double quotes found but single quotes preferred\x1b[0m\n'}
+[11.952064] (stem_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./stem_pkg/calculator.py:34:27: C417 Unnecessary use of map - use a generator expression instead.\x1b[0m\n'}
+[11.953912] (stem_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./stem_pkg/calculator.py:35:27: C417 Unnecessary use of map - use a generator expression instead.\x1b[0m\n'}
+[11.966352] (stem_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./stem_pkg/calculator.py:36:27: C417 Unnecessary use of map - use a generator expression instead.\x1b[0m\n'}
+[11.967908] (stem_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./stem_pkg/calculator.py:62:1: W293 blank line contains whitespace\x1b[0m\n'}
+[11.969528] (stem_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./stem_pkg/calculator.py:65:10: E203 whitespace before ','\x1b[0m\n"}
+[11.971077] (stem_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./stem_pkg/calculator.py:65:39: C417 Unnecessary use of map - use a generator expression instead.\x1b[0m\n'}
+[11.972602] (stem_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./stem_pkg/calculator.py:83:1: E302 expected 2 blank lines, found 1\x1b[0m\n'}
+[11.974273] (stem_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./stem_pkg/calculator.py:83:20: E203 whitespace before ':'\x1b[0m\n"}
+[11.975936] (stem_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./stem_pkg/calculator.py:94:1: E305 expected 2 blank lines after class or function definition, found 1\x1b[0m\n'}
+[11.977778] (stem_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./stem_pkg/calculator.py:94:26: E203 whitespace before ':'\x1b[0m\n"}
+[11.980184] (stem_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./stem_pkg/calculator.py:95:11: W292 no newline at end of file\x1b[0m\n'}
+[11.983329] (stem_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./stem_pkg/tensor.py:5:1: I100 Import statements are in the wrong order. 'import cv2' should be before 'from sunflower_interfaces.msg import TfliteResult'\x1b[0m\n"}
+[11.995739] (stem_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./stem_pkg/tensor.py:7:1: I100 Import statements are in the wrong order. 'import numpy' should be before 'import tensorflow'\x1b[0m\n"}
+[11.997644] (stem_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./stem_pkg/tensor.py:9:1: E302 expected 2 blank lines, found 1\x1b[0m\n'}
+[11.999572] (stem_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./stem_pkg/tensor.py:9:19: E203 whitespace before ':'\x1b[0m\n"}
+[12.001510] (stem_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./stem_pkg/tensor.py:10:1: CNL100 Class definition does not have a new line.\x1b[0m\n'}
+[12.003278] (stem_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./stem_pkg/tensor.py:20:46: E203 whitespace before ':'\x1b[0m\n"}
+[12.005053] (stem_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./stem_pkg/tensor.py:41:9: F841 local variable 'data' is assigned to but never used\x1b[0m\n"}
+[12.006709] (stem_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./stem_pkg/tensor.py:41:16: C408 Unnecessary list call - rewrite as a literal.\x1b[0m\n'}
+[12.008450] (stem_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./stem_pkg/tensor.py:53:1: E302 expected 2 blank lines, found 1\x1b[0m\n'}
+[12.010210] (stem_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./stem_pkg/tensor.py:53:20: E203 whitespace before ':'\x1b[0m\n"}
+[12.011810] (stem_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./stem_pkg/tensor.py:55:50: Q000 Double quotes found but single quotes preferred\x1b[0m\n'}
+[12.014053] (stem_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./stem_pkg/tensor.py:55:100: E501 line too long (100 > 99 characters)\x1b[0m\n'}
+[12.015699] (stem_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./stem_pkg/tensor.py:67:1: E305 expected 2 blank lines after class or function definition, found 1\x1b[0m\n'}
+[12.017346] (stem_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./stem_pkg/tensor.py:67:26: E203 whitespace before ':'\x1b[0m\n"}
+[12.018994] (stem_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./stem_pkg/tensor.py:70:1: E265 block comment should start with '# '\x1b[0m\n"}
+[12.020626] (-) TimerEvent: {}
+[12.021530] (stem_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./stem_pkg/tensor.py:70:29: W292 no newline at end of file\x1b[0m\n'}
+[12.023305] (stem_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./stem_pkg/tensor.py:70:29: W292 no newline at end of file\x1b[0m\n'}
+[12.025091] (stem_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./stem_pkg/tensor.py:70:29: W292 no newline at end of file\x1b[0m\n'}
+[12.026813] (stem_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./stem_pkg/tester.py:5:1: I100 Import statements are in the wrong order. 'from pynput import keyboard' should be before 'from std_msgs.msg import String'\x1b[0m\n"}
+[12.028330] (stem_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./stem_pkg/tester.py:7:1: E302 expected 2 blank lines, found 1\x1b[0m\n'}
+[12.029761] (stem_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./stem_pkg/tester.py:7:19: E203 whitespace before ':'\x1b[0m\n"}
+[12.031482] (stem_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./stem_pkg/tester.py:8:1: CNL100 Class definition does not have a new line.\x1b[0m\n'}
+[12.033127] (stem_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./stem_pkg/tester.py:16:21: E251 unexpected spaces around keyword / parameter equals\x1b[0m\n'}
+[12.046417] (stem_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./stem_pkg/tester.py:16:23: E251 unexpected spaces around keyword / parameter equals\x1b[0m\n'}
+[12.048121] (stem_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./stem_pkg/tester.py:17:23: E251 unexpected spaces around keyword / parameter equals\x1b[0m\n'}
+[12.049876] (stem_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./stem_pkg/tester.py:17:25: E251 unexpected spaces around keyword / parameter equals\x1b[0m\n'}
+[12.051263] (stem_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./stem_pkg/tester.py:21:43: E203 whitespace before ':'\x1b[0m\n"}
+[12.052581] (stem_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./stem_pkg/tester.py:29:1: B901 blind except: statement\x1b[0m\n'}
+[12.053914] (stem_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./stem_pkg/tester.py:29:9: E722 do not use bare 'except'\x1b[0m\n"}
+[12.055013] (stem_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./stem_pkg/tester.py:32:32: E203 whitespace before ':'\x1b[0m\n"}
+[12.056605] (stem_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./stem_pkg/tester.py:37:17: Q000 Double quotes found but single quotes preferred\x1b[0m\n'}
+[12.058333] (stem_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./stem_pkg/tester.py:37:20: E203 whitespace before ':'\x1b[0m\n"}
+[12.060011] (stem_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./stem_pkg/tester.py:38:17: Q000 Double quotes found but single quotes preferred\x1b[0m\n'}
+[12.061615] (stem_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./stem_pkg/tester.py:39:19: Q000 Double quotes found but single quotes preferred\x1b[0m\n'}
+[12.063246] (stem_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./stem_pkg/tester.py:39:22: E203 whitespace before ':'\x1b[0m\n"}
+[12.064837] (stem_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./stem_pkg/tester.py:40:17: Q000 Double quotes found but single quotes preferred\x1b[0m\n'}
+[12.066410] (stem_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./stem_pkg/tester.py:41:19: Q000 Double quotes found but single quotes preferred\x1b[0m\n'}
+[12.067994] (stem_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./stem_pkg/tester.py:41:22: E203 whitespace before ':'\x1b[0m\n"}
+[12.069705] (stem_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./stem_pkg/tester.py:42:17: Q000 Double quotes found but single quotes preferred\x1b[0m\n'}
+[12.071052] (stem_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./stem_pkg/tester.py:43:19: Q000 Double quotes found but single quotes preferred\x1b[0m\n'}
+[12.072401] (stem_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./stem_pkg/tester.py:43:22: E203 whitespace before ':'\x1b[0m\n"}
+[12.074054] (stem_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./stem_pkg/tester.py:44:17: Q000 Double quotes found but single quotes preferred\x1b[0m\n'}
+[12.075974] (stem_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./stem_pkg/tester.py:45:19: Q000 Double quotes found but single quotes preferred\x1b[0m\n'}
+[12.077671] (stem_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./stem_pkg/tester.py:45:22: E203 whitespace before ':'\x1b[0m\n"}
+[12.079436] (stem_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./stem_pkg/tester.py:46:17: Q000 Double quotes found but single quotes preferred\x1b[0m\n'}
+[12.081217] (stem_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./stem_pkg/tester.py:47:19: Q000 Double quotes found but single quotes preferred\x1b[0m\n'}
+[12.082669] (stem_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./stem_pkg/tester.py:47:22: E203 whitespace before ':'\x1b[0m\n"}
+[12.084209] (stem_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./stem_pkg/tester.py:48:17: Q000 Double quotes found but single quotes preferred\x1b[0m\n'}
+[12.085894] (stem_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./stem_pkg/tester.py:49:13: E203 whitespace before ':'\x1b[0m\n"}
+[12.087480] (stem_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./stem_pkg/tester.py:57:1: E302 expected 2 blank lines, found 1\x1b[0m\n'}
+[12.089398] (stem_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./stem_pkg/tester.py:57:20: E203 whitespace before ':'\x1b[0m\n"}
+[12.091144] (stem_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./stem_pkg/tester.py:68:1: E305 expected 2 blank lines after class or function definition, found 1\x1b[0m\n'}
+[12.092830] (stem_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./stem_pkg/tester.py:68:26: E203 whitespace before ':'\x1b[0m\n"}
+[12.094341] (stem_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./stem_pkg/tester.py:69:11: W292 no newline at end of file\x1b[0m\n'}
+[12.096179] (stem_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./stem_pkg/tensor_publisher.py:5:1: I100 Import statements are in the wrong order. 'import cv2' should be before 'from std_msgs.msg import String'\x1b[0m\n"}
+[12.097845] (stem_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./stem_pkg/tensor_publisher.py:7:1: I100 Import statements are in the wrong order. 'import numpy' should be before 'import tensorflow'\x1b[0m\n"}
+[12.099343] (stem_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./stem_pkg/tensor_publisher.py:8:1: F401 'pandas as pd' imported but unused\x1b[0m\n"}
+[12.100968] (stem_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./stem_pkg/tensor_publisher.py:10:1: E302 expected 2 blank lines, found 1\x1b[0m\n'}
+[12.102621] (stem_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./stem_pkg/tensor_publisher.py:10:28: E203 whitespace before ':'\x1b[0m\n"}
+[12.104401] (stem_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./stem_pkg/tensor_publisher.py:11:1: CNL100 Class definition does not have a new line.\x1b[0m\n'}
+[12.106210] (stem_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./stem_pkg/tensor_publisher.py:21:46: E203 whitespace before ':'\x1b[0m\n"}
+[12.108047] (stem_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./stem_pkg/tensor_publisher.py:42:16: C408 Unnecessary list call - rewrite as a literal.\x1b[0m\n'}
+[12.110047] (stem_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./stem_pkg/tensor_publisher.py:44:28: E203 whitespace before ':'\x1b[0m\n"}
+[12.111713] (stem_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./stem_pkg/tensor_publisher.py:47:20: Q000 Double quotes found but single quotes preferred\x1b[0m\n'}
+[12.114139] (stem_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./stem_pkg/tensor_publisher.py:48:20: Q000 Double quotes found but single quotes preferred\x1b[0m\n'}
+[12.117286] (stem_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./stem_pkg/tensor_publisher.py:52:1: E302 expected 2 blank lines, found 1\x1b[0m\n'}
+[12.119033] (stem_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./stem_pkg/tensor_publisher.py:52:20: E203 whitespace before ':'\x1b[0m\n"}
+[12.120815] (-) TimerEvent: {}
+[12.121686] (stem_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./stem_pkg/tensor_publisher.py:54:50: Q000 Double quotes found but single quotes preferred\x1b[0m\n'}
+[12.123544] (stem_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./stem_pkg/tensor_publisher.py:54:100: E501 line too long (100 > 99 characters)\x1b[0m\n'}
+[12.125551] (stem_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./stem_pkg/tensor_publisher.py:66:1: E305 expected 2 blank lines after class or function definition, found 1\x1b[0m\n'}
+[12.127418] (stem_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./stem_pkg/tensor_publisher.py:66:26: E203 whitespace before ':'\x1b[0m\n"}
+[12.129412] (stem_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./stem_pkg/tensor_publisher.py:69:1: E265 block comment should start with '# '\x1b[0m\n"}
+[12.131387] (stem_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./stem_pkg/tensor_publisher.py:69:29: W292 no newline at end of file\x1b[0m\n'}
+[12.133346] (stem_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./stem_pkg/tensor_publisher.py:69:29: W292 no newline at end of file\x1b[0m\n'}
+[12.135341] (stem_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./stem_pkg/tensor_publisher.py:69:29: W292 no newline at end of file\x1b[0m\n'}
+[12.137121] (stem_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE   assert 1 == 0\x1b[0m\n'}
+[12.138841] (stem_pkg) StdoutLine: {'line': b'----------------------------- Captured stdout call -----------------------------\n'}
+[12.140595] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.142419] (stem_pkg) StdoutLine: {'line': b"./setup.py:2:1: I100 Import statements are in the wrong order. 'import os' should be before 'from setuptools import setup' and in a different group.\n"}
+[12.144091] (stem_pkg) StdoutLine: {'line': b'import os\n'}
+[12.146077] (stem_pkg) StdoutLine: {'line': b'^\n'}
+[12.147792] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.149712] (stem_pkg) StdoutLine: {'line': b"./setup.py:2:1: I201 Missing newline between import groups. 'import os' is identified as Stdlib and 'from setuptools import setup' is identified as Third Party.\n"}
+[12.151577] (stem_pkg) StdoutLine: {'line': b'import os\n'}
+[12.153455] (stem_pkg) StdoutLine: {'line': b'^\n'}
+[12.155325] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.157172] (stem_pkg) StdoutLine: {'line': b"./setup.py:3:1: I100 Import statements are in the wrong order. 'from glob import glob' should be before 'import os'\n"}
+[12.158952] (stem_pkg) StdoutLine: {'line': b'from glob import glob\n'}
+[12.161299] (stem_pkg) StdoutLine: {'line': b'^\n'}
+[12.163150] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.164997] (stem_pkg) StdoutLine: {'line': b'./setup.py:26:13: Q000 Double quotes found but single quotes preferred\n'}
+[12.166651] (stem_pkg) StdoutLine: {'line': b'            "serial_talker=stem_pkg.serial_talker:main",\n'}
+[12.168362] (stem_pkg) StdoutLine: {'line': b'            ^\n'}
+[12.170044] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.171823] (stem_pkg) StdoutLine: {'line': b'./setup.py:27:13: Q000 Double quotes found but single quotes preferred\n'}
+[12.173631] (stem_pkg) StdoutLine: {'line': b'            "cmd_selector=stem_pkg.cmd_selector:main",\n'}
+[12.175437] (stem_pkg) StdoutLine: {'line': b'            ^\n'}
+[12.177112] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.178922] (stem_pkg) StdoutLine: {'line': b'./setup.py:28:13: Q000 Double quotes found but single quotes preferred\n'}
+[12.181242] (stem_pkg) StdoutLine: {'line': b'            "calculator=stem_pkg.calculator:main",\n'}
+[12.183865] (stem_pkg) StdoutLine: {'line': b'            ^\n'}
+[12.185492] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.187073] (stem_pkg) StdoutLine: {'line': b'./setup.py:29:13: Q000 Double quotes found but single quotes preferred\n'}
+[12.188679] (stem_pkg) StdoutLine: {'line': b'            "tensor_publisher=stem_pkg.tensor_publisher:main",\n'}
+[12.190185] (stem_pkg) StdoutLine: {'line': b'            ^\n'}
+[12.191781] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.193420] (stem_pkg) StdoutLine: {'line': b'./setup.py:30:13: Q000 Double quotes found but single quotes preferred\n'}
+[12.194965] (stem_pkg) StdoutLine: {'line': b'            "tensor=stem_pkg.tensor:main"\n'}
+[12.196498] (stem_pkg) StdoutLine: {'line': b'            ^\n'}
+[12.198239] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.200042] (stem_pkg) StdoutLine: {'line': b"./setup.py:31:13: E265 block comment should start with '# '\n"}
+[12.202048] (stem_pkg) StdoutLine: {'line': b'            #"tester=stem_pkg.tester:main",\n'}
+[12.203883] (stem_pkg) StdoutLine: {'line': b'            ^\n'}
+[12.205777] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.207477] (stem_pkg) StdoutLine: {'line': b"./setup.py:32:13: E265 block comment should start with '# '\n"}
+[12.209231] (stem_pkg) StdoutLine: {'line': b'            #"controller=stem_pkg.controller:main"\n'}
+[12.210995] (stem_pkg) StdoutLine: {'line': b'            ^\n'}
+[12.212622] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.214291] (stem_pkg) StdoutLine: {'line': b'./setup.py:35:2: W292 no newline at end of file\n'}
+[12.215791] (stem_pkg) StdoutLine: {'line': b') ^\n'}
+[12.217327] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.218912] (stem_pkg) StdoutLine: {'line': b'./launch/stem.launch.py:4:1: E302 expected 2 blank lines, found 1\n'}
+[12.220431] (stem_pkg) StdoutLine: {'line': b'def generate_launch_description():\n'}
+[12.222008] (-) TimerEvent: {}
+[12.223939] (stem_pkg) StdoutLine: {'line': b'^\n'}
+[12.225671] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.227105] (stem_pkg) StdoutLine: {'line': b'./launch/stem.launch.py:10:20: E251 unexpected spaces around keyword / parameter equals\n'}
+[12.228754] (stem_pkg) StdoutLine: {'line': b"            output= 'screen'),\n"}
+[12.240514] (stem_pkg) StdoutLine: {'line': b'                   ^\n'}
+[12.241409] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.242098] (stem_pkg) StdoutLine: {'line': b"./launch/stem.launch.py:20:32: E202 whitespace before ')'\n"}
+[12.242706] (stem_pkg) StdoutLine: {'line': b"            name='cmd_selector' ),\n"}
+[12.243275] (stem_pkg) StdoutLine: {'line': b'                               ^\n'}
+[12.243856] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.244441] (stem_pkg) StdoutLine: {'line': b'./launch/stem.launch.py:26:20: E251 unexpected spaces around keyword / parameter equals\n'}
+[12.245114] (stem_pkg) StdoutLine: {'line': b"            output= 'screen' )\n"}
+[12.245699] (stem_pkg) StdoutLine: {'line': b'                   ^\n'}
+[12.246253] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.246835] (stem_pkg) StdoutLine: {'line': b"./launch/stem.launch.py:26:29: E202 whitespace before ')'\n"}
+[12.247465] (stem_pkg) StdoutLine: {'line': b"            output= 'screen' )\n"}
+[12.248117] (stem_pkg) StdoutLine: {'line': b'                            ^\n'}
+[12.248884] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.249658] (stem_pkg) StdoutLine: {'line': b'./launch/stem.launch.py:27:7: W292 no newline at end of file\n'}
+[12.250381] (stem_pkg) StdoutLine: {'line': b'    ])      ^\n'}
+[12.251008] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.251608] (stem_pkg) StdoutLine: {'line': b"./stem_pkg/serial_talker.py:5:1: I100 Import statements are in the wrong order. 'import serial' should be before 'from std_msgs.msg import String'\n"}
+[12.252318] (stem_pkg) StdoutLine: {'line': b'import serial \n'}
+[12.252979] (stem_pkg) StdoutLine: {'line': b'^\n'}
+[12.253694] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.254430] (stem_pkg) StdoutLine: {'line': b'./stem_pkg/serial_talker.py:5:14: W291 trailing whitespace\n'}
+[12.255134] (stem_pkg) StdoutLine: {'line': b'import serial \n'}
+[12.255810] (stem_pkg) StdoutLine: {'line': b'             ^\n'}
+[12.256495] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.257332] (stem_pkg) StdoutLine: {'line': b'./stem_pkg/serial_talker.py:11:5: E301 expected 1 blank line, found 0\n'}
+[12.258006] (stem_pkg) StdoutLine: {'line': b'    def __init__(self):\n'}
+[12.258761] (stem_pkg) StdoutLine: {'line': b'    ^\n'}
+[12.259493] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.260196] (stem_pkg) StdoutLine: {'line': b'./stem_pkg/serial_talker.py:19:32: Q000 Double quotes found but single quotes preferred\n'}
+[12.261009] (stem_pkg) StdoutLine: {'line': b'        self.get_logger().info("Serial connection started")\n'}
+[12.261809] (stem_pkg) StdoutLine: {'line': b'                               ^\n'}
+[12.262534] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.263221] (stem_pkg) StdoutLine: {'line': b'./stem_pkg/serial_talker.py:22:24: Q000 Double quotes found but single quotes preferred\n'}
+[12.263878] (stem_pkg) StdoutLine: {'line': b'        self.ser.write("^1*2*3*4*5*6*7*8*8".encode())\n'}
+[12.264543] (stem_pkg) StdoutLine: {'line': b'                       ^\n'}
+[12.265282] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.265875] (stem_pkg) StdoutLine: {'line': b'./stem_pkg/serial_talker.py:40:1: E305 expected 2 blank lines after class or function definition, found 1\n'}
+[12.266444] (stem_pkg) StdoutLine: {'line': b"if __name__ == '__main__' :\n"}
+[12.267044] (stem_pkg) StdoutLine: {'line': b'^\n'}
+[12.267586] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.268155] (stem_pkg) StdoutLine: {'line': b"./stem_pkg/serial_talker.py:40:26: E203 whitespace before ':'\n"}
+[12.268717] (stem_pkg) StdoutLine: {'line': b"if __name__ == '__main__' :\n"}
+[12.269318] (stem_pkg) StdoutLine: {'line': b'                         ^\n'}
+[12.269888] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.270453] (stem_pkg) StdoutLine: {'line': b'./stem_pkg/serial_talker.py:41:11: W292 no newline at end of file\n'}
+[12.271011] (stem_pkg) StdoutLine: {'line': b'    main()          ^\n'}
+[12.271637] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.272216] (stem_pkg) StdoutLine: {'line': b"./stem_pkg/controller.py:5:1: I100 Import statements are in the wrong order. 'import RPi.GPIO' should be before 'from std_msgs.msg import String'\n"}
+[12.272808] (stem_pkg) StdoutLine: {'line': b'import RPi.GPIO as GPIO\n'}
+[12.273402] (stem_pkg) StdoutLine: {'line': b'^\n'}
+[12.273974] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.274567] (stem_pkg) StdoutLine: {'line': b'./stem_pkg/controller.py:7:1: E302 expected 2 blank lines, found 1\n'}
+[12.275105] (stem_pkg) StdoutLine: {'line': b'class Controller(Node) :\n'}
+[12.275647] (stem_pkg) StdoutLine: {'line': b'^\n'}
+[12.276210] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.277139] (stem_pkg) StdoutLine: {'line': b"./stem_pkg/controller.py:7:23: E203 whitespace before ':'\n"}
+[12.277936] (stem_pkg) StdoutLine: {'line': b'class Controller(Node) :\n'}
+[12.278600] (stem_pkg) StdoutLine: {'line': b'                      ^\n'}
+[12.279246] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.279910] (stem_pkg) StdoutLine: {'line': b'./stem_pkg/controller.py:8:1: CNL100 Class definition does not have a new line.\n'}
+[12.280647] (stem_pkg) StdoutLine: {'line': b'    def __init__(self):\n'}
+[12.281398] (stem_pkg) StdoutLine: {'line': b'^\n'}
+[12.281897] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.282407] (stem_pkg) StdoutLine: {'line': b'./stem_pkg/controller.py:15:1: W293 blank line contains whitespace\n'}
+[12.283083] (stem_pkg) StdoutLine: {'line': b'        \n'}
+[12.283762] (stem_pkg) StdoutLine: {'line': b'^\n'}
+[12.284436] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.285203] (stem_pkg) StdoutLine: {'line': b'./stem_pkg/controller.py:19:60: E261 at least two spaces before inline comment\n'}
+[12.285889] (stem_pkg) StdoutLine: {'line': b'        GPIO.setup(12, GPIO.IN, pull_up_down=GPIO.PUD_DOWN) #RED\n'}
+[12.286636] (stem_pkg) StdoutLine: {'line': b'                                                           ^\n'}
+[12.287341] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.288043] (stem_pkg) StdoutLine: {'line': b"./stem_pkg/controller.py:19:61: E262 inline comment should start with '# '\n"}
+[12.288731] (stem_pkg) StdoutLine: {'line': b'        GPIO.setup(12, GPIO.IN, pull_up_down=GPIO.PUD_DOWN) #RED\n'}
+[12.289506] (stem_pkg) StdoutLine: {'line': b'                                                            ^\n'}
+[12.290177] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.290855] (stem_pkg) StdoutLine: {'line': b'./stem_pkg/controller.py:20:60: E261 at least two spaces before inline comment\n'}
+[12.291622] (stem_pkg) StdoutLine: {'line': b'        GPIO.setup(13, GPIO.IN, pull_up_down=GPIO.PUD_DOWN) #ORANGE\n'}
+[12.292306] (stem_pkg) StdoutLine: {'line': b'                                                           ^\n'}
+[12.293134] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.293840] (stem_pkg) StdoutLine: {'line': b"./stem_pkg/controller.py:20:61: E262 inline comment should start with '# '\n"}
+[12.294473] (stem_pkg) StdoutLine: {'line': b'        GPIO.setup(13, GPIO.IN, pull_up_down=GPIO.PUD_DOWN) #ORANGE\n'}
+[12.295103] (stem_pkg) StdoutLine: {'line': b'                                                            ^\n'}
+[12.295713] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.296348] (stem_pkg) StdoutLine: {'line': b'./stem_pkg/controller.py:22:60: E261 at least two spaces before inline comment\n'}
+[12.297020] (stem_pkg) StdoutLine: {'line': b'        GPIO.setup(19, GPIO.IN, pull_up_down=GPIO.PUD_DOWN) #YELLOW\n'}
+[12.297644] (stem_pkg) StdoutLine: {'line': b'                                                           ^\n'}
+[12.298225] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.298851] (stem_pkg) StdoutLine: {'line': b"./stem_pkg/controller.py:22:61: E262 inline comment should start with '# '\n"}
+[12.299434] (stem_pkg) StdoutLine: {'line': b'        GPIO.setup(19, GPIO.IN, pull_up_down=GPIO.PUD_DOWN) #YELLOW\n'}
+[12.300100] (stem_pkg) StdoutLine: {'line': b'                                                            ^\n'}
+[12.300723] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.301402] (stem_pkg) StdoutLine: {'line': b'./stem_pkg/controller.py:23:60: E261 at least two spaces before inline comment\n'}
+[12.301975] (stem_pkg) StdoutLine: {'line': b'        GPIO.setup(16, GPIO.IN, pull_up_down=GPIO.PUD_DOWN) #GREEN\n'}
+[12.302538] (stem_pkg) StdoutLine: {'line': b'                                                           ^\n'}
+[12.303121] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.303687] (stem_pkg) StdoutLine: {'line': b"./stem_pkg/controller.py:23:61: E262 inline comment should start with '# '\n"}
+[12.304248] (stem_pkg) StdoutLine: {'line': b'        GPIO.setup(16, GPIO.IN, pull_up_down=GPIO.PUD_DOWN) #GREEN\n'}
+[12.304866] (stem_pkg) StdoutLine: {'line': b'                                                            ^\n'}
+[12.305601] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.306347] (stem_pkg) StdoutLine: {'line': b'./stem_pkg/controller.py:25:60: E261 at least two spaces before inline comment\n'}
+[12.307001] (stem_pkg) StdoutLine: {'line': b'        GPIO.setup(20, GPIO.IN, pull_up_down=GPIO.PUD_DOWN) #BLUE\n'}
+[12.307676] (stem_pkg) StdoutLine: {'line': b'                                                           ^\n'}
+[12.308356] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.309205] (stem_pkg) StdoutLine: {'line': b"./stem_pkg/controller.py:25:61: E262 inline comment should start with '# '\n"}
+[12.309923] (stem_pkg) StdoutLine: {'line': b'        GPIO.setup(20, GPIO.IN, pull_up_down=GPIO.PUD_DOWN) #BLUE\n'}
+[12.310650] (stem_pkg) StdoutLine: {'line': b'                                                            ^\n'}
+[12.311377] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.312072] (stem_pkg) StdoutLine: {'line': b'./stem_pkg/controller.py:26:60: E261 at least two spaces before inline comment\n'}
+[12.312838] (stem_pkg) StdoutLine: {'line': b'        GPIO.setup(26, GPIO.IN, pull_up_down=GPIO.PUD_DOWN) #VIOLET\n'}
+[12.313559] (stem_pkg) StdoutLine: {'line': b'                                                           ^\n'}
+[12.314235] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.314930] (stem_pkg) StdoutLine: {'line': b"./stem_pkg/controller.py:26:61: E262 inline comment should start with '# '\n"}
+[12.315650] (stem_pkg) StdoutLine: {'line': b'        GPIO.setup(26, GPIO.IN, pull_up_down=GPIO.PUD_DOWN) #VIOLET\n'}
+[12.316300] (stem_pkg) StdoutLine: {'line': b'                                                            ^\n'}
+[12.319961] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.320711] (stem_pkg) StdoutLine: {'line': b'./stem_pkg/controller.py:28:60: E261 at least two spaces before inline comment\n'}
+[12.321327] (stem_pkg) StdoutLine: {'line': b'        GPIO.setup(21, GPIO.IN, pull_up_down=GPIO.PUD_DOWN) #BROWN\n'}
+[12.321825] (stem_pkg) StdoutLine: {'line': b'                                                           ^\n'}
+[12.322323] (-) TimerEvent: {}
+[12.322974] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.323744] (stem_pkg) StdoutLine: {'line': b"./stem_pkg/controller.py:28:61: E262 inline comment should start with '# '\n"}
+[12.324580] (stem_pkg) StdoutLine: {'line': b'        GPIO.setup(21, GPIO.IN, pull_up_down=GPIO.PUD_DOWN) #BROWN\n'}
+[12.325472] (stem_pkg) StdoutLine: {'line': b'                                                            ^\n'}
+[12.326792] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.327475] (stem_pkg) StdoutLine: {'line': b"./stem_pkg/controller.py:30:9: E265 block comment should start with '# '\n"}
+[12.328220] (stem_pkg) StdoutLine: {'line': b'        #GPIO.setup(17, GPIO.IN, GPIO.PUD_UP) #black toggle yellow\n'}
+[12.328941] (stem_pkg) StdoutLine: {'line': b'        ^\n'}
+[12.339733] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.340489] (stem_pkg) StdoutLine: {'line': b"./stem_pkg/controller.py:31:9: E265 block comment should start with '# '\n"}
+[12.341226] (stem_pkg) StdoutLine: {'line': b'        #GPIO.setup(18, GPIO.IN, GPIO.PUD_UP) #black toggle greeen\n'}
+[12.341908] (stem_pkg) StdoutLine: {'line': b'        ^\n'}
+[12.342895] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.343593] (stem_pkg) StdoutLine: {'line': b'./stem_pkg/controller.py:33:57: E251 unexpected spaces around keyword / parameter equals\n'}
+[12.344215] (stem_pkg) StdoutLine: {'line': b'        GPIO.add_event_detect(12, GPIO.FALLING, callback = self.on_press, bouncetime=100)\n'}
+[12.344992] (stem_pkg) StdoutLine: {'line': b'                                                        ^\n'}
+[12.345680] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.346342] (stem_pkg) StdoutLine: {'line': b'./stem_pkg/controller.py:33:59: E251 unexpected spaces around keyword / parameter equals\n'}
+[12.347031] (stem_pkg) StdoutLine: {'line': b'        GPIO.add_event_detect(12, GPIO.FALLING, callback = self.on_press, bouncetime=100)\n'}
+[12.347682] (stem_pkg) StdoutLine: {'line': b'                                                          ^\n'}
+[12.348340] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.349045] (stem_pkg) StdoutLine: {'line': b'./stem_pkg/controller.py:34:57: E251 unexpected spaces around keyword / parameter equals\n'}
+[12.349791] (stem_pkg) StdoutLine: {'line': b'        GPIO.add_event_detect(13, GPIO.FALLING, callback = self.on_press, bouncetime=100)\n'}
+[12.350501] (stem_pkg) StdoutLine: {'line': b'                                                        ^\n'}
+[12.351152] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.351802] (stem_pkg) StdoutLine: {'line': b'./stem_pkg/controller.py:34:59: E251 unexpected spaces around keyword / parameter equals\n'}
+[12.352430] (stem_pkg) StdoutLine: {'line': b'        GPIO.add_event_detect(13, GPIO.FALLING, callback = self.on_press, bouncetime=100)\n'}
+[12.353193] (stem_pkg) StdoutLine: {'line': b'                                                          ^\n'}
+[12.353849] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.354460] (stem_pkg) StdoutLine: {'line': b'./stem_pkg/controller.py:36:57: E251 unexpected spaces around keyword / parameter equals\n'}
+[12.355162] (stem_pkg) StdoutLine: {'line': b'        GPIO.add_event_detect(19, GPIO.FALLING, callback = self.on_press, bouncetime=100)\n'}
+[12.355823] (stem_pkg) StdoutLine: {'line': b'                                                        ^\n'}
+[12.356493] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.368583] (stem_pkg) StdoutLine: {'line': b'./stem_pkg/controller.py:36:59: E251 unexpected spaces around keyword / parameter equals\n'}
+[12.369435] (stem_pkg) StdoutLine: {'line': b'        GPIO.add_event_detect(19, GPIO.FALLING, callback = self.on_press, bouncetime=100)\n'}
+[12.370108] (stem_pkg) StdoutLine: {'line': b'                                                          ^\n'}
+[12.370718] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.371382] (stem_pkg) StdoutLine: {'line': b'./stem_pkg/controller.py:37:57: E251 unexpected spaces around keyword / parameter equals\n'}
+[12.377177] (stem_pkg) StdoutLine: {'line': b'        GPIO.add_event_detect(16, GPIO.FALLING, callback = self.on_press, bouncetime=100)\n'}
+[12.377904] (stem_pkg) StdoutLine: {'line': b'                                                        ^\n'}
+[12.378674] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.379399] (stem_pkg) StdoutLine: {'line': b'./stem_pkg/controller.py:37:59: E251 unexpected spaces around keyword / parameter equals\n'}
+[12.386268] (stem_pkg) StdoutLine: {'line': b'        GPIO.add_event_detect(16, GPIO.FALLING, callback = self.on_press, bouncetime=100)\n'}
+[12.387036] (stem_pkg) StdoutLine: {'line': b'                                                          ^\n'}
+[12.387771] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.388460] (stem_pkg) StdoutLine: {'line': b'./stem_pkg/controller.py:39:57: E251 unexpected spaces around keyword / parameter equals\n'}
+[12.389436] (stem_pkg) StdoutLine: {'line': b'        GPIO.add_event_detect(20, GPIO.FALLING, callback = self.on_press, bouncetime=100)\n'}
+[12.390231] (stem_pkg) StdoutLine: {'line': b'                                                        ^\n'}
+[12.390890] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.391590] (stem_pkg) StdoutLine: {'line': b'./stem_pkg/controller.py:39:59: E251 unexpected spaces around keyword / parameter equals\n'}
+[12.392289] (stem_pkg) StdoutLine: {'line': b'        GPIO.add_event_detect(20, GPIO.FALLING, callback = self.on_press, bouncetime=100)\n'}
+[12.406068] (stem_pkg) StdoutLine: {'line': b'                                                          ^\n'}
+[12.407505] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.408273] (stem_pkg) StdoutLine: {'line': b'./stem_pkg/controller.py:40:57: E251 unexpected spaces around keyword / parameter equals\n'}
+[12.409169] (stem_pkg) StdoutLine: {'line': b'        GPIO.add_event_detect(26, GPIO.FALLING, callback = self.on_press, bouncetime=100)\n'}
+[12.409839] (stem_pkg) StdoutLine: {'line': b'                                                        ^\n'}
+[12.410561] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.411235] (stem_pkg) StdoutLine: {'line': b'./stem_pkg/controller.py:40:59: E251 unexpected spaces around keyword / parameter equals\n'}
+[12.411909] (stem_pkg) StdoutLine: {'line': b'        GPIO.add_event_detect(26, GPIO.FALLING, callback = self.on_press, bouncetime=100)\n'}
+[12.412583] (stem_pkg) StdoutLine: {'line': b'                                                          ^\n'}
+[12.413409] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.414159] (stem_pkg) StdoutLine: {'line': b'./stem_pkg/controller.py:42:57: E251 unexpected spaces around keyword / parameter equals\n'}
+[12.414865] (stem_pkg) StdoutLine: {'line': b'        GPIO.add_event_detect(21, GPIO.FALLING, callback = self.on_press, bouncetime=100)\n'}
+[12.415563] (stem_pkg) StdoutLine: {'line': b'                                                        ^\n'}
+[12.416188] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.416841] (stem_pkg) StdoutLine: {'line': b'./stem_pkg/controller.py:42:59: E251 unexpected spaces around keyword / parameter equals\n'}
+[12.417550] (stem_pkg) StdoutLine: {'line': b'        GPIO.add_event_detect(21, GPIO.FALLING, callback = self.on_press, bouncetime=100)\n'}
+[12.418315] (stem_pkg) StdoutLine: {'line': b'                                                          ^\n'}
+[12.418966] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.419647] (stem_pkg) StdoutLine: {'line': b"./stem_pkg/controller.py:46:9: E265 block comment should start with '# '\n"}
+[12.420336] (stem_pkg) StdoutLine: {'line': b'        #GPIO.wait_for_edge(18, GPIO.RISING, bouncetime = 10)\n'}
+[12.421131] (stem_pkg) StdoutLine: {'line': b'        ^\n'}
+[12.421835] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.422469] (-) TimerEvent: {}
+[12.422932] (stem_pkg) StdoutLine: {'line': b"./stem_pkg/controller.py:48:43: E203 whitespace before ':'\n"}
+[12.423667] (stem_pkg) StdoutLine: {'line': b'    def publish_key_command_msg(self, msg) :\n'}
+[12.424216] (stem_pkg) StdoutLine: {'line': b'                                          ^\n'}
+[12.424673] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.425259] (stem_pkg) StdoutLine: {'line': b"./stem_pkg/controller.py:55:32: E203 whitespace before ':'\n"}
+[12.425845] (stem_pkg) StdoutLine: {'line': b'        if msg.data is not None :\n'}
+[12.426471] (stem_pkg) StdoutLine: {'line': b'                               ^\n'}
+[12.426963] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.427444] (stem_pkg) StdoutLine: {'line': b"./stem_pkg/controller.py:60:19: E203 whitespace before ':'\n"}
+[12.427906] (stem_pkg) StdoutLine: {'line': b'        if k == 12 :\n'}
+[12.428680] (stem_pkg) StdoutLine: {'line': b'                  ^\n'}
+[12.429543] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.430254] (stem_pkg) StdoutLine: {'line': b'./stem_pkg/controller.py:61:17: Q000 Double quotes found but single quotes preferred\n'}
+[12.431821] (stem_pkg) StdoutLine: {'line': b'            c = "up"\n'}
+[12.432590] (stem_pkg) StdoutLine: {'line': b'                ^\n'}
+[12.433538] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.434137] (stem_pkg) StdoutLine: {'line': b"./stem_pkg/controller.py:62:21: E203 whitespace before ':'\n"}
+[12.435035] (stem_pkg) StdoutLine: {'line': b'        elif k == 13 :\n'}
+[12.435995] (stem_pkg) StdoutLine: {'line': b'                    ^\n'}
+[12.436969] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.437737] (stem_pkg) StdoutLine: {'line': b'./stem_pkg/controller.py:63:17: Q000 Double quotes found but single quotes preferred\n'}
+[12.438385] (stem_pkg) StdoutLine: {'line': b'            c = "left"\n'}
+[12.438757] (stem_pkg) StdoutLine: {'line': b'                ^\n'}
+[12.439074] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.439373] (stem_pkg) StdoutLine: {'line': b"./stem_pkg/controller.py:64:21: E203 whitespace before ':'\n"}
+[12.439669] (stem_pkg) StdoutLine: {'line': b'        elif k == 19 :\n'}
+[12.439960] (stem_pkg) StdoutLine: {'line': b'                    ^\n'}
+[12.440258] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.440560] (stem_pkg) StdoutLine: {'line': b'./stem_pkg/controller.py:65:17: Q000 Double quotes found but single quotes preferred\n'}
+[12.440946] (stem_pkg) StdoutLine: {'line': b'            c = "init"\n'}
+[12.441372] (stem_pkg) StdoutLine: {'line': b'                ^\n'}
+[12.441817] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.442278] (stem_pkg) StdoutLine: {'line': b"./stem_pkg/controller.py:66:21: E203 whitespace before ':'\n"}
+[12.442830] (stem_pkg) StdoutLine: {'line': b'        elif k == 16 :\n'}
+[12.443286] (stem_pkg) StdoutLine: {'line': b'                    ^\n'}
+[12.443715] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.444157] (stem_pkg) StdoutLine: {'line': b'./stem_pkg/controller.py:67:17: Q000 Double quotes found but single quotes preferred\n'}
+[12.444619] (stem_pkg) StdoutLine: {'line': b'            c = "down"\n'}
+[12.445287] (stem_pkg) StdoutLine: {'line': b'                ^\n'}
+[12.445880] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.446484] (stem_pkg) StdoutLine: {'line': b"./stem_pkg/controller.py:68:21: E203 whitespace before ':'\n"}
+[12.447067] (stem_pkg) StdoutLine: {'line': b'        elif k == 20 :\n'}
+[12.447763] (stem_pkg) StdoutLine: {'line': b'                    ^\n'}
+[12.448410] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.449076] (stem_pkg) StdoutLine: {'line': b'./stem_pkg/controller.py:69:17: Q000 Double quotes found but single quotes preferred\n'}
+[12.449658] (stem_pkg) StdoutLine: {'line': b'            c = "turn left"\n'}
+[12.450146] (stem_pkg) StdoutLine: {'line': b'                ^\n'}
+[12.450746] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.451438] (stem_pkg) StdoutLine: {'line': b"./stem_pkg/controller.py:70:21: E203 whitespace before ':'\n"}
+[12.452098] (stem_pkg) StdoutLine: {'line': b'        elif k == 26 :\n'}
+[12.452865] (stem_pkg) StdoutLine: {'line': b'                    ^\n'}
+[12.453544] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.454170] (stem_pkg) StdoutLine: {'line': b'./stem_pkg/controller.py:71:17: Q000 Double quotes found but single quotes preferred\n'}
+[12.454698] (stem_pkg) StdoutLine: {'line': b'            c = "turn right"\n'}
+[12.455206] (stem_pkg) StdoutLine: {'line': b'                ^\n'}
+[12.455717] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.456220] (stem_pkg) StdoutLine: {'line': b"./stem_pkg/controller.py:72:21: E203 whitespace before ':'\n"}
+[12.456730] (stem_pkg) StdoutLine: {'line': b'        elif k == 21 :\n'}
+[12.457806] (stem_pkg) StdoutLine: {'line': b'                    ^\n'}
+[12.458454] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.459000] (stem_pkg) StdoutLine: {'line': b'./stem_pkg/controller.py:73:17: Q000 Double quotes found but single quotes preferred\n'}
+[12.459523] (stem_pkg) StdoutLine: {'line': b'            c = "right"\n'}
+[12.460050] (stem_pkg) StdoutLine: {'line': b'                ^\n'}
+[12.460551] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.461239] (stem_pkg) StdoutLine: {'line': b"./stem_pkg/controller.py:74:21: E203 whitespace before ':'\n"}
+[12.461840] (stem_pkg) StdoutLine: {'line': b'        elif k == 18 :\n'}
+[12.462608] (stem_pkg) StdoutLine: {'line': b'                    ^\n'}
+[12.463033] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.463497] (stem_pkg) StdoutLine: {'line': b'./stem_pkg/controller.py:75:17: Q000 Double quotes found but single quotes preferred\n'}
+[12.464014] (stem_pkg) StdoutLine: {'line': b'            c = "True"\n'}
+[12.464534] (stem_pkg) StdoutLine: {'line': b'                ^\n'}
+[12.465107] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.465662] (stem_pkg) StdoutLine: {'line': b"./stem_pkg/controller.py:76:21: E203 whitespace before ':'\n"}
+[12.466090] (stem_pkg) StdoutLine: {'line': b'        elif k == 17 :\n'}
+[12.466668] (stem_pkg) StdoutLine: {'line': b'                    ^\n'}
+[12.467303] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.467828] (stem_pkg) StdoutLine: {'line': b'./stem_pkg/controller.py:77:17: Q000 Double quotes found but single quotes preferred\n'}
+[12.468308] (stem_pkg) StdoutLine: {'line': b'            c = "False"\n'}
+[12.468814] (stem_pkg) StdoutLine: {'line': b'                ^\n'}
+[12.469490] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.470182] (stem_pkg) StdoutLine: {'line': b"./stem_pkg/controller.py:78:13: E203 whitespace before ':'\n"}
+[12.470914] (stem_pkg) StdoutLine: {'line': b'        else :\n'}
+[12.471611] (stem_pkg) StdoutLine: {'line': b'            ^\n'}
+[12.472344] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.473346] (stem_pkg) StdoutLine: {'line': b"./stem_pkg/controller.py:83:20: E203 whitespace before ':'\n"}
+[12.474034] (stem_pkg) StdoutLine: {'line': b'def main(args=None) :\n'}
+[12.474695] (stem_pkg) StdoutLine: {'line': b'                   ^\n'}
+[12.475344] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.476081] (stem_pkg) StdoutLine: {'line': b'./stem_pkg/controller.py:95:1: E305 expected 2 blank lines after class or function definition, found 1\n'}
+[12.476735] (stem_pkg) StdoutLine: {'line': b"if __name__ == '__main__' :\n"}
+[12.477518] (stem_pkg) StdoutLine: {'line': b'^\n'}
+[12.478187] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.478828] (stem_pkg) StdoutLine: {'line': b"./stem_pkg/controller.py:95:26: E203 whitespace before ':'\n"}
+[12.479942] (stem_pkg) StdoutLine: {'line': b"if __name__ == '__main__' :\n"}
+[12.480623] (stem_pkg) StdoutLine: {'line': b'                         ^\n'}
+[12.481275] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.481767] (stem_pkg) StdoutLine: {'line': b'./stem_pkg/controller.py:96:11: W292 no newline at end of file\n'}
+[12.482320] (stem_pkg) StdoutLine: {'line': b'    main()          ^\n'}
+[12.482888] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.483310] (stem_pkg) StdoutLine: {'line': b"./stem_pkg/async_serial_talker.py:5:1: I100 Import statements are in the wrong order. 'import asyncio' should be before 'from std_msgs.msg import String' and in a different group.\n"}
+[12.483796] (stem_pkg) StdoutLine: {'line': b'import asyncio\n'}
+[12.484705] (stem_pkg) StdoutLine: {'line': b'^\n'}
+[12.485564] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.485975] (stem_pkg) StdoutLine: {'line': b"./stem_pkg/async_serial_talker.py:5:1: I201 Missing newline between import groups. 'import asyncio' is identified as Stdlib and 'from std_msgs.msg import String' is identified as Third Party.\n"}
+[12.486334] (stem_pkg) StdoutLine: {'line': b'import asyncio\n'}
+[12.486671] (stem_pkg) StdoutLine: {'line': b'^\n'}
+[12.487112] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.487621] (stem_pkg) StdoutLine: {'line': b"./stem_pkg/async_serial_talker.py:6:1: I201 Missing newline between import groups. 'import serial_asyncio' is identified as Third Party and 'import asyncio' is identified as Stdlib.\n"}
+[12.488185] (stem_pkg) StdoutLine: {'line': b'import serial_asyncio\n'}
+[12.488751] (stem_pkg) StdoutLine: {'line': b'^\n'}
+[12.489709] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.490289] (stem_pkg) StdoutLine: {'line': b'./stem_pkg/async_serial_talker.py:11:5: E301 expected 1 blank line, found 0\n'}
+[12.490913] (stem_pkg) StdoutLine: {'line': b'    def __init__(self):\n'}
+[12.491677] (stem_pkg) StdoutLine: {'line': b'    ^\n'}
+[12.492445] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.493316] (stem_pkg) StdoutLine: {'line': b'./stem_pkg/async_serial_talker.py:20:32: Q000 Double quotes found but single quotes preferred\n'}
+[12.494257] (stem_pkg) StdoutLine: {'line': b'        self.get_logger().info("Serial connection started")\n'}
+[12.495672] (stem_pkg) StdoutLine: {'line': b'                               ^\n'}
+[12.496576] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.497315] (stem_pkg) StdoutLine: {'line': b'./stem_pkg/async_serial_talker.py:29:100: E501 line too long (102 > 99 characters)\n'}
+[12.497905] (stem_pkg) StdoutLine: {'line': b'        _, writer = await serial_asyncio.open_serial_connection(url=self.SERIAL_PORT, baudrate=115200)\n'}
+[12.498463] (stem_pkg) StdoutLine: {'line': b'                                                                                                   ^\n'}
+[12.498957] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.499537] (stem_pkg) StdoutLine: {'line': b"./stem_pkg/async_serial_talker.py:38:38: E203 whitespace before ':'\n"}
+[12.500205] (stem_pkg) StdoutLine: {'line': b'    async def send(self, writer, msg) :\n'}
+[12.501169] (stem_pkg) StdoutLine: {'line': b'                                     ^\n'}
+[12.501776] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.502224] (stem_pkg) StdoutLine: {'line': b"./stem_pkg/async_serial_talker.py:39:21: E203 whitespace before ':'\n"}
+[12.502858] (stem_pkg) StdoutLine: {'line': b'        for c in msg :\n'}
+[12.503717] (stem_pkg) StdoutLine: {'line': b'                    ^\n'}
+[12.504576] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.505384] (stem_pkg) StdoutLine: {'line': b"./stem_pkg/async_serial_talker.py:42:9: E265 block comment should start with '# '\n"}
+[12.506224] (stem_pkg) StdoutLine: {'line': b"        #writer.write(b'_')\n"}
+[12.507018] (stem_pkg) StdoutLine: {'line': b'        ^\n'}
+[12.507610] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.508510] (stem_pkg) StdoutLine: {'line': b'./stem_pkg/async_serial_talker.py:57:1: E305 expected 2 blank lines after class or function definition, found 1\n'}
+[12.509248] (stem_pkg) StdoutLine: {'line': b"if __name__ == '__main__' :\n"}
+[12.509830] (stem_pkg) StdoutLine: {'line': b'^\n'}
+[12.510585] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.511361] (stem_pkg) StdoutLine: {'line': b"./stem_pkg/async_serial_talker.py:57:26: E203 whitespace before ':'\n"}
+[12.512272] (stem_pkg) StdoutLine: {'line': b"if __name__ == '__main__' :\n"}
+[12.513187] (stem_pkg) StdoutLine: {'line': b'                         ^\n'}
+[12.513894] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.514575] (stem_pkg) StdoutLine: {'line': b'./stem_pkg/async_serial_talker.py:58:11: W292 no newline at end of file\n'}
+[12.515270] (stem_pkg) StdoutLine: {'line': b'    main()          ^\n'}
+[12.515886] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.516574] (stem_pkg) StdoutLine: {'line': b'./stem_pkg/cmd_selector.py:6:1: E302 expected 2 blank lines, found 1\n'}
+[12.517324] (stem_pkg) StdoutLine: {'line': b'class CommandSelector(Node):\n'}
+[12.518008] (stem_pkg) StdoutLine: {'line': b'^\n'}
+[12.518652] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.519285] (stem_pkg) StdoutLine: {'line': b'./stem_pkg/cmd_selector.py:8:5: E301 expected 1 blank line, found 0\n'}
+[12.519941] (stem_pkg) StdoutLine: {'line': b'    def __init__(self):\n'}
+[12.520618] (stem_pkg) StdoutLine: {'line': b'    ^\n'}
+[12.521426] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.522093] (stem_pkg) StdoutLine: {'line': b'./stem_pkg/cmd_selector.py:44:1: E303 too many blank lines (3)\n'}
+[12.522737] (-) TimerEvent: {}
+[12.524377] (stem_pkg) StdoutLine: {'line': b'def main(args=None):\n'}
+[12.525317] (stem_pkg) StdoutLine: {'line': b'^\n'}
+[12.526339] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.527523] (stem_pkg) StdoutLine: {'line': b'./stem_pkg/cmd_selector.py:55:1: E305 expected 2 blank lines after class or function definition, found 1\n'}
+[12.528609] (stem_pkg) StdoutLine: {'line': b"if __name__ == '__main__' :\n"}
+[12.529475] (stem_pkg) StdoutLine: {'line': b'^\n'}
+[12.530505] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.531239] (stem_pkg) StdoutLine: {'line': b"./stem_pkg/cmd_selector.py:55:26: E203 whitespace before ':'\n"}
+[12.531963] (stem_pkg) StdoutLine: {'line': b"if __name__ == '__main__' :\n"}
+[12.532690] (stem_pkg) StdoutLine: {'line': b'                         ^\n'}
+[12.533530] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.534351] (stem_pkg) StdoutLine: {'line': b'./stem_pkg/cmd_selector.py:56:11: W292 no newline at end of file\n'}
+[12.535054] (stem_pkg) StdoutLine: {'line': b'    main()          ^\n'}
+[12.535971] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.536624] (stem_pkg) StdoutLine: {'line': b"./stem_pkg/calculator.py:1:1: F401 'socket.NI_NUMERICHOST' imported but unused\n"}
+[12.537457] (stem_pkg) StdoutLine: {'line': b'from socket import NI_NUMERICHOST\n'}
+[12.538183] (stem_pkg) StdoutLine: {'line': b'^\n'}
+[12.538868] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.539564] (stem_pkg) StdoutLine: {'line': b"./stem_pkg/calculator.py:2:1: I201 Missing newline between import groups. 'import rclpy' is identified as Third Party and 'from socket import NI_NUMERICHOST' is identified as Stdlib.\n"}
+[12.540329] (stem_pkg) StdoutLine: {'line': b'import rclpy\n'}
+[12.541219] (stem_pkg) StdoutLine: {'line': b'^\n'}
+[12.541662] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.542214] (stem_pkg) StdoutLine: {'line': b"./stem_pkg/calculator.py:7:1: I100 Import statements are in the wrong order. 'import math' should be before 'from sunflower_interfaces.msg import TfliteResult' and in a different group.\n"}
+[12.542926] (stem_pkg) StdoutLine: {'line': b'import math\n'}
+[12.543649] (stem_pkg) StdoutLine: {'line': b'^\n'}
+[12.544351] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.545154] (stem_pkg) StdoutLine: {'line': b"./stem_pkg/calculator.py:7:1: I201 Missing newline between import groups. 'import math' is identified as Stdlib and 'from sunflower_interfaces.msg import TfliteResult' is identified as Third Party.\n"}
+[12.545925] (stem_pkg) StdoutLine: {'line': b'import math\n'}
+[12.546902] (stem_pkg) StdoutLine: {'line': b'^\n'}
+[12.547605] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.548189] (stem_pkg) StdoutLine: {'line': b'./stem_pkg/calculator.py:9:1: E302 expected 2 blank lines, found 1\n'}
+[12.548860] (stem_pkg) StdoutLine: {'line': b'class Calculator(Node) :\n'}
+[12.549529] (stem_pkg) StdoutLine: {'line': b'^\n'}
+[12.550140] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.550814] (stem_pkg) StdoutLine: {'line': b"./stem_pkg/calculator.py:9:23: E203 whitespace before ':'\n"}
+[12.551261] (stem_pkg) StdoutLine: {'line': b'class Calculator(Node) :\n'}
+[12.551700] (stem_pkg) StdoutLine: {'line': b'                      ^\n'}
+[12.552181] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.552646] (stem_pkg) StdoutLine: {'line': b'./stem_pkg/calculator.py:10:1: CNL100 Class definition does not have a new line.\n'}
+[12.553294] (stem_pkg) StdoutLine: {'line': b'    def __init__(self):\n'}
+[12.553836] (stem_pkg) StdoutLine: {'line': b'^\n'}
+[12.554304] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.554742] (stem_pkg) StdoutLine: {'line': b"./stem_pkg/calculator.py:23:35: E203 whitespace before ':'\n"}
+[12.555144] (stem_pkg) StdoutLine: {'line': b'    def publish_command(self, cmd) :\n'}
+[12.555545] (stem_pkg) StdoutLine: {'line': b'                                  ^\n'}
+[12.555945] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.556400] (stem_pkg) StdoutLine: {'line': b'./stem_pkg/calculator.py:31:30: Q000 Double quotes found but single quotes preferred\n'}
+[12.557134] (stem_pkg) StdoutLine: {'line': b'        self.publish_command("".join(data))\n'}
+[12.558367] (stem_pkg) StdoutLine: {'line': b'                             ^\n'}
+[12.559126] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.559760] (stem_pkg) StdoutLine: {'line': b'./stem_pkg/calculator.py:34:27: C417 Unnecessary use of map - use a generator expression instead.\n'}
+[12.560461] (stem_pkg) StdoutLine: {'line': b'        n_x, n_y, n_con = map(lambda x: x, nose)\n'}
+[12.561104] (stem_pkg) StdoutLine: {'line': b'                          ^\n'}
+[12.561652] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.562146] (stem_pkg) StdoutLine: {'line': b'./stem_pkg/calculator.py:35:27: C417 Unnecessary use of map - use a generator expression instead.\n'}
+[12.562656] (stem_pkg) StdoutLine: {'line': b'        l_x, l_y, l_con = map(lambda x: x, eye_l)\n'}
+[12.563220] (stem_pkg) StdoutLine: {'line': b'                          ^\n'}
+[12.563903] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.564516] (stem_pkg) StdoutLine: {'line': b'./stem_pkg/calculator.py:36:27: C417 Unnecessary use of map - use a generator expression instead.\n'}
+[12.565474] (stem_pkg) StdoutLine: {'line': b'        r_x, r_y, r_con = map(lambda x: x, eye_r)\n'}
+[12.566141] (stem_pkg) StdoutLine: {'line': b'                          ^\n'}
+[12.566774] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.567426] (stem_pkg) StdoutLine: {'line': b'./stem_pkg/calculator.py:62:1: W293 blank line contains whitespace\n'}
+[12.568050] (stem_pkg) StdoutLine: {'line': b'    \n'}
+[12.568947] (stem_pkg) StdoutLine: {'line': b'^\n'}
+[12.569594] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.570243] (stem_pkg) StdoutLine: {'line': b"./stem_pkg/calculator.py:65:10: E203 whitespace before ','\n"}
+[12.570838] (stem_pkg) StdoutLine: {'line': b'        _ , nose_x, nose_confidence = map(lambda x: x, nose)\n'}
+[12.571434] (stem_pkg) StdoutLine: {'line': b'         ^\n'}
+[12.572008] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.572557] (stem_pkg) StdoutLine: {'line': b'./stem_pkg/calculator.py:65:39: C417 Unnecessary use of map - use a generator expression instead.\n'}
+[12.573206] (stem_pkg) StdoutLine: {'line': b'        _ , nose_x, nose_confidence = map(lambda x: x, nose)\n'}
+[12.573680] (stem_pkg) StdoutLine: {'line': b'                                      ^\n'}
+[12.574127] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.574562] (stem_pkg) StdoutLine: {'line': b'./stem_pkg/calculator.py:83:1: E302 expected 2 blank lines, found 1\n'}
+[12.575032] (stem_pkg) StdoutLine: {'line': b'def main(args=None) :\n'}
+[12.575455] (stem_pkg) StdoutLine: {'line': b'^\n'}
+[12.575880] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.576289] (stem_pkg) StdoutLine: {'line': b"./stem_pkg/calculator.py:83:20: E203 whitespace before ':'\n"}
+[12.576710] (stem_pkg) StdoutLine: {'line': b'def main(args=None) :\n'}
+[12.577291] (stem_pkg) StdoutLine: {'line': b'                   ^\n'}
+[12.577683] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.578029] (stem_pkg) StdoutLine: {'line': b'./stem_pkg/calculator.py:94:1: E305 expected 2 blank lines after class or function definition, found 1\n'}
+[12.578378] (stem_pkg) StdoutLine: {'line': b"if __name__ == '__main__' :\n"}
+[12.578721] (stem_pkg) StdoutLine: {'line': b'^\n'}
+[12.579184] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.579891] (stem_pkg) StdoutLine: {'line': b"./stem_pkg/calculator.py:94:26: E203 whitespace before ':'\n"}
+[12.580431] (stem_pkg) StdoutLine: {'line': b"if __name__ == '__main__' :\n"}
+[12.581018] (stem_pkg) StdoutLine: {'line': b'                         ^\n'}
+[12.581559] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.582064] (stem_pkg) StdoutLine: {'line': b'./stem_pkg/calculator.py:95:11: W292 no newline at end of file\n'}
+[12.583139] (stem_pkg) StdoutLine: {'line': b'    main()          ^\n'}
+[12.583682] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.584208] (stem_pkg) StdoutLine: {'line': b"./stem_pkg/tensor.py:5:1: I100 Import statements are in the wrong order. 'import cv2' should be before 'from sunflower_interfaces.msg import TfliteResult'\n"}
+[12.584882] (stem_pkg) StdoutLine: {'line': b'import cv2\n'}
+[12.585452] (stem_pkg) StdoutLine: {'line': b'^\n'}
+[12.586091] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.586757] (stem_pkg) StdoutLine: {'line': b"./stem_pkg/tensor.py:7:1: I100 Import statements are in the wrong order. 'import numpy' should be before 'import tensorflow'\n"}
+[12.587463] (stem_pkg) StdoutLine: {'line': b'import numpy as np\n'}
+[12.588215] (stem_pkg) StdoutLine: {'line': b'^\n'}
+[12.588944] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.589752] (stem_pkg) StdoutLine: {'line': b'./stem_pkg/tensor.py:9:1: E302 expected 2 blank lines, found 1\n'}
+[12.590425] (stem_pkg) StdoutLine: {'line': b'class Tensor(Node) :\n'}
+[12.591099] (stem_pkg) StdoutLine: {'line': b'^\n'}
+[12.591753] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.592471] (stem_pkg) StdoutLine: {'line': b"./stem_pkg/tensor.py:9:19: E203 whitespace before ':'\n"}
+[12.593471] (stem_pkg) StdoutLine: {'line': b'class Tensor(Node) :\n'}
+[12.594096] (stem_pkg) StdoutLine: {'line': b'                  ^\n'}
+[12.594733] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.595337] (stem_pkg) StdoutLine: {'line': b'./stem_pkg/tensor.py:10:1: CNL100 Class definition does not have a new line.\n'}
+[12.595947] (stem_pkg) StdoutLine: {'line': b'    def __init__(self, interpreter, cap):\n'}
+[12.596650] (stem_pkg) StdoutLine: {'line': b'^\n'}
+[12.597461] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.598125] (stem_pkg) StdoutLine: {'line': b"./stem_pkg/tensor.py:20:46: E203 whitespace before ':'\n"}
+[12.598819] (stem_pkg) StdoutLine: {'line': b'    def tensor_result(self, interpreter, cap) :\n'}
+[12.599486] (stem_pkg) StdoutLine: {'line': b'                                             ^\n'}
+[12.600065] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.600642] (stem_pkg) StdoutLine: {'line': b"./stem_pkg/tensor.py:41:9: F841 local variable 'data' is assigned to but never used\n"}
+[12.601324] (stem_pkg) StdoutLine: {'line': b'        data = list()\n'}
+[12.601909] (stem_pkg) StdoutLine: {'line': b'        ^\n'}
+[12.602482] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.603067] (stem_pkg) StdoutLine: {'line': b'./stem_pkg/tensor.py:41:16: C408 Unnecessary list call - rewrite as a literal.\n'}
+[12.603634] (stem_pkg) StdoutLine: {'line': b'        data = list()\n'}
+[12.604259] (stem_pkg) StdoutLine: {'line': b'               ^\n'}
+[12.604907] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.605608] (stem_pkg) StdoutLine: {'line': b'./stem_pkg/tensor.py:53:1: E302 expected 2 blank lines, found 1\n'}
+[12.606234] (stem_pkg) StdoutLine: {'line': b'def main(args=None) :\n'}
+[12.606893] (stem_pkg) StdoutLine: {'line': b'^\n'}
+[12.607542] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.608235] (stem_pkg) StdoutLine: {'line': b"./stem_pkg/tensor.py:53:20: E203 whitespace before ':'\n"}
+[12.609132] (stem_pkg) StdoutLine: {'line': b'def main(args=None) :\n'}
+[12.609826] (stem_pkg) StdoutLine: {'line': b'                   ^\n'}
+[12.610607] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.611273] (stem_pkg) StdoutLine: {'line': b'./stem_pkg/tensor.py:55:50: Q000 Double quotes found but single quotes preferred\n'}
+[12.611946] (stem_pkg) StdoutLine: {'line': b'    interpreter = tf.lite.Interpreter(model_path="lite-model_movenet_singlepose_lightning_3.tflite")\n'}
+[12.612626] (stem_pkg) StdoutLine: {'line': b'                                                 ^\n'}
+[12.613439] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.614128] (stem_pkg) StdoutLine: {'line': b'./stem_pkg/tensor.py:55:100: E501 line too long (100 > 99 characters)\n'}
+[12.614681] (stem_pkg) StdoutLine: {'line': b'    interpreter = tf.lite.Interpreter(model_path="lite-model_movenet_singlepose_lightning_3.tflite")\n'}
+[12.615323] (stem_pkg) StdoutLine: {'line': b'                                                                                                   ^\n'}
+[12.615985] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.616597] (stem_pkg) StdoutLine: {'line': b'./stem_pkg/tensor.py:67:1: E305 expected 2 blank lines after class or function definition, found 1\n'}
+[12.617254] (stem_pkg) StdoutLine: {'line': b"if __name__ == '__main__' :\n"}
+[12.617819] (stem_pkg) StdoutLine: {'line': b'^\n'}
+[12.618401] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.619071] (stem_pkg) StdoutLine: {'line': b"./stem_pkg/tensor.py:67:26: E203 whitespace before ':'\n"}
+[12.619708] (stem_pkg) StdoutLine: {'line': b"if __name__ == '__main__' :\n"}
+[12.620358] (stem_pkg) StdoutLine: {'line': b'                         ^\n'}
+[12.621059] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.621668] (stem_pkg) StdoutLine: {'line': b"./stem_pkg/tensor.py:70:1: E265 block comment should start with '# '\n"}
+[12.622266] (stem_pkg) StdoutLine: {'line': b'#\xec\xbd\x94, \xec\x99\xbc\xeb\x88\x88, \xec\x98\xa4\xeb\x88\x88, \xec\x99\xbc\xea\xb7\x80, \xec\x98\xa4\xea\xb7\x80, \xec\x99\xbc\xec\x96\xb4\xea\xb9\xa8, \xec\x98\xa4\xec\x96\xb4\xea\xb9\xa8^\n'}
+[12.622946] (-) TimerEvent: {}
+[12.624806] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.625695] (stem_pkg) StdoutLine: {'line': b'./stem_pkg/tensor.py:70:29: W292 no newline at end of file\n'}
+[12.626963] (stem_pkg) StdoutLine: {'line': b'#\xec\xbd\x94, \xec\x99\xbc\xeb\x88\x88, \xec\x98\xa4\xeb\x88\x88, \xec\x99\xbc\xea\xb7\x80, \xec\x98\xa4\xea\xb7\x80, \xec\x99\xbc\xec\x96\xb4\xea\xb9\xa8, \xec\x98\xa4\xec\x96\xb4\xea\xb9\xa8                            ^\n'}
+[12.627677] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.628377] (stem_pkg) StdoutLine: {'line': b'./stem_pkg/tensor.py:70:29: W292 no newline at end of file\n'}
+[12.629225] (stem_pkg) StdoutLine: {'line': b'#\xec\xbd\x94, \xec\x99\xbc\xeb\x88\x88, \xec\x98\xa4\xeb\x88\x88, \xec\x99\xbc\xea\xb7\x80, \xec\x98\xa4\xea\xb7\x80, \xec\x99\xbc\xec\x96\xb4\xea\xb9\xa8, \xec\x98\xa4\xec\x96\xb4\xea\xb9\xa8                            ^\n'}
+[12.630451] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.631627] (stem_pkg) StdoutLine: {'line': b'./stem_pkg/tensor.py:70:29: W292 no newline at end of file\n'}
+[12.632319] (stem_pkg) StdoutLine: {'line': b'#\xec\xbd\x94, \xec\x99\xbc\xeb\x88\x88, \xec\x98\xa4\xeb\x88\x88, \xec\x99\xbc\xea\xb7\x80, \xec\x98\xa4\xea\xb7\x80, \xec\x99\xbc\xec\x96\xb4\xea\xb9\xa8, \xec\x98\xa4\xec\x96\xb4\xea\xb9\xa8                            ^\n'}
+[12.633039] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.633769] (stem_pkg) StdoutLine: {'line': b"./stem_pkg/tester.py:5:1: I100 Import statements are in the wrong order. 'from pynput import keyboard' should be before 'from std_msgs.msg import String'\n"}
+[12.634490] (stem_pkg) StdoutLine: {'line': b'from pynput import keyboard\n'}
+[12.635163] (stem_pkg) StdoutLine: {'line': b'^\n'}
+[12.635806] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.636470] (stem_pkg) StdoutLine: {'line': b'./stem_pkg/tester.py:7:1: E302 expected 2 blank lines, found 1\n'}
+[12.637210] (stem_pkg) StdoutLine: {'line': b'class Tester(Node) :\n'}
+[12.637880] (stem_pkg) StdoutLine: {'line': b'^\n'}
+[12.638605] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.639280] (stem_pkg) StdoutLine: {'line': b"./stem_pkg/tester.py:7:19: E203 whitespace before ':'\n"}
+[12.639960] (stem_pkg) StdoutLine: {'line': b'class Tester(Node) :\n'}
+[12.640647] (stem_pkg) StdoutLine: {'line': b'                  ^\n'}
+[12.641486] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.642635] (stem_pkg) StdoutLine: {'line': b'./stem_pkg/tester.py:8:1: CNL100 Class definition does not have a new line.\n'}
+[12.643365] (stem_pkg) StdoutLine: {'line': b'    def __init__(self):\n'}
+[12.644023] (stem_pkg) StdoutLine: {'line': b'^\n'}
+[12.645059] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.645761] (stem_pkg) StdoutLine: {'line': b'./stem_pkg/tester.py:16:21: E251 unexpected spaces around keyword / parameter equals\n'}
+[12.646872] (stem_pkg) StdoutLine: {'line': b'            on_press = self.on_press,\n'}
+[12.647563] (stem_pkg) StdoutLine: {'line': b'                    ^\n'}
+[12.648324] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.650013] (stem_pkg) StdoutLine: {'line': b'./stem_pkg/tester.py:16:23: E251 unexpected spaces around keyword / parameter equals\n'}
+[12.650767] (stem_pkg) StdoutLine: {'line': b'            on_press = self.on_press,\n'}
+[12.651429] (stem_pkg) StdoutLine: {'line': b'                      ^\n'}
+[12.652096] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.652754] (stem_pkg) StdoutLine: {'line': b'./stem_pkg/tester.py:17:23: E251 unexpected spaces around keyword / parameter equals\n'}
+[12.653689] (stem_pkg) StdoutLine: {'line': b'            on_release = self.on_release)\n'}
+[12.654420] (stem_pkg) StdoutLine: {'line': b'                      ^\n'}
+[12.655109] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.656291] (stem_pkg) StdoutLine: {'line': b'./stem_pkg/tester.py:17:25: E251 unexpected spaces around keyword / parameter equals\n'}
+[12.658696] (stem_pkg) StdoutLine: {'line': b'            on_release = self.on_release)\n'}
+[12.660036] (stem_pkg) StdoutLine: {'line': b'                        ^\n'}
+[12.661124] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.661818] (stem_pkg) StdoutLine: {'line': b"./stem_pkg/tester.py:21:43: E203 whitespace before ':'\n"}
+[12.662569] (stem_pkg) StdoutLine: {'line': b'    def publish_key_command_msg(self, msg) :\n'}
+[12.663340] (stem_pkg) StdoutLine: {'line': b'                                          ^\n'}
+[12.664011] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.664695] (stem_pkg) StdoutLine: {'line': b'./stem_pkg/tester.py:29:1: B901 blind except: statement\n'}
+[12.665460] (stem_pkg) StdoutLine: {'line': b'        except:\n'}
+[12.666145] (stem_pkg) StdoutLine: {'line': b'^\n'}
+[12.666793] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.667426] (stem_pkg) StdoutLine: {'line': b"./stem_pkg/tester.py:29:9: E722 do not use bare 'except'\n"}
+[12.668124] (stem_pkg) StdoutLine: {'line': b'        except:\n'}
+[12.668801] (stem_pkg) StdoutLine: {'line': b'        ^\n'}
+[12.669468] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.670666] (stem_pkg) StdoutLine: {'line': b"./stem_pkg/tester.py:32:32: E203 whitespace before ':'\n"}
+[12.671400] (stem_pkg) StdoutLine: {'line': b'        if msg.data is not None :\n'}
+[12.672143] (stem_pkg) StderrLine: {'line': b'\x1b[33m=============================== warnings summary ===============================\x1b[0m\n'}
+[12.673084] (stem_pkg) StderrLine: {'line': b'../../../.local/lib/python3.8/site-packages/_pytest/nodes.py:633\n'}
+[12.673744] (stem_pkg) StderrLine: {'line': b'  Warning: The (fspath: py.path.local) argument to Package is deprecated. Please use the (path: pathlib.Path) argument instead.\n'}
+[12.674432] (stem_pkg) StderrLine: {'line': b'  See https://docs.pytest.org/en/latest/deprecations.html#fspath-argument-for-node-constructors-replaced-with-pathlib-path\n'}
+[12.675128] (stem_pkg) StdoutLine: {'line': b'                               ^\n'}
+[12.675768] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.676440] (stem_pkg) StdoutLine: {'line': b'./stem_pkg/tester.py:37:17: Q000 Double quotes found but single quotes preferred\n'}
+[12.677228] (stem_pkg) StdoutLine: {'line': b'        if k == "w" :\n'}
+[12.678003] (stem_pkg) StdoutLine: {'line': b'                ^\n'}
+[12.678643] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.679275] (stem_pkg) StdoutLine: {'line': b"./stem_pkg/tester.py:37:20: E203 whitespace before ':'\n"}
+[12.679864] (stem_pkg) StdoutLine: {'line': b'        if k == "w" :\n'}
+[12.680529] (stem_pkg) StdoutLine: {'line': b'                   ^\n'}
+[12.681445] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.682092] (stem_pkg) StdoutLine: {'line': b'./stem_pkg/tester.py:38:17: Q000 Double quotes found but single quotes preferred\n'}
+[12.682757] (stem_pkg) StdoutLine: {'line': b'            c = "up"\n'}
+[12.683386] (stem_pkg) StdoutLine: {'line': b'                ^\n'}
+[12.684048] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.684738] (stem_pkg) StdoutLine: {'line': b'./stem_pkg/tester.py:39:19: Q000 Double quotes found but single quotes preferred\n'}
+[12.685433] (stem_pkg) StdoutLine: {'line': b'        elif k == "s" :\n'}
+[12.685907] (stem_pkg) StdoutLine: {'line': b'                  ^\n'}
+[12.686511] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.687227] (stem_pkg) StdoutLine: {'line': b"./stem_pkg/tester.py:39:22: E203 whitespace before ':'\n"}
+[12.687892] (stem_pkg) StdoutLine: {'line': b'        elif k == "s" :\n'}
+[12.688531] (stem_pkg) StdoutLine: {'line': b'                     ^\n'}
+[12.689249] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.689935] (stem_pkg) StdoutLine: {'line': b'./stem_pkg/tester.py:40:17: Q000 Double quotes found but single quotes preferred\n'}
+[12.690613] (stem_pkg) StdoutLine: {'line': b'            c = "down"\n'}
+[12.691170] (stem_pkg) StdoutLine: {'line': b'                ^\n'}
+[12.691712] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.692301] (stem_pkg) StdoutLine: {'line': b'./stem_pkg/tester.py:41:19: Q000 Double quotes found but single quotes preferred\n'}
+[12.692909] (stem_pkg) StdoutLine: {'line': b'        elif k == "a" :\n'}
+[12.693498] (stem_pkg) StdoutLine: {'line': b'                  ^\n'}
+[12.694037] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.694571] (stem_pkg) StdoutLine: {'line': b"./stem_pkg/tester.py:41:22: E203 whitespace before ':'\n"}
+[12.695115] (stem_pkg) StdoutLine: {'line': b'        elif k == "a" :\n'}
+[12.695657] (stem_pkg) StdoutLine: {'line': b'                     ^\n'}
+[12.696271] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.696943] (stem_pkg) StdoutLine: {'line': b'./stem_pkg/tester.py:42:17: Q000 Double quotes found but single quotes preferred\n'}
+[12.697607] (stem_pkg) StdoutLine: {'line': b'            c = "left"\n'}
+[12.698142] (stem_pkg) StdoutLine: {'line': b'                ^\n'}
+[12.698696] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.699280] (stem_pkg) StdoutLine: {'line': b'./stem_pkg/tester.py:43:19: Q000 Double quotes found but single quotes preferred\n'}
+[12.699889] (stem_pkg) StdoutLine: {'line': b'        elif k == "d" :\n'}
+[12.700457] (stem_pkg) StdoutLine: {'line': b'                  ^\n'}
+[12.701139] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.701755] (stem_pkg) StdoutLine: {'line': b"./stem_pkg/tester.py:43:22: E203 whitespace before ':'\n"}
+[12.702366] (stem_pkg) StdoutLine: {'line': b'        elif k == "d" :\n'}
+[12.702999] (stem_pkg) StdoutLine: {'line': b'                     ^\n'}
+[12.703657] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.704238] (stem_pkg) StdoutLine: {'line': b'./stem_pkg/tester.py:44:17: Q000 Double quotes found but single quotes preferred\n'}
+[12.704869] (stem_pkg) StdoutLine: {'line': b'            c = "right"\n'}
+[12.705516] (stem_pkg) StdoutLine: {'line': b'                ^\n'}
+[12.706149] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.706721] (stem_pkg) StdoutLine: {'line': b'./stem_pkg/tester.py:45:19: Q000 Double quotes found but single quotes preferred\n'}
+[12.707336] (stem_pkg) StdoutLine: {'line': b'        elif k == "," :\n'}
+[12.707918] (stem_pkg) StdoutLine: {'line': b'                  ^\n'}
+[12.708481] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.709137] (stem_pkg) StdoutLine: {'line': b"./stem_pkg/tester.py:45:22: E203 whitespace before ':'\n"}
+[12.709720] (stem_pkg) StdoutLine: {'line': b'        elif k == "," :\n'}
+[12.710222] (stem_pkg) StdoutLine: {'line': b'                     ^\n'}
+[12.710752] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.711246] (stem_pkg) StdoutLine: {'line': b'./stem_pkg/tester.py:46:17: Q000 Double quotes found but single quotes preferred\n'}
+[12.711735] (stem_pkg) StdoutLine: {'line': b'            c = "turn left"\n'}
+[12.712267] (stem_pkg) StdoutLine: {'line': b'                ^\n'}
+[12.712831] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.713399] (stem_pkg) StdoutLine: {'line': b'./stem_pkg/tester.py:47:19: Q000 Double quotes found but single quotes preferred\n'}
+[12.714024] (stem_pkg) StdoutLine: {'line': b'        elif k == "." :\n'}
+[12.714570] (stem_pkg) StdoutLine: {'line': b'                  ^\n'}
+[12.715095] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.715623] (stem_pkg) StdoutLine: {'line': b"./stem_pkg/tester.py:47:22: E203 whitespace before ':'\n"}
+[12.716161] (stem_pkg) StdoutLine: {'line': b'        elif k == "." :\n'}
+[12.716904] (stem_pkg) StdoutLine: {'line': b'                     ^\n'}
+[12.717432] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.717872] (stem_pkg) StdoutLine: {'line': b'./stem_pkg/tester.py:48:17: Q000 Double quotes found but single quotes preferred\n'}
+[12.718374] (stem_pkg) StdoutLine: {'line': b'            c = "turn right"\n'}
+[12.719089] (stem_pkg) StdoutLine: {'line': b'                ^\n'}
+[12.720019] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.720756] (stem_pkg) StdoutLine: {'line': b"./stem_pkg/tester.py:49:13: E203 whitespace before ':'\n"}
+[12.721638] (stem_pkg) StdoutLine: {'line': b'        else :\n'}
+[12.722289] (stem_pkg) StdoutLine: {'line': b'            ^\n'}
+[12.722923] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.723541] (-) TimerEvent: {}
+[12.725341] (stem_pkg) StdoutLine: {'line': b'./stem_pkg/tester.py:57:1: E302 expected 2 blank lines, found 1\n'}
+[12.726196] (stem_pkg) StdoutLine: {'line': b'def main(args=None) :\n'}
+[12.726972] (stem_pkg) StdoutLine: {'line': b'^\n'}
+[12.728317] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.729071] (stem_pkg) StdoutLine: {'line': b"./stem_pkg/tester.py:57:20: E203 whitespace before ':'\n"}
+[12.730107] (stem_pkg) StdoutLine: {'line': b'def main(args=None) :\n'}
+[12.731181] (stem_pkg) StdoutLine: {'line': b'                   ^\n'}
+[12.731882] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.732492] (stem_pkg) StdoutLine: {'line': b'./stem_pkg/tester.py:68:1: E305 expected 2 blank lines after class or function definition, found 1\n'}
+[12.733165] (stem_pkg) StdoutLine: {'line': b"if __name__ == '__main__' :\n"}
+[12.733804] (stem_pkg) StdoutLine: {'line': b'^\n'}
+[12.734550] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.735203] (stem_pkg) StdoutLine: {'line': b"./stem_pkg/tester.py:68:26: E203 whitespace before ':'\n"}
+[12.735848] (stem_pkg) StdoutLine: {'line': b"if __name__ == '__main__' :\n"}
+[12.736548] (stem_pkg) StdoutLine: {'line': b'                         ^\n'}
+[12.737307] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.738017] (stem_pkg) StdoutLine: {'line': b'./stem_pkg/tester.py:69:11: W292 no newline at end of file\n'}
+[12.738689] (stem_pkg) StdoutLine: {'line': b'    main()          ^\n'}
+[12.739380] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.740049] (stem_pkg) StdoutLine: {'line': b"./stem_pkg/tensor_publisher.py:5:1: I100 Import statements are in the wrong order. 'import cv2' should be before 'from std_msgs.msg import String'\n"}
+[12.740727] (stem_pkg) StdoutLine: {'line': b'import cv2\n'}
+[12.741527] (stem_pkg) StdoutLine: {'line': b'^\n'}
+[12.742180] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.742848] (stem_pkg) StdoutLine: {'line': b"./stem_pkg/tensor_publisher.py:7:1: I100 Import statements are in the wrong order. 'import numpy' should be before 'import tensorflow'\n"}
+[12.743554] (stem_pkg) StdoutLine: {'line': b'import numpy as np\n'}
+[12.744236] (stem_pkg) StdoutLine: {'line': b'^\n'}
+[12.744922] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.745605] (stem_pkg) StdoutLine: {'line': b"./stem_pkg/tensor_publisher.py:8:1: F401 'pandas as pd' imported but unused\n"}
+[12.746309] (stem_pkg) StdoutLine: {'line': b'import pandas as pd\n'}
+[12.746950] (stem_pkg) StdoutLine: {'line': b'^\n'}
+[12.747674] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.748300] (stem_pkg) StdoutLine: {'line': b'./stem_pkg/tensor_publisher.py:10:1: E302 expected 2 blank lines, found 1\n'}
+[12.749003] (stem_pkg) StdoutLine: {'line': b'class TensorPublisher(Node) :\n'}
+[12.749678] (stem_pkg) StdoutLine: {'line': b'^\n'}
+[12.750306] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.751005] (stem_pkg) StdoutLine: {'line': b"./stem_pkg/tensor_publisher.py:10:28: E203 whitespace before ':'\n"}
+[12.751616] (stem_pkg) StdoutLine: {'line': b'class TensorPublisher(Node) :\n'}
+[12.752234] (stem_pkg) StdoutLine: {'line': b'                           ^\n'}
+[12.752926] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.753603] (stem_pkg) StdoutLine: {'line': b'./stem_pkg/tensor_publisher.py:11:1: CNL100 Class definition does not have a new line.\n'}
+[12.754276] (stem_pkg) StdoutLine: {'line': b'    def __init__(self, interpreter, cap):\n'}
+[12.754959] (stem_pkg) StdoutLine: {'line': b'^\n'}
+[12.755592] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.756268] (stem_pkg) StdoutLine: {'line': b"./stem_pkg/tensor_publisher.py:21:46: E203 whitespace before ':'\n"}
+[12.756978] (stem_pkg) StdoutLine: {'line': b'    def tensor_result(self, interpreter, cap) :\n'}
+[12.757622] (stem_pkg) StdoutLine: {'line': b'                                             ^\n'}
+[12.758279] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.758828] (stem_pkg) StdoutLine: {'line': b'./stem_pkg/tensor_publisher.py:42:16: C408 Unnecessary list call - rewrite as a literal.\n'}
+[12.759432] (stem_pkg) StdoutLine: {'line': b'        data = list()\n'}
+[12.760317] (stem_pkg) StdoutLine: {'line': b'               ^\n'}
+[12.761179] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.762058] (stem_pkg) StdoutLine: {'line': b"./stem_pkg/tensor_publisher.py:44:28: E203 whitespace before ':'\n"}
+[12.762950] (stem_pkg) StdoutLine: {'line': b'        for shape in shaped :\n'}
+[12.763451] (stem_pkg) StdoutLine: {'line': b'                           ^\n'}
+[12.763876] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.764289] (stem_pkg) StdoutLine: {'line': b'./stem_pkg/tensor_publisher.py:47:20: Q000 Double quotes found but single quotes preferred\n'}
+[12.764716] (stem_pkg) StdoutLine: {'line': b'        datastr = ["^"] + datastr\n'}
+[12.765277] (stem_pkg) StdoutLine: {'line': b'                   ^\n'}
+[12.765759] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.766177] (stem_pkg) StdoutLine: {'line': b'./stem_pkg/tensor_publisher.py:48:20: Q000 Double quotes found but single quotes preferred\n'}
+[12.766762] (stem_pkg) StdoutLine: {'line': b'        msg.data = "*".join(datastr)\n'}
+[12.767286] (stem_pkg) StdoutLine: {'line': b'                   ^\n'}
+[12.767790] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.768360] (stem_pkg) StdoutLine: {'line': b'./stem_pkg/tensor_publisher.py:52:1: E302 expected 2 blank lines, found 1\n'}
+[12.768902] (stem_pkg) StdoutLine: {'line': b'def main(args=None) :\n'}
+[12.769475] (stem_pkg) StdoutLine: {'line': b'^\n'}
+[12.769987] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.770503] (stem_pkg) StdoutLine: {'line': b"./stem_pkg/tensor_publisher.py:52:20: E203 whitespace before ':'\n"}
+[12.771065] (stem_pkg) StdoutLine: {'line': b'def main(args=None) :\n'}
+[12.771674] (stem_pkg) StdoutLine: {'line': b'                   ^\n'}
+[12.772178] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.772669] (stem_pkg) StdoutLine: {'line': b'./stem_pkg/tensor_publisher.py:54:50: Q000 Double quotes found but single quotes preferred\n'}
+[12.773249] (stem_pkg) StdoutLine: {'line': b'    interpreter = tf.lite.Interpreter(model_path="lite-model_movenet_singlepose_lightning_3.tflite")\n'}
+[12.773815] (stem_pkg) StdoutLine: {'line': b'                                                 ^\n'}
+[12.774348] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.774891] (stem_pkg) StdoutLine: {'line': b'./stem_pkg/tensor_publisher.py:54:100: E501 line too long (100 > 99 characters)\n'}
+[12.775597] (stem_pkg) StdoutLine: {'line': b'    interpreter = tf.lite.Interpreter(model_path="lite-model_movenet_singlepose_lightning_3.tflite")\n'}
+[12.776122] (stem_pkg) StdoutLine: {'line': b'                                                                                                   ^\n'}
+[12.776634] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.777241] (stem_pkg) StdoutLine: {'line': b'./stem_pkg/tensor_publisher.py:66:1: E305 expected 2 blank lines after class or function definition, found 1\n'}
+[12.777766] (stem_pkg) StdoutLine: {'line': b"if __name__ == '__main__' :\n"}
+[12.778388] (stem_pkg) StdoutLine: {'line': b'^\n'}
+[12.779009] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.779623] (stem_pkg) StdoutLine: {'line': b"./stem_pkg/tensor_publisher.py:66:26: E203 whitespace before ':'\n"}
+[12.780261] (stem_pkg) StdoutLine: {'line': b"if __name__ == '__main__' :\n"}
+[12.780954] (stem_pkg) StdoutLine: {'line': b'                         ^\n'}
+[12.781569] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.782107] (stem_pkg) StdoutLine: {'line': b"./stem_pkg/tensor_publisher.py:69:1: E265 block comment should start with '# '\n"}
+[12.782631] (stem_pkg) StdoutLine: {'line': b'#\xec\xbd\x94, \xec\x99\xbc\xeb\x88\x88, \xec\x98\xa4\xeb\x88\x88, \xec\x99\xbc\xea\xb7\x80, \xec\x98\xa4\xea\xb7\x80, \xec\x99\xbc\xec\x96\xb4\xea\xb9\xa8, \xec\x98\xa4\xec\x96\xb4\xea\xb9\xa8^\n'}
+[12.783167] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.783683] (stem_pkg) StdoutLine: {'line': b'./stem_pkg/tensor_publisher.py:69:29: W292 no newline at end of file\n'}
+[12.784257] (stem_pkg) StdoutLine: {'line': b'#\xec\xbd\x94, \xec\x99\xbc\xeb\x88\x88, \xec\x98\xa4\xeb\x88\x88, \xec\x99\xbc\xea\xb7\x80, \xec\x98\xa4\xea\xb7\x80, \xec\x99\xbc\xec\x96\xb4\xea\xb9\xa8, \xec\x98\xa4\xec\x96\xb4\xea\xb9\xa8                            ^\n'}
+[12.784844] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.785449] (stem_pkg) StdoutLine: {'line': b'./stem_pkg/tensor_publisher.py:69:29: W292 no newline at end of file\n'}
+[12.785958] (stem_pkg) StdoutLine: {'line': b'#\xec\xbd\x94, \xec\x99\xbc\xeb\x88\x88, \xec\x98\xa4\xeb\x88\x88, \xec\x99\xbc\xea\xb7\x80, \xec\x98\xa4\xea\xb7\x80, \xec\x99\xbc\xec\x96\xb4\xea\xb9\xa8, \xec\x98\xa4\xec\x96\xb4\xea\xb9\xa8                            ^\n'}
+[12.786496] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.787018] (stem_pkg) StdoutLine: {'line': b'./stem_pkg/tensor_publisher.py:69:29: W292 no newline at end of file\n'}
+[12.787529] (stem_pkg) StdoutLine: {'line': b'#\xec\xbd\x94, \xec\x99\xbc\xeb\x88\x88, \xec\x98\xa4\xeb\x88\x88, \xec\x99\xbc\xea\xb7\x80, \xec\x98\xa4\xea\xb7\x80, \xec\x99\xbc\xec\x96\xb4\xea\xb9\xa8, \xec\x98\xa4\xec\x96\xb4\xea\xb9\xa8                            ^\n'}
+[12.788066] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.789112] (stem_pkg) StdoutLine: {'line': b'1     B901 blind except: statement\n'}
+[12.790023] (stem_pkg) StdoutLine: {'line': b'2     C408 Unnecessary list call - rewrite as a literal.\n'}
+[12.790693] (stem_pkg) StdoutLine: {'line': b'4     C417 Unnecessary use of map - use a generator expression instead.\n'}
+[12.792079] (stem_pkg) StdoutLine: {'line': b'5     CNL100 Class definition does not have a new line.\n'}
+[12.793882] (stem_pkg) StdoutLine: {'line': b"2     E202 whitespace before ')'\n"}
+[12.794644] (stem_pkg) StdoutLine: {'line': b"46    E203 whitespace before ':'\n"}
+[12.795283] (stem_pkg) StdoutLine: {'line': b'20    E251 unexpected spaces around keyword / parameter equals\n'}
+[12.795848] (stem_pkg) StdoutLine: {'line': b'7     E261 at least two spaces before inline comment\n'}
+[12.796451] (stem_pkg) StdoutLine: {'line': b"7     E262 inline comment should start with '# '\n"}
+[12.797840] (stem_pkg) StdoutLine: {'line': b"8     E265 block comment should start with '# '\n"}
+[12.799221] (stem_pkg) StdoutLine: {'line': b'3     E301 expected 1 blank line, found 0\n'}
+[12.800845] (stem_pkg) StdoutLine: {'line': b'11    E302 expected 2 blank lines, found 1\n'}
+[12.802178] (stem_pkg) StdoutLine: {'line': b'1     E303 too many blank lines (3)\n'}
+[12.803638] (stem_pkg) StdoutLine: {'line': b'8     E305 expected 2 blank lines after class or function definition, found 1\n'}
+[12.805350] (stem_pkg) StdoutLine: {'line': b'3     E501 line too long (102 > 99 characters)\n'}
+[12.806840] (stem_pkg) StdoutLine: {'line': b"1     E722 do not use bare 'except'\n"}
+[12.808252] (stem_pkg) StdoutLine: {'line': b"2     F401 'socket.NI_NUMERICHOST' imported but unused\n"}
+[12.809843] (stem_pkg) StdoutLine: {'line': b"1     F841 local variable 'data' is assigned to but never used\n"}
+[12.811543] (stem_pkg) StdoutLine: {'line': b"11    I100 Import statements are in the wrong order. 'import os' should be before 'from setuptools import setup' and in a different group.\n"}
+[12.812945] (stem_pkg) StdoutLine: {'line': b"5     I201 Missing newline between import groups. 'import os' is identified as Stdlib and 'from setuptools import setup' is identified as Third Party.\n"}
+[12.814623] (stem_pkg) StdoutLine: {'line': b'34    Q000 Double quotes found but single quotes preferred\n'}
+[12.815863] (stem_pkg) StdoutLine: {'line': b'1     W291 trailing whitespace\n'}
+[12.818334] (stem_pkg) StdoutLine: {'line': b'14    W292 no newline at end of file\n'}
+[12.819629] (stem_pkg) StdoutLine: {'line': b'2     W293 blank line contains whitespace\n'}
+[12.821170] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.822639] (stem_pkg) StdoutLine: {'line': b'14 files checked\n'}
+[12.824021] (-) TimerEvent: {}
+[12.826587] (stem_pkg) StdoutLine: {'line': b'199 errors\n'}
+[12.827965] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.829634] (stem_pkg) StdoutLine: {'line': b"'B'-type errors: 1\n"}
+[12.831356] (stem_pkg) StdoutLine: {'line': b"'C'-type errors: 11\n"}
+[12.832540] (stem_pkg) StdoutLine: {'line': b"'E'-type errors: 117\n"}
+[12.833368] (stem_pkg) StdoutLine: {'line': b"'F'-type errors: 3\n"}
+[12.834188] (stem_pkg) StdoutLine: {'line': b"'I'-type errors: 16\n"}
+[12.834898] (stem_pkg) StdoutLine: {'line': b"'Q'-type errors: 34\n"}
+[12.835593] (stem_pkg) StdoutLine: {'line': b"'W'-type errors: 17\n"}
+[12.836283] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.836977] (stem_pkg) StdoutLine: {'line': b'Checked files:\n'}
+[12.837751] (stem_pkg) StdoutLine: {'line': b'\n'}
+[12.838469] (stem_pkg) StdoutLine: {'line': b'* ./setup.py\n'}
+[12.839280] (stem_pkg) StdoutLine: {'line': b'* ./launch/stem.launch.py\n'}
+[12.855427] (stem_pkg) StdoutLine: {'line': b'* ./stem_pkg/serial_talker.py\n'}
+[12.856992] (stem_pkg) StdoutLine: {'line': b'* ./stem_pkg/__init__.py\n'}
+[12.860414] (stem_pkg) StdoutLine: {'line': b'* ./stem_pkg/controller.py\n'}
+[12.861946] (stem_pkg) StdoutLine: {'line': b'* ./stem_pkg/async_serial_talker.py\n'}
+[12.862952] (stem_pkg) StdoutLine: {'line': b'* ./stem_pkg/cmd_selector.py\n'}
+[12.864102] (stem_pkg) StdoutLine: {'line': b'* ./stem_pkg/calculator.py\n'}
+[12.866133] (stem_pkg) StdoutLine: {'line': b'* ./stem_pkg/tensor.py\n'}
+[12.866891] (stem_pkg) StdoutLine: {'line': b'* ./stem_pkg/tester.py\n'}
+[12.867465] (stem_pkg) StdoutLine: {'line': b'* ./stem_pkg/tensor_publisher.py\n'}
+[12.868021] (stem_pkg) StdoutLine: {'line': b'* ./test/test_flake8.py\n'}
+[12.868608] (stem_pkg) StdoutLine: {'line': b'* ./test/test_copyright.py\n'}
+[12.869190] (stem_pkg) StdoutLine: {'line': b'* ./test/test_pep257.py\n'}
+[12.869730] (stem_pkg) StderrLine: {'line': b'\n'}
+[12.870285] (stem_pkg) StderrLine: {'line': b'../../../../../opt/ros/foxy/lib/python3.8/site-packages/launch_testing/pytest/hooks.py:179\n'}
+[12.870839] (stem_pkg) StderrLine: {'line': b'../../../../../opt/ros/foxy/lib/python3.8/site-packages/launch_testing/pytest/hooks.py:179\n'}
+[12.871373] (stem_pkg) StderrLine: {'line': b'../../../../../opt/ros/foxy/lib/python3.8/site-packages/launch_testing/pytest/hooks.py:179\n'}
+[12.871913] (stem_pkg) StderrLine: {'line': b'  Warning: The (fspath: py.path.local) argument to Module is deprecated. Please use the (path: pathlib.Path) argument instead.\n'}
+[12.872414] (stem_pkg) StderrLine: {'line': b'  See https://docs.pytest.org/en/latest/deprecations.html#fspath-argument-for-node-constructors-replaced-with-pathlib-path\n'}
+[12.872953] (stem_pkg) StderrLine: {'line': b'\n'}
+[12.873488] (stem_pkg) StderrLine: {'line': b'../../../../../usr/lib/python3/dist-packages/pydocstyle/config.py:6\n'}
+[12.873910] (stem_pkg) StderrLine: {'line': b"  Warning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.10 it will stop working\n"}
+[12.874397] (stem_pkg) StderrLine: {'line': b'\n'}
+[12.874888] (stem_pkg) StderrLine: {'line': b'-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n'}
+[12.875473] (stem_pkg) StdoutLine: {'line': b'------- generated xml file: /home/pi/sunflower/build/stem_pkg/pytest.xml -------\n'}
+[12.876099] (stem_pkg) StdoutLine: {'line': b'=========================== short test summary info ============================\n'}
+[12.876621] (stem_pkg) StdoutLine: {'line': b'FAILED test/test_copyright.py::test_copyright - AssertionError: Found errors\n'}
+[12.877234] (stem_pkg) StdoutLine: {'line': b'FAILED test/test_flake8.py::test_flake8 - AssertionError: Found 199 code styl...\n'}
+[12.877816] (stem_pkg) StdoutLine: {'line': b'\x1b[31m=================== \x1b[31m\x1b[1m2 failed\x1b[0m, \x1b[32m1 passed\x1b[0m, \x1b[33m5 warnings\x1b[0m\x1b[31m in 3.48s\x1b[0m\x1b[31m ====================\x1b[0m\n'}
+[12.878430] (test_pkg) StdoutLine: {'line': b'\x1b[1m============================= test session starts ==============================\x1b[0m\n'}
+[12.879177] (test_pkg) StdoutLine: {'line': b'platform linux -- Python 3.8.10, pytest-7.1.2, pluggy-0.13.0\n'}
+[12.879816] (stem_pkg) CommandEnded: {'returncode': 1}
+[12.881667] (stem_pkg) TestFailure: {'identifier': 'stem_pkg'}
+[12.881917] (stem_pkg) JobEnded: {'identifier': 'stem_pkg', 'rc': 0}
+[12.898075] (test_pkg) StdoutLine: {'line': b'cachedir: /home/pi/sunflower/build/test_pkg/.pytest_cache\n'}
+[12.898874] (test_pkg) StdoutLine: {'line': b'rootdir: /home/pi/sunflower/src/test_pkg\n'}
+[12.899534] (test_pkg) StdoutLine: {'line': b'plugins: ament-flake8-0.9.6, ament-copyright-0.9.6, launch-testing-ros-0.11.6, ament-xmllint-0.9.6, ament-pep257-0.9.6, ament-lint-0.9.6, launch-testing-0.10.8, rerunfailures-10.2, repeat-0.9.1, colcon-core-0.8.3, cov-2.8.1\n'}
+[12.900246] (test_pkg) StdoutLine: {'line': b'\x1b[1mcollecting ... \x1b[0m\x1b[1m\n'}
+[12.901107] (test_pkg) StdoutLine: {'line': b'collected 3 items                                                              \x1b[0m\n'}
+[12.901800] (test_pkg) StdoutLine: {'line': b'\n'}
+[12.902424] (test_pkg) StdoutLine: {'line': b'test/test_copyright.py \x1b[32m.\x1b[0m\x1b[33m                                                 [ 33%]\x1b[0m\n'}
+[12.924188] (-) TimerEvent: {}
+[13.025635] (-) TimerEvent: {}
+[13.127901] (-) TimerEvent: {}
+[13.230055] (-) TimerEvent: {}
+[13.332354] (-) TimerEvent: {}
+[13.435919] (-) TimerEvent: {}
+[13.536911] (-) TimerEvent: {}
+[13.564249] (tflite_pkg) StdoutLine: {'line': b'\x1b[1m============================= test session starts ==============================\x1b[0m\n'}
+[13.565116] (tflite_pkg) StdoutLine: {'line': b'platform linux -- Python 3.8.10, pytest-7.1.2, pluggy-0.13.0\n'}
+[13.610124] (tflite_pkg) StdoutLine: {'line': b'cachedir: /home/pi/sunflower/build/tflite_pkg/.pytest_cache\n'}
+[13.611049] (tflite_pkg) StdoutLine: {'line': b'rootdir: /home/pi/sunflower/src/tflite_pkg\n'}
+[13.611807] (tflite_pkg) StdoutLine: {'line': b'plugins: ament-flake8-0.9.6, ament-copyright-0.9.6, launch-testing-ros-0.11.6, ament-xmllint-0.9.6, ament-pep257-0.9.6, ament-lint-0.9.6, launch-testing-0.10.8, rerunfailures-10.2, repeat-0.9.1, colcon-core-0.8.3, cov-2.8.1\n'}
+[13.613803] (test_pkg) StdoutLine: {'line': b'test/test_flake8.py \x1b[32m.\x1b[0m\x1b[33m                                                    [ 66%]\x1b[0m\n'}
+[13.637123] (-) TimerEvent: {}
+[13.718195] (test_pkg) StdoutLine: {'line': b'test/test_pep257.py \x1b[32m.\x1b[0m\x1b[33m                                                    [100%]\x1b[0m\n'}
+[13.719768] (test_pkg) StderrLine: {'line': b'\n'}
+[13.721077] (test_pkg) StderrLine: {'line': b'\x1b[33m=============================== warnings summary ===============================\x1b[0m\n'}
+[13.722511] (test_pkg) StderrLine: {'line': b'../../../../../opt/ros/foxy/lib/python3.8/site-packages/launch_testing/pytest/hooks.py:179\n'}
+[13.723770] (test_pkg) StderrLine: {'line': b'../../../../../opt/ros/foxy/lib/python3.8/site-packages/launch_testing/pytest/hooks.py:179\n'}
+[13.725956] (test_pkg) StderrLine: {'line': b'../../../../../opt/ros/foxy/lib/python3.8/site-packages/launch_testing/pytest/hooks.py:179\n'}
+[13.728304] (test_pkg) StderrLine: {'line': b'  Warning: The (fspath: py.path.local) argument to Module is deprecated. Please use the (path: pathlib.Path) argument instead.\n'}
+[13.731065] (test_pkg) StderrLine: {'line': b'  See https://docs.pytest.org/en/latest/deprecations.html#fspath-argument-for-node-constructors-replaced-with-pathlib-path\n'}
+[13.744043] (-) TimerEvent: {}
+[13.745223] (test_pkg) StderrLine: {'line': b'\n'}
+[13.750309] (test_pkg) StderrLine: {'line': b'../../../../../usr/lib/python3/dist-packages/pydocstyle/config.py:6\n'}
+[13.751565] (test_pkg) StderrLine: {'line': b"  Warning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.10 it will stop working\n"}
+[13.752722] (test_pkg) StderrLine: {'line': b'\n'}
+[13.754172] (test_pkg) StderrLine: {'line': b'../../../.local/lib/python3.8/site-packages/_pytest/nodes.py:633\n'}
+[13.755834] (test_pkg) StderrLine: {'line': b'  Warning: The (fspath: py.path.local) argument to Package is deprecated. Please use the (path: pathlib.Path) argument instead.\n'}
+[13.757762] (test_pkg) StderrLine: {'line': b'  See https://docs.pytest.org/en/latest/deprecations.html#fspath-argument-for-node-constructors-replaced-with-pathlib-path\n'}
+[13.759319] (test_pkg) StderrLine: {'line': b'\n'}
+[13.760817] (test_pkg) StderrLine: {'line': b'-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n'}
+[13.762263] (test_pkg) StdoutLine: {'line': b'------- generated xml file: /home/pi/sunflower/build/test_pkg/pytest.xml -------\n'}
+[13.763701] (test_pkg) StdoutLine: {'line': b'\x1b[33m======================== \x1b[32m3 passed\x1b[0m, \x1b[33m\x1b[1m5 warnings\x1b[0m\x1b[33m in 1.84s\x1b[0m\x1b[33m =========================\x1b[0m\n'}
+[13.844246] (-) TimerEvent: {}
+[13.945546] (-) TimerEvent: {}
+[13.967312] (tflite_pkg) StdoutLine: {'line': b'\x1b[1mcollecting ... \x1b[0m\x1b[1m\n'}
+[13.969641] (tflite_pkg) StdoutLine: {'line': b'collected 3 items                                                              \x1b[0m\n'}
+[13.973011] (tflite_pkg) StdoutLine: {'line': b'\n'}
+[14.047622] (-) TimerEvent: {}
+[14.096218] (test_pkg) CommandEnded: {'returncode': 0}
+[14.098132] (test_pkg) JobEnded: {'identifier': 'test_pkg', 'rc': 0}
+[14.147813] (-) TimerEvent: {}
+[14.169849] (tflite_pkg) StdoutLine: {'line': b'test/test_copyright.py \x1b[32m.\x1b[0m\x1b[33m                                                 [ 33%]\x1b[0m\n'}
+[14.248020] (-) TimerEvent: {}
+[14.348931] (-) TimerEvent: {}
+[14.449668] (-) TimerEvent: {}
+[14.550460] (-) TimerEvent: {}
+[14.651449] (-) TimerEvent: {}
+[14.752511] (-) TimerEvent: {}
+[14.832888] (tflite_pkg) StdoutLine: {'line': b'test/test_flake8.py \x1b[32m.\x1b[0m\x1b[33m                                                    [ 66%]\x1b[0m\n'}
+[14.852706] (-) TimerEvent: {}
+[14.925931] (tflite_pkg) StderrLine: {'line': b'\n'}
+[14.927446] (tflite_pkg) StderrLine: {'line': b'\x1b[33m=============================== warnings summary ===============================\x1b[0m\n'}
+[14.928987] (tflite_pkg) StdoutLine: {'line': b'test/test_pep257.py \x1b[32m.\x1b[0m\x1b[33m                                                    [100%]\x1b[0m\n'}
+[14.930461] (tflite_pkg) StderrLine: {'line': b'../../../../../opt/ros/foxy/lib/python3.8/site-packages/launch_testing/pytest/hooks.py:179\n'}
+[14.931431] (tflite_pkg) StderrLine: {'line': b'../../../../../opt/ros/foxy/lib/python3.8/site-packages/launch_testing/pytest/hooks.py:179\n'}
+[14.932273] (tflite_pkg) StderrLine: {'line': b'../../../../../opt/ros/foxy/lib/python3.8/site-packages/launch_testing/pytest/hooks.py:179\n'}
+[14.933643] (tflite_pkg) StderrLine: {'line': b'  Warning: The (fspath: py.path.local) argument to Module is deprecated. Please use the (path: pathlib.Path) argument instead.\n'}
+[14.935357] (tflite_pkg) StderrLine: {'line': b'  See https://docs.pytest.org/en/latest/deprecations.html#fspath-argument-for-node-constructors-replaced-with-pathlib-path\n'}
+[14.936648] (tflite_pkg) StderrLine: {'line': b'\n'}
+[14.937819] (tflite_pkg) StderrLine: {'line': b'../../../../../usr/lib/python3/dist-packages/pydocstyle/config.py:6\n'}
+[14.938937] (tflite_pkg) StderrLine: {'line': b"  Warning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.10 it will stop working\n"}
+[14.939980] (tflite_pkg) StderrLine: {'line': b'\n'}
+[14.941046] (tflite_pkg) StdoutLine: {'line': b'------ generated xml file: /home/pi/sunflower/build/tflite_pkg/pytest.xml ------\n'}
+[14.942159] (tflite_pkg) StderrLine: {'line': b'../../../.local/lib/python3.8/site-packages/_pytest/nodes.py:633\n'}
+[14.943541] (tflite_pkg) StderrLine: {'line': b'  Warning: The (fspath: py.path.local) argument to Package is deprecated. Please use the (path: pathlib.Path) argument instead.\n'}
+[14.944752] (tflite_pkg) StderrLine: {'line': b'  See https://docs.pytest.org/en/latest/deprecations.html#fspath-argument-for-node-constructors-replaced-with-pathlib-path\n'}
+[14.946600] (tflite_pkg) StderrLine: {'line': b'\n'}
+[14.948348] (tflite_pkg) StderrLine: {'line': b'-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n'}
+[14.950645] (tflite_pkg) StdoutLine: {'line': b'\x1b[33m======================== \x1b[32m3 passed\x1b[0m, \x1b[33m\x1b[1m5 warnings\x1b[0m\x1b[33m in 1.37s\x1b[0m\x1b[33m =========================\x1b[0m\n'}
+[14.954053] (-) TimerEvent: {}
+[15.055532] (-) TimerEvent: {}
+[15.157810] (-) TimerEvent: {}
+[15.260453] (-) TimerEvent: {}
+[15.270775] (tflite_pkg) CommandEnded: {'returncode': 0}
+[15.273383] (tflite_pkg) JobEnded: {'identifier': 'tflite_pkg', 'rc': 0}
+[15.280348] (-) EventReactorShutdown: {}

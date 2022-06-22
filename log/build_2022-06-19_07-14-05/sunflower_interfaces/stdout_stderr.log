@@ -1,0 +1,155 @@
+-- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found builtin_interfaces: 1.0.0 (/opt/ros/foxy/share/builtin_interfaces/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)
+-- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") 
+-- Found ament_cmake_ros: 0.9.2 (/opt/ros/foxy/share/ament_cmake_ros/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3.5") 
+-- Found python_cmake_module: 0.8.1 (/opt/ros/foxy/share/python_cmake_module/cmake)
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8
+-- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.8.so
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/pi/sunflower/build/sunflower_interfaces
+[  3%] [34m[1mGenerating C code for ROS interfaces[0m
+[  6%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[35m[1mScanning dependencies of target sunflower_interfaces__rosidl_generator_c[0m
+[  9%] [32mBuilding C object CMakeFiles/sunflower_interfaces__rosidl_generator_c.dir/rosidl_generator_c/sunflower_interfaces/msg/detail/tflite_result__functions.c.o[0m
+[  9%] Built target sunflower_interfaces__cpp
+[ 12%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[ 16%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[ 19%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[ 22%] [32m[1mLinking C shared library libsunflower_interfaces__rosidl_generator_c.so[0m
+[ 22%] Built target sunflower_interfaces__rosidl_generator_c
+[ 25%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[35m[1mScanning dependencies of target sunflower_interfaces__rosidl_typesupport_cpp[0m
+[ 29%] [32mBuilding CXX object CMakeFiles/sunflower_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/sunflower_interfaces/msg/tflite_result__type_support.cpp.o[0m
+[35m[1mScanning dependencies of target sunflower_interfaces__rosidl_typesupport_introspection_cpp[0m
+[35m[1mScanning dependencies of target sunflower_interfaces__rosidl_typesupport_fastrtps_cpp[0m
+[ 32%] [32mBuilding CXX object CMakeFiles/sunflower_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/sunflower_interfaces/msg/detail/tflite_result__type_support.cpp.o[0m
+[ 35%] [32mBuilding CXX object CMakeFiles/sunflower_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/sunflower_interfaces/msg/detail/dds_fastrtps/tflite_result__type_support.cpp.o[0m
+[35m[1mScanning dependencies of target sunflower_interfaces__rosidl_typesupport_introspection_c[0m
+[ 38%] [32mBuilding C object CMakeFiles/sunflower_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/sunflower_interfaces/msg/detail/tflite_result__type_support.c.o[0m
+[ 41%] [32m[1mLinking C shared library libsunflower_interfaces__rosidl_typesupport_introspection_c.so[0m
+[ 41%] Built target sunflower_interfaces__rosidl_typesupport_introspection_c
+[ 45%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[ 48%] [32m[1mLinking CXX shared library libsunflower_interfaces__rosidl_typesupport_cpp.so[0m
+[ 48%] Built target sunflower_interfaces__rosidl_typesupport_cpp
+[ 51%] [32m[1mLinking CXX shared library libsunflower_interfaces__rosidl_typesupport_introspection_cpp.so[0m
+[ 51%] Built target sunflower_interfaces__rosidl_typesupport_introspection_cpp
+[35m[1mScanning dependencies of target sunflower_interfaces__rosidl_typesupport_c[0m
+[ 54%] [32mBuilding CXX object CMakeFiles/sunflower_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/sunflower_interfaces/msg/tflite_result__type_support.cpp.o[0m
+[ 58%] [32m[1mLinking CXX shared library libsunflower_interfaces__rosidl_typesupport_c.so[0m
+[ 58%] Built target sunflower_interfaces__rosidl_typesupport_c
+[ 61%] [32m[1mLinking CXX shared library libsunflower_interfaces__rosidl_typesupport_fastrtps_cpp.so[0m
+[ 61%] Built target sunflower_interfaces__rosidl_typesupport_fastrtps_cpp
+[ 64%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[35m[1mScanning dependencies of target sunflower_interfaces__rosidl_typesupport_fastrtps_c[0m
+[ 67%] [32mBuilding CXX object CMakeFiles/sunflower_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/sunflower_interfaces/msg/detail/tflite_result__type_support_c.cpp.o[0m
+[ 70%] [32m[1mLinking CXX shared library libsunflower_interfaces__rosidl_typesupport_fastrtps_c.so[0m
+[ 70%] Built target sunflower_interfaces__rosidl_typesupport_fastrtps_c
+[ 70%] Built target sunflower_interfaces
+[ 74%] [34m[1mGenerating Python code for ROS interfaces[0m
+[ 74%] Built target sunflower_interfaces__py
+[35m[1mScanning dependencies of target sunflower_interfaces__python[0m
+[ 77%] [32mBuilding C object CMakeFiles/sunflower_interfaces__python.dir/rosidl_generator_py/sunflower_interfaces/msg/_tflite_result_s.c.o[0m
+[ 80%] [32m[1mLinking C shared library rosidl_generator_py/sunflower_interfaces/libsunflower_interfaces__python.so[0m
+[ 80%] Built target sunflower_interfaces__python
+[35m[1mScanning dependencies of target sunflower_interfaces__rosidl_typesupport_c__pyext[0m
+[35m[1mScanning dependencies of target sunflower_interfaces__rosidl_typesupport_fastrtps_c__pyext[0m
+[35m[1mScanning dependencies of target sunflower_interfaces__rosidl_typesupport_introspection_c__pyext[0m
+[ 83%] [32mBuilding C object CMakeFiles/sunflower_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/sunflower_interfaces/_sunflower_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[ 87%] [32mBuilding C object CMakeFiles/sunflower_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/sunflower_interfaces/_sunflower_interfaces_s.ep.rosidl_typesupport_c.c.o[0m
+[ 90%] [32mBuilding C object CMakeFiles/sunflower_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/sunflower_interfaces/_sunflower_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[ 93%] [32m[1mLinking C shared library rosidl_generator_py/sunflower_interfaces/sunflower_interfaces_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so[0m
+[ 96%] [32m[1mLinking C shared library rosidl_generator_py/sunflower_interfaces/sunflower_interfaces_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so[0m
+[100%] [32m[1mLinking CXX shared library rosidl_generator_py/sunflower_interfaces/sunflower_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-38-aarch64-linux-gnu.so[0m
+[100%] Built target sunflower_interfaces__rosidl_typesupport_introspection_c__pyext
+[100%] Built target sunflower_interfaces__rosidl_typesupport_c__pyext
+[100%] Built target sunflower_interfaces__rosidl_typesupport_fastrtps_c__pyext
+-- Install configuration: ""
+-- Execute custom install script
+-- Up-to-date symlink: /home/pi/sunflower/install/sunflower_interfaces/share/ament_index/resource_index/rosidl_interfaces/sunflower_interfaces
+-- Up-to-date symlink: /home/pi/sunflower/install/sunflower_interfaces/include/sunflower_interfaces/msg/detail/tflite_result__functions.h
+-- Up-to-date symlink: /home/pi/sunflower/install/sunflower_interfaces/include/sunflower_interfaces/msg/detail/tflite_result__struct.h
+-- Up-to-date symlink: /home/pi/sunflower/install/sunflower_interfaces/include/sunflower_interfaces/msg/detail/tflite_result__type_support.h
+-- Up-to-date symlink: /home/pi/sunflower/install/sunflower_interfaces/include/sunflower_interfaces/msg/rosidl_generator_c__visibility_control.h
+-- Up-to-date symlink: /home/pi/sunflower/install/sunflower_interfaces/include/sunflower_interfaces/msg/tflite_result.h
+-- Up-to-date symlink: /home/pi/sunflower/install/sunflower_interfaces/share/sunflower_interfaces/environment/library_path.sh
+-- Up-to-date symlink: /home/pi/sunflower/install/sunflower_interfaces/share/sunflower_interfaces/environment/library_path.dsv
+-- Up-to-date symlink: /home/pi/sunflower/install/sunflower_interfaces/include/sunflower_interfaces/msg/detail/tflite_result__rosidl_typesupport_fastrtps_c.h
+-- Up-to-date symlink: /home/pi/sunflower/install/sunflower_interfaces/include/sunflower_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+-- Up-to-date symlink: /home/pi/sunflower/install/sunflower_interfaces/lib/libsunflower_interfaces__rosidl_typesupport_fastrtps_c.so
+-- Up-to-date symlink: /home/pi/sunflower/install/sunflower_interfaces/include/sunflower_interfaces/msg/detail/tflite_result__rosidl_typesupport_fastrtps_cpp.hpp
+-- Up-to-date symlink: /home/pi/sunflower/install/sunflower_interfaces/include/sunflower_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+-- Up-to-date symlink: /home/pi/sunflower/install/sunflower_interfaces/lib/libsunflower_interfaces__rosidl_typesupport_fastrtps_cpp.so
+-- Up-to-date symlink: /home/pi/sunflower/install/sunflower_interfaces/include/sunflower_interfaces/msg/detail/tflite_result__rosidl_typesupport_introspection_c.h
+-- Up-to-date symlink: /home/pi/sunflower/install/sunflower_interfaces/include/sunflower_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+-- Up-to-date symlink: /home/pi/sunflower/install/sunflower_interfaces/include/sunflower_interfaces/msg/detail/tflite_result__builder.hpp
+-- Up-to-date symlink: /home/pi/sunflower/install/sunflower_interfaces/include/sunflower_interfaces/msg/detail/tflite_result__struct.hpp
+-- Up-to-date symlink: /home/pi/sunflower/install/sunflower_interfaces/include/sunflower_interfaces/msg/detail/tflite_result__traits.hpp
+-- Up-to-date symlink: /home/pi/sunflower/install/sunflower_interfaces/include/sunflower_interfaces/msg/tflite_result.hpp
+-- Up-to-date symlink: /home/pi/sunflower/install/sunflower_interfaces/include/sunflower_interfaces/msg/detail/tflite_result__rosidl_typesupport_introspection_cpp.hpp
+-- Up-to-date symlink: /home/pi/sunflower/install/sunflower_interfaces/share/sunflower_interfaces/environment/pythonpath.sh
+-- Up-to-date symlink: /home/pi/sunflower/install/sunflower_interfaces/share/sunflower_interfaces/environment/pythonpath.dsv
+-- Up-to-date symlink: /home/pi/sunflower/install/sunflower_interfaces/lib/python3.8/site-packages/sunflower_interfaces/__init__.py
+-- Up-to-date symlink: /home/pi/sunflower/install/sunflower_interfaces/lib/python3.8/site-packages/sunflower_interfaces/msg/__init__.py
+-- Up-to-date symlink: /home/pi/sunflower/install/sunflower_interfaces/lib/python3.8/site-packages/sunflower_interfaces/msg/_tflite_result.py
+-- Up-to-date symlink: /home/pi/sunflower/install/sunflower_interfaces/lib/python3.8/site-packages/sunflower_interfaces/sunflower_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-38-aarch64-linux-gnu.so
+-- Up-to-date symlink: /home/pi/sunflower/install/sunflower_interfaces/lib/python3.8/site-packages/sunflower_interfaces/sunflower_interfaces_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so
+-- Up-to-date symlink: /home/pi/sunflower/install/sunflower_interfaces/lib/python3.8/site-packages/sunflower_interfaces/sunflower_interfaces_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so
+-- Up-to-date symlink: /home/pi/sunflower/install/sunflower_interfaces/lib/libsunflower_interfaces__python.so
+-- Up-to-date symlink: /home/pi/sunflower/install/sunflower_interfaces/share/sunflower_interfaces/msg/TfliteResult.idl
+-- Up-to-date symlink: /home/pi/sunflower/install/sunflower_interfaces/share/sunflower_interfaces/msg/TfliteResult.msg
+-- Up-to-date symlink: /home/pi/sunflower/install/sunflower_interfaces/share/ament_index/resource_index/package_run_dependencies/sunflower_interfaces
+-- Up-to-date symlink: /home/pi/sunflower/install/sunflower_interfaces/share/ament_index/resource_index/parent_prefix_path/sunflower_interfaces
+-- Up-to-date symlink: /home/pi/sunflower/install/sunflower_interfaces/share/sunflower_interfaces/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/pi/sunflower/install/sunflower_interfaces/share/sunflower_interfaces/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/pi/sunflower/install/sunflower_interfaces/share/sunflower_interfaces/environment/path.sh
+-- Up-to-date symlink: /home/pi/sunflower/install/sunflower_interfaces/share/sunflower_interfaces/environment/path.dsv
+-- Up-to-date symlink: /home/pi/sunflower/install/sunflower_interfaces/share/sunflower_interfaces/local_setup.bash
+-- Up-to-date symlink: /home/pi/sunflower/install/sunflower_interfaces/share/sunflower_interfaces/local_setup.sh
+-- Up-to-date symlink: /home/pi/sunflower/install/sunflower_interfaces/share/sunflower_interfaces/local_setup.zsh
+-- Up-to-date symlink: /home/pi/sunflower/install/sunflower_interfaces/share/sunflower_interfaces/local_setup.dsv
+-- Symlinking: /home/pi/sunflower/install/sunflower_interfaces/share/sunflower_interfaces/package.dsv
+-- Up-to-date symlink: /home/pi/sunflower/install/sunflower_interfaces/share/ament_index/resource_index/packages/sunflower_interfaces
+-- Up-to-date symlink: /home/pi/sunflower/install/sunflower_interfaces/share/sunflower_interfaces/cmake/rosidl_cmake-extras.cmake
+-- Up-to-date symlink: /home/pi/sunflower/install/sunflower_interfaces/share/sunflower_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Up-to-date symlink: /home/pi/sunflower/install/sunflower_interfaces/share/sunflower_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+-- Up-to-date symlink: /home/pi/sunflower/install/sunflower_interfaces/share/sunflower_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+-- Up-to-date symlink: /home/pi/sunflower/install/sunflower_interfaces/share/sunflower_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Up-to-date symlink: /home/pi/sunflower/install/sunflower_interfaces/share/sunflower_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+-- Up-to-date symlink: /home/pi/sunflower/install/sunflower_interfaces/share/sunflower_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+-- Up-to-date symlink: /home/pi/sunflower/install/sunflower_interfaces/share/sunflower_interfaces/cmake/sunflower_interfacesConfig.cmake
+-- Up-to-date symlink: /home/pi/sunflower/install/sunflower_interfaces/share/sunflower_interfaces/cmake/sunflower_interfacesConfig-version.cmake
+-- Up-to-date symlink: /home/pi/sunflower/install/sunflower_interfaces/share/sunflower_interfaces/package.xml
+-- Installing: /home/pi/sunflower/install/sunflower_interfaces/lib/libsunflower_interfaces__rosidl_generator_c.so
+-- Set runtime path of "/home/pi/sunflower/install/sunflower_interfaces/lib/libsunflower_interfaces__rosidl_generator_c.so" to ""
+-- Installing: /home/pi/sunflower/install/sunflower_interfaces/lib/libsunflower_interfaces__rosidl_typesupport_introspection_c.so
+-- Set runtime path of "/home/pi/sunflower/install/sunflower_interfaces/lib/libsunflower_interfaces__rosidl_typesupport_introspection_c.so" to ""
+-- Installing: /home/pi/sunflower/install/sunflower_interfaces/lib/libsunflower_interfaces__rosidl_typesupport_c.so
+-- Set runtime path of "/home/pi/sunflower/install/sunflower_interfaces/lib/libsunflower_interfaces__rosidl_typesupport_c.so" to ""
+-- Installing: /home/pi/sunflower/install/sunflower_interfaces/lib/libsunflower_interfaces__rosidl_typesupport_introspection_cpp.so
+-- Set runtime path of "/home/pi/sunflower/install/sunflower_interfaces/lib/libsunflower_interfaces__rosidl_typesupport_introspection_cpp.so" to ""
+-- Installing: /home/pi/sunflower/install/sunflower_interfaces/lib/libsunflower_interfaces__rosidl_typesupport_cpp.so
+-- Set runtime path of "/home/pi/sunflower/install/sunflower_interfaces/lib/libsunflower_interfaces__rosidl_typesupport_cpp.so" to ""
+Compiling '/home/pi/sunflower/install/sunflower_interfaces/lib/python3.8/site-packages/sunflower_interfaces/__init__.py'...
+-- Up-to-date: /home/pi/sunflower/install/sunflower_interfaces/share/sunflower_interfaces/cmake/sunflower_interfaces__rosidl_generator_cExport.cmake
+-- Installing: /home/pi/sunflower/install/sunflower_interfaces/share/sunflower_interfaces/cmake/sunflower_interfaces__rosidl_generator_cExport-noconfig.cmake
+-- Up-to-date: /home/pi/sunflower/install/sunflower_interfaces/share/sunflower_interfaces/cmake/sunflower_interfaces__rosidl_typesupport_introspection_cExport.cmake
+-- Installing: /home/pi/sunflower/install/sunflower_interfaces/share/sunflower_interfaces/cmake/sunflower_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+-- Up-to-date: /home/pi/sunflower/install/sunflower_interfaces/share/sunflower_interfaces/cmake/sunflower_interfaces__rosidl_typesupport_cExport.cmake
+-- Installing: /home/pi/sunflower/install/sunflower_interfaces/share/sunflower_interfaces/cmake/sunflower_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+-- Up-to-date: /home/pi/sunflower/install/sunflower_interfaces/share/sunflower_interfaces/cmake/sunflower_interfaces__rosidl_generator_cppExport.cmake
+-- Up-to-date: /home/pi/sunflower/install/sunflower_interfaces/share/sunflower_interfaces/cmake/sunflower_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+-- Installing: /home/pi/sunflower/install/sunflower_interfaces/share/sunflower_interfaces/cmake/sunflower_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+-- Up-to-date: /home/pi/sunflower/install/sunflower_interfaces/share/sunflower_interfaces/cmake/sunflower_interfaces__rosidl_typesupport_cppExport.cmake
+-- Installing: /home/pi/sunflower/install/sunflower_interfaces/share/sunflower_interfaces/cmake/sunflower_interfaces__rosidl_typesupport_cppExport-noconfig.cmake

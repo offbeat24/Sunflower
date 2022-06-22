@@ -1,0 +1,21 @@
+[3.869s] Invoking command in '/home/pi/sunflower/build/sf_pkg': PYTHONPATH=/home/pi/sunflower/install/sf_pkg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/pi/sunflower/install/sf_pkg --editable --build-directory /home/pi/sunflower/build/sf_pkg/build --no-deps install_data --install-dir /home/pi/sunflower/install/sf_pkg
+[4.926s] running develop
+[5.581s] running egg_info
+[5.581s] writing sf_pkg.egg-info/PKG-INFO
+[5.582s] writing dependency_links to sf_pkg.egg-info/dependency_links.txt
+[5.583s] writing entry points to sf_pkg.egg-info/entry_points.txt
+[5.584s] writing requirements to sf_pkg.egg-info/requires.txt
+[5.585s] writing top-level names to sf_pkg.egg-info/top_level.txt
+[5.711s] reading manifest file 'sf_pkg.egg-info/SOURCES.txt'
+[5.715s] writing manifest file 'sf_pkg.egg-info/SOURCES.txt'
+[5.865s] running build_ext
+[5.866s] Creating /home/pi/sunflower/install/sf_pkg/lib/python3.8/site-packages/sf-pkg.egg-link (link to .)
+[5.870s] Installing calculator script to /home/pi/sunflower/install/sf_pkg/lib/sf_pkg
+[5.871s] Installing cmd_selector script to /home/pi/sunflower/install/sf_pkg/lib/sf_pkg
+[5.871s] Installing serial_talker script to /home/pi/sunflower/install/sf_pkg/lib/sf_pkg
+[5.872s] Installing tensor_publisher script to /home/pi/sunflower/install/sf_pkg/lib/sf_pkg
+[5.874s] 
+[5.875s] Installed /home/pi/sunflower/build/sf_pkg
+[5.875s] running install_data
+[5.876s] copying package.xml -> /home/pi/sunflower/install/sf_pkg/share/sf_pkg
+[5.998s] Invoked command in '/home/pi/sunflower/build/sf_pkg' returned '0': PYTHONPATH=/home/pi/sunflower/install/sf_pkg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/pi/sunflower/install/sf_pkg --editable --build-directory /home/pi/sunflower/build/sf_pkg/build --no-deps install_data --install-dir /home/pi/sunflower/install/sf_pkg

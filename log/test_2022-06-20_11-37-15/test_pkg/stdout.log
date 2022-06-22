@@ -1,0 +1,13 @@
+[1m============================= test session starts ==============================[0m
+platform linux -- Python 3.8.10, pytest-7.1.2, pluggy-0.13.0
+cachedir: /home/pi/sunflower/build/test_pkg/.pytest_cache
+rootdir: /home/pi/sunflower/src/test_pkg
+plugins: ament-flake8-0.9.6, ament-copyright-0.9.6, launch-testing-ros-0.11.6, ament-xmllint-0.9.6, ament-pep257-0.9.6, ament-lint-0.9.6, launch-testing-0.10.8, rerunfailures-10.2, repeat-0.9.1, colcon-core-0.8.3, cov-2.8.1
+[1mcollecting ... [0m[1m
+collected 3 items                                                              [0m
+
+test/test_copyright.py [32m.[0m[33m                                                 [ 33%][0m
+test/test_flake8.py [32m.[0m[33m                                                    [ 66%][0m
+test/test_pep257.py [32m.[0m[33m                                                    [100%][0m
+------- generated xml file: /home/pi/sunflower/build/test_pkg/pytest.xml -------
+[33m======================== [32m3 passed[0m, [33m[1m5 warnings[0m[33m in 1.86s[0m[33m =========================[0m

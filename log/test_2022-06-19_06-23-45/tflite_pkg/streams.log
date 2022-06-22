@@ -1,0 +1,31 @@
+[6.372s] Invoking command in '/home/pi/sunflower/src/tflite_pkg': PYTEST_ADDOPTS=--tb=short --junit-xml=/home/pi/sunflower/build/tflite_pkg/pytest.xml --junit-prefix=tflite_pkg -o cache_dir=/home/pi/sunflower/build/tflite_pkg/.pytest_cache /usr/bin/python3 -m pytest
+[11.588s] [1m============================= test session starts ==============================[0m
+[11.589s] platform linux -- Python 3.8.10, pytest-7.1.2, pluggy-0.13.0
+[11.633s] cachedir: /home/pi/sunflower/build/tflite_pkg/.pytest_cache
+[11.635s] rootdir: /home/pi/sunflower/src/tflite_pkg
+[11.638s] plugins: ament-flake8-0.9.6, ament-copyright-0.9.6, launch-testing-ros-0.11.6, ament-xmllint-0.9.6, ament-pep257-0.9.6, ament-lint-0.9.6, launch-testing-0.10.8, rerunfailures-10.2, repeat-0.9.1, colcon-core-0.8.3, cov-2.8.1
+[11.909s] [1mcollecting ... [0m[1m
+[11.909s] collected 3 items                                                              [0m
+[11.911s] 
+[12.035s] test/test_copyright.py [32m.[0m[33m                                                 [ 33%][0m
+[12.803s] test/test_flake8.py [32m.[0m[33m                                                    [ 66%][0m
+[12.885s] test/test_pep257.py [32m.[0m[33m                                                    [100%][0m
+[12.886s] 
+[12.887s] [33m=============================== warnings summary ===============================[0m
+[12.888s] ../../../../../opt/ros/foxy/lib/python3.8/site-packages/launch_testing/pytest/hooks.py:179
+[12.889s] ../../../../../opt/ros/foxy/lib/python3.8/site-packages/launch_testing/pytest/hooks.py:179
+[12.890s] ../../../../../opt/ros/foxy/lib/python3.8/site-packages/launch_testing/pytest/hooks.py:179
+[12.891s]   Warning: The (fspath: py.path.local) argument to Module is deprecated. Please use the (path: pathlib.Path) argument instead.
+[12.892s]   See https://docs.pytest.org/en/latest/deprecations.html#fspath-argument-for-node-constructors-replaced-with-pathlib-path
+[12.893s] 
+[12.894s] ../../../../../usr/lib/python3/dist-packages/pydocstyle/config.py:6
+[12.895s]   Warning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.10 it will stop working
+[12.898s] 
+[12.899s] ../../../.local/lib/python3.8/site-packages/_pytest/nodes.py:633
+[12.900s]   Warning: The (fspath: py.path.local) argument to Package is deprecated. Please use the (path: pathlib.Path) argument instead.
+[12.902s]   See https://docs.pytest.org/en/latest/deprecations.html#fspath-argument-for-node-constructors-replaced-with-pathlib-path
+[12.903s] 
+[12.904s] -- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+[12.906s] ------ generated xml file: /home/pi/sunflower/build/tflite_pkg/pytest.xml ------
+[12.908s] [33m======================== [32m3 passed[0m, [33m[1m5 warnings[0m[33m in 1.30s[0m[33m =========================[0m
+[13.241s] Invoked command in '/home/pi/sunflower/src/tflite_pkg' returned '0': PYTEST_ADDOPTS=--tb=short --junit-xml=/home/pi/sunflower/build/tflite_pkg/pytest.xml --junit-prefix=tflite_pkg -o cache_dir=/home/pi/sunflower/build/tflite_pkg/.pytest_cache /usr/bin/python3 -m pytest

@@ -1,0 +1,185 @@
+[1.285s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'test']
+[1.285s] DEBUG:colcon:Parsed command line arguments: Namespace(abort_on_error=False, allow_overriding=[], base_paths=['.'], build_base='build', ctest_args=None, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method TestVerb.main of <colcon_core.verb.test.TestVerb object at 0xffffa082a1c0>>, merge_install=False, metas=['./colcon.meta'], packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=4, paths=None, pytest_args=None, pytest_with_coverage=False, python_testing=None, retest_until_fail=0, retest_until_pass=0, return_code_on_test_failure=False, test_result_base=None, unittest_args=None, verb_extension=<colcon_core.verb.test.TestVerb object at 0xffffa082a1c0>, verb_name='test', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0xffffa0834430>)
+[1.364s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.364s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.364s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.364s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.365s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[1.365s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.365s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/pi/sunflower'
+[1.366s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[1.366s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[1.366s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[1.366s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[1.367s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[1.367s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[1.367s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[1.367s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[1.367s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[1.425s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[1.425s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[1.426s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[1.426s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[1.426s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[1.427s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extensions ['ignore', 'ignore_ament_install']
+[1.428s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extension 'ignore'
+[1.428s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extension 'ignore_ament_install'
+[1.429s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extensions ['colcon_pkg']
+[1.429s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extension 'colcon_pkg'
+[1.430s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extensions ['colcon_meta']
+[1.430s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extension 'colcon_meta'
+[1.431s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extensions ['ros']
+[1.431s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extension 'ros'
+[1.432s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extensions ['cmake', 'python']
+[1.432s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extension 'cmake'
+[1.433s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extension 'python'
+[1.433s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extensions ['python_setup_py']
+[1.433s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extension 'python_setup_py'
+[1.434s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[1.435s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[1.435s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[1.436s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[1.437s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[1.437s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[1.438s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[1.439s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[1.440s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[1.440s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[1.441s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[1.441s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[1.442s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[1.442s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[1.443s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[1.443s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[1.443s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[1.444s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[1.445s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[1.445s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[1.446s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[1.446s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[1.447s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[1.448s] Level 1:colcon.colcon_core.package_identification:_identify(src/stem_pkg) by extensions ['ignore', 'ignore_ament_install']
+[1.449s] Level 1:colcon.colcon_core.package_identification:_identify(src/stem_pkg) by extension 'ignore'
+[1.449s] Level 1:colcon.colcon_core.package_identification:_identify(src/stem_pkg) by extension 'ignore_ament_install'
+[1.450s] Level 1:colcon.colcon_core.package_identification:_identify(src/stem_pkg) by extensions ['colcon_pkg']
+[1.450s] Level 1:colcon.colcon_core.package_identification:_identify(src/stem_pkg) by extension 'colcon_pkg'
+[1.451s] Level 1:colcon.colcon_core.package_identification:_identify(src/stem_pkg) by extensions ['colcon_meta']
+[1.451s] Level 1:colcon.colcon_core.package_identification:_identify(src/stem_pkg) by extension 'colcon_meta'
+[1.452s] Level 1:colcon.colcon_core.package_identification:_identify(src/stem_pkg) by extensions ['ros']
+[1.452s] Level 1:colcon.colcon_core.package_identification:_identify(src/stem_pkg) by extension 'ros'
+[1.457s] DEBUG:colcon.colcon_core.package_identification:Failed to parse potential ROS package manifest in'src/stem_pkg': Error(s) in package 'src/stem_pkg/package.xml':
+The manifest contains invalid XML:
+mismatched tag: line 21, column 29
+[1.458s] Level 1:colcon.colcon_core.package_identification:_identify(src/stem_pkg) by extensions ['cmake', 'python']
+[1.458s] Level 1:colcon.colcon_core.package_identification:_identify(src/stem_pkg) by extension 'cmake'
+[1.458s] Level 1:colcon.colcon_core.package_identification:_identify(src/stem_pkg) by extension 'python'
+[1.459s] DEBUG:colcon.colcon_core.package_identification:Python package in 'src/stem_pkg' passes arguments to the setup() function which requires a different identification extension than 'python'
+[1.459s] Level 1:colcon.colcon_core.package_identification:_identify(src/stem_pkg) by extensions ['python_setup_py']
+[1.460s] Level 1:colcon.colcon_core.package_identification:_identify(src/stem_pkg) by extension 'python_setup_py'
+[2.876s] DEBUG:colcon.colcon_core.package_identification:Package 'src/stem_pkg' with type 'python' and name 'stem_pkg'
+[2.878s] Level 1:colcon.colcon_core.package_identification:_identify(src/sunflower_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[2.879s] Level 1:colcon.colcon_core.package_identification:_identify(src/sunflower_interfaces) by extension 'ignore'
+[2.880s] Level 1:colcon.colcon_core.package_identification:_identify(src/sunflower_interfaces) by extension 'ignore_ament_install'
+[2.881s] Level 1:colcon.colcon_core.package_identification:_identify(src/sunflower_interfaces) by extensions ['colcon_pkg']
+[2.882s] Level 1:colcon.colcon_core.package_identification:_identify(src/sunflower_interfaces) by extension 'colcon_pkg'
+[2.882s] Level 1:colcon.colcon_core.package_identification:_identify(src/sunflower_interfaces) by extensions ['colcon_meta']
+[2.883s] Level 1:colcon.colcon_core.package_identification:_identify(src/sunflower_interfaces) by extension 'colcon_meta'
+[2.884s] Level 1:colcon.colcon_core.package_identification:_identify(src/sunflower_interfaces) by extensions ['ros']
+[2.885s] Level 1:colcon.colcon_core.package_identification:_identify(src/sunflower_interfaces) by extension 'ros'
+[2.897s] DEBUG:colcon.colcon_core.package_identification:Package 'src/sunflower_interfaces' with type 'ros.ament_cmake' and name 'sunflower_interfaces'
+[2.898s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_pkg) by extensions ['ignore', 'ignore_ament_install']
+[2.899s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_pkg) by extension 'ignore'
+[2.900s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_pkg) by extension 'ignore_ament_install'
+[2.900s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_pkg) by extensions ['colcon_pkg']
+[2.901s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_pkg) by extension 'colcon_pkg'
+[2.901s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_pkg) by extensions ['colcon_meta']
+[2.902s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_pkg) by extension 'colcon_meta'
+[2.902s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_pkg) by extensions ['ros']
+[2.902s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_pkg) by extension 'ros'
+[2.906s] DEBUG:colcon.colcon_core.package_identification:Package 'src/test_pkg' with type 'ros.ament_python' and name 'test_pkg'
+[2.907s] Level 1:colcon.colcon_core.package_identification:_identify(src/tflite_pkg) by extensions ['ignore', 'ignore_ament_install']
+[2.908s] Level 1:colcon.colcon_core.package_identification:_identify(src/tflite_pkg) by extension 'ignore'
+[2.909s] Level 1:colcon.colcon_core.package_identification:_identify(src/tflite_pkg) by extension 'ignore_ament_install'
+[2.909s] Level 1:colcon.colcon_core.package_identification:_identify(src/tflite_pkg) by extensions ['colcon_pkg']
+[2.910s] Level 1:colcon.colcon_core.package_identification:_identify(src/tflite_pkg) by extension 'colcon_pkg'
+[2.911s] Level 1:colcon.colcon_core.package_identification:_identify(src/tflite_pkg) by extensions ['colcon_meta']
+[2.911s] Level 1:colcon.colcon_core.package_identification:_identify(src/tflite_pkg) by extension 'colcon_meta'
+[2.912s] Level 1:colcon.colcon_core.package_identification:_identify(src/tflite_pkg) by extensions ['ros']
+[2.913s] Level 1:colcon.colcon_core.package_identification:_identify(src/tflite_pkg) by extension 'ros'
+[2.915s] DEBUG:colcon.colcon_core.package_identification:Package 'src/tflite_pkg' with type 'ros.ament_python' and name 'tflite_pkg'
+[2.916s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[2.917s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[2.917s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[2.918s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[2.918s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[2.958s] Level 5:colcon.colcon_core.verb:set package 'stem_pkg' test argument 'ctest_args' from command line to 'None'
+[2.958s] Level 5:colcon.colcon_core.verb:set package 'stem_pkg' test argument 'python_testing' from command line to 'None'
+[2.959s] Level 5:colcon.colcon_core.verb:set package 'stem_pkg' test argument 'pytest_args' from command line to 'None'
+[2.959s] Level 5:colcon.colcon_core.verb:set package 'stem_pkg' test argument 'pytest_with_coverage' from command line to 'False'
+[2.959s] Level 5:colcon.colcon_core.verb:set package 'stem_pkg' test argument 'unittest_args' from command line to 'None'
+[2.960s] Level 5:colcon.colcon_core.verb:set package 'stem_pkg' test argument 'retest_until_pass' from command line to '0'
+[2.960s] Level 5:colcon.colcon_core.verb:set package 'stem_pkg' test argument 'retest_until_fail' from command line to '0'
+[2.960s] DEBUG:colcon.colcon_core.verb.test:Testing package 'stem_pkg' with the following arguments: {'build_base': '/home/pi/sunflower/build/stem_pkg', 'ctest_args': None, 'install_base': '/home/pi/sunflower/install/stem_pkg', 'path': '/home/pi/sunflower/src/stem_pkg', 'pytest_args': None, 'pytest_with_coverage': False, 'python_testing': None, 'retest_until_fail': 0, 'retest_until_pass': 0, 'test_result_base': None, 'unittest_args': None}
+[2.965s] Level 5:colcon.colcon_core.verb:set package 'sunflower_interfaces' test argument 'ctest_args' from command line to 'None'
+[2.966s] Level 5:colcon.colcon_core.verb:set package 'sunflower_interfaces' test argument 'python_testing' from command line to 'None'
+[2.966s] Level 5:colcon.colcon_core.verb:set package 'sunflower_interfaces' test argument 'pytest_args' from command line to 'None'
+[2.966s] Level 5:colcon.colcon_core.verb:set package 'sunflower_interfaces' test argument 'pytest_with_coverage' from command line to 'False'
+[2.967s] Level 5:colcon.colcon_core.verb:set package 'sunflower_interfaces' test argument 'unittest_args' from command line to 'None'
+[2.967s] Level 5:colcon.colcon_core.verb:set package 'sunflower_interfaces' test argument 'retest_until_pass' from command line to '0'
+[2.968s] Level 5:colcon.colcon_core.verb:set package 'sunflower_interfaces' test argument 'retest_until_fail' from command line to '0'
+[2.969s] DEBUG:colcon.colcon_core.verb.test:Testing package 'sunflower_interfaces' with the following arguments: {'build_base': '/home/pi/sunflower/build/sunflower_interfaces', 'ctest_args': None, 'install_base': '/home/pi/sunflower/install/sunflower_interfaces', 'path': '/home/pi/sunflower/src/sunflower_interfaces', 'pytest_args': None, 'pytest_with_coverage': False, 'python_testing': None, 'retest_until_fail': 0, 'retest_until_pass': 0, 'test_result_base': None, 'unittest_args': None}
+[2.973s] Level 5:colcon.colcon_core.verb:set package 'test_pkg' test argument 'ctest_args' from command line to 'None'
+[2.974s] Level 5:colcon.colcon_core.verb:set package 'test_pkg' test argument 'python_testing' from command line to 'None'
+[2.974s] Level 5:colcon.colcon_core.verb:set package 'test_pkg' test argument 'pytest_args' from command line to 'None'
+[2.975s] Level 5:colcon.colcon_core.verb:set package 'test_pkg' test argument 'pytest_with_coverage' from command line to 'False'
+[2.975s] Level 5:colcon.colcon_core.verb:set package 'test_pkg' test argument 'unittest_args' from command line to 'None'
+[2.975s] Level 5:colcon.colcon_core.verb:set package 'test_pkg' test argument 'retest_until_pass' from command line to '0'
+[2.976s] Level 5:colcon.colcon_core.verb:set package 'test_pkg' test argument 'retest_until_fail' from command line to '0'
+[2.976s] DEBUG:colcon.colcon_core.verb.test:Testing package 'test_pkg' with the following arguments: {'build_base': '/home/pi/sunflower/build/test_pkg', 'ctest_args': None, 'install_base': '/home/pi/sunflower/install/test_pkg', 'path': '/home/pi/sunflower/src/test_pkg', 'pytest_args': None, 'pytest_with_coverage': False, 'python_testing': None, 'retest_until_fail': 0, 'retest_until_pass': 0, 'test_result_base': None, 'unittest_args': None}
+[2.981s] Level 5:colcon.colcon_core.verb:set package 'tflite_pkg' test argument 'ctest_args' from command line to 'None'
+[2.982s] Level 5:colcon.colcon_core.verb:set package 'tflite_pkg' test argument 'python_testing' from command line to 'None'
+[2.982s] Level 5:colcon.colcon_core.verb:set package 'tflite_pkg' test argument 'pytest_args' from command line to 'None'
+[2.983s] Level 5:colcon.colcon_core.verb:set package 'tflite_pkg' test argument 'pytest_with_coverage' from command line to 'False'
+[2.983s] Level 5:colcon.colcon_core.verb:set package 'tflite_pkg' test argument 'unittest_args' from command line to 'None'
+[2.984s] Level 5:colcon.colcon_core.verb:set package 'tflite_pkg' test argument 'retest_until_pass' from command line to '0'
+[2.984s] Level 5:colcon.colcon_core.verb:set package 'tflite_pkg' test argument 'retest_until_fail' from command line to '0'
+[2.985s] DEBUG:colcon.colcon_core.verb.test:Testing package 'tflite_pkg' with the following arguments: {'build_base': '/home/pi/sunflower/build/tflite_pkg', 'ctest_args': None, 'install_base': '/home/pi/sunflower/install/tflite_pkg', 'path': '/home/pi/sunflower/src/tflite_pkg', 'pytest_args': None, 'pytest_with_coverage': False, 'python_testing': None, 'retest_until_fail': 0, 'retest_until_pass': 0, 'test_result_base': None, 'unittest_args': None}
+[2.987s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[3.016s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[3.018s] INFO:colcon.colcon_core.task.python.test:Testing Python package in '/home/pi/sunflower/src/stem_pkg'
+[3.044s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[3.046s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.046s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.094s] INFO:colcon.colcon_ros.task.ament_cmake.test:Testing ROS package in '/home/pi/sunflower/src/sunflower_interfaces' with build type 'ament_cmake'
+[3.095s] INFO:colcon.colcon_cmake.task.cmake.test:Testing CMake package in '/home/pi/sunflower/src/sunflower_interfaces'
+[3.101s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.102s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.137s] INFO:colcon.colcon_ros.task.ament_python.test:Testing ROS package in '/home/pi/sunflower/src/test_pkg' with build type'ament_python'
+[3.138s] INFO:colcon.colcon_core.task.python.test:Testing Python package in '/home/pi/sunflower/src/test_pkg'
+[3.143s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.146s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.182s] INFO:colcon.colcon_ros.task.ament_python.test:Testing ROS package in '/home/pi/sunflower/src/tflite_pkg' with build type'ament_python'
+[3.184s] INFO:colcon.colcon_core.task.python.test:Testing Python package in '/home/pi/sunflower/src/tflite_pkg'
+[3.189s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.190s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.770s] Level 1:colcon.colcon_core.task.python.test:test() by extension 'pytest'
+[4.771s] Level 1:colcon.colcon_core.task.python.test:test.step() by extension 'pytest'
+[4.777s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/pi/sunflower/src/stem_pkg': PYTEST_ADDOPTS=--tb=short --junit-xml=/home/pi/sunflower/build/stem_pkg/pytest.xml --junit-prefix=stem_pkg -o cache_dir=/home/pi/sunflower/build/stem_pkg/.pytest_cache PYTHONPATH=/home/pi/sunflower/build/stem_pkg:/home/pi/sunflower/install/stem_pkg/lib/python3.8/site-packages:/home/pi/sunflower/build/tflite_pkg:/home/pi/sunflower/install/tflite_pkg/lib/python3.8/site-packages:/home/pi/sunflower/build/test_pkg:/home/pi/sunflower/install/test_pkg/lib/python3.8/site-packages:/home/pi/sunflower/install/sunflower_interfaces/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/python3 -m pytest
+[6.549s] Level 1:colcon.colcon_core.task.python.test:test() by extension 'pytest'
+[6.550s] Level 1:colcon.colcon_core.task.python.test:test.step() by extension 'pytest'
+[6.557s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/pi/sunflower/src/test_pkg': AMENT_PREFIX_PATH=/home/pi/sunflower/install/test_pkg:/home/pi/sunflower/install/tflite_pkg:/home/pi/sunflower/install/sunflower_interfaces:/opt/ros/foxy PYTEST_ADDOPTS=--tb=short --junit-xml=/home/pi/sunflower/build/test_pkg/pytest.xml --junit-prefix=test_pkg -o cache_dir=/home/pi/sunflower/build/test_pkg/.pytest_cache PYTHONPATH=/home/pi/sunflower/build/test_pkg:/home/pi/sunflower/install/test_pkg/lib/python3.8/site-packages:/home/pi/sunflower/build/tflite_pkg:/home/pi/sunflower/install/tflite_pkg/lib/python3.8/site-packages:/home/pi/sunflower/build/stem_pkg:/home/pi/sunflower/install/sunflower_interfaces/lib/python3.8/site-packages:/home/pi/sunflower/install/stem_pkg/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/python3 -m pytest
+[9.091s] Level 1:colcon.colcon_core.task.python.test:test() by extension 'pytest'
+[9.092s] Level 1:colcon.colcon_core.task.python.test:test.step() by extension 'pytest'
+[9.100s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/pi/sunflower/src/tflite_pkg': PYTEST_ADDOPTS=--tb=short --junit-xml=/home/pi/sunflower/build/tflite_pkg/pytest.xml --junit-prefix=tflite_pkg -o cache_dir=/home/pi/sunflower/build/tflite_pkg/.pytest_cache /usr/bin/python3 -m pytest
+[9.126s] Level 5:colcon.colcon_cmake.task.cmake.test:No ctests found in '/home/pi/sunflower/src/sunflower_interfaces'
+[13.764s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/pi/sunflower/src/stem_pkg' returned '1': PYTEST_ADDOPTS=--tb=short --junit-xml=/home/pi/sunflower/build/stem_pkg/pytest.xml --junit-prefix=stem_pkg -o cache_dir=/home/pi/sunflower/build/stem_pkg/.pytest_cache PYTHONPATH=/home/pi/sunflower/build/stem_pkg:/home/pi/sunflower/install/stem_pkg/lib/python3.8/site-packages:/home/pi/sunflower/build/tflite_pkg:/home/pi/sunflower/install/tflite_pkg/lib/python3.8/site-packages:/home/pi/sunflower/build/test_pkg:/home/pi/sunflower/install/test_pkg/lib/python3.8/site-packages:/home/pi/sunflower/install/sunflower_interfaces/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/python3 -m pytest
+[13.783s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/pi/sunflower/src/test_pkg' returned '0': AMENT_PREFIX_PATH=/home/pi/sunflower/install/test_pkg:/home/pi/sunflower/install/tflite_pkg:/home/pi/sunflower/install/sunflower_interfaces:/opt/ros/foxy PYTEST_ADDOPTS=--tb=short --junit-xml=/home/pi/sunflower/build/test_pkg/pytest.xml --junit-prefix=test_pkg -o cache_dir=/home/pi/sunflower/build/test_pkg/.pytest_cache PYTHONPATH=/home/pi/sunflower/build/test_pkg:/home/pi/sunflower/install/test_pkg/lib/python3.8/site-packages:/home/pi/sunflower/build/tflite_pkg:/home/pi/sunflower/install/tflite_pkg/lib/python3.8/site-packages:/home/pi/sunflower/build/stem_pkg:/home/pi/sunflower/install/sunflower_interfaces/lib/python3.8/site-packages:/home/pi/sunflower/install/stem_pkg/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/python3 -m pytest
+[15.670s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[15.671s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[15.672s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/pi/sunflower/src/tflite_pkg' returned '0': PYTEST_ADDOPTS=--tb=short --junit-xml=/home/pi/sunflower/build/tflite_pkg/pytest.xml --junit-prefix=tflite_pkg -o cache_dir=/home/pi/sunflower/build/tflite_pkg/.pytest_cache /usr/bin/python3 -m pytest
+[15.672s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[15.673s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[15.710s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[15.711s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[15.712s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[15.778s] DEBUG:colcon.colcon_core.event_reactor:joined thread

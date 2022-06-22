@@ -1,0 +1,16 @@
+[10.922s] Invoking command in '/home/pi/sunflower/build/test_pkg': PYTHONPATH=/home/pi/sunflower/install/test_pkg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/pi/sunflower/install/test_pkg --editable --build-directory /home/pi/sunflower/build/test_pkg/build --no-deps install_data --install-dir /home/pi/sunflower/install/test_pkg
+[13.433s] running develop
+[14.763s] running egg_info
+[14.766s] writing test_pkg.egg-info/PKG-INFO
+[14.768s] writing dependency_links to test_pkg.egg-info/dependency_links.txt
+[14.768s] writing entry points to test_pkg.egg-info/entry_points.txt
+[14.769s] writing requirements to test_pkg.egg-info/requires.txt
+[14.770s] writing top-level names to test_pkg.egg-info/top_level.txt
+[14.919s] reading manifest file 'test_pkg.egg-info/SOURCES.txt'
+[14.923s] writing manifest file 'test_pkg.egg-info/SOURCES.txt'
+[15.143s] running build_ext
+[15.144s] Creating /home/pi/sunflower/install/test_pkg/lib/python3.8/site-packages/test-pkg.egg-link (link to .)
+[15.149s] 
+[15.150s] Installed /home/pi/sunflower/build/test_pkg
+[15.151s] running install_data
+[15.306s] Invoked command in '/home/pi/sunflower/build/test_pkg' returned '0': PYTHONPATH=/home/pi/sunflower/install/test_pkg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/pi/sunflower/install/test_pkg --editable --build-directory /home/pi/sunflower/build/test_pkg/build --no-deps install_data --install-dir /home/pi/sunflower/install/test_pkg

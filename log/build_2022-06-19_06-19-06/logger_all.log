@@ -1,0 +1,345 @@
+[0.547s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[0.548s] DEBUG:colcon:Parsed command line arguments: Namespace(allow_overriding=[], ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffffa6fdf0a0>>, merge_install=False, metas=['./colcon.meta'], packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=4, paths=None, symlink_install=True, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffffa6fdf0a0>, verb_name='build', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0xffffa6fdf5e0>)
+[0.657s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.658s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.658s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.658s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.658s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.658s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.659s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/pi/sunflower'
+[0.659s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.660s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.660s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.661s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.661s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.661s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.661s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.661s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.661s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.712s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.712s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.713s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.713s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.713s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.714s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extensions ['ignore', 'ignore_ament_install']
+[0.714s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extension 'ignore'
+[0.715s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extension 'ignore_ament_install'
+[0.715s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extensions ['colcon_pkg']
+[0.715s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extension 'colcon_pkg'
+[0.716s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extensions ['colcon_meta']
+[0.716s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extension 'colcon_meta'
+[0.716s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extensions ['ros']
+[0.716s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extension 'ros'
+[0.716s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extensions ['cmake', 'python']
+[0.716s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extension 'cmake'
+[0.717s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extension 'python'
+[0.717s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extensions ['python_setup_py']
+[0.717s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extension 'python_setup_py'
+[0.717s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.718s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.718s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.719s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.719s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.719s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.720s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.720s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.720s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.721s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.721s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.721s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.722s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.722s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.722s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.722s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.723s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.723s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.724s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.724s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.724s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.725s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.725s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.726s] Level 1:colcon.colcon_core.package_identification:_identify(src/stem_pkg) by extensions ['ignore', 'ignore_ament_install']
+[0.726s] Level 1:colcon.colcon_core.package_identification:_identify(src/stem_pkg) by extension 'ignore'
+[0.726s] Level 1:colcon.colcon_core.package_identification:_identify(src/stem_pkg) by extension 'ignore_ament_install'
+[0.727s] Level 1:colcon.colcon_core.package_identification:_identify(src/stem_pkg) by extensions ['colcon_pkg']
+[0.727s] Level 1:colcon.colcon_core.package_identification:_identify(src/stem_pkg) by extension 'colcon_pkg'
+[0.727s] Level 1:colcon.colcon_core.package_identification:_identify(src/stem_pkg) by extensions ['colcon_meta']
+[0.727s] Level 1:colcon.colcon_core.package_identification:_identify(src/stem_pkg) by extension 'colcon_meta'
+[0.727s] Level 1:colcon.colcon_core.package_identification:_identify(src/stem_pkg) by extensions ['ros']
+[0.727s] Level 1:colcon.colcon_core.package_identification:_identify(src/stem_pkg) by extension 'ros'
+[0.731s] DEBUG:colcon.colcon_core.package_identification:Failed to parse potential ROS package manifest in'src/stem_pkg': Error(s) in package 'src/stem_pkg/package.xml':
+The manifest contains invalid XML:
+mismatched tag: line 21, column 29
+[0.732s] Level 1:colcon.colcon_core.package_identification:_identify(src/stem_pkg) by extensions ['cmake', 'python']
+[0.732s] Level 1:colcon.colcon_core.package_identification:_identify(src/stem_pkg) by extension 'cmake'
+[0.732s] Level 1:colcon.colcon_core.package_identification:_identify(src/stem_pkg) by extension 'python'
+[0.732s] DEBUG:colcon.colcon_core.package_identification:Python package in 'src/stem_pkg' passes arguments to the setup() function which requires a different identification extension than 'python'
+[0.733s] Level 1:colcon.colcon_core.package_identification:_identify(src/stem_pkg) by extensions ['python_setup_py']
+[0.733s] Level 1:colcon.colcon_core.package_identification:_identify(src/stem_pkg) by extension 'python_setup_py'
+[2.090s] DEBUG:colcon.colcon_core.package_identification:Package 'src/stem_pkg' with type 'python' and name 'stem_pkg'
+[2.091s] Level 1:colcon.colcon_core.package_identification:_identify(src/sunflower_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[2.091s] Level 1:colcon.colcon_core.package_identification:_identify(src/sunflower_interfaces) by extension 'ignore'
+[2.092s] Level 1:colcon.colcon_core.package_identification:_identify(src/sunflower_interfaces) by extension 'ignore_ament_install'
+[2.092s] Level 1:colcon.colcon_core.package_identification:_identify(src/sunflower_interfaces) by extensions ['colcon_pkg']
+[2.093s] Level 1:colcon.colcon_core.package_identification:_identify(src/sunflower_interfaces) by extension 'colcon_pkg'
+[2.093s] Level 1:colcon.colcon_core.package_identification:_identify(src/sunflower_interfaces) by extensions ['colcon_meta']
+[2.093s] Level 1:colcon.colcon_core.package_identification:_identify(src/sunflower_interfaces) by extension 'colcon_meta'
+[2.094s] Level 1:colcon.colcon_core.package_identification:_identify(src/sunflower_interfaces) by extensions ['ros']
+[2.094s] Level 1:colcon.colcon_core.package_identification:_identify(src/sunflower_interfaces) by extension 'ros'
+[2.102s] DEBUG:colcon.colcon_core.package_identification:Package 'src/sunflower_interfaces' with type 'ros.ament_cmake' and name 'sunflower_interfaces'
+[2.103s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_pkg) by extensions ['ignore', 'ignore_ament_install']
+[2.104s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_pkg) by extension 'ignore'
+[2.105s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_pkg) by extension 'ignore_ament_install'
+[2.105s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_pkg) by extensions ['colcon_pkg']
+[2.105s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_pkg) by extension 'colcon_pkg'
+[2.106s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_pkg) by extensions ['colcon_meta']
+[2.106s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_pkg) by extension 'colcon_meta'
+[2.106s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_pkg) by extensions ['ros']
+[2.106s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_pkg) by extension 'ros'
+[2.109s] DEBUG:colcon.colcon_core.package_identification:Package 'src/test_pkg' with type 'ros.ament_python' and name 'test_pkg'
+[2.110s] Level 1:colcon.colcon_core.package_identification:_identify(src/tflite_pkg) by extensions ['ignore', 'ignore_ament_install']
+[2.111s] Level 1:colcon.colcon_core.package_identification:_identify(src/tflite_pkg) by extension 'ignore'
+[2.111s] Level 1:colcon.colcon_core.package_identification:_identify(src/tflite_pkg) by extension 'ignore_ament_install'
+[2.112s] Level 1:colcon.colcon_core.package_identification:_identify(src/tflite_pkg) by extensions ['colcon_pkg']
+[2.112s] Level 1:colcon.colcon_core.package_identification:_identify(src/tflite_pkg) by extension 'colcon_pkg'
+[2.112s] Level 1:colcon.colcon_core.package_identification:_identify(src/tflite_pkg) by extensions ['colcon_meta']
+[2.113s] Level 1:colcon.colcon_core.package_identification:_identify(src/tflite_pkg) by extension 'colcon_meta'
+[2.113s] Level 1:colcon.colcon_core.package_identification:_identify(src/tflite_pkg) by extensions ['ros']
+[2.113s] Level 1:colcon.colcon_core.package_identification:_identify(src/tflite_pkg) by extension 'ros'
+[2.117s] DEBUG:colcon.colcon_core.package_identification:Package 'src/tflite_pkg' with type 'ros.ament_python' and name 'tflite_pkg'
+[2.118s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[2.120s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[2.120s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[2.121s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[2.121s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[2.224s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[2.224s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[2.238s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 2 installed packages in /home/pi/sunflower/install
+[2.247s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 263 installed packages in /opt/ros/foxy
+[2.314s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[2.766s] Level 5:colcon.colcon_core.verb:set package 'stem_pkg' build argument 'cmake_args' from command line to 'None'
+[2.766s] Level 5:colcon.colcon_core.verb:set package 'stem_pkg' build argument 'cmake_target' from command line to 'None'
+[2.767s] Level 5:colcon.colcon_core.verb:set package 'stem_pkg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.768s] Level 5:colcon.colcon_core.verb:set package 'stem_pkg' build argument 'cmake_clean_cache' from command line to 'False'
+[2.768s] Level 5:colcon.colcon_core.verb:set package 'stem_pkg' build argument 'cmake_clean_first' from command line to 'False'
+[2.769s] Level 5:colcon.colcon_core.verb:set package 'stem_pkg' build argument 'cmake_force_configure' from command line to 'False'
+[2.770s] Level 5:colcon.colcon_core.verb:set package 'stem_pkg' build argument 'ament_cmake_args' from command line to 'None'
+[2.770s] Level 5:colcon.colcon_core.verb:set package 'stem_pkg' build argument 'catkin_cmake_args' from command line to 'None'
+[2.771s] Level 5:colcon.colcon_core.verb:set package 'stem_pkg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.771s] DEBUG:colcon.colcon_core.verb:Building package 'stem_pkg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/pi/sunflower/build/stem_pkg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/pi/sunflower/install/stem_pkg', 'merge_install': False, 'path': '/home/pi/sunflower/src/stem_pkg', 'symlink_install': True, 'test_result_base': None}
+[2.775s] Level 5:colcon.colcon_core.verb:set package 'sunflower_interfaces' build argument 'cmake_args' from command line to 'None'
+[2.776s] Level 5:colcon.colcon_core.verb:set package 'sunflower_interfaces' build argument 'cmake_target' from command line to 'None'
+[2.776s] Level 5:colcon.colcon_core.verb:set package 'sunflower_interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.777s] Level 5:colcon.colcon_core.verb:set package 'sunflower_interfaces' build argument 'cmake_clean_cache' from command line to 'False'
+[2.777s] Level 5:colcon.colcon_core.verb:set package 'sunflower_interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[2.778s] Level 5:colcon.colcon_core.verb:set package 'sunflower_interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[2.778s] Level 5:colcon.colcon_core.verb:set package 'sunflower_interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[2.779s] Level 5:colcon.colcon_core.verb:set package 'sunflower_interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[2.779s] Level 5:colcon.colcon_core.verb:set package 'sunflower_interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.780s] DEBUG:colcon.colcon_core.verb:Building package 'sunflower_interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/pi/sunflower/build/sunflower_interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/pi/sunflower/install/sunflower_interfaces', 'merge_install': False, 'path': '/home/pi/sunflower/src/sunflower_interfaces', 'symlink_install': True, 'test_result_base': None}
+[2.785s] Level 5:colcon.colcon_core.verb:set package 'test_pkg' build argument 'cmake_args' from command line to 'None'
+[2.786s] Level 5:colcon.colcon_core.verb:set package 'test_pkg' build argument 'cmake_target' from command line to 'None'
+[2.786s] Level 5:colcon.colcon_core.verb:set package 'test_pkg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.787s] Level 5:colcon.colcon_core.verb:set package 'test_pkg' build argument 'cmake_clean_cache' from command line to 'False'
+[2.787s] Level 5:colcon.colcon_core.verb:set package 'test_pkg' build argument 'cmake_clean_first' from command line to 'False'
+[2.787s] Level 5:colcon.colcon_core.verb:set package 'test_pkg' build argument 'cmake_force_configure' from command line to 'False'
+[2.788s] Level 5:colcon.colcon_core.verb:set package 'test_pkg' build argument 'ament_cmake_args' from command line to 'None'
+[2.788s] Level 5:colcon.colcon_core.verb:set package 'test_pkg' build argument 'catkin_cmake_args' from command line to 'None'
+[2.789s] Level 5:colcon.colcon_core.verb:set package 'test_pkg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.789s] DEBUG:colcon.colcon_core.verb:Building package 'test_pkg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/pi/sunflower/build/test_pkg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/pi/sunflower/install/test_pkg', 'merge_install': False, 'path': '/home/pi/sunflower/src/test_pkg', 'symlink_install': True, 'test_result_base': None}
+[2.793s] Level 5:colcon.colcon_core.verb:set package 'tflite_pkg' build argument 'cmake_args' from command line to 'None'
+[2.794s] Level 5:colcon.colcon_core.verb:set package 'tflite_pkg' build argument 'cmake_target' from command line to 'None'
+[2.794s] Level 5:colcon.colcon_core.verb:set package 'tflite_pkg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.795s] Level 5:colcon.colcon_core.verb:set package 'tflite_pkg' build argument 'cmake_clean_cache' from command line to 'False'
+[2.795s] Level 5:colcon.colcon_core.verb:set package 'tflite_pkg' build argument 'cmake_clean_first' from command line to 'False'
+[2.796s] Level 5:colcon.colcon_core.verb:set package 'tflite_pkg' build argument 'cmake_force_configure' from command line to 'False'
+[2.796s] Level 5:colcon.colcon_core.verb:set package 'tflite_pkg' build argument 'ament_cmake_args' from command line to 'None'
+[2.797s] Level 5:colcon.colcon_core.verb:set package 'tflite_pkg' build argument 'catkin_cmake_args' from command line to 'None'
+[2.797s] Level 5:colcon.colcon_core.verb:set package 'tflite_pkg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.798s] DEBUG:colcon.colcon_core.verb:Building package 'tflite_pkg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/pi/sunflower/build/tflite_pkg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/pi/sunflower/install/tflite_pkg', 'merge_install': False, 'path': '/home/pi/sunflower/src/tflite_pkg', 'symlink_install': True, 'test_result_base': None}
+[2.800s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[2.815s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[2.817s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/pi/sunflower/src/stem_pkg'
+[2.844s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[2.845s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.846s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.878s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/pi/sunflower/src/sunflower_interfaces' with build type 'ament_cmake'
+[2.879s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/pi/sunflower/src/sunflower_interfaces'
+[2.883s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.884s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.910s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/pi/sunflower/src/test_pkg' with build type 'ament_python'
+[2.911s] Level 1:colcon.colcon_core.shell:create_environment_hook('test_pkg', 'ament_prefix_path')
+[2.915s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/pi/sunflower/install/test_pkg/share/test_pkg/hook/ament_prefix_path.ps1'
+[2.920s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/pi/sunflower/install/test_pkg/share/test_pkg/hook/ament_prefix_path.dsv'
+[2.922s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/pi/sunflower/install/test_pkg/share/test_pkg/hook/ament_prefix_path.sh'
+[2.927s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.927s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.956s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/pi/sunflower/src/tflite_pkg' with build type 'ament_python'
+[2.957s] Level 1:colcon.colcon_core.shell:create_environment_hook('tflite_pkg', 'ament_prefix_path')
+[2.961s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/pi/sunflower/install/tflite_pkg/share/tflite_pkg/hook/ament_prefix_path.ps1'
+[2.966s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/pi/sunflower/install/tflite_pkg/share/tflite_pkg/hook/ament_prefix_path.dsv'
+[2.968s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/pi/sunflower/install/tflite_pkg/share/tflite_pkg/hook/ament_prefix_path.sh'
+[2.974s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.974s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.600s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/pi/sunflower/build/sunflower_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /home/pi/sunflower/src/sunflower_interfaces -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/pi/sunflower/install/sunflower_interfaces
+[6.938s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/pi/sunflower/src/test_pkg'
+[6.942s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[6.942s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[8.979s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/pi/sunflower/src/tflite_pkg'
+[8.983s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[8.983s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[9.020s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/pi/sunflower/install/stem_pkg/share/ament_index/resource_index/packages/stem_pkg
+[9.021s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/pi/sunflower/install/stem_pkg/share/stem_pkg/package.xml
+[9.021s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/pi/sunflower/install/stem_pkg/share/stem_pkg/stem.launch.py
+[9.023s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/pi/sunflower/install/stem_pkg/lib/stem_pkg/calculator
+[9.024s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/pi/sunflower/install/stem_pkg/lib/stem_pkg/cmd_selector
+[9.024s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/pi/sunflower/install/stem_pkg/lib/stem_pkg/serial_talker
+[9.024s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/pi/sunflower/install/stem_pkg/lib/stem_pkg/tensor
+[9.024s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/pi/sunflower/install/stem_pkg/lib/stem_pkg/tensor_publisher
+[9.039s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/pi/sunflower/build/stem_pkg': PYTHONPATH=/home/pi/sunflower/install/stem_pkg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/pi/sunflower/install/stem_pkg --editable --build-directory /home/pi/sunflower/build/stem_pkg/build --no-deps install_data --install-dir /home/pi/sunflower/install/stem_pkg
+[13.150s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/pi/sunflower/build/tflite_pkg': PYTHONPATH=/home/pi/sunflower/install/tflite_pkg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/pi/sunflower/install/tflite_pkg --editable --build-directory /home/pi/sunflower/build/tflite_pkg/build --no-deps install_data --install-dir /home/pi/sunflower/install/tflite_pkg
+[13.430s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/pi/sunflower/build/test_pkg': PYTHONPATH=/home/pi/sunflower/install/test_pkg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/pi/sunflower/install/test_pkg --editable --build-directory /home/pi/sunflower/build/test_pkg/build --no-deps install_data --install-dir /home/pi/sunflower/install/test_pkg
+[15.666s] Level 1:colcon.colcon_core.shell:create_environment_hook('stem_pkg', 'pythonpath_develop')
+[15.670s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/pi/sunflower/build/stem_pkg/share/stem_pkg/hook/pythonpath_develop.ps1'
+[15.672s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/pi/sunflower/build/stem_pkg' returned '0': PYTHONPATH=/home/pi/sunflower/install/stem_pkg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/pi/sunflower/install/stem_pkg --editable --build-directory /home/pi/sunflower/build/stem_pkg/build --no-deps install_data --install-dir /home/pi/sunflower/install/stem_pkg
+[15.679s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/pi/sunflower/build/stem_pkg/share/stem_pkg/hook/pythonpath_develop.dsv'
+[15.682s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/pi/sunflower/build/stem_pkg/share/stem_pkg/hook/pythonpath_develop.sh'
+[15.761s] Level 1:colcon.colcon_core.environment:checking '/home/pi/sunflower/install/stem_pkg' for CMake module files
+[15.767s] Level 1:colcon.colcon_core.environment:checking '/home/pi/sunflower/install/stem_pkg' for CMake config files
+[15.776s] Level 1:colcon.colcon_core.environment:checking '/home/pi/sunflower/install/stem_pkg/lib'
+[15.786s] Level 1:colcon.colcon_core.environment:checking '/home/pi/sunflower/install/stem_pkg/bin'
+[15.787s] Level 1:colcon.colcon_core.environment:checking '/home/pi/sunflower/install/stem_pkg/lib/pkgconfig/stem_pkg.pc'
+[15.788s] Level 1:colcon.colcon_core.environment:checking '/home/pi/sunflower/install/stem_pkg/lib/python3.8/site-packages'
+[15.801s] Level 1:colcon.colcon_core.shell:create_environment_hook('stem_pkg', 'pythonpath')
+[15.804s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/pi/sunflower/install/stem_pkg/share/stem_pkg/hook/pythonpath.ps1'
+[15.808s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/pi/sunflower/install/stem_pkg/share/stem_pkg/hook/pythonpath.dsv'
+[15.814s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/pi/sunflower/install/stem_pkg/share/stem_pkg/hook/pythonpath.sh'
+[15.830s] Level 1:colcon.colcon_core.environment:checking '/home/pi/sunflower/install/stem_pkg/bin'
+[15.831s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(stem_pkg)
+[15.835s] INFO:colcon.colcon_core.shell:Creating package script '/home/pi/sunflower/install/stem_pkg/share/stem_pkg/package.ps1'
+[15.848s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/pi/sunflower/install/stem_pkg/share/stem_pkg/package.dsv'
+[15.866s] INFO:colcon.colcon_core.shell:Creating package script '/home/pi/sunflower/install/stem_pkg/share/stem_pkg/package.sh'
+[15.871s] INFO:colcon.colcon_core.shell:Creating package script '/home/pi/sunflower/install/stem_pkg/share/stem_pkg/package.bash'
+[15.877s] INFO:colcon.colcon_core.shell:Creating package script '/home/pi/sunflower/install/stem_pkg/share/stem_pkg/package.zsh'
+[15.885s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/pi/sunflower/install/stem_pkg/share/colcon-core/packages/stem_pkg)
+[15.900s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/pi/sunflower/build/sunflower_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /home/pi/sunflower/src/sunflower_interfaces -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/pi/sunflower/install/sunflower_interfaces
+[15.913s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/pi/sunflower/build/sunflower_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/pi/sunflower/build/sunflower_interfaces -- -j4 -l4
+[18.765s] Level 1:colcon.colcon_core.shell:create_environment_hook('tflite_pkg', 'pythonpath_develop')
+[18.769s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/pi/sunflower/build/tflite_pkg/share/tflite_pkg/hook/pythonpath_develop.ps1'
+[18.771s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/pi/sunflower/build/tflite_pkg' returned '0': PYTHONPATH=/home/pi/sunflower/install/tflite_pkg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/pi/sunflower/install/tflite_pkg --editable --build-directory /home/pi/sunflower/build/tflite_pkg/build --no-deps install_data --install-dir /home/pi/sunflower/install/tflite_pkg
+[18.778s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/pi/sunflower/build/tflite_pkg/share/tflite_pkg/hook/pythonpath_develop.dsv'
+[18.782s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/pi/sunflower/build/tflite_pkg/share/tflite_pkg/hook/pythonpath_develop.sh'
+[18.794s] Level 1:colcon.colcon_core.environment:checking '/home/pi/sunflower/install/tflite_pkg' for CMake module files
+[18.798s] Level 1:colcon.colcon_core.environment:checking '/home/pi/sunflower/install/tflite_pkg' for CMake config files
+[18.806s] Level 1:colcon.colcon_core.environment:checking '/home/pi/sunflower/install/tflite_pkg/lib'
+[18.807s] Level 1:colcon.colcon_core.environment:checking '/home/pi/sunflower/install/tflite_pkg/bin'
+[18.808s] Level 1:colcon.colcon_core.environment:checking '/home/pi/sunflower/install/tflite_pkg/lib/pkgconfig/tflite_pkg.pc'
+[18.810s] Level 1:colcon.colcon_core.environment:checking '/home/pi/sunflower/install/tflite_pkg/lib/python3.8/site-packages'
+[18.811s] Level 1:colcon.colcon_core.shell:create_environment_hook('tflite_pkg', 'pythonpath')
+[18.815s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/pi/sunflower/install/tflite_pkg/share/tflite_pkg/hook/pythonpath.ps1'
+[18.818s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/pi/sunflower/install/tflite_pkg/share/tflite_pkg/hook/pythonpath.dsv'
+[18.821s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/pi/sunflower/install/tflite_pkg/share/tflite_pkg/hook/pythonpath.sh'
+[18.826s] Level 1:colcon.colcon_core.environment:checking '/home/pi/sunflower/install/tflite_pkg/bin'
+[18.827s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tflite_pkg)
+[18.832s] INFO:colcon.colcon_core.shell:Creating package script '/home/pi/sunflower/install/tflite_pkg/share/tflite_pkg/package.ps1'
+[18.837s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/pi/sunflower/install/tflite_pkg/share/tflite_pkg/package.dsv'
+[18.843s] INFO:colcon.colcon_core.shell:Creating package script '/home/pi/sunflower/install/tflite_pkg/share/tflite_pkg/package.sh'
+[18.847s] INFO:colcon.colcon_core.shell:Creating package script '/home/pi/sunflower/install/tflite_pkg/share/tflite_pkg/package.bash'
+[18.850s] INFO:colcon.colcon_core.shell:Creating package script '/home/pi/sunflower/install/tflite_pkg/share/tflite_pkg/package.zsh'
+[18.853s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/pi/sunflower/install/tflite_pkg/share/colcon-core/packages/tflite_pkg)
+[19.249s] Level 1:colcon.colcon_core.shell:create_environment_hook('test_pkg', 'pythonpath_develop')
+[19.250s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/pi/sunflower/build/test_pkg' returned '0': PYTHONPATH=/home/pi/sunflower/install/test_pkg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/pi/sunflower/install/test_pkg --editable --build-directory /home/pi/sunflower/build/test_pkg/build --no-deps install_data --install-dir /home/pi/sunflower/install/test_pkg
+[19.254s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/pi/sunflower/build/test_pkg/share/test_pkg/hook/pythonpath_develop.ps1'
+[19.258s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/pi/sunflower/build/test_pkg/share/test_pkg/hook/pythonpath_develop.dsv'
+[19.260s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/pi/sunflower/build/test_pkg/share/test_pkg/hook/pythonpath_develop.sh'
+[19.268s] Level 1:colcon.colcon_core.environment:checking '/home/pi/sunflower/install/test_pkg' for CMake module files
+[19.270s] Level 1:colcon.colcon_core.environment:checking '/home/pi/sunflower/install/test_pkg' for CMake config files
+[19.274s] Level 1:colcon.colcon_core.environment:checking '/home/pi/sunflower/install/test_pkg/lib'
+[19.275s] Level 1:colcon.colcon_core.environment:checking '/home/pi/sunflower/install/test_pkg/bin'
+[19.276s] Level 1:colcon.colcon_core.environment:checking '/home/pi/sunflower/install/test_pkg/lib/pkgconfig/test_pkg.pc'
+[19.278s] Level 1:colcon.colcon_core.environment:checking '/home/pi/sunflower/install/test_pkg/lib/python3.8/site-packages'
+[19.278s] Level 1:colcon.colcon_core.shell:create_environment_hook('test_pkg', 'pythonpath')
+[19.281s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/pi/sunflower/install/test_pkg/share/test_pkg/hook/pythonpath.ps1'
+[19.283s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/pi/sunflower/install/test_pkg/share/test_pkg/hook/pythonpath.dsv'
+[19.285s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/pi/sunflower/install/test_pkg/share/test_pkg/hook/pythonpath.sh'
+[19.288s] Level 1:colcon.colcon_core.environment:checking '/home/pi/sunflower/install/test_pkg/bin'
+[19.289s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(test_pkg)
+[19.293s] INFO:colcon.colcon_core.shell:Creating package script '/home/pi/sunflower/install/test_pkg/share/test_pkg/package.ps1'
+[19.296s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/pi/sunflower/install/test_pkg/share/test_pkg/package.dsv'
+[19.300s] INFO:colcon.colcon_core.shell:Creating package script '/home/pi/sunflower/install/test_pkg/share/test_pkg/package.sh'
+[19.303s] INFO:colcon.colcon_core.shell:Creating package script '/home/pi/sunflower/install/test_pkg/share/test_pkg/package.bash'
+[19.305s] INFO:colcon.colcon_core.shell:Creating package script '/home/pi/sunflower/install/test_pkg/share/test_pkg/package.zsh'
+[19.308s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/pi/sunflower/install/test_pkg/share/colcon-core/packages/test_pkg)
+[20.610s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/pi/sunflower/build/sunflower_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/pi/sunflower/build/sunflower_interfaces -- -j4 -l4
+[21.017s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/pi/sunflower/build/sunflower_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/pi/sunflower/build/sunflower_interfaces
+[23.482s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(sunflower_interfaces)
+[23.487s] Level 1:colcon.colcon_core.environment:checking '/home/pi/sunflower/install/sunflower_interfaces' for CMake module files
+[23.490s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/pi/sunflower/build/sunflower_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/pi/sunflower/build/sunflower_interfaces
+[23.506s] Level 1:colcon.colcon_core.environment:checking '/home/pi/sunflower/install/sunflower_interfaces' for CMake config files
+[23.513s] Level 1:colcon.colcon_core.shell:create_environment_hook('sunflower_interfaces', 'cmake_prefix_path')
+[23.519s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/pi/sunflower/install/sunflower_interfaces/share/sunflower_interfaces/hook/cmake_prefix_path.ps1'
+[23.524s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/pi/sunflower/install/sunflower_interfaces/share/sunflower_interfaces/hook/cmake_prefix_path.dsv'
+[23.528s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/pi/sunflower/install/sunflower_interfaces/share/sunflower_interfaces/hook/cmake_prefix_path.sh'
+[23.533s] Level 1:colcon.colcon_core.environment:checking '/home/pi/sunflower/install/sunflower_interfaces/lib'
+[23.534s] Level 1:colcon.colcon_core.shell:create_environment_hook('sunflower_interfaces', 'ld_library_path_lib')
+[23.538s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/pi/sunflower/install/sunflower_interfaces/share/sunflower_interfaces/hook/ld_library_path_lib.ps1'
+[23.543s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/pi/sunflower/install/sunflower_interfaces/share/sunflower_interfaces/hook/ld_library_path_lib.dsv'
+[23.548s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/pi/sunflower/install/sunflower_interfaces/share/sunflower_interfaces/hook/ld_library_path_lib.sh'
+[23.552s] Level 1:colcon.colcon_core.environment:checking '/home/pi/sunflower/install/sunflower_interfaces/bin'
+[23.553s] Level 1:colcon.colcon_core.environment:checking '/home/pi/sunflower/install/sunflower_interfaces/lib/pkgconfig/sunflower_interfaces.pc'
+[23.554s] Level 1:colcon.colcon_core.environment:checking '/home/pi/sunflower/install/sunflower_interfaces/lib/python3.8/site-packages'
+[23.555s] Level 1:colcon.colcon_core.shell:create_environment_hook('sunflower_interfaces', 'pythonpath')
+[23.558s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/pi/sunflower/install/sunflower_interfaces/share/sunflower_interfaces/hook/pythonpath.ps1'
+[23.562s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/pi/sunflower/install/sunflower_interfaces/share/sunflower_interfaces/hook/pythonpath.dsv'
+[23.566s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/pi/sunflower/install/sunflower_interfaces/share/sunflower_interfaces/hook/pythonpath.sh'
+[23.570s] Level 1:colcon.colcon_core.environment:checking '/home/pi/sunflower/install/sunflower_interfaces/bin'
+[23.577s] INFO:colcon.colcon_core.shell:Creating package script '/home/pi/sunflower/install/sunflower_interfaces/share/sunflower_interfaces/package.ps1'
+[23.582s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/pi/sunflower/install/sunflower_interfaces/share/sunflower_interfaces/package.dsv'
+[23.588s] INFO:colcon.colcon_core.shell:Creating package script '/home/pi/sunflower/install/sunflower_interfaces/share/sunflower_interfaces/package.sh'
+[23.596s] INFO:colcon.colcon_core.shell:Creating package script '/home/pi/sunflower/install/sunflower_interfaces/share/sunflower_interfaces/package.bash'
+[23.605s] INFO:colcon.colcon_core.shell:Creating package script '/home/pi/sunflower/install/sunflower_interfaces/share/sunflower_interfaces/package.zsh'
+[23.610s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/pi/sunflower/install/sunflower_interfaces/share/colcon-core/packages/sunflower_interfaces)
+[23.934s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(sunflower_interfaces)
+[23.939s] Level 1:colcon.colcon_core.environment:checking '/home/pi/sunflower/install/sunflower_interfaces' for CMake module files
+[23.943s] Level 1:colcon.colcon_core.environment:checking '/home/pi/sunflower/install/sunflower_interfaces' for CMake config files
+[23.948s] Level 1:colcon.colcon_core.shell:create_environment_hook('sunflower_interfaces', 'cmake_prefix_path')
+[23.953s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/pi/sunflower/install/sunflower_interfaces/share/sunflower_interfaces/hook/cmake_prefix_path.ps1'
+[23.958s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/pi/sunflower/install/sunflower_interfaces/share/sunflower_interfaces/hook/cmake_prefix_path.dsv'
+[23.961s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/pi/sunflower/install/sunflower_interfaces/share/sunflower_interfaces/hook/cmake_prefix_path.sh'
+[23.968s] Level 1:colcon.colcon_core.environment:checking '/home/pi/sunflower/install/sunflower_interfaces/lib'
+[23.969s] Level 1:colcon.colcon_core.shell:create_environment_hook('sunflower_interfaces', 'ld_library_path_lib')
+[23.972s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/pi/sunflower/install/sunflower_interfaces/share/sunflower_interfaces/hook/ld_library_path_lib.ps1'
+[23.974s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/pi/sunflower/install/sunflower_interfaces/share/sunflower_interfaces/hook/ld_library_path_lib.dsv'
+[23.976s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/pi/sunflower/install/sunflower_interfaces/share/sunflower_interfaces/hook/ld_library_path_lib.sh'
+[23.979s] Level 1:colcon.colcon_core.environment:checking '/home/pi/sunflower/install/sunflower_interfaces/bin'
+[23.979s] Level 1:colcon.colcon_core.environment:checking '/home/pi/sunflower/install/sunflower_interfaces/lib/pkgconfig/sunflower_interfaces.pc'
+[23.981s] Level 1:colcon.colcon_core.environment:checking '/home/pi/sunflower/install/sunflower_interfaces/lib/python3.8/site-packages'
+[23.981s] Level 1:colcon.colcon_core.shell:create_environment_hook('sunflower_interfaces', 'pythonpath')
+[23.984s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/pi/sunflower/install/sunflower_interfaces/share/sunflower_interfaces/hook/pythonpath.ps1'
+[23.986s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/pi/sunflower/install/sunflower_interfaces/share/sunflower_interfaces/hook/pythonpath.dsv'
+[23.988s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/pi/sunflower/install/sunflower_interfaces/share/sunflower_interfaces/hook/pythonpath.sh'
+[23.991s] Level 1:colcon.colcon_core.environment:checking '/home/pi/sunflower/install/sunflower_interfaces/bin'
+[23.995s] INFO:colcon.colcon_core.shell:Creating package script '/home/pi/sunflower/install/sunflower_interfaces/share/sunflower_interfaces/package.ps1'
+[23.998s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/pi/sunflower/install/sunflower_interfaces/share/sunflower_interfaces/package.dsv'
+[24.002s] INFO:colcon.colcon_core.shell:Creating package script '/home/pi/sunflower/install/sunflower_interfaces/share/sunflower_interfaces/package.sh'
+[24.006s] INFO:colcon.colcon_core.shell:Creating package script '/home/pi/sunflower/install/sunflower_interfaces/share/sunflower_interfaces/package.bash'
+[24.010s] INFO:colcon.colcon_core.shell:Creating package script '/home/pi/sunflower/install/sunflower_interfaces/share/sunflower_interfaces/package.zsh'
+[24.014s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/pi/sunflower/install/sunflower_interfaces/share/colcon-core/packages/sunflower_interfaces)
+[24.017s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[24.019s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[24.028s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[24.028s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[24.062s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[24.063s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[24.063s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[24.140s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[24.143s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/pi/sunflower/install/local_setup.ps1'
+[24.150s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/pi/sunflower/install/_local_setup_util_ps1.py'
+[24.157s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/pi/sunflower/install/setup.ps1'
+[24.223s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/pi/sunflower/install/local_setup.sh'
+[24.227s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/pi/sunflower/install/_local_setup_util_sh.py'
+[24.234s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/pi/sunflower/install/setup.sh'
+[24.244s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/pi/sunflower/install/local_setup.bash'
+[24.247s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/pi/sunflower/install/setup.bash'
+[24.253s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/pi/sunflower/install/local_setup.zsh'
+[24.256s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/pi/sunflower/install/setup.zsh'

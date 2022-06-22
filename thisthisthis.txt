@@ -1,0 +1,4 @@
+cd sunflower
+source /opt/ros/foxy/setup.bash
+. ~/sunflower/install/local_setup.bash
+ros2 launch sf_pkg sf.launch.py

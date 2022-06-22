@@ -1,0 +1,21 @@
+[7.746s] Invoking command in '/home/pi/sunflower/build/stem_pkg': PYTHONPATH=/home/pi/sunflower/install/stem_pkg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/pi/sunflower/install/stem_pkg --editable --build-directory /home/pi/sunflower/build/stem_pkg/build --no-deps install_data --install-dir /home/pi/sunflower/install/stem_pkg
+[10.617s] running develop
+[12.148s] running egg_info
+[12.149s] writing stem_pkg.egg-info/PKG-INFO
+[12.152s] writing dependency_links to stem_pkg.egg-info/dependency_links.txt
+[12.156s] writing entry points to stem_pkg.egg-info/entry_points.txt
+[12.159s] writing requirements to stem_pkg.egg-info/requires.txt
+[12.162s] writing top-level names to stem_pkg.egg-info/top_level.txt
+[12.385s] reading manifest file 'stem_pkg.egg-info/SOURCES.txt'
+[12.392s] writing manifest file 'stem_pkg.egg-info/SOURCES.txt'
+[12.668s] running build_ext
+[12.670s] Creating /home/pi/sunflower/install/stem_pkg/lib/python3.8/site-packages/stem-pkg.egg-link (link to .)
+[12.679s] Installing calculator script to /home/pi/sunflower/install/stem_pkg/lib/stem_pkg
+[12.682s] Installing cmd_selector script to /home/pi/sunflower/install/stem_pkg/lib/stem_pkg
+[12.685s] Installing serial_talker script to /home/pi/sunflower/install/stem_pkg/lib/stem_pkg
+[12.688s] Installing tensor script to /home/pi/sunflower/install/stem_pkg/lib/stem_pkg
+[12.689s] Installing tensor_publisher script to /home/pi/sunflower/install/stem_pkg/lib/stem_pkg
+[12.692s] 
+[12.693s] Installed /home/pi/sunflower/build/stem_pkg
+[12.694s] running install_data
+[15.319s] Invoked command in '/home/pi/sunflower/build/stem_pkg' returned '0': PYTHONPATH=/home/pi/sunflower/install/stem_pkg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/pi/sunflower/install/stem_pkg --editable --build-directory /home/pi/sunflower/build/stem_pkg/build --no-deps install_data --install-dir /home/pi/sunflower/install/stem_pkg

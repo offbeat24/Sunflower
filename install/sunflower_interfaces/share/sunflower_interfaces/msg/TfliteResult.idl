@@ -1,0 +1,26 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from sunflower_interfaces/msg/TfliteResult.msg
+// generated code does not contain a copyright notice
+
+
+module sunflower_interfaces {
+  module msg {
+    @verbatim (language="comment", text=
+      "Messages")
+    struct TfliteResult {
+      sequence<float> nose;
+
+      sequence<float> eye_l;
+
+      sequence<float> eye_r;
+
+      sequence<float> ear_l;
+
+      sequence<float> ear_r;
+
+      sequence<float> shoulder_l;
+
+      sequence<float> shoulder_r;
+    };
+  };
+};
